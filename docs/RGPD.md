@@ -7,30 +7,33 @@ Département des Alpes-Maritimes — Direction de la Construction, de l'Immobili
 
 ---
 
-## ⚠️ Point à faire valider par le DPO avant mise en production
+## Où vont les données
 
-L'application est un site **statique**, sans serveur ni base de données. Les demandes des
-visiteurs sont donc collectées par un **service externe** : un script Google Apps Script
-qui écrit dans une feuille de calcul et envoie un récapitulatif quotidien
-(voir `docs/REGISTRE.md`).
+Les coordonnées des visiteurs sont écrites dans un **fichier Excel appartenant au
+Département**, hébergé sur son OneDrive.
 
-**Conséquence** : les coordonnées saisies — prénom, nom, direction, adresse
-professionnelle — et le poste qui intéresse la personne **sont conservés dans une feuille
-de calcul Google**, dont l'hébergement peut se situer **hors Union européenne**.
+**Rien n'est conservé par l'application ni sur GitHub.** Le code, hébergé publiquement, ne
+fait que transmettre : il n'a ni base de données, ni fichier, ni journal. La demande traverse
+le navigateur du visiteur et part directement vers le fichier du Département.
 
-Ce point doit être **arbitré et validé par le Délégué à la protection des données du
-Département avant toute mise en ligne**. Trois issues possibles :
+```
+Téléphone du visiteur  ──►  flux Power Automate  ──►  Excel sur le OneDrive du Département
+   (saisie du formulaire)      (du Département)           (une ligne par demande)
+```
 
-| Option | Ce que ça implique |
+Conséquence pour l'analyse : **les données restent dans le périmètre Microsoft 365 du
+Département**, sous sa propre responsabilité de traitement et ses propres règles. Aucun
+prestataire tiers ne s'interpose, et il n'y a pas de transfert hors des outils que le
+Département utilise déjà.
+
+### Ce qui reste à valider par le DPO
+
+| Point | Pourquoi |
 |---|---|
-| Valider Google Workspace | Vérifier les clauses contractuelles types, inscrire le traitement au registre, mentionner le transfert hors UE dans l'information des personnes |
-| Choisir un service européen ou interne | Le script est le seul point de contact : il suffit d'exposer une adresse qui accepte un `POST` de JSON. Une liste SharePoint via Power Automate ferait l'affaire. Seul `registre.endpoint` change. |
-| Renoncer à la collecte en ligne | Les visiteurs se signalent auprès d'un agent, qui note à la main. C'est déjà ce que l'application affiche tant que le registre n'est pas raccordé. |
-
-Un point est en revanche **réglé** : le poste qui intéresse un agent est une information
-sensible en contexte de mobilité interne. Elle n'est jamais affichée publiquement, jamais
-transmise à un tiers autre que le service de collecte, et **le visiteur ne reçoit aucun
-courriel** — rien n'atterrit dans une boîte partagée par erreur.
+| Inscription du traitement au registre | Nouveau traitement, même temporaire |
+| Durée de conservation et purge | 12 mois annoncés au visiteur ; **la purge du fichier n'a rien d'automatique** |
+| Liste des personnes ayant accès au fichier | L'intérêt d'un agent pour un poste est sensible en mobilité interne |
+| Mention d'information | Celle affichée dans le formulaire, à valider dans sa formulation |
 
 ---
 
@@ -67,12 +70,11 @@ profil, pas de données sensibles au sens de l'article 9.
 
 ## 4. Destinataires
 
-- **une seule personne** à la DCIP, destinataire du récapitulatif de fin de journée.
-  Cette adresse est fixée **côté serveur**, dans `scripts/apps-script/Code.gs` — pas dans
-  un fichier public de l'application ;
-- le prestataire hébergeant le tableau (voir l'avertissement en tête de document).
+- les agents de la DCIP à qui le **fichier Excel** est partagé, et eux seuls ;
+- aucun prestataire tiers : le fichier vit dans le OneDrive du Département.
 
-Aucun courriel n'est envoyé au visiteur.
+Aucun courriel n'est envoyé au visiteur, et l'application ne transmet la demande à personne
+d'autre qu'au fichier du Département.
 
 Aucune cession, aucune revente, aucun transfert à un tiers non listé ici.
 
@@ -83,9 +85,8 @@ Aucune cession, aucune revente, aucun transfert à un tiers non listé ici.
 
 Cette durée couvre la campagne de mobilité interne consécutive à l'événement.
 
-> ⚠️ **La purge n'est pas automatique.** Il faut supprimer les lignes de la feuille de
-> calcul — et les récapitulatifs quotidiens dans la boîte du destinataire — à l'échéance.
-> Inscrivez cette date dans le registre des traitements. Voir `docs/REGISTRE.md`.
+> ⚠️ **La purge n'est pas automatique.** Il faut supprimer les lignes du fichier Excel à
+> l'échéance. Inscrivez cette date dans le registre des traitements. Voir `docs/REGISTRE.md`.
 
 ## 6. Droits des personnes
 
@@ -124,10 +125,10 @@ document.
 
 - Site servi exclusivement en **HTTPS** (GitHub Pages, TLS 1.3).
 - Aucune donnée personnelle stockée dans le dépôt, aucune clé privée versionnée.
-- L'adresse du service de collecte est publique, mais ce point d'entrée ne sait **qu'ajouter
-  une ligne** : il ne lit rien, ne modifie rien, ne supprime rien. Le pire qu'un tiers puisse
-  en faire est d'y écrire des demandes fictives.
-- L'adresse qui reçoit le récapitulatif est fixée **côté serveur**, jamais dans un fichier
-  servi au navigateur.
+- L'adresse du flux de collecte figure dans le code, servi en clair, mais elle ne permet
+  **que d'ajouter une ligne** : ni lecture du fichier, ni modification, ni suppression. Le
+  pire qu'un tiers puisse en faire est d'y écrire des demandes fictives.
+- **Aucun secret Microsoft ne figure dans le code.** C'est précisément la raison du passage
+  par un flux : un accès direct au OneDrive aurait exigé d'y placer un identifiant.
 - Mesures anti-abus : champ leurre, délai minimum avant soumission, plafond de 3 envois par
   navigateur et par heure.

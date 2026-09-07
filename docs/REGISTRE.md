@@ -1,96 +1,121 @@
 # Le registre des demandes
 
-Comment les demandes des visiteurs sont collectées, et comment le récapitulatif
-de fin de journée est envoyé.
+Où vont les coordonnées des visiteurs intéressés par un poste, et comment
+l'application les y dépose.
 
-*Rédigé le 6 septembre 2026 — événement du mercredi 23 septembre 2026.*
+*Réécrit le 7 septembre 2026 — événement du mercredi 23 septembre 2026.*
 
 ---
+
+## En une phrase
+
+Les demandes sont écrites dans un **fichier Excel appartenant au Département**, sur son
+OneDrive. **Rien n'est conservé dans l'application ni sur GitHub.**
 
 ## Ce qui se passe, vu du visiteur
 
 Il ouvre une fiche de poste, clique **« Je suis intéressé(e) par ce poste »**, renseigne
-**prénom, nom, direction et adresse** — tous obligatoires — accepte d'être recontacté,
-puis clique sur **« Enregistrer ma demande »**.
+**prénom, nom, direction et adresse** — tous obligatoires — accepte d'être recontacté, puis
+clique sur **« Enregistrer ma demande »**. L'écran confirme qu'il sera recontacté dans les
+meilleurs délais. Aucun courriel ne lui est envoyé.
 
-L'écran confirme : *« Votre demande est enregistrée. La DCIP vous recontacte dans les
-meilleurs délais. »* Aucun courriel ne lui est envoyé.
+## Le chemin des données
 
-## Ce qui se passe derrière
+```
+Téléphone du visiteur  ──►  flux Power Automate  ──►  Excel sur le OneDrive du Département
+   (saisie du formulaire)      (du Département)           (une ligne par demande)
+```
 
-1. La demande part vers un **script de collecte**, qui l'ajoute à une ligne d'un
-   **tableau** (une feuille de calcul Google).
-2. Chaque soir à 18 h, ce même script envoie **un récapitulatif des demandes du jour**
-   à **une seule adresse**.
+Le code de l'application, hébergé sur GitHub, ne fait que **transmettre**. Il ne garde rien :
+ni fichier, ni base, ni journal. Les seules choses que le navigateur du visiteur retient sont
+ses préférences d'affichage, ses scores de quiz, et — le temps d'un envoi manqué — la demande
+à rejouer au retour du réseau. Rien de tout cela ne remonte nulle part.
 
-> **Pourquoi un service externe.** L'application est un site statique : elle n'a ni base
-> de données ni tâche planifiée. Or les visiteurs scannent le QR avec **leur** téléphone —
-> une trace gardée dans le navigateur resterait sur leur appareil, et la DCIP ne verrait
-> rien. Il faut donc un point de collecte commun. C'est ce que prévoyait déjà le fichier
-> source du projet (`SHEETS_URL`).
+## Pourquoi un flux et pas un accès direct au fichier
+
+Un site statique ne peut pas écrire dans un OneDrive : il faudrait un secret Microsoft dans
+le code, or ce code est **servi en clair** à quiconque ouvre la page. On passe donc par un
+flux **Power Automate** hébergé côté Département.
+
+L'adresse de ce flux figure, elle, dans le code — mais elle ne permet **que d'ajouter une
+ligne**. Elle ne donne accès à rien : ni lecture du fichier, ni modification, ni suppression.
+Le pire qu'un tiers puisse en faire est d'y écrire des demandes fictives.
 
 ---
 
 ## Installation, une fois
 
-### 1. Créer le tableau
+### 1. Le fichier Excel
 
-Sur <https://drive.google.com>, créez une **feuille de calcul** nommée par exemple
-« Registre JDMM 2026 ». L'onglet et les en-têtes sont créés automatiquement à la première
-demande — il n'y a rien à préparer.
+Sur le OneDrive du Département, créez un classeur, par exemple **« Demandes JDMM 2026 »**.
+Dans la première feuille, créez un **tableau** (Insertion → Tableau) avec exactement ces
+colonnes, dans cet ordre :
 
-### 2. Coller le script
+| Colonne |
+|---|
+| `Horodatage` |
+| `Prenom` |
+| `Nom` |
+| `Direction` |
+| `Email` |
+| `Projet` |
+| `Message` |
+| `Poste` |
+| `Service` |
+| `Categorie` |
+| `Statut` |
+| `URL` |
 
-Dans la feuille : menu **Extensions → Apps Script**. Effacez le contenu par défaut et
-collez l'intégralité de `scripts/apps-script/Code.gs`.
+> Power Automate ne sait écrire que dans un **tableau** nommé, pas dans une simple plage.
+> C'est l'étape qu'on oublie. Notez le nom du tableau (par défaut `Tableau1`).
 
-En haut du fichier, vérifiez la seule valeur à régler :
+Partagez ensuite le fichier avec les personnes de la DCIP qui doivent le consulter.
 
-```js
-var DESTINATAIRE = 'mickael@connect3s.fr';
+### 2. Le flux Power Automate
+
+Sur <https://make.powerautomate.com>, créez un flux **instantané** :
+
+1. Déclencheur : **When an HTTP request is received**.
+2. Dans le schéma JSON attendu, collez :
+
+```json
+{
+  "type": "object",
+  "properties": {
+    "horodatage":      { "type": "string" },
+    "prenom":          { "type": "string" },
+    "nom":             { "type": "string" },
+    "direction":       { "type": "string" },
+    "email":           { "type": "string" },
+    "projet":          { "type": "string" },
+    "message":         { "type": "string" },
+    "poste_titre":     { "type": "string" },
+    "poste_service":   { "type": "string" },
+    "poste_categorie": { "type": "string" },
+    "poste_statut":    { "type": "string" },
+    "poste_url":       { "type": "string" }
+  }
+}
 ```
 
-> C'est **ici**, côté serveur, que se décide qui reçoit le récapitulatif — pas dans
-> `data/config.json`, qui est public et modifiable par n'importe qui.
+3. Action suivante : **Excel Online (Business) → Ajouter une ligne dans un tableau**.
+   Choisissez le classeur, la feuille et le tableau, puis reliez chaque colonne au champ
+   correspondant du déclencheur.
+4. Ajoutez une action **Réponse** (Response) avec le code `200` et le corps
+   `{"ok": true}` — l'application attend cette confirmation.
+5. Enregistrez, puis **copiez l'URL HTTP POST** affichée sur le déclencheur.
 
-Enregistrez (icône disquette).
+> ⚠️ Le déclencheur « When an HTTP request is received » demande une **licence Power Automate
+> Premium**. Si le Département ne l'a pas, voyez les solutions de repli en fin de document.
 
-### 3. Déployer en application web
-
-**Déployer → Nouveau déploiement** → type **Application Web** :
-
-| Réglage | Valeur |
-|---|---|
-| Description | Registre JDMM |
-| Exécuter en tant que | **Moi** |
-| Qui a accès | **Tout le monde** |
-
-Google demande une autorisation : acceptez (le script écrit dans *votre* feuille et envoie
-depuis *votre* adresse). Un avertissement « application non validée » peut apparaître —
-c'est normal pour un script personnel : **Paramètres avancés → Accéder au projet**.
-
-Copiez l'**URL de l'application web** (elle se termine par `/exec`).
-
-> ⚠️ **À chaque modification du script, refaites un déploiement** (« Gérer les
-> déploiements → Modifier → Nouvelle version »), sinon l'ancienne version continue de
-> répondre.
-
-### 4. Poser le déclencheur quotidien
-
-Toujours dans Apps Script, sélectionnez la fonction **`installerDeclencheur`** dans la
-liste déroulante, puis **Exécuter**. Elle programme l'envoi tous les jours entre 18 h et
-19 h. Vérifiez ensuite dans **Déclencheurs** (icône réveil) qu'il est bien là.
-
-Pour changer l'heure, modifiez `.atHour(18)` puis relancez `installerDeclencheur`.
-
-### 5. Raccorder l'application
+### 3. Raccorder l'application
 
 Dans `data/config.json` :
 
 ```json
 "registre": {
-  "endpoint": "https://script.google.com/macros/s/……/exec",
-  "destinataire_recapitulatif": "mickael@connect3s.fr"
+  "endpoint": "https://prod-XX.westeurope.logic.azure.com:443/workflows/……",
+  "libelle_destination": "Fichier Excel partagé du Département (OneDrive)"
 }
 ```
 
@@ -100,72 +125,58 @@ Poussez. Comptez une à deux minutes de déploiement, puis **dix minutes** de ca
 
 ## Vérifier
 
-1. Dans Apps Script, lancez **`testerEnvoi`** : un récapitulatif d'exemple part vers
-   l'adresse configurée, sans rien écrire dans le tableau.
-2. Sur le site, enregistrez une vraie demande avec vos coordonnées.
-   L'écran doit dire *« Votre demande est enregistrée »* — et non *« Le registre n'est pas
+1. Sur le site, enregistrez une demande de test avec vos vraies coordonnées.
+2. L'écran doit dire *« Votre demande est enregistrée »* — et non *« Le registre n'est pas
    encore raccordé »*, qui signale un `endpoint` manquant.
-3. Vérifiez qu'une ligne est apparue dans la feuille de calcul.
-4. Lancez **`envoyerRecapitulatif`** à la main : vous devez recevoir le récapitulatif du
-   jour, et la colonne « Récapitulatif envoyé » se remplir.
+3. Ouvrez le fichier Excel : une ligne doit être apparue, horodatée.
+4. Dans Power Automate, l'historique du flux doit montrer une exécution réussie.
 
-**Faites ce test au moins deux jours avant l'événement** : si les courriels partent en
-indésirables, il faut le temps de le corriger.
-
----
+**Faites ce test au moins deux jours avant l'événement.**
 
 ## Si le registre n'est pas raccordé le jour J
 
-L'application ne fait pas semblant. L'écran affiche :
+L'application ne fait pas semblant. Elle affiche :
 
-> *Le registre des demandes n'est pas encore raccordé sur ce stand. Signalez-vous auprès
-> d'un agent : votre demande sera notée à la main.*
+> *Le registre des demandes n'est pas encore raccordé sur ce stand. Signalez-vous auprès d'un
+> agent : votre demande sera notée à la main.*
 
-C'est volontaire : mieux vaut renvoyer le visiteur vers un agent que lui laisser croire à
-un enregistrement qui n'a pas eu lieu.
+Mieux vaut renvoyer le visiteur vers une personne que lui laisser croire à un enregistrement
+qui n'a pas eu lieu.
 
 ## Si le réseau tombe pendant l'événement
 
-La demande est **conservée sur le téléphone du visiteur** et repart automatiquement dès
-que la connexion revient — tant qu'il n'a pas fermé son navigateur. L'écran le dit :
-*« Votre demande est conservée et sera transmise dès le retour du réseau. »*
+La demande est **conservée sur le téléphone du visiteur** et repart automatiquement dès que
+la connexion revient, tant qu'il n'a pas fermé son navigateur. L'écran le dit.
 
 ---
 
-## Ce que le récapitulatif contient
+## Solutions de repli, si Power Automate Premium n'est pas disponible
 
-- le **nombre de demandes** du jour, en objet du courriel ;
-- le **classement des postes** par nombre de demandes — le chiffre utile pour la DCIP ;
-- le **détail** de chaque demande : nom, direction, adresse cliquable, heure, projet de
-  mobilité, poste concerné et message éventuel.
+| Solution | Ce que ça change |
+|---|---|
+| **Microsoft Forms** | Un formulaire Forms écrit nativement dans un Excel sur OneDrive, sans licence supplémentaire. L'application ouvrirait le formulaire au lieu d'écrire elle-même — le poste peut y être pré-rempli par l'URL. Moins intégré visuellement, mais zéro développement et conformité gérée par Microsoft. |
+| **Saisie manuelle sur le stand** | Un agent note les demandes dans le fichier au fur et à mesure. L'application affiche déjà le message qui invite à se signaler. |
+| **Une liste SharePoint** | Mêmes contraintes de licence pour l'écriture depuis l'extérieur. |
 
-Les demandes déjà incluses dans un récapitulatif sont marquées : une relance manuelle ne
-les renverra pas. Le marquage a lieu **après** l'envoi, pour qu'un courriel en échec ne
-fasse pas disparaître les demandes du prochain récapitulatif.
+Le module `js/commun/registre.js` est agnostique : il envoie un JSON en `POST` et attend
+`{"ok": true}`. Changer de destination ne demande que de modifier `registre.endpoint`.
 
 ---
 
 ## Données personnelles
 
-Le tableau contient des **données personnelles d'agents** : nom, prénom, direction,
-adresse professionnelle, et l'intérêt porté à un poste — une information sensible dans un
-contexte de mobilité interne.
+Le fichier contient des **données personnelles d'agents** : nom, prénom, direction, adresse
+professionnelle, et l'intérêt porté à un poste — information sensible dans un contexte de
+mobilité interne.
+
+**Le Département en est seul détenteur et responsable de traitement.** L'application ne
+conserve rien, GitHub ne conserve rien.
 
 | Obligation | Ce qu'il faut faire |
 |---|---|
-| Accès restreint | Ne partagez la feuille qu'avec les personnes qui en ont besoin |
-| Conservation 12 mois | **Supprimez les lignes** à l'échéance : rien ne le fait tout seul |
-| Registre des traitements | Inscrivez ce traitement, et l'échéance de purge |
-| Hébergement | Google Workspace, hors UE selon la configuration — **à valider par le DPO** |
+| Accès restreint | Ne partager le fichier qu'avec les personnes qui en ont besoin |
+| Conservation 12 mois | **Supprimer les lignes** à l'échéance : rien ne le fait tout seul |
+| Registre des traitements | Inscrire ce traitement et l'échéance de purge |
+| Hébergement | OneDrive du Département — dans son propre périmètre, ce qui simplifie l'analyse |
 
 Voir `docs/RGPD.md`.
-
-## Remplacer Google par autre chose
-
-Le script est le seul point de contact. Pour utiliser un autre service — une liste
-SharePoint via Power Automate, par exemple — il suffit d'exposer une adresse qui accepte
-un `POST` de JSON et renvoie `{"ok": true}`. Rien d'autre ne change dans l'application :
-seul `registre.endpoint` est à modifier.
-
-Les champs transmis sont : `horodatage`, `prenom`, `nom`, `direction`, `email`, `projet`,
-`message`, `poste_titre`, `poste_service`, `poste_categorie`, `poste_url`, `poste_statut`.

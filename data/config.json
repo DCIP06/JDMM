@@ -65,7 +65,7 @@
   },
   "registre": {
     "endpoint": "À_RENSEIGNER",
-    "destinataire_recapitulatif": "mickael@connect3s.fr"
+    "libelle_destination": "Fichier Excel partagé du Département (OneDrive)"
   },
-  "_note_registre": "endpoint : adresse du script de collecte (Google Apps Script déployé en application web), qui écrit chaque demande dans un tableau et envoie le récapitulatif en fin de journée. Marche à suivre : docs/REGISTRE.md. Tant que cette valeur vaut À_RENSEIGNER, l'application le dit à l'écran au lieu de laisser croire à un enregistrement. destinataire_recapitulatif est indicatif ici : la valeur qui fait foi est DESTINATAIRE dans scripts/apps-script/Code.gs, côté serveur — une adresse écrite dans ce fichier-ci serait publique et modifiable par n'importe qui."
+  "_note_registre": "endpoint : adresse du flux Power Automate qui reçoit une demande et ajoute une ligne dans le fichier Excel partagé du Département, sur son OneDrive. Marche à suivre : docs/REGISTRE.md. AUCUNE donnée personnelle n'est stockée dans ce dépôt ni dans l'application : la demande traverse le navigateur du visiteur puis part directement vers le fichier du Département, qui en reste seul détenteur. Tant que cette valeur vaut À_RENSEIGNER, l'application le dit à l'écran au lieu de laisser croire à un enregistrement."
 }

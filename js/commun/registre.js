@@ -5,20 +5,25 @@
    dans un tableau tenu côté serveur, et une personne reçoit en fin de journée
    le récapitulatif de toutes les demandes du jour.
 
-   POURQUOI UN SERVICE EXTERNE. L'application est un site statique : elle n'a
-   ni base de données ni tâche planifiée. Or les visiteurs scannent le QR avec
-   LEUR téléphone — une trace gardée dans le navigateur resterait sur leur
-   appareil, et la DCIP ne verrait rien. Il faut donc un point de collecte
-   commun. Celui retenu est un script Google Apps Script (scripts/apps-script/),
-   qui écrit dans une feuille de calcul et envoie le récapitulatif chaque soir.
-   C'est ce que prévoyait déjà le fichier source (`SHEETS_URL`).
+   OÙ VONT LES DONNÉES. Dans un **fichier Excel partagé du Département**, sur
+   son OneDrive. Rien n'est conservé ici : ni dans ce dépôt, ni dans
+   l'application, ni sur le navigateur du visiteur au-delà de l'envoi. La
+   demande traverse le navigateur et part directement vers le fichier du
+   Département, qui en reste seul détenteur.
 
-   L'adresse de ce point de collecte vit dans data/config.json → registre.endpoint.
-   Tant qu'elle est vide, l'application le dit franchement plutôt que de laisser
+   COMMENT. Un site statique ne peut pas écrire dans un OneDrive : il faudrait
+   un secret Microsoft dans le code, or ce code est servi en clair. On passe
+   donc par un **flux Power Automate** côté Département : l'application envoie
+   la demande à l'adresse du flux, le flux ajoute la ligne dans le fichier.
+   Rien de sensible ne circule dans l'application — l'adresse du flux ne
+   permet que d'ajouter une ligne, jamais de lire le fichier.
+
+   L'adresse du flux vit dans data/config.json → registre.endpoint. Tant
+   qu'elle est vide, l'application le dit franchement plutôt que de laisser
    croire à un enregistrement qui n'a pas lieu.
 
-   RGPD : les coordonnées transitent par ce service et y sont conservées.
-   Point à valider par le DPO du Département (voir docs/RGPD.md).
+   RGPD : le fichier appartient au Département et relève de sa responsabilité
+   de traitement. Voir docs/RGPD.md.
    ========================================================================== */
 
 import { chargerConfig } from './offers.js';
@@ -100,9 +105,11 @@ async function transmettre(endpoint, demande) {
   const arret = new AbortController();
   const minuteur = setTimeout(() => arret.abort(), TIMEOUT_MS);
   try {
-    // `text/plain` évite la requête préalable CORS : un Web App Apps Script
-    // n'y répond pas, et le navigateur bloquerait alors l'envoi. Le script
-    // lit le corps brut et le parse lui-même.
+    // `text/plain` évite la requête préalable CORS. Un flux Power Automate y
+    // répond, mais la requête préalable que déclencherait `application/json`
+    // n'est pas toujours acceptée selon la configuration : le navigateur
+    // bloquerait alors l'envoi. Le flux reçoit le corps et le parse lui-même
+    // grâce au schéma déclaré sur son déclencheur.
     const reponse = await fetch(endpoint, {
       method: 'POST',
       headers: { 'Content-Type': 'text/plain;charset=utf-8' },

@@ -29,9 +29,9 @@ Il renseigne **prénom, nom, direction et adresse — tous obligatoires**, éven
 projet de mobilité et un message, accepte d'être recontacté, et **enregistre sa demande**.
 L'écran confirme qu'il sera recontacté dans les meilleurs délais.
 
-La demande rejoint un **tableau** tenu par un script de collecte, et **une seule personne**
-reçoit chaque soir à 18 h le **récapitulatif des demandes du jour** : classement des postes
-les plus demandés, puis le détail de chacune. Voir [`docs/REGISTRE.md`](docs/REGISTRE.md).
+La demande est écrite dans un **fichier Excel appartenant au Département**, sur son OneDrive,
+partagé avec les agents de la DCIP concernés. **Rien n'est conservé par l'application ni sur
+GitHub** : le code ne fait que transmettre. Voir [`docs/REGISTRE.md`](docs/REGISTRE.md).
 
 **Quiz** — il scanne, choisit un des trois quiz, répond, lit la correction rédigée,
 obtient son score et son verdict. Aucune inscription, rien à installer.
@@ -120,13 +120,13 @@ closes — 4 des 7 le sont déjà.
 
 ## Points ouverts
 
-- **Registre des demandes à raccorder** — voir [`docs/REGISTRE.md`](docs/REGISTRE.md),
-  une vingtaine de minutes. Tant qu'il ne l'est pas, l'application le dit à l'écran et
-  invite le visiteur à se signaler auprès d'un agent : elle ne laisse jamais croire à un
-  enregistrement qui n'a pas eu lieu.
+- **Registre des demandes à raccorder** : un fichier Excel sur le OneDrive du Département et
+  un flux Power Automate — voir [`docs/REGISTRE.md`](docs/REGISTRE.md), une vingtaine de
+  minutes. Tant qu'il ne l'est pas, l'application le dit à l'écran et invite le visiteur à se
+  signaler auprès d'un agent : elle ne laisse jamais croire à un enregistrement qui n'a pas eu
+  lieu.
 - **Logo officiel** — les icônes sont provisoires, le SVG reste à réclamer.
-- **Contact DPO** à renseigner, et validation du DPO sur l'hébergement du tableau
-  (voir `docs/RGPD.md`).
+- **Contact DPO** à renseigner, et inscription du traitement au registre (voir `docs/RGPD.md`).
 - **3 fiches sur 7 sont encore en ligne** ; 4 offres DCIP publiées n'ont pas de fiche.
   Arbitrage DCIP.
 - Le dépôt est sous un **compte personnel**. Un transfert vers une organisation du
