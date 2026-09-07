@@ -47,9 +47,16 @@ Le pire qu'un tiers puisse en faire est d'y écrire des demandes fictives.
 
 ### 1. Le fichier Excel
 
-Sur le OneDrive du Département, créez un classeur, par exemple **« Demandes JDMM 2026 »**.
-Dans la première feuille, créez un **tableau** (Insertion → Tableau) avec exactement ces
-colonnes, dans cet ordre :
+Un classeur prêt à l'emploi est fourni : **`local/JDMM.xlsx`** (hors dépôt Git — un fichier
+qui reçoit des données personnelles n'a rien à faire sur GitHub). Déposez-le sur le OneDrive
+du Département, puis partagez-le avec les personnes de la DCIP qui doivent le consulter.
+
+Il contient déjà la feuille **`Demandes`**, le tableau nommé **`Demandes`**, les douze
+colonnes attendues et une feuille **« À lire »** qui dit aux utilisateurs ce qu'ils ne
+doivent pas renommer.
+
+Si vous préférez le créer à la main : dans la première feuille, un **tableau**
+(Insertion → Tableau) avec exactement ces colonnes, dans cet ordre :
 
 | Colonne |
 |---|
@@ -67,9 +74,12 @@ colonnes, dans cet ordre :
 | `URL` |
 
 > Power Automate ne sait écrire que dans un **tableau** nommé, pas dans une simple plage.
-> C'est l'étape qu'on oublie. Notez le nom du tableau (par défaut `Tableau1`).
+> C'est l'étape qu'on oublie. Le classeur fourni s'en charge : feuille `Demandes`,
+> tableau `Demandes`. Ne les renommez pas — le flux les désigne par leur nom, et un
+> renommage arrête les enregistrements **sans message d'erreur visible**.
 
-Partagez ensuite le fichier avec les personnes de la DCIP qui doivent le consulter.
+Ajouter des colonnes de suivi **à droite** du tableau ne gêne rien. En insérer une au
+milieu, si.
 
 ### 2. Le flux Power Automate
 

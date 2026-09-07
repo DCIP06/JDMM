@@ -17,3 +17,5 @@ design/apercu/
 design/ctrl/
 design/mes/
 design/captures/
+# Classeur du registre : jamais sur GitHub (il reçoit des données personnelles)
+local/
