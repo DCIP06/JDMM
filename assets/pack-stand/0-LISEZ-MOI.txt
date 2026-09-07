@@ -1,0 +1,64 @@
+PACK STAND — JOURNÉE DES MÉTIERS ET DE LA MOBILITÉ
+Département des Alpes-Maritimes — DCIP
+CADAM, mercredi 23 septembre 2026
+
+====================================================================
+
+OUVRIR LES APPLICATIONS DEPUIS UN PC
+
+  1-Postes-vacants-DCIP.url  ....  double-cliquez (Windows)
+  2-Trois-quiz-DCIP.url      ....  double-cliquez (Windows)
+
+  Les fichiers .webloc font la même chose sous macOS.
+
+  Ou directement dans le navigateur :
+    https://dcip06.github.io/JDMM/postes/
+    https://dcip06.github.io/JDMM/quiz/
+
+--------------------------------------------------------------------
+
+POUR L'IMPRIMEUR
+
+  QR-postes-vectoriel.svg  ....  QR des postes, vectoriel
+  QR-quiz-vectoriel.svg    ....  QR des quiz, vectoriel
+
+  Le format vectoriel reste net à n'importe quelle taille : du roll-up
+  60 x 160 cm à la carte de poche. C'est celui à transmettre.
+
+  Les fichiers QR-postes.png et QR-quiz.png servent seulement à
+  visualiser à l'écran ou à coller dans un document.
+
+--------------------------------------------------------------------
+
+À IMPRIMER TEL QUEL
+
+  Affichette-A5-postes.pdf  ....  une page A5, prête à imprimer
+  Affichette-A5-quiz.pdf    ....  une page A5, prête à imprimer
+
+  Chaque affichette porte le QR, l'accroche et les trois arguments.
+
+--------------------------------------------------------------------
+
+AVANT DE LANCER UNE IMPRESSION
+
+  Scannez le QR avec un vrai téléphone et vérifiez qu'il ouvre bien
+  l'application. Trente secondes de contrôle valent mieux qu'un tirage
+  à refaire.
+
+  Si l'adresse du site change d'ici l'événement, les QR sont à
+  régénérer : prévenez CONNECT 3S.
+
+--------------------------------------------------------------------
+
+SUR LE STAND
+
+  Les visiteurs scannent avec leur propre téléphone. Conseillez-leur,
+  après ouverture, de faire Partager puis « Ajouter à l'écran
+  d'accueil » : l'application s'installe et fonctionne même sans
+  réseau — utile dans un hall.
+
+  Pour la borne du stand, ouvrez simplement les deux raccourcis dans
+  deux onglets : l'affichage s'adapte au grand écran.
+
+====================================================================
+CONNECT 3S — Cagnes-sur-Mer (06) — connect3s.fr

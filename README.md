@@ -13,8 +13,9 @@ l'Immobilier et du Patrimoine) à la **Journée des Métiers et de la Mobilité*
 | **Postes vacants** | <https://dcip06.github.io/JDMM/postes/> | Les 7 fiches DCIP. On ouvre une fiche, on la reçoit par courriel. |
 | **Trois quiz** | <https://dcip06.github.io/JDMM/quiz/> | Prévention incendie, gardiennage, sûreté — 20 questions. |
 
-Chacune a son QR code (`assets/qr-postes.svg`, `assets/qr-quiz.svg`) et sa carte A5
-prête à imprimer (`assets/planche-a5-postes.html`, `assets/planche-a5-quiz.html`).
+**Pack pour le stand** — QR codes, affichettes A5 et raccourcis de bureau :
+<https://dcip06.github.io/JDMM/assets/pack-stand/> (ou `assets/pack-stand.zip` en un seul
+téléchargement).
 
 Elles reproduisent le contenu et le parcours des deux fichiers de référence,
 `sources/dcip_postes.html` et `sources/quiz-hub-mobile.html`.
