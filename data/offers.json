@@ -1,9 +1,163 @@
 {
- "generated_at": "2026-09-05T08:14:38Z",
+ "generated_at": "2026-09-08T04:16:41Z",
  "source": "https://www.departement06.fr/offres-demploi",
  "count": 60,
  "count_dcip": 8,
  "offers": [
+  {
+   "id": "assistant-de-service-social-msd-les-paillons-dt4-hf-20505",
+   "titre": "Assistant de service social MSD Les Paillons DT4 H/F (20505)",
+   "url": "https://www.departement06.fr/offres-demploi/assistant-de-service-social-msd-les-paillons-dt4-hf-20505",
+   "domaine": "Social",
+   "categorie": "A",
+   "categories": [
+    "A"
+   ],
+   "filiere": "MEDICO-SOCIALE",
+   "filieres": [
+    "MEDICO-SOCIALE"
+   ],
+   "deadline": "2026-09-30",
+   "deadline_label": "30 septembre 2026",
+   "publie_le": "2026-09-07",
+   "resume": "Au sein de la Maison des Solidarités Départementale Les Paillons, l'assistant social rattaché à l'équipe pluridisciplinaire, aide à résoudre des problèmes divers d'ordre social, administratif, socio-économique posés par différents publics en…",
+   "dcip": false,
+   "service": "",
+   "appariement": "",
+   "candidature_permanente": false
+  },
+  {
+   "id": "assistant-de-service-social-volant-dt4-hf-20291",
+   "titre": "Assistant de service social volant DT4 H/F (20291)",
+   "url": "https://www.departement06.fr/offres-demploi/assistant-de-service-social-volant-dt4-hf-20291",
+   "domaine": "Social",
+   "categorie": "A",
+   "categories": [
+    "A"
+   ],
+   "filiere": "MEDICO-SOCIALE",
+   "filieres": [
+    "MEDICO-SOCIALE"
+   ],
+   "deadline": "2026-09-30",
+   "deadline_label": "30 septembre 2026",
+   "publie_le": "2026-09-07",
+   "resume": "Au sein de la maison des Solidarités départementales de Nice et alentours, l'équipe volante, l'assistant social rattaché à l'équipe pluridisciplinaire, aide à résoudre des problèmes divers d'ordre social, administratif, socio-économique posés par…",
+   "dcip": false,
+   "service": "",
+   "appariement": "",
+   "candidature_permanente": false
+  },
+  {
+   "id": "cesf-volant-dt2-hf-20760",
+   "titre": "CESF Volant DT2 H/F (20760)",
+   "url": "https://www.departement06.fr/offres-demploi/cesf-volant-dt2-hf-20760",
+   "domaine": "Social",
+   "categorie": "A",
+   "categories": [
+    "A"
+   ],
+   "filiere": "MEDICO-SOCIALE",
+   "filieres": [
+    "MEDICO-SOCIALE"
+   ],
+   "deadline": "2026-09-30",
+   "deadline_label": "30 septembre 2026",
+   "publie_le": "2026-09-07",
+   "resume": "Au sein de la MSD, le Conseiller en économie sociale et familiale accompagne les ménages en difficulté afin de prévenir le surendettement et favoriser leur maintien ou accès au logement, en développant leurs compétences en gestion budgétaire et en…",
+   "dcip": false,
+   "service": "",
+   "appariement": "",
+   "candidature_permanente": false
+  },
+  {
+   "id": "educateur-specialise-msd-les-paillons-dt4-hf-20499",
+   "titre": "Educateur spécialisé MSD Les Paillons DT4 H/F (20499)",
+   "url": "https://www.departement06.fr/offres-demploi/educateur-specialise-msd-les-paillons-dt4-hf-20499",
+   "domaine": "Social",
+   "categorie": "A",
+   "categories": [
+    "A"
+   ],
+   "filiere": "MEDICO-SOCIALE",
+   "filieres": [
+    "MEDICO-SOCIALE"
+   ],
+   "deadline": "2026-09-30",
+   "deadline_label": "30 septembre 2026",
+   "publie_le": "2026-09-07",
+   "resume": "Au sein de la Maison des Solidarités Départementale des Paillons, l'assistant social, rattaché à l'équipe pluridisciplinaire, aide à résoudre des problèmes divers d'ordre social, administratif, socio-économique posés par différents publics en…",
+   "dcip": false,
+   "service": "",
+   "appariement": "",
+   "candidature_permanente": false
+  },
+  {
+   "id": "infirmier-pmi-nice-lyautey-dt4-hf-31252",
+   "titre": "Infirmier PMI Nice Lyautey DT4 H/F (31252)",
+   "url": "https://www.departement06.fr/offres-demploi/infirmier-pmi-nice-lyautey-dt4-hf-31252",
+   "domaine": "Social",
+   "categorie": "A",
+   "categories": [
+    "A"
+   ],
+   "filiere": "MEDICO-SOCIALE",
+   "filieres": [
+    "MEDICO-SOCIALE"
+   ],
+   "deadline": "2026-09-30",
+   "deadline_label": "30 septembre 2026",
+   "publie_le": "2026-09-07",
+   "resume": "L'infirmier à la Protection Maternelle et Infantile de Nice Lyautey, contribue à la prévention et à la promotion de la santé des enfants, des familles et de la population, en assurant un suivi médical, éducatif et organisationnel dans le cadre des…",
+   "dcip": false,
+   "service": "",
+   "appariement": "",
+   "candidature_permanente": false
+  },
+  {
+   "id": "puericultrice-pmi-les-paillons-dt4-hf-21016",
+   "titre": "Puéricultrice PMI Les Paillons DT4 H/F (21016)",
+   "url": "https://www.departement06.fr/offres-demploi/puericultrice-pmi-les-paillons-dt4-hf-21016",
+   "domaine": "Social",
+   "categorie": "A",
+   "categories": [
+    "A"
+   ],
+   "filiere": "MEDICO-SOCIALE",
+   "filieres": [
+    "MEDICO-SOCIALE"
+   ],
+   "deadline": "2026-09-30",
+   "deadline_label": "30 septembre 2026",
+   "publie_le": "2026-09-07",
+   "resume": "Au sein de la Protection Maternelle et Infantile des Paillons, la puéricultrice assure la protection, la santé et le développement harmonieux des jeunes enfants, tout en accompagnant et soutenant les parents dans leurs responsabilités éducatives",
+   "dcip": false,
+   "service": "",
+   "appariement": "",
+   "candidature_permanente": false
+  },
+  {
+   "id": "secretaire-msd-nice-ouest-dt3-hf-31763",
+   "titre": "Secrétaire MSD Nice Ouest DT3 H/F (31763)",
+   "url": "https://www.departement06.fr/offres-demploi/secretaire-msd-nice-ouest-dt3-hf-31763",
+   "domaine": "Social",
+   "categorie": "C",
+   "categories": [
+    "C"
+   ],
+   "filiere": "MEDICO-SOCIALE",
+   "filieres": [
+    "MEDICO-SOCIALE"
+   ],
+   "deadline": "2026-09-30",
+   "deadline_label": "30 septembre 2026",
+   "publie_le": "2026-09-07",
+   "resume": "Au sein de la Maison des Solidarités Départementale de Nice Ouest, le secrétaire assure un accueil de qualité, une écoute active et un suivi administratif rigoureux afin de garantir une prise en charge efficace des usagers, en facilitant leur…",
+   "dcip": false,
+   "service": "",
+   "appariement": "",
+   "candidature_permanente": false
+  },
   {
    "id": "agent-de-bibliotheque-collection-adultes-valberg-hf-33090",
    "titre": "Agent de bibliothèque-collection adultes à Valberg H/F (33090)",
@@ -1181,160 +1335,6 @@
    "deadline_label": "Candidature permanente",
    "publie_le": "2025-08-29",
    "resume": "Au sein de la PMI, la sage femme participe à la mise en œuvre de la politique du Département en référence à l'article L2112 du code de la santé publique relative à la protection et à la promotion de la santé, de la famille et de l'enfance en ce qui…",
-   "dcip": false,
-   "service": "",
-   "appariement": "",
-   "candidature_permanente": true
-  },
-  {
-   "id": "assistant-social-hf",
-   "titre": "Assistant social H/F",
-   "url": "https://www.departement06.fr/offres-demploi/assistant-social-hf",
-   "domaine": "Social",
-   "categorie": "A",
-   "categories": [
-    "A"
-   ],
-   "filiere": "MEDICO-SOCIALE",
-   "filieres": [
-    "MEDICO-SOCIALE"
-   ],
-   "deadline": "",
-   "deadline_label": "Candidature permanente",
-   "publie_le": "2025-07-25",
-   "resume": "Au sein de la MSD, l'assistant social, rattaché à l'équipe pluridisciplinaire, aide à résoudre des problèmes divers d'ordre social, administratif, socio-économique posés par différents publics en difficulté, dans le cadre de la politique…",
-   "dcip": false,
-   "service": "",
-   "appariement": "",
-   "candidature_permanente": true
-  },
-  {
-   "id": "animateur-pour-les-ecoles-departementales-de-pleine-nature-hf",
-   "titre": "Animateur pour les écoles départementales de pleine nature H/F",
-   "url": "https://www.departement06.fr/offres-demploi/animateur-pour-les-ecoles-departementales-de-pleine-nature-hf",
-   "domaine": "Education - Animation - Jeunesse",
-   "categorie": "C",
-   "categories": [
-    "C"
-   ],
-   "filiere": "ANIMATION",
-   "filieres": [
-    "ANIMATION"
-   ],
-   "deadline": "",
-   "deadline_label": "Candidature permanente",
-   "publie_le": "2025-07-23",
-   "resume": "Au sein des écoles départementales de pleine nature, l'animateur accueille et encadre un groupe d'enfants de 6 à 12 ans dans la vie quotidienne et les activités pratiquées. Il conçoit, propose et met en œuvre des activités éducatives et de loisirs…",
-   "dcip": false,
-   "service": "",
-   "appariement": "",
-   "candidature_permanente": true
-  },
-  {
-   "id": "educateur-specialise-hf",
-   "titre": "Educateur spécialisé H/F",
-   "url": "https://www.departement06.fr/offres-demploi/educateur-specialise-hf",
-   "domaine": "Social",
-   "categorie": "A",
-   "categories": [
-    "A"
-   ],
-   "filiere": "MEDICO-SOCIALE",
-   "filieres": [
-    "MEDICO-SOCIALE"
-   ],
-   "deadline": "",
-   "deadline_label": "Candidature permanente",
-   "publie_le": "2025-07-23",
-   "resume": "Au sein de la MSD, l'éducateur assure la protection et le développement global des enfants et des jeunes en situation de vulnérabilité, en apportant un soutien adapté aux familles, en accompagnant les mineurs confiés au Département, et en…",
-   "dcip": false,
-   "service": "",
-   "appariement": "",
-   "candidature_permanente": true
-  },
-  {
-   "id": "infirmier-hf",
-   "titre": "Infirmier H/F",
-   "url": "https://www.departement06.fr/offres-demploi/infirmier-hf",
-   "domaine": "",
-   "categorie": "A",
-   "categories": [
-    "A"
-   ],
-   "filiere": "MEDICO-SOCIALE",
-   "filieres": [
-    "MEDICO-SOCIALE"
-   ],
-   "deadline": "",
-   "deadline_label": "Candidature permanente",
-   "publie_le": "2025-07-23",
-   "resume": "L'infirmier participe aux missions de prévention et de promotion de la santé auprès de divers publics dans le domaine de la compétence du Département. Il évalue les situations individuelles et les besoins des personnes. Il participe aux synthèses ou…",
-   "dcip": false,
-   "service": "",
-   "appariement": "",
-   "candidature_permanente": true
-  },
-  {
-   "id": "medecin-de-pmi-hf",
-   "titre": "Médecin de PMI H/F",
-   "url": "https://www.departement06.fr/offres-demploi/medecin-de-pmi-hf",
-   "domaine": "",
-   "categorie": "A",
-   "categories": [
-    "A"
-   ],
-   "filiere": "MEDICO-SOCIALE",
-   "filieres": [
-    "MEDICO-SOCIALE"
-   ],
-   "deadline": "",
-   "deadline_label": "Candidature permanente",
-   "publie_le": "2025-07-23",
-   "resume": "Directement rattaché au médecin chef du service départemental de PMI, le médecin de PMI participe à l'élaboration et à la mise en œuvre de la politique du Département relative à la protection et à la promotion de la santé de la famille et de l…",
-   "dcip": false,
-   "service": "",
-   "appariement": "",
-   "candidature_permanente": true
-  },
-  {
-   "id": "puericultrice-hf",
-   "titre": "Puéricultrice H/F",
-   "url": "https://www.departement06.fr/offres-demploi/puericultrice-hf",
-   "domaine": "Santé",
-   "categorie": "A",
-   "categories": [
-    "A"
-   ],
-   "filiere": "MEDICO-SOCIALE",
-   "filieres": [
-    "MEDICO-SOCIALE"
-   ],
-   "deadline": "",
-   "deadline_label": "Candidature permanente",
-   "publie_le": "2025-07-23",
-   "resume": "Au sein de la PMI, la puéricultrice assure la protection, la santé et le développement harmonieux des jeunes enfants, tout en accompagnant et soutenant les parents dans leurs responsabilités éducatives",
-   "dcip": false,
-   "service": "",
-   "appariement": "",
-   "candidature_permanente": true
-  },
-  {
-   "id": "tos-chef-de-cuisine-en-college-hf",
-   "titre": "TOS - Chef de cuisine en collège H/F",
-   "url": "https://www.departement06.fr/offres-demploi/tos-chef-de-cuisine-en-college-hf",
-   "domaine": "",
-   "categorie": "C",
-   "categories": [
-    "C"
-   ],
-   "filiere": "TECHNIQUE",
-   "filieres": [
-    "TECHNIQUE"
-   ],
-   "deadline": "",
-   "deadline_label": "Candidature permanente",
-   "publie_le": "2025-07-23",
-   "resume": "Placé sous l'autorité hiérarchique du service de l'éducation et sous l'autorité fonctionnelle du Chef d'établissement, le chef de cuisine conçoit et réalise les menus servis en restauration collective. Il dirige l'équipe affectée au service de…",
    "dcip": false,
    "service": "",
    "appariement": "",
