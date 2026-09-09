@@ -1,9 +1,32 @@
 {
- "generated_at": "2026-09-08T04:16:41Z",
+ "generated_at": "2026-09-09T04:16:14Z",
  "source": "https://www.departement06.fr/offres-demploi",
  "count": 60,
  "count_dcip": 8,
  "offers": [
+  {
+   "id": "controleur-de-gestion-hf-34034",
+   "titre": "Contrôleur de gestion H/F (34034)",
+   "url": "https://www.departement06.fr/offres-demploi/controleur-de-gestion-hf-34034",
+   "domaine": "Finances et contrôle de gestion",
+   "categorie": "B",
+   "categories": [
+    "B",
+    "A"
+   ],
+   "filiere": "ADMINISTRATIVE",
+   "filieres": [
+    "ADMINISTRATIVE"
+   ],
+   "deadline": "2026-10-09",
+   "deadline_label": "9 octobre 2026",
+   "publie_le": "2026-09-08",
+   "resume": "En votre qualité de contrôleur de gestion :-Vous assurerez périodiquement la communication et la présentation d'outils d'analyse et de pilotage (rapport d'activité, tableaux de bord, etc.), -Vous rédigerez des analyses, rapports, études…",
+   "dcip": false,
+   "service": "",
+   "appariement": "",
+   "candidature_permanente": false
+  },
   {
    "id": "assistant-de-service-social-msd-les-paillons-dt4-hf-20505",
    "titre": "Assistant de service social MSD Les Paillons DT4 H/F (20505)",
@@ -335,9 +358,9 @@
    "candidature_permanente": false
   },
   {
-   "id": "adjoint-au-responsable-de-ladret-hf-33440",
-   "titre": "Adjoint au responsable de l'ADRET H/F (33440)",
-   "url": "https://www.departement06.fr/offres-demploi/adjoint-au-responsable-de-ladret-hf-33440",
+   "id": "adjoint-antenne-departementale-de-recueil-devaluation-et-de-traitement-des",
+   "titre": "Adjoint Antenne départementale de recueil, d'évaluation et de traitement des informations préoccupantes H/F (33440)",
+   "url": "https://www.departement06.fr/offres-demploi/adjoint-antenne-departementale-de-recueil-devaluation-et-de-traitement-des",
    "domaine": "Social",
    "categorie": "A",
    "categories": [
@@ -1317,28 +1340,6 @@
    "poste_dcip_id": "charge-de-projets-etudes-et-marches-hf-33932",
    "appariement": "url",
    "candidature_permanente": false
-  },
-  {
-   "id": "sage-femme-hf",
-   "titre": "Sage femme H/F",
-   "url": "https://www.departement06.fr/offres-demploi/sage-femme-hf",
-   "domaine": "",
-   "categorie": "A",
-   "categories": [
-    "A"
-   ],
-   "filiere": "MEDICO-SOCIALE",
-   "filieres": [
-    "MEDICO-SOCIALE"
-   ],
-   "deadline": "",
-   "deadline_label": "Candidature permanente",
-   "publie_le": "2025-08-29",
-   "resume": "Au sein de la PMI, la sage femme participe à la mise en œuvre de la politique du Département en référence à l'article L2112 du code de la santé publique relative à la protection et à la promotion de la santé, de la famille et de l'enfance en ce qui…",
-   "dcip": false,
-   "service": "",
-   "appariement": "",
-   "candidature_permanente": true
   }
  ]
 }
