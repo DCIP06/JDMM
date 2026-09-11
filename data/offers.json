@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-09-10T04:16:24Z",
+ "generated_at": "2026-09-11T04:17:02Z",
  "source": "https://www.departement06.fr/offres-demploi",
  "count": 60,
  "count_dcip": 8,
@@ -897,28 +897,6 @@
    "candidature_permanente": false
   },
   {
-   "id": "secretaire-de-direction-cab-32028",
-   "titre": "Secrétaire de direction-CAB-(32028)",
-   "url": "https://www.departement06.fr/offres-demploi/secretaire-de-direction-cab-32028",
-   "domaine": "Affaires générales",
-   "categorie": "B",
-   "categories": [
-    "B"
-   ],
-   "filiere": "ADMINISTRATIVE",
-   "filieres": [
-    "ADMINISTRATIVE"
-   ],
-   "deadline": "2026-09-10",
-   "deadline_label": "10 septembre 2026",
-   "publie_le": "2026-08-10",
-   "resume": "Placé(e) sous l'autorité de la Direction de Cabinet, le/la secrétaire de direction assure le soutien administratif, organisationnel, relationnel et logistique du Cabinet du Président. Il/Elle travaille en lien direct avec les membres du Cabinet, les…",
-   "dcip": false,
-   "service": "",
-   "appariement": "",
-   "candidature_permanente": false
-  },
-  {
    "id": "assistant-de-gestion-service-maintenance-des-colleges-dcip-31438",
    "titre": "Assistant de gestion service maintenance des collèges DCIP (31438)",
    "url": "https://www.departement06.fr/offres-demploi/assistant-de-gestion-service-maintenance-des-colleges-dcip-31438",
@@ -1340,6 +1318,28 @@
    "poste_dcip_id": "charge-de-projets-etudes-et-marches-hf-33932",
    "appariement": "url",
    "candidature_permanente": false
+  },
+  {
+   "id": "sage-femme-hf",
+   "titre": "Sage femme H/F",
+   "url": "https://www.departement06.fr/offres-demploi/sage-femme-hf",
+   "domaine": "",
+   "categorie": "A",
+   "categories": [
+    "A"
+   ],
+   "filiere": "MEDICO-SOCIALE",
+   "filieres": [
+    "MEDICO-SOCIALE"
+   ],
+   "deadline": "",
+   "deadline_label": "Candidature permanente",
+   "publie_le": "2025-08-29",
+   "resume": "Au sein de la PMI, la sage femme participe à la mise en œuvre de la politique du Département en référence à l'article L2112 du code de la santé publique relative à la protection et à la promotion de la santé, de la famille et de l'enfance en ce qui…",
+   "dcip": false,
+   "service": "",
+   "appariement": "",
+   "candidature_permanente": true
   }
  ]
 }
