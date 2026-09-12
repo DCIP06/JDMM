@@ -1,9 +1,75 @@
 {
- "generated_at": "2026-09-11T04:17:02Z",
+ "generated_at": "2026-09-12T04:15:26Z",
  "source": "https://www.departement06.fr/offres-demploi",
  "count": 60,
- "count_dcip": 8,
+ "count_dcip": 7,
  "offers": [
+  {
+   "id": "agent-forestier-des-parcs-naturels-departementaux-secteur-ouest-hf-21279",
+   "titre": "Agent forestier des parcs naturels départementaux - secteur ouest H/F (21279)",
+   "url": "https://www.departement06.fr/offres-demploi/agent-forestier-des-parcs-naturels-departementaux-secteur-ouest-hf-21279",
+   "domaine": "Environnement - Ecologie",
+   "categorie": "C",
+   "categories": [
+    "C"
+   ],
+   "filiere": "TECHNIQUE",
+   "filieres": [
+    "TECHNIQUE"
+   ],
+   "deadline": "2026-10-11",
+   "deadline_label": "11 octobre 2026",
+   "publie_le": "2026-09-11",
+   "resume": "Au sein de ce secteur, l'agent forestier assure l'entretien, la sécurité et l'aménagement des espaces naturels, en garantissant leur propreté, leur accessibilité et leur valorisation, tout en contribuant à la préservation de l'environnement, à l…",
+   "dcip": false,
+   "service": "",
+   "appariement": "",
+   "candidature_permanente": false
+  },
+  {
+   "id": "garde-nature-des-parcs-naturels-departementaux-secteur-est-hf-31254",
+   "titre": "Garde nature des parcs naturels départementaux - secteur Est H/F (31254)",
+   "url": "https://www.departement06.fr/offres-demploi/garde-nature-des-parcs-naturels-departementaux-secteur-est-hf-31254",
+   "domaine": "Environnement - Ecologie",
+   "categorie": "C",
+   "categories": [
+    "C"
+   ],
+   "filiere": "TECHNIQUE",
+   "filieres": [
+    "TECHNIQUE"
+   ],
+   "deadline": "2026-10-11",
+   "deadline_label": "11 octobre 2026",
+   "publie_le": "2026-09-11",
+   "resume": "Au sein d'une équipe composée de 20 agents (1 responsable, son adjoint et 18 gardes), le garde nature du secteur Est assure en binôme la surveillance des parcs naturels départementaux d'Estienne d'Orves, du Vinaigrier, de la Grande Corniche, du Cros…",
+   "dcip": false,
+   "service": "",
+   "appariement": "",
+   "candidature_permanente": false
+  },
+  {
+   "id": "garde-nature-des-parcs-naturels-departementaux-secteur-est-hf-33340",
+   "titre": "Garde nature des parcs naturels départementaux - Secteur Est H/F (33340)",
+   "url": "https://www.departement06.fr/offres-demploi/garde-nature-des-parcs-naturels-departementaux-secteur-est-hf-33340",
+   "domaine": "Environnement - Ecologie",
+   "categorie": "C",
+   "categories": [
+    "C"
+   ],
+   "filiere": "TECHNIQUE",
+   "filieres": [
+    "TECHNIQUE"
+   ],
+   "deadline": "2026-10-11",
+   "deadline_label": "11 octobre 2026",
+   "publie_le": "2026-09-11",
+   "resume": "Au sein d'une équipe composée de 20 agents (1 responsable, son adjoint et 18 gardes), le garde nature du secteur Est assure en binôme la surveillance des parcs naturels départementaux d'Estienne d'Orves, du Vinaigrier, de la Grande Corniche, du Cros…",
+   "dcip": false,
+   "service": "",
+   "appariement": "",
+   "candidature_permanente": false
+  },
   {
    "id": "controleur-de-gestion-hf-34034",
    "titre": "Contrôleur de gestion H/F (34034)",
@@ -762,28 +828,6 @@
    "candidature_permanente": false
   },
   {
-   "id": "responsable-de-section-services-medico-sociaux-et-accueils-alternatifs-hf-33025",
-   "titre": "Responsable de section services médico-sociaux et accueils alternatifs H/F (33025)",
-   "url": "https://www.departement06.fr/offres-demploi/responsable-de-section-services-medico-sociaux-et-accueils-alternatifs-hf-33025",
-   "domaine": "Social",
-   "categorie": "A",
-   "categories": [
-    "A"
-   ],
-   "filiere": "ADMINISTRATIVE",
-   "filieres": [
-    "ADMINISTRATIVE"
-   ],
-   "deadline": "2026-09-11",
-   "deadline_label": "11 septembre 2026",
-   "publie_le": "2026-08-20",
-   "resume": "Le responsable de section des services médico-sociaux et accueils alternatifs assure le pilotage opérationnel et stratégique du développement, du suivi et du contrôle des dispositifs d'aide au maintien à domicile, d'offres de répit et d'habitats…",
-   "dcip": false,
-   "service": "",
-   "appariement": "",
-   "candidature_permanente": false
-  },
-  {
    "id": "responsable-de-lunite-mediation-hf-30323",
    "titre": "Responsable de l'unité médiation H/F (30323)",
    "url": "https://www.departement06.fr/offres-demploi/responsable-de-lunite-mediation-hf-30323",
@@ -1291,51 +1335,6 @@
    "deadline_label": "Candidature permanente",
    "publie_le": "2026-04-01",
    "resume": "En qualité de médecin, vous pouvez exercer vos missions dans différentes structures départementales en territoires ou en central (notamment au service départemental de protection maternelle et infantile, en centres de santé, en maison départementale…",
-   "dcip": false,
-   "service": "",
-   "appariement": "",
-   "candidature_permanente": true
-  },
-  {
-   "id": "charge-de-projets-etudes-et-marches-hf-33932",
-   "titre": "Chargé de projets études et marchés H/F (33932)",
-   "url": "https://www.departement06.fr/offres-demploi/charge-de-projets-etudes-et-marches-hf-33932",
-   "domaine": "Patrimoine bâti",
-   "categorie": "A",
-   "categories": [
-    "A"
-   ],
-   "filiere": "TECHNIQUE",
-   "filieres": [
-    "TECHNIQUE"
-   ],
-   "deadline": "2026-09-30",
-   "deadline_label": "30 septembre 2026",
-   "publie_le": "2026-03-20",
-   "resume": "Au sein du service de la maintenance des collèges, le chargé d'études et marchés vient renforcer l'équipe en place. Il prépare et met en œuvre les projets depuis l'élaboration du programme jusqu'au parfait achèvement de l'ouvrage. Il s'agit d…",
-   "dcip": true,
-   "service": "Maintenance des collèges",
-   "poste_dcip_id": "charge-de-projets-etudes-et-marches-hf-33932",
-   "appariement": "url",
-   "candidature_permanente": false
-  },
-  {
-   "id": "sage-femme-hf",
-   "titre": "Sage femme H/F",
-   "url": "https://www.departement06.fr/offres-demploi/sage-femme-hf",
-   "domaine": "",
-   "categorie": "A",
-   "categories": [
-    "A"
-   ],
-   "filiere": "MEDICO-SOCIALE",
-   "filieres": [
-    "MEDICO-SOCIALE"
-   ],
-   "deadline": "",
-   "deadline_label": "Candidature permanente",
-   "publie_le": "2025-08-29",
-   "resume": "Au sein de la PMI, la sage femme participe à la mise en œuvre de la politique du Département en référence à l'article L2112 du code de la santé publique relative à la protection et à la promotion de la santé, de la famille et de l'enfance en ce qui…",
    "dcip": false,
    "service": "",
    "appariement": "",
