@@ -1,426 +1,459 @@
-[
- {
-  "id": "feu",
-  "slug": "prevention-incendie",
-  "titre": "Réagir face à un feu de bureau",
-  "titre_long": "Comment réagir face à un départ de feu au bureau?",
-  "categorie": "Prévention incendie",
-  "ico": "🧯",
-  "accroche": "Triangle du feu, bons réflexes, évacuation… Saurez-vous agir au bon moment ?",
-  "description": "Que vous travailliez dans un IGH ou un ERP, les premières secondes décident de tout. Testez vos connaissances sur les enjeux, les acteurs et les gestes qui font la différence.",
-  "accent": "#E94B1F",
-  "fond": "#0F0E0C",
-  "meta": {
-   "duree": "~5 min",
-   "niveau": "Tous publics",
-   "cadre": "IGH / ERP"
-  },
-  "questions": [
-   {
-    "cat": "Enjeux",
-    "q": "Quels sont les trois éléments réunis pour qu'un feu se déclare (« triangle du feu ») ?",
-    "options": [
-     "Combustible, comburant, énergie d'activation",
-     "Fumée, chaleur, étincelle",
-     "Oxygène, eau, électricité"
-    ],
-    "feedback": "Le <strong>triangle du feu</strong> repose sur trois conditions simultanées : un <strong>combustible</strong> (papier, plastique, mobilier…), un <strong>comburant</strong> (l'oxygène de l'air) et une <strong>énergie d'activation</strong> (étincelle, surchauffe, flamme). Supprimer un seul de ces trois éléments suffit à éteindre le feu — c'est le principe de tous les extincteurs.",
-    "multi": false,
-    "correct": [
-     0
-    ]
-   },
-   {
-    "cat": "Enjeux",
-    "q": "Dans un incendie de bureau, qu'est-ce qui tue le plus souvent ?",
-    "options": [
-     "Les flammes",
-     "Les fumées toxiques",
-     "L'effondrement du bâtiment"
-    ],
-    "feedback": "Plus de <strong>80 % des décès</strong> en incendie sont dus aux <strong>fumées toxiques</strong> (monoxyde de carbone, cyanure d'hydrogène…), pas aux flammes. En quelques minutes, les fumées remplissent un volume et rendent l'évacuation impossible. D'où l'importance de fermer les portes derrière soi et d'évacuer rapidement, au ras du sol si nécessaire.",
-    "multi": false,
-    "correct": [
-     1
-    ]
-   },
-   {
-    "cat": "Enjeux",
-    "q": "À quelle vitesse un feu de bureau non maîtrisé peut-il se propager ?",
-    "options": [
-     "Il met plusieurs heures à se développer",
-     "Le volume peut doubler toutes les 30 secondes",
-     "Cela dépend uniquement du système de ventilation"
-    ],
-    "feedback": "Un feu en phase de développement peut voir son <strong>volume doubler toutes les 30 secondes</strong>. En 3 minutes, une pièce peut être totalement embrasée (phénomène de <em>flashover</em>). C'est pour cela que les premières actions — alarme, évacuation, fermeture des portes — sont décisives.",
-    "multi": false,
-    "correct": [
-     1
-    ]
-   },
-   {
-    "cat": "Acteurs",
-    "q": "Quel est le rôle du « serre-file » lors d'une évacuation ?",
-    "options": [
-     "Il est en tête de file et guide vers la sortie",
-     "Il appelle les secours depuis l'extérieur",
-     "Il ferme la marche, vérifie que tout le monde est sorti et ferme les portes"
-    ],
-    "feedback": "Le <strong>serre-file</strong> ferme la marche : il s'assure que <strong>personne n'est resté en arrière</strong> (bureaux, sanitaires, salles de réunion), <strong>ferme les portes derrière lui</strong> pour ralentir la propagation des fumées, et signale toute anomalie. Le <strong>guide-file</strong>, lui, est en tête : il ouvre le chemin vers la sortie et le point de rassemblement.",
-    "multi": false,
-    "correct": [
-     2
-    ]
-   },
-   {
-    "cat": "Gestes",
-    "q": "Vous découvrez un début d'incendie au bureau. Quelle est la PREMIÈRE action ?",
-    "options": [
-     "Essayer d'éteindre le feu avec un extincteur",
-     "Donner l'alarme (déclencheur manuel le plus proche)",
-     "Appeler les pompiers depuis votre poste"
-    ],
-    "feedback": "La première action est toujours de <strong>donner l'alarme</strong> en actionnant le déclencheur manuel (boîtier rouge) le plus proche. Cela prévient instantanément tout le bâtiment et déclenche les dispositifs de sécurité (désenfumage, compartimentage). <em>Ensuite</em> seulement, si le feu est naissant et que vous savez utiliser un extincteur, vous pouvez tenter une attaque — sans jamais vous mettre en danger.",
-    "multi": false,
-    "correct": [
-     1
-    ]
-   },
-   {
-    "cat": "Gestes",
-    "q": "Lors de l'évacuation, peut-on prendre l'ascenseur ?",
-    "options": [
-     "Oui, c'est plus rapide qu'un escalier",
-     "Oui, si le feu est à un autre étage",
-     "Non — les ascenseurs sont strictement interdits en cas d'incendie"
-    ],
-    "feedback": "<strong>L'ascenseur est interdit</strong> en cas d'incendie. Les fumées s'engouffrent dans la gaine, la cabine peut s'arrêter à l'étage du feu, et l'alimentation électrique peut être coupée à tout moment. Seuls les <strong>ascenseurs « pompiers »</strong> (présents en IGH) peuvent être utilisés par les secours. L'évacuation se fait <strong>toujours par les escaliers</strong>.",
-    "multi": false,
-    "correct": [
-     2
-    ]
-   },
-   {
-    "cat": "Gestes",
-    "q": "Vous évacuez avec un collègue en situation de handicap qui ne peut pas emprunter les escaliers. Où l'accompagnez-vous ?",
-    "options": [
-     "Dans son bureau, en fermant bien la porte",
-     "Vers un Espace d'Attente Sécurisé (EAS), en signalant sa présence aux secours",
-     "Au point de rassemblement extérieur, en le portant dans les escaliers à plusieurs"
-    ],
-    "feedback": "L'<strong>Espace d'Attente Sécurisé (EAS)</strong> est une zone protégée des flammes et des fumées, prévue par la réglementation pour que toute personne ne pouvant pas évacuer par les escaliers puisse <strong>attendre les secours en sécurité</strong>. Une fois la personne installée, vous <strong>signalez immédiatement sa présence</strong> au PC sécurité (SSIAP) ou aux sapeurs-pompiers. <br><br>👉 <strong>Dans l'IGH du Centre administratif, ce sont les paliers des cages d'escaliers de chaque niveau qui font office d'EAS.</strong> Conçus avec un degré coupe-feu élevé, ils permettent à une personne de rester en protection <strong>jusqu'à 2 heures</strong> — soit largement le temps nécessaire à l'intervention des secours.",
-    "multi": false,
-    "correct": [
-     1
-    ]
-   },
-   {
-    "cat": "Gestes",
-    "q": "Pourquoi est-il essentiel de fermer les portes derrière soi en évacuant ?",
-    "options": [
-     "Pour éviter les vols pendant l'évacuation",
-     "Pour ralentir la propagation du feu et des fumées",
-     "Pour permettre aux pompiers de mieux se repérer"
-    ],
-    "feedback": "Une porte fermée peut <strong>contenir un feu pendant 15, 30 voire 60 minutes</strong> (selon son degré coupe-feu) et limite massivement la propagation des fumées toxiques. C'est l'un des principes du <strong>compartimentage</strong>, pilier de la réglementation incendie en IGH et ERP. Ce geste simple peut sauver des vies — y compris la vôtre si vous devez vous réfugier.",
-    "multi": false,
-    "correct": [
-     1
-    ]
-   }
-  ],
-  "verdicts": [
-   {
-    "seuil": 90,
-    "titre": "Expert sécurité incendie.",
-    "texte": "Vos réflexes sont solides : enjeux maîtrisés, acteurs identifiés, gestes connus. Vous êtes une ressource pour vos collègues — n'hésitez pas à partager ces bons réflexes autour de vous."
-   },
-   {
-    "seuil": 70,
-    "titre": "Bonnes bases — quelques angles morts.",
-    "texte": "Vous connaissez l'essentiel. Revoyez les questions ratées et n'hésitez pas à demander une visite des moyens de secours de votre bâtiment (alarmes, RIA, extincteurs, plans d'évacuation)."
-   },
-   {
-    "seuil": 50,
-    "titre": "Connaissances partielles.",
-    "texte": "Les bons réflexes ne sont pas tous acquis. Une formation à l'évacuation ou un exercice incendie sur votre site sont vivement recommandés — les premières secondes font toute la différence."
-   },
-   {
-    "seuil": 0,
-    "titre": "À renforcer en priorité.",
-    "texte": "Le risque incendie au bureau est sous-estimé. Demandez à votre employeur la formation obligatoire à la sécurité incendie (Code du travail, art. R.4227-39) et participez activement au prochain exercice d'évacuation."
-   }
-  ],
-  "intro_titre_html": "Comment réagir face à un <em>départ de feu</em> au bureau ?",
-  "intro_lead_html": "Que vous travailliez dans un <strong>IGH</strong> ou un <strong>ERP</strong>, les premières secondes décident de tout. Testez vos connaissances sur les enjeux, les acteurs et les gestes qui font la différence.",
-  "pied": [
-   "Quiz pédagogique — sécurité incendie en milieu professionnel",
-   "IGH · ERP · SSIAP"
-  ]
+{
+ "hub": {
+  "tag": "DCIP · Forum des Métiers · 10 juin 2026",
+  "eyebrow": "Quiz interactif",
+  "titre_html": "Testez vos connaissances<br>dans le domaine de la sécurité",
+  "titre": "Testez vos connaissances dans le domaine de la sécurité",
+  "jouer": "Jouez et remportez des goodies !",
+  "choisir": "— Sélectionnez votre quiz —"
  },
- {
-  "id": "gard",
-  "slug": "gardiennage",
-  "titre": "Le métier d’agent de sécurité",
-  "titre_long": "Le métier d' agent de sécurité privée au Département",
-  "categorie": "Gardiennage",
-  "ico": "👮",
-  "accroche": "Rondes, main courante, bouton anti-agression… Connaissez-vous ceux qui vous protègent ?",
-  "description": "Un bouton rouge dans un bureau, 29 agents déployés chaque jour, des rondes à 14h sans incident… Que savez-vous vraiment de ceux qui sécurisent vos bâtiments au quotidien? 8 questions pour changer d'oeil sur ce métier.",
-  "accent": "#3B82F6",
-  "fond": "#0B0E14",
-  "meta": {
-   "duree": "~4 min",
-   "niveau": "Tous publics",
-   "cadre": "CD06 / MSD"
+ "quiz": [
+  {
+   "id": "feu",
+   "slug": "prevention-incendie",
+   "ancre": "qz-feu",
+   "titre": "Réagir face à un feu de bureau",
+   "categorie": "Prévention incendie",
+   "ico": "🧯",
+   "marque": "Sécurité incendie · Pro",
+   "titre_long": "Comment réagir face à un départ de feu au bureau ?",
+   "intro_titre_html": "Comment réagir face à un <em>départ de feu</em> au bureau ?",
+   "intro_lead_html": "Que vous travailliez dans un <strong style=\"color:var(--text)\">IGH</strong> ou un <strong style=\"color:var(--text)\">ERP</strong>, les premières secondes décident de tout. Testez vos connaissances sur les enjeux, les acteurs et les gestes qui font la différence.",
+   "accroche": "Triangle du feu, bons réflexes, évacuation… Saurez-vous agir au bon moment ?",
+   "eyebrow": "Quiz interactif",
+   "accent": "",
+   "fond": "#0F0E0C",
+   "duree_carte": "~4 min",
+   "annonces_source": {
+    "carte": "8 questions",
+    "intro": "9"
+   },
+   "meta": {
+    "questions": "8",
+    "duree": "~5 min",
+    "niveau": "Tous publics",
+    "cadre": "IGH / ERP"
+   },
+   "questions": [
+    {
+     "cat": "Enjeux",
+     "q": "Quels sont les trois éléments réunis pour qu'un feu se déclare (« triangle du feu ») ?",
+     "options": [
+      "Combustible, comburant, énergie d'activation",
+      "Fumée, chaleur, étincelle",
+      "Oxygène, eau, électricité"
+     ],
+     "correct": [
+      0
+     ],
+     "feedback": "Le <strong>triangle du feu</strong> repose sur trois conditions simultanées : un <strong>combustible</strong> (papier, plastique, mobilier…), un <strong>comburant</strong> (l'oxygène de l'air) et une <strong>énergie d'activation</strong> (étincelle, surchauffe, flamme). Supprimer un seul de ces trois éléments suffit à éteindre le feu — c'est le principe de tous les extincteurs.",
+     "multi": false
+    },
+    {
+     "cat": "Enjeux",
+     "q": "Dans un incendie de bureau, qu'est-ce qui tue le plus souvent ?",
+     "options": [
+      "Les flammes",
+      "Les fumées toxiques",
+      "L'effondrement du bâtiment"
+     ],
+     "correct": [
+      1
+     ],
+     "feedback": "Plus de <strong>80 % des décès</strong> en incendie sont dus aux <strong>fumées toxiques</strong> (monoxyde de carbone, cyanure d'hydrogène…), pas aux flammes. En quelques minutes, les fumées remplissent un volume et rendent l'évacuation impossible. D'où l'importance de fermer les portes derrière soi et d'évacuer rapidement, au ras du sol si nécessaire.",
+     "multi": false
+    },
+    {
+     "cat": "Enjeux",
+     "q": "À quelle vitesse un feu de bureau non maîtrisé peut-il se propager ?",
+     "options": [
+      "Il met plusieurs heures à se développer",
+      "Le volume peut doubler toutes les 30 secondes",
+      "Cela dépend uniquement du système de ventilation"
+     ],
+     "correct": [
+      1
+     ],
+     "feedback": "Un feu en phase de développement peut voir son <strong>volume doubler toutes les 30 secondes</strong>. En 3 minutes, une pièce peut être totalement embrasée (phénomène de <em>flashover</em>). C'est pour cela que les premières actions — alarme, évacuation, fermeture des portes — sont décisives.",
+     "multi": false
+    },
+    {
+     "cat": "Acteurs",
+     "q": "Quel est le rôle du « serre-file » lors d'une évacuation ?",
+     "options": [
+      "Il est en tête de file et guide vers la sortie",
+      "Il appelle les secours depuis l'extérieur",
+      "Il ferme la marche, vérifie que tout le monde est sorti et ferme les portes"
+     ],
+     "correct": [
+      2
+     ],
+     "feedback": "Le <strong>serre-file</strong> ferme la marche : il s'assure que <strong>personne n'est resté en arrière</strong> (bureaux, sanitaires, salles de réunion), <strong>ferme les portes derrière lui</strong> pour ralentir la propagation des fumées, et signale toute anomalie. Le <strong>guide-file</strong>, lui, est en tête : il ouvre le chemin vers la sortie et le point de rassemblement.",
+     "multi": false
+    },
+    {
+     "cat": "Gestes",
+     "q": "Vous découvrez un début d'incendie au bureau. Quelle est la PREMIÈRE action ?",
+     "options": [
+      "Essayer d'éteindre le feu avec un extincteur",
+      "Donner l'alarme (déclencheur manuel le plus proche)",
+      "Appeler les pompiers depuis votre poste"
+     ],
+     "correct": [
+      1
+     ],
+     "feedback": "La première action est toujours de <strong>donner l'alarme</strong> en actionnant le déclencheur manuel (boîtier rouge) le plus proche. Cela prévient instantanément tout le bâtiment et déclenche les dispositifs de sécurité (désenfumage, compartimentage). <em>Ensuite</em> seulement, si le feu est naissant et que vous savez utiliser un extincteur, vous pouvez tenter une attaque — sans jamais vous mettre en danger.",
+     "multi": false
+    },
+    {
+     "cat": "Gestes",
+     "q": "Lors de l'évacuation, peut-on prendre l'ascenseur ?",
+     "options": [
+      "Oui, c'est plus rapide qu'un escalier",
+      "Oui, si le feu est à un autre étage",
+      "Non — les ascenseurs sont strictement interdits en cas d'incendie"
+     ],
+     "correct": [
+      2
+     ],
+     "feedback": "<strong>L'ascenseur est interdit</strong> en cas d'incendie. Les fumées s'engouffrent dans la gaine, la cabine peut s'arrêter à l'étage du feu, et l'alimentation électrique peut être coupée à tout moment. Seuls les <strong>ascenseurs « pompiers »</strong> (présents en IGH) peuvent être utilisés par les secours. L'évacuation se fait <strong>toujours par les escaliers</strong>.",
+     "multi": false
+    },
+    {
+     "cat": "Gestes",
+     "q": "Vous évacuez avec un collègue en situation de handicap qui ne peut pas emprunter les escaliers. Où l'accompagnez-vous ?",
+     "options": [
+      "Dans son bureau, en fermant bien la porte",
+      "Vers un Espace d'Attente Sécurisé (EAS), en signalant sa présence aux secours",
+      "Au point de rassemblement extérieur, en le portant dans les escaliers à plusieurs"
+     ],
+     "correct": [
+      1
+     ],
+     "feedback": "L'<strong>Espace d'Attente Sécurisé (EAS)</strong> est une zone protégée des flammes et des fumées, prévue par la réglementation pour que toute personne ne pouvant pas évacuer par les escaliers puisse <strong>attendre les secours en sécurité</strong>. Une fois la personne installée, vous <strong>signalez immédiatement sa présence</strong> au PC sécurité (SSIAP) ou aux sapeurs-pompiers. <br><br>👉 <strong>Dans l'IGH du Centre administratif, ce sont les paliers des cages d'escaliers de chaque niveau qui font office d'EAS.</strong> Conçus avec un degré coupe-feu élevé, ils permettent à une personne de rester en protection <strong>jusqu'à 2 heures</strong> — soit largement le temps nécessaire à l'intervention des secours.",
+     "multi": false
+    },
+    {
+     "cat": "Gestes",
+     "q": "Pourquoi est-il essentiel de fermer les portes derrière soi en évacuant ?",
+     "options": [
+      "Pour éviter les vols pendant l'évacuation",
+      "Pour ralentir la propagation du feu et des fumées",
+      "Pour permettre aux pompiers de mieux se repérer"
+     ],
+     "correct": [
+      1
+     ],
+     "feedback": "Une porte fermée peut <strong>contenir un feu pendant 15, 30 voire 60 minutes</strong> (selon son degré coupe-feu) et limite massivement la propagation des fumées toxiques. C'est l'un des principes du <strong>compartimentage</strong>, pilier de la réglementation incendie en IGH et ERP. Ce geste simple peut sauver des vies — y compris la vôtre si vous devez vous réfugier.",
+     "multi": false
+    }
+   ],
+   "verdicts": [
+    {
+     "seuil": 90,
+     "titre": "Expert sécurité incendie.",
+     "texte": "Vos réflexes sont solides : enjeux maîtrisés, acteurs identifiés, gestes connus. Vous êtes une ressource pour vos collègues — n'hésitez pas à partager ces bons réflexes autour de vous."
+    },
+    {
+     "seuil": 70,
+     "titre": "Bonnes bases — quelques angles morts.",
+     "texte": "Vous connaissez l'essentiel. Revoyez les questions ratées et n'hésitez pas à demander une visite des moyens de secours de votre bâtiment (alarmes, RIA, extincteurs, plans d'évacuation)."
+    },
+    {
+     "seuil": 50,
+     "titre": "Connaissances partielles.",
+     "texte": "Les bons réflexes ne sont pas tous acquis. Une formation à l'évacuation ou un exercice incendie sur votre site sont vivement recommandés — les premières secondes font toute la différence."
+    },
+    {
+     "seuil": 0,
+     "titre": "À renforcer en priorité.",
+     "texte": "Le risque incendie au bureau est sous-estimé. Demandez à votre employeur la formation obligatoire à la sécurité incendie (Code du travail, art. R.4227-39) et participez activement au prochain exercice d'évacuation."
+    }
+   ],
+   "goodie": {
+    "sans_faute": "BRAVO vous remportez un goodie, présentez votre résultat pour le récupérer !",
+    "a_retenter": "Bien joué, pour remporter un goodie, retentez votre chance !",
+    "emoji_sans_faute": "🎉",
+    "emoji_a_retenter": "👍"
+   },
+   "pied": [
+    "Quiz pédagogique — sécurité incendie en milieu professionnel",
+    "IGH · ERP · SSIAP"
+   ],
+   "pied_source": [
+    "Quiz pédagogique — sécurité incendie en milieu professionnel",
+    "IGH · ERP · SSIAP"
+   ]
   },
-  "questions": [
-   {
-    "cat": "Le métier",
-    "q": "Qu'est-ce qui distingue vraiment un agent de sécurité privée d'un simple gardien ?",
-    "options": [
-     "Rien — c'est juste une question de vocabulaire",
-     "L'agent de sécurité est un professionnel formé, certifié, dont le rôle va bien au-delà de \"garder une porte\"",
-     "L'agent de sécurité a plus de pouvoirs qu'un gardien municipal"
-    ],
-    "feedback": "L'agent de sécurité privée est un <strong>professionnel certifié</strong>, titulaire d'une carte délivrée par le CNAPS après enquête de moralité et formation. Son rôle est bien plus large qu'on ne l'imagine : <strong>prévention des risques, gestion de conflits, premiers secours, rondes de surveillance, levée de doute…</strong> C'est un poste polyvalent qui demande sang-froid, rigueur et sens du contact humain — loin du cliché du gardien statique.",
-    "multi": false,
-    "correct": [
-     1
-    ]
+  {
+   "id": "secu",
+   "slug": "securite-humaine-materiel",
+   "ancre": "qz-secu",
+   "titre": "Agents, caméras & badges",
+   "categorie": "Sécurité humaine & matériel",
+   "ico": "🛡️",
+   "marque": "Sécurité humaine & matériel · DCIP",
+   "titre_long": "Agents, caméras, badges — que savez-vous de la sécurité ?",
+   "intro_titre_html": "Agents, caméras, badges — que savez-vous de la <em>sécurité</em> ?",
+   "intro_lead_html": "Des agents qui veillent sur le terrain aux dispositifs techniques qui protègent nos bâtiments… la sécurité, c’est aussi une affaire de réflexes du quotidien. 5 questions pour le vérifier.",
+   "accroche": "Rondes, bouton anti-agression, vidéoprotection, badges… Le meilleur des deux mondes de la sécurité au quotidien.",
+   "eyebrow": "Quiz interactif",
+   "accent": "#3D6FE8",
+   "fond": "#0A0D14",
+   "duree_carte": "~3 min",
+   "annonces_source": {
+    "carte": "5 questions",
+    "intro": "5"
    },
-   {
-    "cat": "Sur le terrain",
-    "q": "Vous voyez l'agent de sécurité faire le tour complet du bâtiment à 14h un mardi, seul, sans incident en cours. À quoi cela sert-il ?",
-    "options": [
-     "C'est une obligation syndicale qui n'a pas vraiment d'utilité",
-     "Cela lui permet de se dégourdir les jambes",
-     "La ronde est préventive : elle dissuade, détecte les anomalies et vérifie les équipements de secours"
-    ],
-    "feedback": "La <strong>ronde de surveillance</strong> n'attend pas qu'il se passe quelque chose. Son objectif est triple : <strong>dissuader</strong> par la présence visible, <strong>détecter</strong> les anomalies (porte forcée, colis suspect, fuite…) et <strong>vérifier</strong> les équipements de secours (extincteurs, éclairages de sécurité, issues dégagées). En 2025, le PPS du CADAM a réalisé <strong>3 463 rondes</strong> — soit environ 9 par jour.",
-    "multi": false,
-    "correct": [
-     2
-    ]
+   "meta": {
+    "questions": "5",
+    "duree": "~4 min",
+    "niveau": "Tous publics",
+    "cadre": "CADAM / 06"
    },
-   {
-    "cat": "Sur le terrain",
-    "q": "Quelles sont les missions de l’agent de sécurité dans une MSD ?",
-    "options": [
-     "Prodiguer les premiers secours en cas de malaise",
-     "Gérer une intrusion ou un visiteur agressif",
-     "Rédiger les comptes-rendus des travailleurs sociaux",
-     "Effectuer des rondes et signaler les anomalies"
-    ],
-    "feedback": "Dans une MSD, l’agent de sécurité a <strong>3 missions clés</strong> : premiers secours (formé SST), gestion des conflits et des intrusions, et rondes de surveillance. <em>Rédiger les comptes-rendus des travailleurs sociaux</em> ne fait pas partie de ses attributions.",
-    "multi": true,
-    "correct": [
-     0,
-     1,
-     3
-    ]
+   "questions": [
+    {
+     "cat": "Agents de sécurité",
+     "q": "Vous voyez l'agent de sécurité faire le tour complet du bâtiment à 14h, seul, sans incident en cours. À quoi cela sert-il ?",
+     "options": [
+      "C'est une obligation syndicale qui n'a pas vraiment d'utilité",
+      "La ronde est préventive : elle dissuade, détecte les anomalies et vérifie les équipements de secours",
+      "Cela lui permet de se dégourdir les jambes"
+     ],
+     "correct": [
+      1
+     ],
+     "feedback": "La <strong>ronde de surveillance</strong> n'attend pas qu'il se passe quelque chose. Son objectif est triple : <strong>dissuader</strong> par la présence visible, <strong>détecter</strong> les anomalies (porte forcée, colis suspect...) et <strong>vérifier</strong> les équipements de secours. C'est un travail actif, même quand rien ne semble se passer.",
+     "multi": false
+    },
+    {
+     "cat": "Agents de sécurité",
+     "q": "Dans le bureau d'un travailleur social, il y a un petit bouton rouge discret. À quoi sert-il ?",
+     "options": [
+      "À appeler l'ascenseur sans se déplacer",
+      "À activer la climatisation d'urgence",
+      "À déclencher une alerte silencieuse vers l'agent de sécurité en cas d'agression"
+     ],
+     "correct": [
+      2
+     ],
+     "feedback": "C'est le <strong>bouton anti-agression</strong>. En cas de situation dangereuse, le travailleur social peut déclencher une <strong>alerte silencieuse</strong> — l'usager ne l'entend pas, mais l'agent de sécurité est immédiatement prévenu et intervient discrètement pour évaluer la situation.",
+     "multi": false
+    },
+    {
+     "cat": "Vidéoprotection",
+     "q": "Quelle est la différence entre vidéosurveillance et vidéoprotection ?",
+     "options": [
+      "La vidéosurveillance s'applique aux lieux privés, la vidéoprotection aux espaces ouverts au public",
+      "La vidéoprotection concerne uniquement les établissements scolaires",
+      "La vidéosurveillance est réservée aux forces de l'ordre"
+     ],
+     "correct": [
+      0
+     ],
+     "feedback": "Ce sont deux régimes <strong>juridiquement distincts</strong>. La <strong>vidéosurveillance</strong> concerne les lieux privés (bureaux, halls d'immeubles…), tandis que la <strong>vidéoprotection</strong> encadre les espaces ouverts au public. Les autorisations et règles d'exploitation ne sont pas les mêmes.",
+     "multi": false
+    },
+    {
+     "cat": "Badge & Accès",
+     "q": "Vous perdez votre badge. Quelle est la bonne réaction ?",
+     "options": [
+      "Emprunter le badge d'un collègue en attendant de le retrouver",
+      "Attendre quelques jours — il réapparaît souvent",
+      "Le signaler immédiatement pour qu'il soit désactivé"
+     ],
+     "correct": [
+      2
+     ],
+     "feedback": "Un badge non signalé, c'est une <strong>porte ouverte</strong> : n'importe qui peut le ramasser et accéder à des zones protégées. La désactivation est immédiate.<br><br><strong>Comment signaler ?</strong><br>📞 Appeler le <strong>11</strong> (numéro interne) ou écrire à <strong>acces@departement06.fr</strong><br><br><strong>Si vous trouvez un badge :</strong> le déposer à la <strong>Gestion des Accès</strong> ou au <strong>Poste Permanent de Sécurité — Tour Jean Moulin</strong>.",
+     "multi": false
+    },
+    {
+     "cat": "Vigilance",
+     "q": "Vous trouvez une porte de secours entrouverte qui n'aurait pas dû l'être. Que faites-vous ?",
+     "options": [
+      "Vous la fermez et passez votre chemin — ce n'est sûrement rien",
+      "Vous attendez de voir si quelqu'un d'autre le signale",
+      "Vous signalez immédiatement la situation à la sécurité ou au poste de garde"
+     ],
+     "correct": [
+      2
+     ],
+     "feedback": "Une porte de secours ouverte anormalement est un <strong>signal d'alerte</strong> à ne jamais ignorer. <strong>Signaler au poste de sécurité</strong> immédiatement est le bon réflexe — même si c'est souvent une fausse alerte, le signalement coûte 30 secondes et peut éviter un incident grave.",
+     "multi": false
+    }
+   ],
+   "verdicts": [
+    {
+     "seuil": 90,
+     "titre": "Excellent ! Vous avez tout compris.",
+     "texte": "Badges, caméras, alarmes : vous avez les bons réflexes. Votre comportement au quotidien contribue directement à la sécurité des bâtiments et de vos collègues."
+    },
+    {
+     "seuil": 70,
+     "titre": "Bonne intuition — quelques réflexes à affiner.",
+     "texte": "L'essentiel est là. Les points à retenir : signalez toujours un badge perdu sans attendre, et n'hésitez pas à refuser un prêt de badge — même à un collègue de confiance."
+    },
+    {
+     "seuil": 50,
+     "titre": "Quelques bons réflexes à acquérir.",
+     "texte": "La sûreté, ça s'apprend vite avec les bonnes informations. L'essentiel : badge perdu = signalement immédiat, prêt de badge = interdit, porte anormalement ouverte = à signaler."
+    },
+    {
+     "seuil": 0,
+     "titre": "Des bases à construire — mais c'est tout l'intérêt de ce quiz !",
+     "texte": "Ce quiz est là pour ça : prendre conscience que la sûreté du bâtiment dépend aussi de vous. Trois règles d'or à retenir : signalez un badge perdu immédiatement, ne le prêtez jamais, et alertez la sécurité face à toute anomalie."
+    }
+   ],
+   "goodie": {
+    "sans_faute": "BRAVO vous remportez un goodie, présentez votre résultat pour le récupérer !",
+    "a_retenter": "Bien joué, pour remporter un goodie, retentez votre chance !",
+    "emoji_sans_faute": "🎉",
+    "emoji_a_retenter": "👍"
    },
-   {
-    "cat": "Dispositif",
-    "q": "Dans le bureau d'un travailleur social, il y a un petit bouton rouge discret. À quoi sert-il ?",
-    "options": [
-     "À appeler l'ascenseur sans se déplacer",
-     "À déclencher une alerte silencieuse vers l'agent de sécurité en cas d'agression",
-     "À activer la climatisation d'urgence"
-    ],
-    "feedback": "C'est le <strong>bouton anti-agression</strong>. En cas de situation dangereuse, le travailleur social peut déclencher une <strong>alerte silencieuse</strong> — l'usager ne l'entend pas, mais l'agent de sécurité est immédiatement prévenu. Il intervient alors discrètement pour évaluer la situation et s'interposer si nécessaire, sans aggraver la tension.",
-    "multi": false,
-    "correct": [
-     1
-    ]
-   },
-   {
-    "cat": "Le métier",
-    "q": "Combien d'agents de sécurité sont déployés chaque jour sur l'ensemble des sites du Département — MSD, CADAM, PMI, MAM, CEGIDD, CJS ?",
-    "options": [
-     "Environ 10 agents",
-     "Environ 20 agents",
-     "29 agents"
-    ],
-    "feedback": "<strong>29 agents de sécurité privée</strong> sont sur le terrain chaque jour pour protéger les sites départementaux. En plus de cette présence quotidienne, environ <strong>25 événements par mois</strong> organisés par le Département — cérémonies, manifestations culturelles, réunions publiques — sont également sécurisés. Un dispositif humain discret mais permanent, dont on ne mesure pas toujours l'ampleur.",
-    "multi": false,
-    "correct": [
-     2
-    ]
-   },
-   {
-    "cat": "Sur le terrain",
-    "q": "Vrai ou faux : quand rien ne se passe sur le site, l'agent de sécurité n'a pas vraiment de travail.",
-    "options": [
-     "Vrai — il attend juste qu'un incident survienne",
-     "Faux — c'est précisément quand tout va bien que son travail est efficace",
-     "Ça dépend du site et de l'heure"
-    ],
-    "feedback": "C'est <strong>faux</strong> — et c'est toute la logique du métier. Quand rien ne se passe, c'est souvent parce que l'agent a fait son travail : rondes régulières, présence visible, anomalies détectées tôt. En 2025, le PPS du CADAM a réalisé <strong>3 463 rondes</strong> — soit une toutes les 90 minutes environ. Ce rythme n'est pas là pour occuper l'agent : il est là pour que vous n'ayez <em>jamais</em> à vous inquiéter de ce qui se passe autour de vous.",
-    "multi": false,
-    "correct": [
-     1
-    ]
-   }
-  ],
-  "verdicts": [
-   {
-    "seuil": 90,
-    "titre": "Vous avez tout compris.",
-    "texte": "Vous avez une vision claire et réaliste du métier — loin des clichés. Vous savez que derrière la présence discrète se cache une vigilance permanente, une formation solide et une vraie polyvalence."
-   },
-   {
-    "seuil": 70,
-    "titre": "Bon instinct — quelques surprises quand même.",
-    "texte": "L'essentiel est là. À retenir : un agent de sécurité n'a pas de pouvoir de police, sa présence est avant tout préventive, et sa journée peut basculer à tout moment."
-   },
-   {
-    "seuil": 50,
-    "titre": "Des idées reçues à bousculer.",
-    "texte": "Le métier d'agent de sécurité est souvent mal connu — et ce quiz le prouve ! Polyvalent, formé, titulaire d'une carte professionnelle obligatoire… Discutez avec l'un d'eux au stand DCIP, vous serez surpris."
-   },
-   {
-    "seuil": 0,
-    "titre": "Un métier bien plus riche qu'il n'y paraît !",
-    "texte": "Pas de souci — c'est justement l'intérêt de ce quiz. L'agent de sécurité n'est ni un policier, ni un simple gardien assis. C'est un professionnel formé, polyvalent, qui joue un rôle discret mais essentiel chaque jour sur vos sites."
-   }
-  ],
-  "intro_titre_html": "Le métier d'<em>agent de sécurité</em> privée au Département",
-  "intro_lead_html": "Un bouton rouge dans un bureau, 29 agents déployés chaque jour, des rondes à 14h sans incident… Que savez-vous vraiment de ceux qui sécurisent vos bâtiments au quotidien ? 8 QG_questions pour changer d'oeil sur ce métier.",
-  "pied": [
-   "Quiz pédagogique — sécurité privée & gardiennage",
-   "Conseil Départemental 06"
-  ]
- },
- {
-  "id": "surt",
-  "slug": "surete",
-  "titre": "Vidéoprotection, badges & intrusion",
-  "titre_long": "Vidéoprotection, badges, alarmes — que savez-vous de la sûreté?",
-  "categorie": "Sûreté",
-  "ico": "🔐",
-  "accroche": "Caméras, badges, alarmes… Ces dispositifs font partie de votre quotidien. Les connaissez-vous ?",
-  "description": "Caméras, badges, alarmes… Ces dispositifs font partie de votre quotidien au Département. Mais savez-vous vraiment comment ils fonctionnent, ce qu'ils peuvent filmer, et quels sont vos bons réflexes? 8 questions pour le découvrir.",
-  "accent": "#3D6FE8",
-  "fond": "#0A0D14",
-  "meta": {
-   "duree": "~4 min",
-   "niveau": "Tous publics",
-   "cadre": "CADAM / 06"
+   "pied": [
+    "Quiz pédagogique — sûreté des bâtiments départementaux",
+    "Vidéoprotection · Badges · Intrusion"
+   ],
+   "pied_source": [
+    "Quiz pédagogique — sûreté des bâtiments départementaux",
+    "Vidéoprotection · Badges · Intrusion"
+   ]
   },
-  "questions": [
-   {
-    "cat": "Vidéoprotection",
-    "q": "Quelle est la différence entre vidéosurveillance et vidéoprotection ?",
-    "options": [
-     "La vidéosurveillance s'applique aux lieux privés, la vidéoprotection aux espaces ouverts au public",
-     "La vidéoprotection concerne uniquement les établissements scolaires",
-     "La vidéosurveillance est réservée aux forces de l'ordre"
-    ],
-    "feedback": "Ce sont deux régimes <strong>juridiquement distincts</strong>. La <strong>vidéosurveillance</strong> concerne les lieux privés (bureaux, halls d'immeubles…), tandis que la <strong>vidéoprotection</strong> encadre les espaces ouverts au public. Les autorisations requises et les règles d'exploitation ne sont pas les mêmes.",
-    "multi": false,
-    "correct": [
-     0
-    ]
+  {
+   "id": "etu",
+   "slug": "etudes-et-travaux",
+   "ancre": "qz-etu",
+   "titre": "Découverte du Service Études et Travaux",
+   "categorie": "Études & Travaux",
+   "ico": "🏗️",
+   "marque": "Études & Travaux · DCIP",
+   "titre_long": "Concevoir, bâtir, transformer — découvrez le Service Études et Travaux !",
+   "intro_titre_html": "Concevoir, bâtir, transformer — découvrez le <em>Service Études et Travaux</em> !",
+   "intro_lead_html": "De la première esquisse à la livraison du chantier, découvrez quelques réalités du métier et des opérations pilotées par le Service Études et Travaux. 5 questions pour le découvrir.",
+   "accroche": "De la première esquisse à la livraison du chantier… découvrez les coulisses des grands projets du Département.",
+   "eyebrow": "Quiz interactif",
+   "accent": "#0F766E",
+   "fond": "#0A0D14",
+   "duree_carte": "~3 min",
+   "annonces_source": {
+    "carte": "5 questions",
+    "intro": "5"
    },
-   {
-    "cat": "Vidéoprotection",
-    "q": "Qui a le droit de consulter les images des caméras de vidéoprotection ?",
-    "options": [
-     "N'importe quel agent, c'est un outil de transparence collective",
-     "Uniquement les agents habilités désignés — accès strictement encadré",
-     "Tout responsable de service qui en fait la demande"
-    ],
-    "feedback": "Les images sont <strong>confidentielles</strong> et consultables uniquement par des <strong>agents spécifiquement habilités</strong> — au CADAM, ils sont 6. Même un responsable hiérarchique ne peut pas y accéder librement. Toute consultation doit être justifiée et tracée. C'est la <strong>CNIL</strong> qui veille au respect de ces règles.",
-    "multi": false,
-    "correct": [
-     1
-    ]
+   "meta": {
+    "questions": "5",
+    "duree": "~4 min",
+    "niveau": "Tous publics",
+    "cadre": "CADAM / 06"
    },
-   {
-    "cat": "Vidéoprotection",
-    "q": "Vous avez été victime d'un incident dans votre bâtiment. Avez-vous le droit de demander à voir les images de caméra vous concernant ?",
-    "options": [
-     "Non — les images sont confidentielles et réservées au service sécurité",
-     "Oui, mais uniquement si la police en fait la demande à votre place",
-     "Oui — toute personne filmée peut exercer son droit d'accès auprès du responsable du traitement"
-    ],
-    "feedback": "C'est un droit que très peu de gens connaissent : en tant que personne filmée, vous pouvez exercer votre <strong>droit d'accès</strong> aux images vous concernant, en vertu du RGPD. La demande se fait auprès du <strong>responsable du traitement</strong> — au Département, c'est la DCIP. Les images doivent vous être communiquées dans un délai d'un mois, à condition qu'elles n'aient pas déjà été effacées.",
-    "multi": false,
-    "correct": [
-     2
-    ]
+   "questions": [
+    {
+     "cat": "Le Service",
+     "q": "Quelle est la mission principale du Service Études et Travaux ?",
+     "options": [
+      "Assurer l'entretien des espaces verts départementaux",
+      "Organiser les manifestations départementales",
+      "Concevoir, programmer et suivre la réalisation des opérations de construction, de réhabilitation ou d'aménagement du patrimoine départemental"
+     ],
+     "correct": [
+      2
+     ],
+     "feedback": "Le Service Études et Travaux pilote les <strong>opérations de construction, réhabilitation et aménagement</strong> du patrimoine bâti du Département — collèges, bâtiments administratifs, équipements publics. Un rôle central dans la vie du patrimoine départemental, de l'idée jusqu'à l'ouvrage livré.",
+     "multi": false
+    },
+    {
+     "cat": "Le Service",
+     "q": "À quel stade d'un projet le Service Études et Travaux intervient-il ?",
+     "options": [
+      "Uniquement lors des études préalables",
+      "De la phase de programmation jusqu'à la réception des travaux",
+      "Seulement après la livraison de l'ouvrage"
+     ],
+     "correct": [
+      1
+     ],
+     "feedback": "Le service accompagne le projet sur <strong>toute sa durée</strong> : programmation, études, consultation des entreprises, suivi de chantier, jusqu'à la <strong>réception des travaux</strong>. Une continuité essentielle pour garantir la cohérence du projet du début à la fin.",
+     "multi": false
+    },
+    {
+     "cat": "Délais & Ampleur",
+     "q": "Combien de temps peut s'écouler entre l'expression du besoin et la livraison d'un bâtiment public important ?",
+     "options": [
+      "6 à 12 mois",
+      "1 à 2 ans",
+      "5 à 7 ans"
+     ],
+     "correct": [
+      2
+     ],
+     "feedback": "Un projet public nécessite de nombreuses étapes : <strong>études, autorisations, consultation des entreprises puis travaux</strong>. Entre la définition du besoin et la livraison d'un bâtiment public important, il faut souvent compter <strong>5 à 7 ans</strong> — un temps long qui garantit la qualité et la conformité de l'ouvrage.",
+     "multi": false
+    },
+    {
+     "cat": "Délais & Ampleur",
+     "q": "Pour une réhabilitation lourde de collège, combien d'acteurs différents peuvent être mobilisés ?",
+     "options": [
+      "Entre 5 et 10",
+      "Entre 10 et 20",
+      "Plus de 20"
+     ],
+     "correct": [
+      2
+     ],
+     "feedback": "<strong>Plus de 20 acteurs</strong> peuvent être mobilisés : utilisateurs, architectes, bureaux d'études, contrôleur technique, coordonnateur SPS, concessionnaires, entreprises, exploitants, etc. Une véritable coordination d'équipe est nécessaire pour mener à bien une réhabilitation lourde.",
+     "multi": false
+    },
+    {
+     "cat": "Réception",
+     "q": "À la réception des travaux, l'opération est-elle totalement terminée ?",
+     "options": [
+      "Non, plusieurs garanties continuent à s'appliquer",
+      "Oui, sauf pour l'architecte",
+      "Cela dépend du bâtiment"
+     ],
+     "correct": [
+      0
+     ],
+     "feedback": "La réception marque la <strong>fin du chantier</strong>, mais plusieurs <strong>garanties continuent à protéger le maître d'ouvrage</strong> après la livraison — garantie de parfait achèvement, garantie biennale, garantie décennale. Le suivi ne s'arrête donc pas à la remise des clés.",
+     "multi": false
+    }
+   ],
+   "verdicts": [
+    {
+     "seuil": 90,
+     "titre": "Excellent ! Vous avez tout compris.",
+     "texte": "Badges, caméras, alarmes : vous avez les bons réflexes. Votre comportement au quotidien contribue directement à la sécurité des bâtiments et de vos collègues."
+    },
+    {
+     "seuil": 70,
+     "titre": "Bonne intuition — quelques réflexes à affiner.",
+     "texte": "L'essentiel est là. Les points à retenir : signalez toujours un badge perdu sans attendre, et n'hésitez pas à refuser un prêt de badge — même à un collègue de confiance."
+    },
+    {
+     "seuil": 50,
+     "titre": "Quelques bons réflexes à acquérir.",
+     "texte": "La sûreté, ça s'apprend vite avec les bonnes informations. L'essentiel : badge perdu = signalement immédiat, prêt de badge = interdit, porte anormalement ouverte = à signaler."
+    },
+    {
+     "seuil": 0,
+     "titre": "Des bases à construire — mais c'est tout l'intérêt de ce quiz !",
+     "texte": "Ce quiz est là pour ça : prendre conscience que la sûreté du bâtiment dépend aussi de vous. Trois règles d'or à retenir : signalez un badge perdu immédiatement, ne le prêtez jamais, et alertez la sécurité face à toute anomalie."
+    }
+   ],
+   "goodie": {
+    "sans_faute": "BRAVO vous remportez un goodie, présentez votre résultat pour le récupérer !",
+    "a_retenter": "Bien joué, pour remporter un goodie, retentez votre chance !",
+    "emoji_sans_faute": "🎉",
+    "emoji_a_retenter": "👍"
    },
-   {
-    "cat": "Badge & Accès",
-    "q": "Vous perdez votre badge. Quelle est la bonne réaction ?",
-    "options": [
-     "Emprunter le badge d'un collègue en attendant de le retrouver",
-     "Attendre quelques jours — il réapparaît souvent",
-     "Le signaler immédiatement pour qu'il soit désactivé"
-    ],
-    "feedback": "Un badge non signalé, c'est une <strong>porte ouverte</strong> : n'importe qui peut le ramasser et accéder à des zones protégées. La désactivation est immédiate.<br><br><strong>Comment signaler ?</strong><br>📞 Appeler le <strong>11</strong> (numéro interne) ou écrire à <strong>acces@departement06.fr</strong><br><br><strong>Si vous trouvez un badge :</strong> le déposer à la <strong>Gestion des Accès</strong> ou au <strong>Poste Permanent de Sécurité — Tour Jean Moulin</strong>.",
-    "multi": false,
-    "correct": [
-     2
-    ]
-   },
-   {
-    "cat": "Badge & Accès",
-    "q": "Un collègue vous demande de lui prêter votre badge pour « juste 5 minutes ». Que faites-vous ?",
-    "options": [
-     "Vous lui prêtez — c'est un collègue de confiance",
-     "Vous refusez — le prêt de badge est interdit et dangereux",
-     "Vous acceptez uniquement s'il s'agit d'une urgence"
-    ],
-    "feedback": "Le prêt de badge est <strong>formellement interdit</strong>, quelle que soit la situation. Il <strong>annule la traçabilité</strong> : en cas d'incident, les journaux d'accès montreront votre nom, pas le sien. Refuser avec courtoisie, c'est protéger tout le monde.",
-    "multi": false,
-    "correct": [
-     1
-    ]
-   },
-   {
-    "cat": "Alarme & Intrusion",
-    "q": "Vous trouvez une porte de secours entrouverte qui n'aurait pas dû l'être. Que faites-vous ?",
-    "options": [
-     "Vous la fermez et passez votre chemin — ce n'est sûrement rien",
-     "Vous signalez immédiatement la situation à la sécurité ou au poste de garde",
-     "Vous attendez de voir si quelqu'un d'autre le signale"
-    ],
-    "feedback": "Une porte de secours ouverte anormalement est un <strong>signal d'alerte</strong> à ne jamais ignorer. <strong>Signaler au poste de sécurité</strong> immédiatement est le bon réflexe — même si c'est souvent une fausse alerte, le signalement coûte 30 secondes et peut éviter un incident grave.",
-    "multi": false,
-    "correct": [
-     1
-    ]
-   }
-  ],
-  "verdicts": [
-   {
-    "seuil": 90,
-    "titre": "Excellent ! Vous avez tout compris.",
-    "texte": "Badges, caméras, alarmes : vous avez les bons réflexes. Votre comportement au quotidien contribue directement à la sécurité des bâtiments et de vos collègues."
-   },
-   {
-    "seuil": 70,
-    "titre": "Bonne intuition — quelques réflexes à affiner.",
-    "texte": "L'essentiel est là. Les points à retenir : signalez toujours un badge perdu sans attendre, et n'hésitez pas à refuser un prêt de badge — même à un collègue de confiance."
-   },
-   {
-    "seuil": 50,
-    "titre": "Quelques bons réflexes à acquérir.",
-    "texte": "La sûreté, ça s'apprend vite avec les bonnes informations. L'essentiel : badge perdu = signalement immédiat, prêt de badge = interdit, porte anormalement ouverte = à signaler."
-   },
-   {
-    "seuil": 0,
-    "titre": "Des bases à construire — mais c'est tout l'intérêt de ce quiz !",
-    "texte": "Ce quiz est là pour ça : prendre conscience que la sûreté du bâtiment dépend aussi de vous. Trois règles d'or à retenir : signalez un badge perdu immédiatement, ne le prêtez jamais, et alertez la sécurité face à toute anomalie."
-   }
-  ],
-  "intro_titre_html": "Vidéoprotection, badges, <em>alarmes</em> — que savez-vous de la sûreté ?",
-  "intro_lead_html": "Caméras, badges, alarmes… Ces dispositifs font partie de votre quotidien au Département. Mais savez-vous vraiment comment ils fonctionnent, ce qu'ils peuvent filmer, et quels sont vos bons réflexes ? 8 QS_questions pour le découvrir.",
-  "pied": [
-   "Quiz pédagogique — sûreté des bâtiments départementaux",
-   "Vidéoprotection · Badges · Intrusion"
-  ]
- }
-]
+   "pied": [
+    "Quiz pédagogique — conduite d’opérations de bâtiment",
+    "Programmation · Chantier · Réception"
+   ],
+   "pied_source": [
+    "Quiz pédagogique — sûreté des bâtiments départementaux",
+    "Vidéoprotection · Badges · Intrusion"
+   ]
+  }
+ ]
+}

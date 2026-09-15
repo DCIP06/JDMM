@@ -15,6 +15,7 @@ Le cahier des charges demandait explicitement de corriger ces sélecteurs.
 """
 
 import re
+import sys
 from pathlib import Path
 
 RACINE = Path(__file__).resolve().parent.parent
@@ -84,6 +85,21 @@ def reparer(selecteur):
     return re.sub(r'\s+', ' ', selecteur).strip().lstrip('}').strip()
 
 
+# Les identifiants des quiz se lisent dans la source : les figer ici ferait
+# retomber une palette entière dans les règles communes le jour où la DCIP
+# renomme un quiz — sans la moindre erreur à l'écran.
+IDENTIFIANTS: list[str] = []
+MOTIF_QUIZ = r'#qz-(feu)'          # recalculé au chargement de la source
+
+
+def reperer_quiz(source: str) -> None:
+    global IDENTIFIANTS, MOTIF_QUIZ
+    IDENTIFIANTS = sorted(set(re.findall(r'id="qz-([a-z0-9]+)"', source)))
+    if not IDENTIFIANTS:
+        sys.exit("Aucun panneau « id=\"qz-… \" » dans la source : rien n'a été écrit.")
+    MOTIF_QUIZ = r'#qz-(' + '|'.join(IDENTIFIANTS) + r')'
+
+
 def porter(selecteur):
     """
     Reporte un sélecteur « #qz-feu … » sur la classe de l'application.
@@ -96,10 +112,17 @@ def porter(selecteur):
     Une règle qui vise les trois (« #qz-feu, #qz-gard, #qz-surt ») va bien sur
     « .quiz », puisqu'elle leur est commune.
     """
-    vises = set(re.findall(r'#qz-(feu|gard|surt)', selecteur))
+    vises = set(re.findall(MOTIF_QUIZ, selecteur))
     remplacement = '.quiz' if len(vises) != 1 else f'.quiz[data-quiz="{vises.pop()}"]'
-    selecteur = selecteur.replace('#qz-feu::before', '&::before')
-    selecteur = re.sub(r'#qz-(feu|gard|surt)', remplacement, selecteur)
+    # La source garde des sélecteurs d'anciens quiz supprimés depuis
+    # (« #qz-gard », « #qz-surt ») : on ne les recopie pas dans la feuille.
+    selecteur = ', '.join(
+        part for part in selecteur.split(',')
+        if not (re.search(r'#qz-([a-z0-9]+)', part)
+                and re.search(r'#qz-([a-z0-9]+)', part).group(1) not in IDENTIFIANTS)) or selecteur
+    for ident in IDENTIFIANTS:
+        selecteur = selecteur.replace(f'#qz-{ident}::before', '&::before')
+    selecteur = re.sub(MOTIF_QUIZ, remplacement, selecteur)
     # Le doublon « .quiz, .quiz » du source, et « .quiz .quiz::before ».
     morceaux = [m.strip() for m in selecteur.split(',')]
     vus, propres = set(), []
@@ -127,6 +150,7 @@ def renommer(corps):
 
 def main():
     html = SOURCE.read_text(encoding='utf-8')
+    reperer_quiz(html)
     css = re.findall(r'<style>(.*?)</style>', html, re.S)[0]
     regles = decouper(css)
 
@@ -144,8 +168,12 @@ def main():
     # Le hub a son propre design, sur fond clair : ses règles sont reprises
     # telles quelles, en portant #hub sur .hub.
     hub = []
+    ecartes = []
     for regle in regles:
-        if re.match(r'^\s*(#hub|\.hub-|\.quiz-grid|\.quiz-card|\.card-|\.dot\b|@keyframes blink)', regle):
+        # Un @keyframes ne porte jamais de préfixe de quiz : tous sont repris,
+        # sans quoi une animation référencée ailleurs ne joue simplement pas.
+        if re.match(r'^\s*(#hub|\.hub-|\.quiz-grid|\.quiz-card|\.card-|\.dot\b'
+                    r'|\.goodie-msg|@keyframes)', regle):
             sel, corps = regle.split('{', 1)
             sel = reparer(sel).replace('#hub', '.hub')
             if sel.startswith('@keyframes'):
@@ -153,7 +181,17 @@ def main():
             else:
                 hub.append(f'{sel} {{{corps.rstrip().rstrip("}")}}}')
             continue
+        # Un @media qui ne parle que du hub (téléphone en paysage, par exemple)
+        # n'a pas de préfixe non plus : il se reprend en portant #hub sur .hub.
+        if regle.lstrip().startswith('@media') and '#qz-' not in regle:
+            entete, corps = regle.split('{', 1)
+            hub.append(f'{reparer(entete)} {{{corps.rstrip().rstrip("}").replace("#hub", ".hub")}}}')
+            continue
         if '#qz-' not in regle:
+            # Une règle sans préfixe échappe au portage et disparaît sans bruit :
+            # c'est ainsi que .qz-back s'était retrouvé sans style. On les compte
+            # pour qu'un ajout de la DCIP ne passe plus inaperçu.
+            ecartes.append(re.sub(r'\s+', ' ', regle.split('{', 1)[0]).strip()[:70])
             continue
 
         entete_brute = re.sub(r'/\*.*?\*/', ' ', regle.split('{', 1)[0], flags=re.S)
@@ -165,7 +203,7 @@ def main():
                 entete = '@' + entete.split('@', 1)[1]
                 repares += 1
             interieur = corps.rsplit('}', 1)[0]
-            interieur = renommer(re.sub(r'#qz-(feu|gard|surt)', '.quiz', interieur))
+            interieur = renommer(re.sub(MOTIF_QUIZ, '.quiz', interieur))
             medias.append(f'{entete} {{{interieur}}}')
             continue
 
@@ -177,12 +215,17 @@ def main():
         corps = renommer(corps.rstrip().rstrip('}'))
 
         # Les blocs de variables restent attachés à leur quiz.
-        quiz = re.match(r'^#qz-(feu|gard|surt)$', selecteur)
+        quiz = re.match(rf'^{MOTIF_QUIZ}$', selecteur)
         # Une palette se reconnaît à une DÉCLARATION de variable (« --qz-bg: »),
         # pas à son usage (« var(--qz-bg) ») : le bloc de fond dégradé utilise
         # la variable sans la définir, et passait pour une palette.
         if quiz and re.search(rf'--{PREFIXE}bg\s*:', corps):
-            palettes[quiz.group(1)] = corps
+            # Un quiz peut porter PLUSIEURS blocs de variables : la palette
+            # d'origine, puis un correctif qui n'en redéfinit qu'une partie.
+            # Les remplacer perdrait les couleurs que le correctif ne cite pas
+            # — les boutons se retrouvaient sans fond. On les cumule, dans
+            # l'ordre : la cascade fait le reste.
+            palettes.setdefault(quiz.group(1), []).append(corps)
             continue
 
         cle = porter(selecteur)
@@ -196,10 +239,10 @@ def main():
     # sur « .quiz ». C'est sans risque : les trois valeurs de data-quiz sont
     # mutuellement exclusives, donc seul compte l'ordre AU SEIN d'un quiz, et
     # la fusion se fait à la position de la première occurrence.
-    generique = lambda sel: re.sub(r'\.quiz\[data-quiz="[a-z]+"\]', '.quiz', sel)
+    generique = lambda sel: re.sub(r'\.quiz\[data-quiz="[a-z0-9]+"\]', '.quiz', sel)
     compte = {}
     for sel, corps in composants:
-        compte.setdefault((generique(sel), corps), set()).add(sel)
+        compte.setdefault((generique(sel), corps), []).append(sel)
 
     sortie_composants, emises, fusionnees = [], set(), 0
     for sel, corps in composants:
@@ -207,13 +250,19 @@ def main():
         if cle in emises:
             continue
         emises.add(cle)
-        if len(compte[cle]) == 3:          # portée par les trois quiz
+        porteurs = list(dict.fromkeys(compte[cle]))
+        if len(porteurs) == len(IDENTIFIANTS):     # portée par tous les quiz
             fusionnees += 1
             sortie_composants.append(f'{generique(sel)} {{ {corps} }}')
         else:
-            sortie_composants.append(f'{sel} {{ {corps} }}')
+            # Deux quiz sur trois peuvent partager une règle : il faut alors
+            # GROUPER leurs sélecteurs. N'émettre que le premier ferait perdre
+            # la règle au second, sans la moindre erreur visible — c'est ainsi
+            # que le quiz « etu » s'était retrouvé sans boutons.
+            sortie_composants.append(f'{", ".join(porteurs)} {{ {corps} }}')
 
-    sortie_palettes = [f'.quiz[data-quiz="{q}"] {{{c}}}' for q, c in palettes.items()]
+    sortie_palettes = [f'.quiz[data-quiz="{q}"] {{{"".join(blocs)}}}'
+                       for q, blocs in palettes.items()]
 
     # Les @media sont identiques d'un quiz à l'autre : un seul suffit.
     medias = list(dict.fromkeys(medias))
@@ -247,6 +296,14 @@ def main():
 {chr(10).join(medias)}
 """, encoding='utf-8')
 
+    if ecartes:
+        uniques = sorted(set(ecartes))
+        print(f"  {len(uniques)} sélecteur(s) sans préfixe #qz- NON repris — "
+              f"vérifiez qu'aucun ne sert à l'application :")
+        for sel in uniques[:12]:
+            print(f"    {sel}")
+        if len(uniques) > 12:
+            print(f"    … et {len(uniques) - 12} autres")
     print(f"css/quiz.css : {len(sortie_palettes)} palettes, {len(sortie_composants)} règles, "
           f"{len(medias)} bloc(s) responsive · {repares} sélecteurs réparés "
           f"· {fusionnees} règles communes fusionnées · {len(hub)} règles de hub")

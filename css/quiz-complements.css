@@ -114,3 +114,79 @@ body:has(.quiz[data-quiz="gard"]) { background: #0B0E14; }
    Le noir passe sur les trois accents (5,5 · 5,7 · 4,6). */
 .quiz .btn { color: #000000; }
 .quiz .btn.secondary { color: var(--qz-text); }
+
+/* ==========================================================================
+   Contraste des boutons — mesuré, pas supposé
+   --------------------------------------------------------------------------
+   Le passage des quiz sur fond clair a laissé les accents d'origine, prévus
+   pour du texte sur fond sombre. En blanc sur ces aplats, le texte des boutons
+   (15 px, graisse 600 : pas du « grand texte » au sens WCAG, donc seuil 4,5:1)
+   ne passait plus :
+
+     bouton incendie   blanc sur #E94B1F   3,82:1   →  #D43E15   4,67:1
+     survol incendie   blanc sur #FF6B35   2,84:1   →  #D83A00   4,64:1
+     survol sécurité   blanc sur #6090F8   3,07:1   →  #2B6BF6   4,63:1
+     survol études     blanc sur #14B8A6   2,49:1   →  #0E8376   4,64:1
+
+   Les teintes retenues sont les plus proches des originales qui atteignent le
+   seuil : même teinte, clarté abaissée. Les accents restent inchangés partout
+   ailleurs (titres, filets, pastilles), où ils portent du grand texte ou de la
+   décoration et respectent déjà 3:1.
+   ========================================================================== */
+.quiz[data-quiz="feu"] .btn:not(.secondary) { background: #D43E15; }
+.quiz[data-quiz="feu"] .btn:not(.secondary):hover { background: #D83A00; }
+.quiz[data-quiz="secu"] .btn:not(.secondary):hover { background: #2B6BF6; }
+.quiz[data-quiz="etu"] .btn:not(.secondary):hover { background: #0E8376; }
+
+/* --- Petits textes des quiz : le seuil est 4,5:1 ---------------------------
+   Deux libellés en petit corps sont restés dans leur teinte « fond sombre »
+   après le passage des quiz sur fond clair. Mesuré sur #F6F4EF :
+
+     surtitre incendie #E94B1F  12 px  3,48:1  →  #CA3B14  4,61:1
+     surtitre sécurité #3D6FE8  12 px  4,12:1  →  #3065E6  4,63:1
+     surtitre études   #0F766E  12 px  4,98:1  déjà conforme
+
+   Même teinte, clarté abaissée : l'identité de chaque quiz est conservée.
+   -------------------------------------------------------------------------- */
+.quiz[data-quiz="feu"] .eyebrow { color: #CA3B14; }
+.quiz[data-quiz="secu"] .eyebrow { color: #3065E6; }
+
+/* --- Le reste des contrastes, écran par écran ------------------------------
+   Mesures sur le fond clair #F6F4EF, seuil 4,5:1 (petit texte) ou 3:1 au-delà
+   de 24 px. Chaque valeur conserve la teinte d'origine, clarté abaissée.
+
+     étiquettes de la grille d'intro, 10 px
+       incendie  #847B6D  3,79:1  →  #756D61  4,64:1
+       sécurité  #8A96B0  2,70:1  →  #5F6D8D  4,71:1
+       études    #948C7E  3,03:1  →  #736C60  4,73:1
+
+     catégorie de la question, 11 px — les trois quiz
+       ambre     #F4C95D  1,43:1  →  #8E680A  4,62:1   (illisible sur fond clair)
+
+     emphase du titre d'intro, 64 px
+       sécurité  #6090F8  2,79:1  →  #5084F7  3,19:1
+       études    #14B8A6  2,26:1  →  #119B8B  3,14:1
+   -------------------------------------------------------------------------- */
+/* La teinte discrète est corrigée à la source : elle porte les étiquettes de
+   la grille d'intro, la ligne de marque et le pied de page du quiz. */
+.quiz[data-quiz="feu"]  { --qz-text-soft: #756D61; }
+.quiz[data-quiz="secu"] { --qz-text-soft: #5F6D8D; }
+.quiz[data-quiz="etu"]  { --qz-text-soft: #736C60; }
+.quiz .category { color: #8E680A; }   /* l'ambre est commun aux trois quiz */
+.quiz[data-quiz="secu"] .intro h1 em { color: #5084F7; }
+.quiz[data-quiz="etu"]  .intro h1 em { color: #119B8B; }
+
+/* Le bouton secondaire prenait le fond d'accent : la règle de palette
+   « .quiz[data-quiz="…"] .btn » a la même spécificité que « .quiz .btn.secondary »
+   et passe après. Résultat : « Question suivante » s'affichait en texte sombre
+   sur aplat coloré, 3,18:1. On rétablit le bouton fantôme prévu par le design. */
+.quiz[data-quiz] .btn.secondary {
+  background: transparent;
+  color: var(--qz-text);
+  border: 1px solid var(--qz-line);
+  box-shadow: none;
+}
+.quiz[data-quiz] .btn.secondary:hover {
+  background: var(--qz-surface);
+  border-color: var(--qz-accent);
+}

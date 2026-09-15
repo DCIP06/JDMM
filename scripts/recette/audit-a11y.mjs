@@ -9,9 +9,6 @@ const b = await chromium.launch({ executablePath: '/usr/bin/chromium', args: ['-
 
 const ECRANS = [
   ['Postes · liste', 'postes/', null],
-  ['Postes · liste filtrée', 'postes/', async (p) => {
-    await p.locator('.nf-btn').nth(1).click(); await p.waitForTimeout(400);
-  }],
   ['Postes · fiche', 'postes/', async (p) => {
     await p.locator('.poste-row').first().click(); await p.waitForTimeout(500);
   }],

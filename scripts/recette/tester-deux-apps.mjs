@@ -8,6 +8,7 @@ import { readFileSync } from 'node:fs';
 const FICHES = JSON.parse(readFileSync(new URL('../../data/postes-dcip.json', import.meta.url), 'utf8'));
 const CONFIG = JSON.parse(readFileSync(new URL('../../data/config.json', import.meta.url), 'utf8'));
 const JOURS = CONFIG.rgpd.duree_conservation_jours;
+const QUIZ = JSON.parse(readFileSync(new URL('../../data/quiz.json', import.meta.url), 'utf8')).quiz;
 const NB_FICHES = FICHES.length;
 const BASE = process.env.URL_BASE || 'http://127.0.0.1:8123/';
 const b = await chromium.launch({ executablePath: '/usr/bin/chromium', args: ['--no-sandbox','--disable-gpu'] });
@@ -137,9 +138,16 @@ ok('les 3 quiz sont proposés', await p.locator('.quiz-card').count() === 3,
    String(await p.locator('.quiz-card').count()));
 ok('le hub reprend le titre du fichier source',
    contient(await p.locator('.hub-title').textContent(), 'Testez vos connaissances'));
-ok('les compteurs des cartes annoncent 8, 6 et 6',
-   (await p.locator('.card-meta').allTextContents()).join(' ').match(/8 questions/)
-   && (await p.locator('.card-meta').allTextContents()).join(' ').match(/6 questions/));
+/* Les compteurs des cartes doivent égaler le nombre réel de questions de
+   chaque quiz — le hub livré annonçait 9 questions là où il y en a 8. */
+const ATTENDUS = QUIZ.map((q) => `${q.questions.length} questions`);
+const AFFICHES = (await p.locator('.card-meta').allTextContents())
+  .map((t) => (t.match(/\d+ questions/) || [''])[0]);
+ok(`les compteurs des cartes annoncent ${ATTENDUS.map((a) => a.split(' ')[0]).join(', ')}`,
+   ATTENDUS.every((a) => AFFICHES.includes(a)), AFFICHES.join(' | '));
+ok('aucun compteur ne recopie une annonce fausse de la source',
+   QUIZ.every((q) => String(q.questions.length) !== q.annonces_source.intro
+                     || q.annonces_source.intro === String(q.questions.length)));
 ok('un lien mène aux postes', await p.locator('a[href="../postes/"]').count() >= 1);
 await p.screenshot({ path: 'app-quiz-hub.png' });
 

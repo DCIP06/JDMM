@@ -24,10 +24,13 @@ async function charger() {
   if (catalogue) return catalogue;
   try {
     const reponse = await fetch(new URL('../../data/quiz.json', import.meta.url), { cache: 'no-cache' });
-    catalogue = await reponse.json();
+    const brut = await reponse.json();
+    // Le fichier porte les textes du hub ET les quiz ; une ancienne version
+    // n'était qu'un tableau, on l'accepte encore.
+    catalogue = Array.isArray(brut) ? { hub: {}, quiz: brut } : brut;
   } catch (err) {
     console.error('[quiz] quiz.json illisible', err);
-    catalogue = [];
+    catalogue = { hub: {}, quiz: [] };
   }
   return catalogue;
 }
@@ -37,7 +40,7 @@ async function charger() {
    ========================================================================= */
 
 export async function rendreHub(cible) {
-  const quiz = await charger();
+  const { hub, quiz } = await charger();
   cible.className = 'hub';
   delete cible.dataset.quiz;
 
@@ -52,10 +55,10 @@ export async function rendreHub(cible) {
   cible.innerHTML = `
     <div class="hub-tag"><span class="dot" aria-hidden="true"></span>DCIP ·
       ${ev.nom || 'Journée des Métiers et de la Mobilité'} · ${ev.date || ''}</div>
-    <div class="hub-eyebrow">Quiz interactif</div>
-    <h1 class="hub-title">Testez vos connaissances<br>dans le domaine de la sécurité</h1>
-    <p class="hub-play">Jouez et remportez des goodies&nbsp;!</p>
-    <p class="hub-select">— Sélectionnez votre quiz —</p>
+    <div class="hub-eyebrow">${hub.eyebrow || 'Quiz interactif'}</div>
+    <h1 class="hub-title">${hub.titre_html || 'Testez vos connaissances'}</h1>
+    ${hub.jouer ? `<p class="hub-play">${hub.jouer}</p>` : ''}
+    <p class="hub-select">${hub.choisir || '— Sélectionnez votre quiz —'}</p>
 
     <div class="quiz-grid">
       ${quiz.map((q) => carte(q, resultats[q.id])).join('')}
@@ -80,7 +83,7 @@ function carte(q, resultat) {
       <span class="card-desc">${q.accroche}</span>
       <span class="card-meta">
         <span>${q.questions.length} questions</span>
-        <span>${q.meta.duree}</span>
+        <span>${q.duree_carte || q.meta.duree}</span>
         ${fait}
       </span>
       <span class="card-btn">Commencer <span class="arr" aria-hidden="true">→</span></span>
@@ -94,7 +97,7 @@ function carte(q, resultat) {
 let partie = null;
 
 export async function rendrePartie(cible, id) {
-  const quiz = (await charger()).find((q) => q.id === id);
+  const quiz = (await charger()).quiz.find((q) => q.id === id);
   if (!quiz) { window.location.hash = '#/'; return; }
 
   partie = { quiz, index: 0, score: 0, choix: new Set(), validee: false, reponses: [] };
@@ -293,6 +296,22 @@ function suivant(cible) {
 
 /* --- Écran de résultats ------------------------------------------------------ */
 
+/**
+ * Le message de lot du stand : un sans-faute donne droit à un goodie, sinon
+ * on invite à retenter. Les deux phrases viennent du hub de la DCIP, pas d'ici.
+ * `role="status"` : un lecteur d'écran l'annonce sans que l'on déplace le focus.
+ */
+function lot(quiz, score, total) {
+  const g = quiz.goodie;
+  if (!g || !g.sans_faute) return '';
+  const gagne = score === total;
+  const texte = gagne ? g.sans_faute : g.a_retenter;
+  const emoji = gagne ? g.emoji_sans_faute : g.emoji_a_retenter;
+  return `<p class="goodie-msg ${gagne ? 'win' : 'retry'}" role="status">
+      ${emoji ? `<span class="emoji" aria-hidden="true">${emoji}</span>` : ''}${texte}</p>`;
+}
+
+
 function resultats(cible) {
   const { quiz, score, reponses } = partie;
   const total = quiz.questions.length;
@@ -309,6 +328,7 @@ function resultats(cible) {
       <div class="score-big"><span>${score}</span><span class="total">/${total}</span></div>
       <div class="verdict">${verdict.titre}</div>
       <p class="verdict-text">${verdict.texte}</p>
+      ${lot(quiz, score, total)}
 
       <div class="breakdown">
         <h3>Le détail</h3>

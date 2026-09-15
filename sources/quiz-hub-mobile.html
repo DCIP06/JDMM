@@ -10,6 +10,10 @@
 <style>
 
 
+
+
+
+
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 html, body { min-height: 100%; font-family: 'Manrope', system-ui, sans-serif; -webkit-font-smoothing: antialiased; background: #F6F4EF; color: #1A1A18; }
 #hub { min-height:100vh; display:flex; flex-direction:column; align-items:center; justify-content:flex-start; text-align:center; padding:36px 20px 40px; background:radial-gradient(ellipse 80% 40% at 50% 0%,rgba(232,163,61,.18),transparent 50%),#F6F4EF; }
@@ -38,13 +42,21 @@ html, body { min-height: 100%; font-family: 'Manrope', system-ui, sans-serif; -w
 .card-feu  .card-btn{background:#FEF0EC;color:#C0320A;} .card-gard .card-btn{background:#EFF6FF;color:#1D4ED8;} .card-surt .card-btn{background:#EEF2FF;color:#3730A3;}
 .card-btn .arr { font-size:18px; }
 .hub-foot { font-family:'JetBrains Mono',monospace; font-size:9px; letter-spacing:.1em; text-transform:uppercase; color:#ccc; max-width:420px; width:100%; display:flex; flex-direction:column; align-items:center; gap:4px; text-align:center; }
-.qz-panel { display:none; position:fixed; inset:0; z-index:50; overflow-y:auto; -webkit-overflow-scrolling:touch; background:#0A0D14; }
+.qz-panel { display:none; position:fixed; inset:0; z-index:50; overflow-y:auto; -webkit-overflow-scrolling:touch; background:#F6F4EF; }
 .qz-panel.on { display:block; }
-.qz-back { position:fixed; top:12px; left:12px; z-index:999; display:inline-flex; align-items:center; gap:6px; font-family:'Manrope',sans-serif; font-size:12px; font-weight:700; color:rgba(255,255,255,.5); background:rgba(255,255,255,.07); border:1px solid rgba(255,255,255,.15); padding:10px 16px; min-height:44px; cursor:pointer; border-radius:6px; transition:all .2s; -webkit-tap-highlight-color:transparent; }
+.qz-back { position:fixed; top:12px; left:12px; z-index:999; display:inline-flex; align-items:center; gap:6px; font-family:'Manrope',sans-serif; font-size:12px; font-weight:700; color:#1A1A18; background:#FFFFFF; border:1px solid #E8E5DF; padding:10px 16px; min-height:44px; cursor:pointer; border-radius:6px; transition:all .2s; -webkit-tap-highlight-color:transparent; box-shadow:0 2px 8px rgba(0,0,0,.08); }
 .qz-back:active { color:#fff; background:rgba(255,255,255,.15); }
 #qz-feu, #qz-gard, #qz-surt { min-height:100%; position:relative; }
 
 
+
+
+
+
+#qz-feu {
+  min-height: 100%;
+  position: relative;
+}
 #qz-feu {
     --bg:        #0F0E0C;
     --bg-2:     #16140F;
@@ -78,10 +90,7 @@ html, body { min-height: 100%; font-family: 'Manrope', system-ui, sans-serif; -w
   }
 
   #qz-feu {
-    background:
-      radial-gradient(ellipse 80% 50% at 50% -10%, rgba(233, 75, 31, .14), transparent 60%),
-      radial-gradient(ellipse 60% 40% at 100% 100%, rgba(244, 201, 93, .06), transparent 60%),
-      var(--bg);
+    background: var(--bg);
     background-attachment: fixed;
     position: relative;
     overflow-x: hidden;
@@ -520,485 +529,28 @@ html, body { min-height: 100%; font-family: 'Manrope', system-ui, sans-serif; -w
     #qz-feu .brand-row { font-size: 10px; }
   }
 
-#qz-gard {
-    --bg:        #0B0E14;
-    --bg-2:     #11151E;
-    --surface:   #161B26;
-    --surface-2: #1D2331;
-    --line:      #252D3D;
-    --text:      #EAF0F8;
-    --text-mute: #94A0B5;
-    --text-soft: #5E6878;
-    --accent:    #3B82F6;     /* bleu sécurité */
-    --accent-2:  #60A5FA;
-    --gold:      #F4C95D;
-    --green:     #5BBF7A;
-    --red:       #D9534F;
-    --shadow: 0 30px 80px -20px rgba(0,0,0,.6), 0 8px 24px -8px rgba(0,0,0,.4);
-  }
 
-  
 
-  #qz-gard * { box-sizing: border-box; margin: 0; padding: 0; }
 
-  #qz-gard, #qz-gard {
-    background: var(--bg);
-    color: var(--text);
-    font-family: 'Manrope', system-ui, sans-serif;
-    font-weight: 400;
-    line-height: 1.55;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-    min-height: 100vh;
-  }
 
-  #qz-gard {
-    background:
-      radial-gradient(ellipse 80% 50% at 50% -10%, rgba(59, 130, 246, .14), transparent 60%),
-      radial-gradient(ellipse 60% 40% at 100% 100%, rgba(244, 201, 93, .05), transparent 60%),
-      var(--bg);
-    background-attachment: fixed;
-    position: relative;
-    overflow-x: hidden;
-  }
 
-  #qz-gard::before {
-    content: '';
-    position: fixed;
-    inset: 0;
-    pointer-events: none;
-    z-index: 1;
-    opacity: .3;
-    mix-blend-mode: overlay;
-    background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='200' height='200'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2' stitchTiles='stitch'/><feColorMatrix values='0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 .5 0'/></filter><rect width='100%25' height='100%25' filter='url(%23n)'/></svg>");
-  }
+#qz-feu {
+  --bg:        #F6F4EF;
+  --bg-2:      #F6F4EF;
+  --surface:   #FFFFFF;
+  --surface-2: #FBFAF7;
+  --line:      #E8E5DF;
+  --text:      #1A1A18;
+  --text-mute: #6E665B;
+  --text-soft: #948C7E;
+}
+#qz-feu { background: transparent; }
 
-  #qz-gard .container {
-    max-width: 760px;
-    margin: 0 auto;
-    padding: clamp(20px, 4vw, 48px) clamp(16px, 4vw, 32px) 80px;
-    position: relative;
-    z-index: 2;
-  }
-
-  #qz-gard /* ---------- HEADER ---------- */
-  .brand-row {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin-bottom: clamp(40px, 8vw, 72px);
-    font-family: 'JetBrains Mono', monospace;
-    font-size: 11px;
-    letter-spacing: .12em;
-    text-transform: uppercase;
-    color: var(--text-soft);
-  }
-  #qz-gard .brand-row .dot {
-    display: inline-block;
-    width: 6px; height: 6px;
-    background: var(--accent);
-    border-radius: 50%;
-    margin-right: 8px;
-    box-shadow: 0 0 12px var(--accent);
-    animation: pulse 1.8s ease-in-out infinite;
-  }
-  @keyframes pulse {
-    0%, 100% { opacity: 1; transform: scale(1); }
-    50% { opacity: .5; transform: scale(.85); }
-  }
-
-  #qz-gard /* ---------- INTRO ---------- */
-  .intro { text-align: left; margin-bottom: 56px; }
-  #qz-gard .intro .eyebrow {
-    font-family: 'JetBrains Mono', monospace;
-    font-size: 12px;
-    letter-spacing: .18em;
-    text-transform: uppercase;
-    color: var(--accent);
-    margin-bottom: 24px;
-    display: flex;
-    align-items: center;
-    gap: 12px;
-  }
-  #qz-gard .intro .eyebrow::after {
-    content: '';
-    flex: 1;
-    height: 1px;
-    background: linear-gradient(90deg, var(--accent), transparent);
-    max-width: 120px;
-  }
-  #qz-gard .intro h1 {
-    font-family: 'Fraunces', serif;
-    font-weight: 400;
-    font-size: clamp(36px, 7vw, 64px);
-    line-height: 1.02;
-    letter-spacing: -.02em;
-    margin-bottom: 28px;
-    font-variation-settings: "opsz" 144, "SOFT" 50;
-  }
-  #qz-gard .intro h1 em {
-    font-style: italic;
-    color: var(--accent);
-    font-variation-settings: "opsz" 144, "SOFT" 100;
-  }
-  #qz-gard .intro p.lead {
-    font-size: clamp(16px, 2.2vw, 19px);
-    color: var(--text-mute);
-    max-width: 580px;
-    margin-bottom: 36px;
-  }
-
-  #qz-gard .meta-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
-    gap: 1px;
-    background: var(--line);
-    border: 1px solid var(--line);
-    margin-bottom: 48px;
-  }
-  #qz-gard .meta-grid > div { background: var(--bg); padding: 18px 20px; }
-  #qz-gard .meta-grid .label {
-    font-family: 'JetBrains Mono', monospace;
-    font-size: 10px;
-    letter-spacing: .14em;
-    text-transform: uppercase;
-    color: var(--text-soft);
-    margin-bottom: 6px;
-  }
-  #qz-gard .meta-grid .value {
-    font-family: 'Fraunces', serif;
-    font-size: 20px;
-    color: var(--text);
-    font-weight: 500;
-  }
-
-  #qz-gard .btn {
-    display: inline-flex;
-    align-items: center;
-    gap: 12px;
-    padding: 18px 32px;
-    background: var(--accent);
-    color: #fff;
-    border: none;
-    font-family: 'Manrope', sans-serif;
-    font-size: 15px;
-    font-weight: 600;
-    letter-spacing: .02em;
-    cursor: pointer;
-    transition: all .25s cubic-bezier(.2,.7,.2,1);
-    text-decoration: none;
-  }
-  #qz-gard .btn:hover {
-    background: var(--accent-2);
-    transform: translateY(-2px);
-    box-shadow: 0 20px 40px -10px rgba(59, 130, 246, .5);
-  }
-  #qz-gard .btn:disabled {
-    opacity: .4;
-    cursor: not-allowed;
-    transform: none;
-    box-shadow: none;
-  }
-  #qz-gard .btn:disabled:hover {
-    background: var(--accent);
-    transform: none;
-    box-shadow: none;
-  }
-  #qz-gard .btn .arrow { transition: transform .3s ease; }
-  #qz-gard .btn:hover .arrow { transform: translateX(4px); }
-  #qz-gard .btn.secondary {
-    background: transparent;
-    color: var(--text);
-    border: 1px solid var(--line);
-  }
-  #qz-gard .btn.secondary:hover {
-    background: var(--surface);
-    border-color: var(--accent);
-    box-shadow: none;
-  }
-
-  #qz-gard /* ---------- QUIZ ---------- */
-  .quiz-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 32px;
-    font-family: 'JetBrains Mono', monospace;
-    font-size: 11px;
-    letter-spacing: .14em;
-    text-transform: uppercase;
-    color: var(--text-soft);
-  }
-  #qz-gard .quiz-header .counter { color: var(--text); }
-  #qz-gard .quiz-header .counter strong { color: var(--accent); font-weight: 700; }
-
-  #qz-gard .progress {
-    height: 2px;
-    background: var(--line);
-    margin-bottom: 56px;
-    overflow: hidden;
-  }
-  #qz-gard .progress-bar {
-    height: 100%;
-    background: linear-gradient(90deg, var(--accent), var(--gold));
-    width: 0%;
-    transition: width .5s cubic-bezier(.2,.7,.2,1);
-  }
-
-  #qz-gard .category {
-    font-family: 'JetBrains Mono', monospace;
-    font-size: 11px;
-    letter-spacing: .18em;
-    text-transform: uppercase;
-    color: var(--gold);
-    margin-bottom: 20px;
-  }
-
-  #qz-gard .question {
-    font-family: 'Fraunces', serif;
-    font-weight: 400;
-    font-size: clamp(24px, 4.5vw, 36px);
-    line-height: 1.15;
-    letter-spacing: -.01em;
-    margin-bottom: 16px;
-    font-variation-settings: "opsz" 144, "SOFT" 30;
-  }
-  #qz-gard .multi-hint {
-    font-family: 'JetBrains Mono', monospace;
-    font-size: 11px;
-    letter-spacing: .14em;
-    text-transform: uppercase;
-    color: var(--accent);
-    margin-bottom: 32px;
-    padding: 8px 12px;
-    background: rgba(59, 130, 246, .08);
-    border-left: 2px solid var(--accent);
-    display: inline-block;
-  }
-
-  #qz-gard .options {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    margin-bottom: 32px;
-  }
-
-  #qz-gard .option {
-    display: flex;
-    align-items: flex-start;
-    gap: 16px;
-    padding: 18px 22px;
-    background: var(--surface);
-    border: 1px solid var(--line);
-    cursor: pointer;
-    transition: all .2s ease;
-    text-align: left;
-    color: var(--text);
-    font-family: inherit;
-    font-size: 16px;
-    line-height: 1.45;
-    width: 100%;
-  }
-  #qz-gard .option:hover:not(:disabled) {
-    border-color: var(--accent);
-    background: var(--surface-2);
-    transform: translateX(4px);
-  }
-  #qz-gard .option:disabled { cursor: default; }
-  #qz-gard .option .marker {
-    flex-shrink: 0;
-    width: 24px; height: 24px;
-    border: 1px solid var(--line);
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-family: 'JetBrains Mono', monospace;
-    font-size: 11px;
-    color: var(--text-mute);
-    transition: all .2s ease;
-    margin-top: 1px;
-  }
-  #qz-gard .option.multi .marker { border-radius: 4px; }
-  #qz-gard .option:hover:not(:disabled) .marker {
-    border-color: var(--accent);
-    color: var(--accent);
-  }
-  #qz-gard .option.selected {
-    border-color: var(--accent);
-    background: rgba(59, 130, 246, .06);
-  }
-  #qz-gard .option.selected .marker {
-    background: var(--accent);
-    border-color: var(--accent);
-    color: #fff;
-  }
-  #qz-gard .option.correct {
-    border-color: var(--green);
-    background: rgba(91, 191, 122, .08);
-  }
-  #qz-gard .option.correct .marker {
-    background: var(--green);
-    border-color: var(--green);
-    color: #0F0E0C;
-  }
-  #qz-gard .option.wrong {
-    border-color: var(--red);
-    background: rgba(217, 83, 79, .08);
-  }
-  #qz-gard .option.wrong .marker {
-    background: var(--red);
-    border-color: var(--red);
-    color: #fff;
-  }
-
-  #qz-gard .feedback {
-    border-left: 2px solid var(--accent);
-    padding: 16px 0 16px 20px;
-    margin-bottom: 36px;
-    opacity: 0;
-    max-height: 0;
-    overflow: hidden;
-    transition: opacity .4s ease, max-height .4s ease, padding .4s ease, margin .4s ease;
-  }
-  #qz-gard .feedback.show {
-    opacity: 1;
-    max-height: 800px;
-    padding: 16px 0 16px 20px;
-    margin-bottom: 36px;
-  }
-  #qz-gard .feedback .feedback-label {
-    font-family: 'JetBrains Mono', monospace;
-    font-size: 11px;
-    letter-spacing: .14em;
-    text-transform: uppercase;
-    margin-bottom: 10px;
-  }
-  #qz-gard .feedback p {
-    color: var(--text-mute);
-    font-size: 15px;
-    line-height: 1.6;
-  }
-  #qz-gard .feedback p strong { color: var(--text); font-weight: 600; }
-
-  #qz-gard .nav-row {
-    display: flex;
-    justify-content: flex-end;
-    gap: 12px;
-  }
-
-  #qz-gard /* ---------- RESULTS ---------- */
-  .results { text-align: left; }
-  #qz-gard .results .score-eyebrow {
-    font-family: 'JetBrains Mono', monospace;
-    font-size: 12px;
-    letter-spacing: .18em;
-    text-transform: uppercase;
-    color: var(--accent);
-    margin-bottom: 24px;
-  }
-  #qz-gard .score-big {
-    font-family: 'Fraunces', serif;
-    font-size: clamp(80px, 18vw, 160px);
-    line-height: .9;
-    letter-spacing: -.04em;
-    margin-bottom: 8px;
-    font-variation-settings: "opsz" 144;
-    color: var(--text);
-  }
-  #qz-gard .score-big .total {
-    color: var(--text-soft);
-    font-size: .5em;
-  }
-  #qz-gard .verdict {
-    font-family: 'Fraunces', serif;
-    font-size: clamp(22px, 3.5vw, 32px);
-    line-height: 1.2;
-    margin-bottom: 24px;
-    font-style: italic;
-    color: var(--gold);
-  }
-  #qz-gard .verdict-text {
-    color: var(--text-mute);
-    font-size: 17px;
-    max-width: 580px;
-    margin-bottom: 48px;
-  }
-
-  #qz-gard .breakdown {
-    border-top: 1px solid var(--line);
-    padding-top: 32px;
-    margin-bottom: 40px;
-  }
-  #qz-gard .breakdown h3 {
-    font-family: 'JetBrains Mono', monospace;
-    font-size: 11px;
-    letter-spacing: .18em;
-    text-transform: uppercase;
-    color: var(--text-soft);
-    margin-bottom: 20px;
-    font-weight: 500;
-  }
-  #qz-gard .breakdown-item {
-    display: flex;
-    align-items: baseline;
-    gap: 16px;
-    padding: 14px 0;
-    border-bottom: 1px solid var(--line);
-    font-size: 15px;
-  }
-  #qz-gard .breakdown-item:last-child { border-bottom: none; }
-  #qz-gard .breakdown-item .num {
-    font-family: 'JetBrains Mono', monospace;
-    font-size: 12px;
-    color: var(--text-soft);
-    width: 24px;
-    flex-shrink: 0;
-  }
-  #qz-gard .breakdown-item .label { flex: 1; color: var(--text); }
-  #qz-gard .breakdown-item .status {
-    font-family: 'JetBrains Mono', monospace;
-    font-size: 11px;
-    letter-spacing: .1em;
-    text-transform: uppercase;
-  }
-  #qz-gard .breakdown-item .status.ok { color: var(--green); }
-  #qz-gard .breakdown-item .status.ko { color: var(--red); }
-
-  #qz-gard .footer-note {
-    border-top: 1px solid var(--line);
-    margin-top: 80px;
-    padding-top: 24px;
-    font-family: 'JetBrains Mono', monospace;
-    font-size: 10px;
-    letter-spacing: .14em;
-    text-transform: uppercase;
-    color: var(--text-soft);
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    gap: 12px;
-  }
-
-  #qz-gard /* ---------- ANIMATIONS ---------- */
-  .fade-in {
-    animation: fadeIn .5s cubic-bezier(.2,.7,.2,1) both;
-  }
-  @keyframes fadeIn {
-    from { opacity: 0; transform: translateY(12px); }
-    to { opacity: 1; transform: translateY(0); }
-  }
-  #qz-gard .hidden { display: none !important; }
-
-  #qz-gard /* ---------- RESPONSIVE ---------- */
-  @media (max-width: 540px) {
-    .nav-row { flex-direction: column-reverse; }
-    #qz-gard .nav-row .btn { width: 100%; justify-content: center; }
-    #qz-gard .meta-grid { grid-template-columns: 1fr 1fr; }
-    #qz-gard .brand-row { font-size: 10px; }
-  }
-
-#qz-surt {
+#qz-secu {
+  min-height: 100%;
+  position: relative;
+}
+#qz-secu {
     --bg:        #0A0D14;
     --bg-2:      #0F1320;
     --surface:   #141824;
@@ -1017,9 +569,9 @@ html, body { min-height: 100%; font-family: 'Manrope', system-ui, sans-serif; -w
 
   
 
-  #qz-surt * { box-sizing: border-box; margin: 0; padding: 0; }
+  #qz-secu * { box-sizing: border-box; margin: 0; padding: 0; }
 
-  #qz-surt, #qz-surt {
+  #qz-secu, #qz-secu {
     background: var(--bg);
     color: var(--text);
     font-family: 'Manrope', system-ui, sans-serif;
@@ -1030,17 +582,14 @@ html, body { min-height: 100%; font-family: 'Manrope', system-ui, sans-serif; -w
     min-height: 100vh;
   }
 
-  #qz-surt {
-    background:
-      radial-gradient(ellipse 80% 50% at 50% -10%, rgba(61, 111, 232, .15), transparent 60%),
-      radial-gradient(ellipse 60% 40% at 100% 100%, rgba(244, 201, 93, .05), transparent 60%),
-      var(--bg);
+  #qz-secu {
+    background: var(--bg);
     background-attachment: fixed;
     position: relative;
     overflow-x: hidden;
   }
 
-  #qz-surt::before {
+  #qz-secu::before {
     content: '';
     position: fixed;
     inset: 0;
@@ -1051,7 +600,7 @@ html, body { min-height: 100%; font-family: 'Manrope', system-ui, sans-serif; -w
     background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='200' height='200'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2' stitchTiles='stitch'/><feColorMatrix values='0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 .5 0'/></filter><rect width='100%25' height='100%25' filter='url(%23n)'/></svg>");
   }
 
-  #qz-surt .container {
+  #qz-secu .container {
     max-width: 760px;
     margin: 0 auto;
     padding: clamp(20px, 4vw, 48px) clamp(16px, 4vw, 32px) 80px;
@@ -1059,7 +608,7 @@ html, body { min-height: 100%; font-family: 'Manrope', system-ui, sans-serif; -w
     z-index: 2;
   }
 
-  #qz-surt /* ---------- HEADER ---------- */
+  #qz-secu /* ---------- HEADER ---------- */
   .brand-row {
     display: flex;
     align-items: center;
@@ -1071,7 +620,7 @@ html, body { min-height: 100%; font-family: 'Manrope', system-ui, sans-serif; -w
     text-transform: uppercase;
     color: var(--text-soft);
   }
-  #qz-surt .brand-row .dot {
+  #qz-secu .brand-row .dot {
     display: inline-block;
     width: 6px; height: 6px;
     background: var(--accent);
@@ -1085,9 +634,9 @@ html, body { min-height: 100%; font-family: 'Manrope', system-ui, sans-serif; -w
     50% { opacity: .5; transform: scale(.85); }
   }
 
-  #qz-surt /* ---------- INTRO ---------- */
+  #qz-secu /* ---------- INTRO ---------- */
   .intro { text-align: left; margin-bottom: 56px; }
-  #qz-surt .intro .eyebrow {
+  #qz-secu .intro .eyebrow {
     font-family: 'JetBrains Mono', monospace;
     font-size: 12px;
     letter-spacing: .18em;
@@ -1098,14 +647,14 @@ html, body { min-height: 100%; font-family: 'Manrope', system-ui, sans-serif; -w
     align-items: center;
     gap: 12px;
   }
-  #qz-surt .intro .eyebrow::after {
+  #qz-secu .intro .eyebrow::after {
     content: '';
     flex: 1;
     height: 1px;
     background: linear-gradient(90deg, var(--accent), transparent);
     max-width: 120px;
   }
-  #qz-surt .intro h1 {
+  #qz-secu .intro h1 {
     font-family: 'Fraunces', serif;
     font-weight: 400;
     font-size: clamp(36px, 7vw, 64px);
@@ -1114,19 +663,19 @@ html, body { min-height: 100%; font-family: 'Manrope', system-ui, sans-serif; -w
     margin-bottom: 28px;
     font-variation-settings: "opsz" 144, "SOFT" 50;
   }
-  #qz-surt .intro h1 em {
+  #qz-secu .intro h1 em {
     font-style: italic;
     color: var(--accent-2);
     font-variation-settings: "opsz" 144, "SOFT" 100;
   }
-  #qz-surt .intro p.lead {
+  #qz-secu .intro p.lead {
     font-size: clamp(16px, 2.2vw, 19px);
     color: var(--text-mute);
     max-width: 580px;
     margin-bottom: 36px;
   }
 
-  #qz-surt .meta-grid {
+  #qz-secu .meta-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
     gap: 1px;
@@ -1134,8 +683,8 @@ html, body { min-height: 100%; font-family: 'Manrope', system-ui, sans-serif; -w
     border: 1px solid var(--line);
     margin-bottom: 48px;
   }
-  #qz-surt .meta-grid > div { background: var(--bg); padding: 18px 20px; }
-  #qz-surt .meta-grid .label {
+  #qz-secu .meta-grid > div { background: var(--bg); padding: 18px 20px; }
+  #qz-secu .meta-grid .label {
     font-family: 'JetBrains Mono', monospace;
     font-size: 10px;
     letter-spacing: .14em;
@@ -1143,14 +692,14 @@ html, body { min-height: 100%; font-family: 'Manrope', system-ui, sans-serif; -w
     color: var(--text-soft);
     margin-bottom: 6px;
   }
-  #qz-surt .meta-grid .value {
+  #qz-secu .meta-grid .value {
     font-family: 'Fraunces', serif;
     font-size: 20px;
     color: var(--text);
     font-weight: 500;
   }
 
-  #qz-surt .btn {
+  #qz-secu .btn {
     display: inline-flex;
     align-items: center;
     gap: 12px;
@@ -1165,25 +714,25 @@ html, body { min-height: 100%; font-family: 'Manrope', system-ui, sans-serif; -w
     cursor: pointer;
     transition: all .25s cubic-bezier(.2,.7,.2,1);
   }
-  #qz-surt .btn:hover {
+  #qz-secu .btn:hover {
     background: var(--accent-2);
     transform: translateY(-2px);
     box-shadow: 0 20px 40px -10px rgba(61, 111, 232, .5);
   }
-  #qz-surt .btn .arrow { transition: transform .3s ease; }
-  #qz-surt .btn:hover .arrow { transform: translateX(4px); }
-  #qz-surt .btn.secondary {
+  #qz-secu .btn .arrow { transition: transform .3s ease; }
+  #qz-secu .btn:hover .arrow { transform: translateX(4px); }
+  #qz-secu .btn.secondary {
     background: transparent;
     color: var(--text);
     border: 1px solid var(--line);
   }
-  #qz-surt .btn.secondary:hover {
+  #qz-secu .btn.secondary:hover {
     background: var(--surface);
     border-color: var(--accent);
     box-shadow: none;
   }
 
-  #qz-surt /* ---------- QUIZ ---------- */
+  #qz-secu /* ---------- QUIZ ---------- */
   .quiz-header {
     display: flex;
     justify-content: space-between;
@@ -1195,23 +744,23 @@ html, body { min-height: 100%; font-family: 'Manrope', system-ui, sans-serif; -w
     text-transform: uppercase;
     color: var(--text-soft);
   }
-  #qz-surt .quiz-header .counter { color: var(--text); }
-  #qz-surt .quiz-header .counter strong { color: var(--accent); font-weight: 700; }
+  #qz-secu .quiz-header .counter { color: var(--text); }
+  #qz-secu .quiz-header .counter strong { color: var(--accent); font-weight: 700; }
 
-  #qz-surt .progress {
+  #qz-secu .progress {
     height: 2px;
     background: var(--line);
     margin-bottom: 56px;
     overflow: hidden;
   }
-  #qz-surt .progress-bar {
+  #qz-secu .progress-bar {
     height: 100%;
     background: linear-gradient(90deg, var(--accent), var(--gold));
     width: 0%;
     transition: width .5s cubic-bezier(.2,.7,.2,1);
   }
 
-  #qz-surt .category {
+  #qz-secu .category {
     font-family: 'JetBrains Mono', monospace;
     font-size: 11px;
     letter-spacing: .18em;
@@ -1220,7 +769,7 @@ html, body { min-height: 100%; font-family: 'Manrope', system-ui, sans-serif; -w
     margin-bottom: 20px;
   }
 
-  #qz-surt .question {
+  #qz-secu .question {
     font-family: 'Fraunces', serif;
     font-weight: 400;
     font-size: clamp(24px, 4.5vw, 36px);
@@ -1230,14 +779,14 @@ html, body { min-height: 100%; font-family: 'Manrope', system-ui, sans-serif; -w
     font-variation-settings: "opsz" 144, "SOFT" 30;
   }
 
-  #qz-surt .options {
+  #qz-secu .options {
     display: flex;
     flex-direction: column;
     gap: 10px;
     margin-bottom: 32px;
   }
 
-  #qz-surt .option {
+  #qz-secu .option {
     display: flex;
     align-items: flex-start;
     gap: 16px;
@@ -1253,13 +802,13 @@ html, body { min-height: 100%; font-family: 'Manrope', system-ui, sans-serif; -w
     line-height: 1.45;
     width: 100%;
   }
-  #qz-surt .option:hover:not(:disabled) {
+  #qz-secu .option:hover:not(:disabled) {
     border-color: var(--accent);
     background: var(--surface-2);
     transform: translateX(4px);
   }
-  #qz-surt .option:disabled { cursor: default; }
-  #qz-surt .option .marker {
+  #qz-secu .option:disabled { cursor: default; }
+  #qz-secu .option .marker {
     flex-shrink: 0;
     width: 24px; height: 24px;
     border: 1px solid var(--line);
@@ -1273,13 +822,13 @@ html, body { min-height: 100%; font-family: 'Manrope', system-ui, sans-serif; -w
     transition: all .2s ease;
     margin-top: 1px;
   }
-  #qz-surt .option:hover:not(:disabled) .marker { border-color: var(--accent); color: var(--accent); }
-  #qz-surt .option.correct { border-color: var(--green); background: rgba(91, 191, 122, .08); }
-  #qz-surt .option.correct .marker { background: var(--green); border-color: var(--green); color: #0A0D14; }
-  #qz-surt .option.wrong { border-color: var(--red); background: rgba(217, 83, 79, .08); }
-  #qz-surt .option.wrong .marker { background: var(--red); border-color: var(--red); color: #fff; }
+  #qz-secu .option:hover:not(:disabled) .marker { border-color: var(--accent); color: var(--accent); }
+  #qz-secu .option.correct { border-color: var(--green); background: rgba(91, 191, 122, .08); }
+  #qz-secu .option.correct .marker { background: var(--green); border-color: var(--green); color: #0A0D14; }
+  #qz-secu .option.wrong { border-color: var(--red); background: rgba(217, 83, 79, .08); }
+  #qz-secu .option.wrong .marker { background: var(--red); border-color: var(--red); color: #fff; }
 
-  #qz-surt .feedback {
+  #qz-secu .feedback {
     border-left: 2px solid var(--accent);
     padding: 16px 0 16px 20px;
     margin-bottom: 36px;
@@ -1288,8 +837,8 @@ html, body { min-height: 100%; font-family: 'Manrope', system-ui, sans-serif; -w
     overflow: hidden;
     transition: opacity .4s ease, max-height .4s ease, padding .4s ease, margin .4s ease;
   }
-  #qz-surt .feedback.show { opacity: 1; max-height: 600px; padding: 16px 0 16px 20px; margin-bottom: 36px; }
-  #qz-surt .feedback .feedback-label {
+  #qz-secu .feedback.show { opacity: 1; max-height: 600px; padding: 16px 0 16px 20px; margin-bottom: 36px; }
+  #qz-secu .feedback .feedback-label {
     font-family: 'JetBrains Mono', monospace;
     font-size: 11px;
     letter-spacing: .14em;
@@ -1297,14 +846,14 @@ html, body { min-height: 100%; font-family: 'Manrope', system-ui, sans-serif; -w
     color: var(--accent);
     margin-bottom: 10px;
   }
-  #qz-surt .feedback p { color: var(--text-mute); font-size: 15px; line-height: 1.6; }
-  #qz-surt .feedback p strong { color: var(--text); font-weight: 600; }
+  #qz-secu .feedback p { color: var(--text-mute); font-size: 15px; line-height: 1.6; }
+  #qz-secu .feedback p strong { color: var(--text); font-weight: 600; }
 
-  #qz-surt .nav-row { display: flex; justify-content: flex-end; gap: 12px; }
+  #qz-secu .nav-row { display: flex; justify-content: flex-end; gap: 12px; }
 
-  #qz-surt /* ---------- RESULTS ---------- */
+  #qz-secu /* ---------- RESULTS ---------- */
   .results { text-align: left; }
-  #qz-surt .results .score-eyebrow {
+  #qz-secu .results .score-eyebrow {
     font-family: 'JetBrains Mono', monospace;
     font-size: 12px;
     letter-spacing: .18em;
@@ -1312,7 +861,7 @@ html, body { min-height: 100%; font-family: 'Manrope', system-ui, sans-serif; -w
     color: var(--accent);
     margin-bottom: 24px;
   }
-  #qz-surt .score-big {
+  #qz-secu .score-big {
     font-family: 'Fraunces', serif;
     font-size: clamp(80px, 18vw, 160px);
     line-height: .9;
@@ -1321,8 +870,8 @@ html, body { min-height: 100%; font-family: 'Manrope', system-ui, sans-serif; -w
     font-variation-settings: "opsz" 144;
     color: var(--text);
   }
-  #qz-surt .score-big .total { color: var(--text-soft); font-size: .5em; }
-  #qz-surt .verdict {
+  #qz-secu .score-big .total { color: var(--text-soft); font-size: .5em; }
+  #qz-secu .verdict {
     font-family: 'Fraunces', serif;
     font-size: clamp(22px, 3.5vw, 32px);
     line-height: 1.2;
@@ -1330,10 +879,10 @@ html, body { min-height: 100%; font-family: 'Manrope', system-ui, sans-serif; -w
     font-style: italic;
     color: var(--gold);
   }
-  #qz-surt .verdict-text { color: var(--text-mute); font-size: 17px; max-width: 580px; margin-bottom: 48px; }
+  #qz-secu .verdict-text { color: var(--text-mute); font-size: 17px; max-width: 580px; margin-bottom: 48px; }
 
-  #qz-surt .breakdown { border-top: 1px solid var(--line); padding-top: 32px; margin-bottom: 40px; }
-  #qz-surt .breakdown h3 {
+  #qz-secu .breakdown { border-top: 1px solid var(--line); padding-top: 32px; margin-bottom: 40px; }
+  #qz-secu .breakdown h3 {
     font-family: 'JetBrains Mono', monospace;
     font-size: 11px;
     letter-spacing: .18em;
@@ -1342,7 +891,7 @@ html, body { min-height: 100%; font-family: 'Manrope', system-ui, sans-serif; -w
     margin-bottom: 20px;
     font-weight: 500;
   }
-  #qz-surt .breakdown-item {
+  #qz-secu .breakdown-item {
     display: flex;
     align-items: baseline;
     gap: 16px;
@@ -1350,14 +899,14 @@ html, body { min-height: 100%; font-family: 'Manrope', system-ui, sans-serif; -w
     border-bottom: 1px solid var(--line);
     font-size: 15px;
   }
-  #qz-surt .breakdown-item:last-child { border-bottom: none; }
-  #qz-surt .breakdown-item .num { font-family: 'JetBrains Mono', monospace; font-size: 12px; color: var(--text-soft); width: 24px; flex-shrink: 0; }
-  #qz-surt .breakdown-item .label { flex: 1; color: var(--text); }
-  #qz-surt .breakdown-item .status { font-family: 'JetBrains Mono', monospace; font-size: 11px; letter-spacing: .1em; text-transform: uppercase; }
-  #qz-surt .breakdown-item .status.ok { color: var(--green); }
-  #qz-surt .breakdown-item .status.ko { color: var(--red); }
+  #qz-secu .breakdown-item:last-child { border-bottom: none; }
+  #qz-secu .breakdown-item .num { font-family: 'JetBrains Mono', monospace; font-size: 12px; color: var(--text-soft); width: 24px; flex-shrink: 0; }
+  #qz-secu .breakdown-item .label { flex: 1; color: var(--text); }
+  #qz-secu .breakdown-item .status { font-family: 'JetBrains Mono', monospace; font-size: 11px; letter-spacing: .1em; text-transform: uppercase; }
+  #qz-secu .breakdown-item .status.ok { color: var(--green); }
+  #qz-secu .breakdown-item .status.ko { color: var(--red); }
 
-  #qz-surt .footer-note {
+  #qz-secu .footer-note {
     border-top: 1px solid var(--line);
     margin-top: 80px;
     padding-top: 24px;
@@ -1372,19 +921,470 @@ html, body { min-height: 100%; font-family: 'Manrope', system-ui, sans-serif; -w
     gap: 12px;
   }
 
-  #qz-surt .fade-in { animation: fadeIn .5s cubic-bezier(.2,.7,.2,1) both; }
+  #qz-secu .fade-in { animation: fadeIn .5s cubic-bezier(.2,.7,.2,1) both; }
   @keyframes fadeIn {
     from { opacity: 0; transform: translateY(12px); }
     to { opacity: 1; transform: translateY(0); }
   }
-  #qz-surt .hidden { display: none !important; }
+  #qz-secu .hidden { display: none !important; }
 
   @media (max-width: 540px) {
-    #qz-surt .nav-row { flex-direction: column-reverse; }
-    #qz-surt .nav-row .btn { width: 100%; justify-content: center; }
-    #qz-surt .meta-grid { grid-template-columns: 1fr 1fr; }
-    #qz-surt .brand-row { font-size: 10px; }
+    #qz-secu .nav-row { flex-direction: column-reverse; }
+    #qz-secu .nav-row .btn { width: 100%; justify-content: center; }
+    #qz-secu .meta-grid { grid-template-columns: 1fr 1fr; }
+    #qz-secu .brand-row { font-size: 10px; }
   }
+
+#qz-secu {
+  --bg:        #F6F4EF;
+  --bg-2:      #F6F4EF;
+  --surface:   #FFFFFF;
+  --surface-2: #FBFAF7;
+  --line:      #E8E5DF;
+  --text:      #1A1A18;
+  --text-mute: #505870;
+  --text-soft: #8A96B0;
+}
+#qz-secu { background: transparent; }
+
+#qz-etu {
+  min-height: 100%;
+  position: relative;
+}
+#qz-etu {
+    --bg:        #0A0D14;
+    --bg-2:      #0F1320;
+    --surface:   #141824;
+    --surface-2: #1A2030;
+    --line:      #222840;
+    --text:      #E8EDF8;
+    --text-mute: #8A96B0;
+    --text-soft: #505870;
+    --accent:    #0F766E;
+    --accent-2:  #14B8A6;
+    --gold:      #F4C95D;
+    --green:     #5BBF7A;
+    --red:       #D9534F;
+    --shadow: 0 30px 80px -20px rgba(0,0,0,.6), 0 8px 24px -8px rgba(0,0,0,.4);
+  }
+
+  
+
+  #qz-etu * { box-sizing: border-box; margin: 0; padding: 0; }
+
+  #qz-etu, #qz-etu {
+    background: var(--bg);
+    color: var(--text);
+    font-family: 'Manrope', system-ui, sans-serif;
+    font-weight: 400;
+    line-height: 1.55;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    min-height: 100vh;
+  }
+
+  #qz-etu {
+    background: var(--bg);
+    background-attachment: fixed;
+    position: relative;
+    overflow-x: hidden;
+  }
+
+  #qz-etu::before {
+    content: '';
+    position: fixed;
+    inset: 0;
+    pointer-events: none;
+    z-index: 1;
+    opacity: .35;
+    mix-blend-mode: overlay;
+    background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='200' height='200'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2' stitchTiles='stitch'/><feColorMatrix values='0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 .5 0'/></filter><rect width='100%25' height='100%25' filter='url(%23n)'/></svg>");
+  }
+
+  #qz-etu .container {
+    max-width: 760px;
+    margin: 0 auto;
+    padding: clamp(20px, 4vw, 48px) clamp(16px, 4vw, 32px) 80px;
+    position: relative;
+    z-index: 2;
+  }
+
+  #qz-etu /* ---------- HEADER ---------- */
+  .brand-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: clamp(40px, 8vw, 72px);
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 11px;
+    letter-spacing: .12em;
+    text-transform: uppercase;
+    color: var(--text-soft);
+  }
+  #qz-etu .brand-row .dot {
+    display: inline-block;
+    width: 6px; height: 6px;
+    background: var(--accent);
+    border-radius: 50%;
+    margin-right: 8px;
+    box-shadow: 0 0 12px var(--accent);
+    animation: pulse 1.8s ease-in-out infinite;
+  }
+  @keyframes pulse {
+    0%, 100% { opacity: 1; transform: scale(1); }
+    50% { opacity: .5; transform: scale(.85); }
+  }
+
+  #qz-etu /* ---------- INTRO ---------- */
+  .intro { text-align: left; margin-bottom: 56px; }
+  #qz-etu .intro .eyebrow {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 12px;
+    letter-spacing: .18em;
+    text-transform: uppercase;
+    color: var(--accent);
+    margin-bottom: 24px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+  }
+  #qz-etu .intro .eyebrow::after {
+    content: '';
+    flex: 1;
+    height: 1px;
+    background: linear-gradient(90deg, var(--accent), transparent);
+    max-width: 120px;
+  }
+  #qz-etu .intro h1 {
+    font-family: 'Fraunces', serif;
+    font-weight: 400;
+    font-size: clamp(36px, 7vw, 64px);
+    line-height: 1.02;
+    letter-spacing: -.02em;
+    margin-bottom: 28px;
+    font-variation-settings: "opsz" 144, "SOFT" 50;
+  }
+  #qz-etu .intro h1 em {
+    font-style: italic;
+    color: var(--accent-2);
+    font-variation-settings: "opsz" 144, "SOFT" 100;
+  }
+  #qz-etu .intro p.lead {
+    font-size: clamp(16px, 2.2vw, 19px);
+    color: var(--text-mute);
+    max-width: 580px;
+    margin-bottom: 36px;
+  }
+
+  #qz-etu .meta-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+    gap: 1px;
+    background: var(--line);
+    border: 1px solid var(--line);
+    margin-bottom: 48px;
+  }
+  #qz-etu .meta-grid > div { background: var(--bg); padding: 18px 20px; }
+  #qz-etu .meta-grid .label {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 10px;
+    letter-spacing: .14em;
+    text-transform: uppercase;
+    color: var(--text-soft);
+    margin-bottom: 6px;
+  }
+  #qz-etu .meta-grid .value {
+    font-family: 'Fraunces', serif;
+    font-size: 20px;
+    color: var(--text);
+    font-weight: 500;
+  }
+
+  #qz-etu .btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 12px;
+    padding: 18px 32px;
+    background: var(--accent);
+    color: #fff;
+    border: none;
+    font-family: 'Manrope', sans-serif;
+    font-size: 15px;
+    font-weight: 600;
+    letter-spacing: .02em;
+    cursor: pointer;
+    transition: all .25s cubic-bezier(.2,.7,.2,1);
+  }
+  #qz-etu .btn:hover {
+    background: var(--accent-2);
+    transform: translateY(-2px);
+    box-shadow: 0 20px 40px -10px rgba(61, 111, 232, .5);
+  }
+  #qz-etu .btn .arrow { transition: transform .3s ease; }
+  #qz-etu .btn:hover .arrow { transform: translateX(4px); }
+  #qz-etu .btn.secondary {
+    background: transparent;
+    color: var(--text);
+    border: 1px solid var(--line);
+  }
+  #qz-etu .btn.secondary:hover {
+    background: var(--surface);
+    border-color: var(--accent);
+    box-shadow: none;
+  }
+
+  #qz-etu /* ---------- QUIZ ---------- */
+  .quiz-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 32px;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 11px;
+    letter-spacing: .14em;
+    text-transform: uppercase;
+    color: var(--text-soft);
+  }
+  #qz-etu .quiz-header .counter { color: var(--text); }
+  #qz-etu .quiz-header .counter strong { color: var(--accent); font-weight: 700; }
+
+  #qz-etu .progress {
+    height: 2px;
+    background: var(--line);
+    margin-bottom: 56px;
+    overflow: hidden;
+  }
+  #qz-etu .progress-bar {
+    height: 100%;
+    background: linear-gradient(90deg, var(--accent), var(--gold));
+    width: 0%;
+    transition: width .5s cubic-bezier(.2,.7,.2,1);
+  }
+
+  #qz-etu .category {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 11px;
+    letter-spacing: .18em;
+    text-transform: uppercase;
+    color: var(--gold);
+    margin-bottom: 20px;
+  }
+
+  #qz-etu .question {
+    font-family: 'Fraunces', serif;
+    font-weight: 400;
+    font-size: clamp(24px, 4.5vw, 36px);
+    line-height: 1.15;
+    letter-spacing: -.01em;
+    margin-bottom: 40px;
+    font-variation-settings: "opsz" 144, "SOFT" 30;
+  }
+
+  #qz-etu .options {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 32px;
+  }
+
+  #qz-etu .option {
+    display: flex;
+    align-items: flex-start;
+    gap: 16px;
+    padding: 18px 22px;
+    background: var(--surface);
+    border: 1px solid var(--line);
+    cursor: pointer;
+    transition: all .2s ease;
+    text-align: left;
+    color: var(--text);
+    font-family: inherit;
+    font-size: 16px;
+    line-height: 1.45;
+    width: 100%;
+  }
+  #qz-etu .option:hover:not(:disabled) {
+    border-color: var(--accent);
+    background: var(--surface-2);
+    transform: translateX(4px);
+  }
+  #qz-etu .option:disabled { cursor: default; }
+  #qz-etu .option .marker {
+    flex-shrink: 0;
+    width: 24px; height: 24px;
+    border: 1px solid var(--line);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 11px;
+    color: var(--text-mute);
+    transition: all .2s ease;
+    margin-top: 1px;
+  }
+  #qz-etu .option:hover:not(:disabled) .marker { border-color: var(--accent); color: var(--accent); }
+  #qz-etu .option.correct { border-color: var(--green); background: rgba(91, 191, 122, .08); }
+  #qz-etu .option.correct .marker { background: var(--green); border-color: var(--green); color: #0A0D14; }
+  #qz-etu .option.wrong { border-color: var(--red); background: rgba(217, 83, 79, .08); }
+  #qz-etu .option.wrong .marker { background: var(--red); border-color: var(--red); color: #fff; }
+
+  #qz-etu .feedback {
+    border-left: 2px solid var(--accent);
+    padding: 16px 0 16px 20px;
+    margin-bottom: 36px;
+    opacity: 0;
+    max-height: 0;
+    overflow: hidden;
+    transition: opacity .4s ease, max-height .4s ease, padding .4s ease, margin .4s ease;
+  }
+  #qz-etu .feedback.show { opacity: 1; max-height: 600px; padding: 16px 0 16px 20px; margin-bottom: 36px; }
+  #qz-etu .feedback .feedback-label {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 11px;
+    letter-spacing: .14em;
+    text-transform: uppercase;
+    color: var(--accent);
+    margin-bottom: 10px;
+  }
+  #qz-etu .feedback p { color: var(--text-mute); font-size: 15px; line-height: 1.6; }
+  #qz-etu .feedback p strong { color: var(--text); font-weight: 600; }
+
+  #qz-etu .nav-row { display: flex; justify-content: flex-end; gap: 12px; }
+
+  #qz-etu /* ---------- RESULTS ---------- */
+  .results { text-align: left; }
+  #qz-etu .results .score-eyebrow {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 12px;
+    letter-spacing: .18em;
+    text-transform: uppercase;
+    color: var(--accent);
+    margin-bottom: 24px;
+  }
+  #qz-etu .score-big {
+    font-family: 'Fraunces', serif;
+    font-size: clamp(80px, 18vw, 160px);
+    line-height: .9;
+    letter-spacing: -.04em;
+    margin-bottom: 8px;
+    font-variation-settings: "opsz" 144;
+    color: var(--text);
+  }
+  #qz-etu .score-big .total { color: var(--text-soft); font-size: .5em; }
+  #qz-etu .verdict {
+    font-family: 'Fraunces', serif;
+    font-size: clamp(22px, 3.5vw, 32px);
+    line-height: 1.2;
+    margin-bottom: 24px;
+    font-style: italic;
+    color: var(--gold);
+  }
+  #qz-etu .verdict-text { color: var(--text-mute); font-size: 17px; max-width: 580px; margin-bottom: 48px; }
+
+  #qz-etu .breakdown { border-top: 1px solid var(--line); padding-top: 32px; margin-bottom: 40px; }
+  #qz-etu .breakdown h3 {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 11px;
+    letter-spacing: .18em;
+    text-transform: uppercase;
+    color: var(--text-soft);
+    margin-bottom: 20px;
+    font-weight: 500;
+  }
+  #qz-etu .breakdown-item {
+    display: flex;
+    align-items: baseline;
+    gap: 16px;
+    padding: 14px 0;
+    border-bottom: 1px solid var(--line);
+    font-size: 15px;
+  }
+  #qz-etu .breakdown-item:last-child { border-bottom: none; }
+  #qz-etu .breakdown-item .num { font-family: 'JetBrains Mono', monospace; font-size: 12px; color: var(--text-soft); width: 24px; flex-shrink: 0; }
+  #qz-etu .breakdown-item .label { flex: 1; color: var(--text); }
+  #qz-etu .breakdown-item .status { font-family: 'JetBrains Mono', monospace; font-size: 11px; letter-spacing: .1em; text-transform: uppercase; }
+  #qz-etu .breakdown-item .status.ok { color: var(--green); }
+  #qz-etu .breakdown-item .status.ko { color: var(--red); }
+
+  #qz-etu .footer-note {
+    border-top: 1px solid var(--line);
+    margin-top: 80px;
+    padding-top: 24px;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 10px;
+    letter-spacing: .14em;
+    text-transform: uppercase;
+    color: var(--text-soft);
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 12px;
+  }
+
+  #qz-etu .fade-in { animation: fadeIn .5s cubic-bezier(.2,.7,.2,1) both; }
+  @keyframes fadeIn {
+    from { opacity: 0; transform: translateY(12px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+  #qz-etu .hidden { display: none !important; }
+
+  @media (max-width: 540px) {
+    #qz-etu .nav-row { flex-direction: column-reverse; }
+    #qz-etu .nav-row .btn { width: 100%; justify-content: center; }
+    #qz-etu .meta-grid { grid-template-columns: 1fr 1fr; }
+    #qz-etu .brand-row { font-size: 10px; }
+  }
+
+#qz-etu {
+  --bg:        #F6F4EF;
+  --bg-2:      #F6F4EF;
+  --surface:   #FFFFFF;
+  --surface-2: #FBFAF7;
+  --line:      #E8E5DF;
+  --text:      #1A1A18;
+  --text-mute: #6E665B;
+  --text-soft: #948C7E;
+}
+#qz-etu { background: transparent; }
+
+
+#qz-feu, #qz-secu, #qz-etu {
+  background: #F6F4EF !important;
+}
+
+
+#qz-feu, #qz-secu, #qz-etu {
+  --bg:        #F6F4EF !important;
+  --bg-2:      #F6F4EF !important;
+  --surface:   #FFFFFF !important;
+  --surface-2: #FBFAF7 !important;
+  --line:      #E8E5DF !important;
+  --text:      #1A1A18 !important;
+}
+
+
+.goodie-msg {
+  font-family: 'Fraunces', serif;
+  font-weight: 600;
+  font-size: clamp(20px, 3.2vw, 30px);
+  line-height: 1.3;
+  padding: 20px 24px;
+  border-radius: 14px;
+  margin: 8px 0 32px;
+  text-align: left;
+}
+.goodie-msg.win {
+  background: rgba(91, 191, 122, .12);
+  border: 1.5px solid rgba(91, 191, 122, .4);
+  color: #1a7a3e;
+}
+.goodie-msg.retry {
+  background: rgba(244, 201, 93, .15);
+  border: 1.5px solid rgba(244, 201, 93, .5);
+  color: #8a6a12;
+}
+.goodie-msg .emoji { margin-right: 8px; }
 
 </style>
 </head>
@@ -1404,18 +1404,18 @@ html, body { min-height: 100%; font-family: 'Manrope', system-ui, sans-serif; -w
       <div class="card-meta"><span>8 questions</span><span>~4 min</span></div>
       <button class="card-btn">Commencer <span class="arr">&rarr;</span></button>
     </div>
-    <div class="quiz-card card-gard" onclick="openQuiz('gard')">
-      <span class="card-ico">&#x1F46E;</span><div class="card-cat">Gardiennage</div>
-      <div class="card-title">Le m&eacute;tier d&rsquo;agent de s&eacute;curit&eacute;</div>
-      <div class="card-desc">Rondes, main courante, bouton anti-agression&hellip; Connaissez-vous ceux qui vous prot&egrave;gent&nbsp;?</div>
-      <div class="card-meta"><span>6 questions</span><span>~3 min</span></div>
+    <div class="quiz-card card-secu" onclick="openQuiz('secu')">
+      <span class="card-ico">&#x1F6E1;&#xFE0F;</span><div class="card-cat">S&eacute;curit&eacute; humaine &amp; mat&eacute;riel</div>
+      <div class="card-title">Agents, cam&eacute;ras &amp; badges</div>
+      <div class="card-desc">Rondes, bouton anti-agression, vid&eacute;oprotection, badges&hellip; Le meilleur des deux mondes de la s&eacute;curit&eacute; au quotidien.</div>
+      <div class="card-meta"><span>5 questions</span><span>~3 min</span></div>
       <button class="card-btn">Commencer <span class="arr">&rarr;</span></button>
     </div>
-    <div class="quiz-card card-surt" onclick="openQuiz('surt')">
-      <span class="card-ico">&#x1F510;</span><div class="card-cat">S&ucirc;ret&eacute;</div>
-      <div class="card-title">Vid&eacute;oprotection, badges &amp; intrusion</div>
-      <div class="card-desc">Cam&eacute;ras, badges, alarmes&hellip; Ces dispositifs font partie de votre quotidien. Les connaissez-vous&nbsp;?</div>
-      <div class="card-meta"><span>6 questions</span><span>~3 min</span></div>
+    <div class="quiz-card card-etu" onclick="openQuiz('etu')">
+      <span class="card-ico">&#x1F3D7;&#xFE0F;</span><div class="card-cat">&Eacute;tudes &amp; Travaux</div>
+      <div class="card-title">D&eacute;couverte du Service &Eacute;tudes et Travaux</div>
+      <div class="card-desc">De la premi&egrave;re esquisse &agrave; la livraison du chantier&hellip; d&eacute;couvrez les coulisses des grands projets du D&eacute;partement.</div>
+      <div class="card-meta"><span>5 questions</span><span>~3 min</span></div>
       <button class="card-btn">Commencer <span class="arr">&rarr;</span></button>
     </div>
   </div>
@@ -1491,6 +1491,7 @@ html, body { min-height: 100%; font-family: 'Manrope', system-ui, sans-serif; -w
     <div class="QF_score-big"><span id="QF_scoreNum">0</span><span class="total">/8</span></div>
     <div class="verdict" id="QF_verdict">—</div>
     <p class="verdict-text" id="QF_verdictText">—</p>
+    <div class="goodie-msg" id="QF_goodieMsg"></div>
 
     <div class="breakdown">
       <h3>Détail des réponses</h3>
@@ -1724,7 +1725,7 @@ html, body { min-height: 100%; font-family: 'Manrope', system-ui, sans-serif; -w
       text = "Vos réflexes sont solides : enjeux maîtrisés, acteurs identifiés, gestes connus. Vous êtes une ressource pour vos collègues — n'hésitez pas à partager ces bons réflexes autour de vous.";
     } else if (pct >= 70) {
       verdict = "Bonnes bases — quelques angles morts.";
-      text = "Vous connaissez l'essentiel. Revoyez les QF_questions ratées et n'hésitez pas à demander une visite des moyens de secours de votre bâtiment (alarmes, RIA, extincteurs, plans d'évacuation).";
+      text = "Vous connaissez l'essentiel. Revoyez les questions ratées et n'hésitez pas à demander une visite des moyens de secours de votre bâtiment (alarmes, RIA, extincteurs, plans d'évacuation).";
     } else if (pct >= 50) {
       verdict = "Connaissances partielles.";
       text = "Les bons réflexes ne sont pas tous acquis. Une formation à l'évacuation ou un exercice incendie sur votre site sont vivement recommandés — les premières secondes font toute la différence.";
@@ -1733,7 +1734,16 @@ html, body { min-height: 100%; font-family: 'Manrope', system-ui, sans-serif; -w
       text = "Le risque incendie au bureau est sous-estimé. Demandez à votre employeur la formation obligatoire à la sécurité incendie (Code du travail, art. R.4227-39) et participez activement au prochain exercice d'évacuation.";
     }
     document.getElementById('QF_verdict').textContent = verdict;
+    
     document.getElementById('QF_verdictText').textContent = text;
+    const QF_goodieEl = document.getElementById('QF_goodieMsg');
+    if (QF_score === QF_questions.length) {
+      QF_goodieEl.className = 'goodie-msg win';
+      QF_goodieEl.innerHTML = '<span class="emoji">🎉</span>BRAVO vous remportez un goodie, présentez votre résultat pour le récupérer !';
+    } else {
+      QF_goodieEl.className = 'goodie-msg retry';
+      QF_goodieEl.innerHTML = '<span class="emoji">👍</span>Bien joué, pour remporter un goodie, retentez votre chance !';
+    }
 
     const list = document.getElementById('QF_breakdownList');
     list.innerHTML = QF_answers.map((a, i) => `
@@ -1747,396 +1757,38 @@ html, body { min-height: 100%; font-family: 'Manrope', system-ui, sans-serif; -w
     window.scrollTo({ top: 0, behavior: 'smooth' });
   }
 
-  function QF_restart() { showHub(); }
+  function QF_restart() {
+    QF_current = 0; QF_score = 0; QF_answers = [];
+    document.getElementById('QF_results').classList.add('hidden');
+    document.getElementById('QF_intro').classList.remove('hidden');
+    document.getElementById('QF_intro').classList.add('fade-in');
+    document.getElementById('QF_progressBar').style.width = '0%';
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  }
 </script></div>
 
-<div id="qz-gard" class="qz-panel">
+
+<div id="qz-secu" class="qz-panel">
 <button class="qz-back" onclick="showHub()">&#x2190; Accueil</button>
 <div class="container">
 
   <div class="brand-row">
-    <span><span class="dot"></span>Gardiennage · Sécurité privée</span>
+    <span><span class="dot"></span>Sécurité humaine &amp; matériel · DCIP</span>
     <span>2026 / Quiz</span>
   </div>
 
   <!-- ===================== INTRO ===================== -->
-  <section id="QG_intro" class="intro fade-in">
+  <section id="QC_intro" class="intro fade-in">
     <div class="eyebrow">Quiz interactif</div>
-    <h1>Le métier d'<em>agent de sécurité</em> privée au Département</h1>
+    <h1>Agents, caméras, badges — que savez-vous de la <em>sécurité</em>&nbsp;?</h1>
     <p class="lead">
-      Un bouton rouge dans un bureau, 29 agents déployés chaque jour, des rondes à 14h sans incident… Que savez-vous vraiment de ceux qui sécurisent vos bâtiments au quotidien ? 8 QG_questions pour changer d'oeil sur ce métier.
+      Des agents qui veillent sur le terrain aux dispositifs techniques qui protègent nos bâtiments… la sécurité, c’est aussi une affaire de réflexes du quotidien. 5 questions pour le vérifier.
     </p>
 
     <div class="meta-grid">
       <div>
         <div class="label">Questions</div>
-        <div class="value">8</div>
-      </div>
-      <div>
-        <div class="label">Durée</div>
-        <div class="value">~4 min</div>
-      </div>
-      <div>
-        <div class="label">Niveau</div>
-        <div class="value">Tous publics</div>
-      </div>
-      <div>
-        <div class="label">Cadre</div>
-        <div class="value">CD06 / MSD</div>
-      </div>
-    </div>
-
-    <button class="btn" onclick="QG_startQuiz()">
-      Commencer le quiz
-      <span class="arrow">→</span>
-    </button>
-  </section>
-
-  <!-- ===================== QUIZ ===================== -->
-  <section id="QG_quiz" class="hidden">
-    <div class="quiz-header">
-      <span class="counter">Question <strong id="QG_qNum">1</strong> / <span id="QG_qTotal">8</span></span>
-      <span id="QG_catTag">Le métier</span>
-    </div>
-    <div class="progress"><div class="progress-bar" id="QG_progressBar"></div></div>
-
-    <div id="QG_questionContainer"></div>
-
-    <div class="nav-row">
-      <button class="btn hidden" id="QG_validateBtn" onclick="QG_validateMulti()" disabled>
-        Valider mes réponses
-        <span class="arrow">→</span>
-      </button>
-      <button class="btn secondary hidden" id="QG_nextBtn" onclick="QG_nextQuestion()">
-        Question suivante
-        <span class="arrow">→</span>
-      </button>
-    </div>
-  </section>
-
-  <!-- ===================== RESULTS ===================== -->
-  <section id="QG_results" class="hidden results">
-    <div class="QG_score-eyebrow">Résultat final</div>
-    <div class="QG_score-big"><span id="QG_scoreNum">0</span><span class="total">/8</span></div>
-    <div class="verdict" id="QG_verdict">—</div>
-    <p class="verdict-text" id="QG_verdictText">—</p>
-
-    <div class="breakdown">
-      <h3>Détail des réponses</h3>
-      <div id="QG_breakdownList"></div>
-    </div>
-
-    <button class="btn" onclick="QG_restart()">
-      Refaire le quiz
-      <span class="arrow">↻</span>
-    </button>
-  </section>
-
-  <div class="footer-note">
-    <span>Quiz pédagogique — sécurité privée &amp; gardiennage</span>
-    <span>Conseil Départemental 06</span>
-  </div>
-
-</div>
-
-<script>
-  const QG_questions = [
-    {
-      cat: "Le métier",
-      q: "Qu'est-ce qui distingue vraiment un agent de sécurité privée d'un simple gardien ?",
-      options: [
-        "Rien — c'est juste une question de vocabulaire",
-        "L'agent de sécurité est un professionnel formé, certifié, dont le rôle va bien au-delà de \"garder une porte\"",
-        "L'agent de sécurité a plus de pouvoirs qu'un gardien municipal"
-      ],
-      correct: [1],
-      feedback: "L'agent de sécurité privée est un <strong>professionnel certifié</strong>, titulaire d'une carte délivrée par le CNAPS après enquête de moralité et formation. Son rôle est bien plus large qu'on ne l'imagine : <strong>prévention des risques, gestion de conflits, premiers secours, rondes de surveillance, levée de doute…</strong> C'est un poste polyvalent qui demande sang-froid, rigueur et sens du contact humain — loin du cliché du gardien statique."
-    },
-    {
-      cat: "Sur le terrain",
-      q: "Vous voyez l'agent de sécurité faire le tour complet du bâtiment à 14h un mardi, seul, sans incident en cours. À quoi cela sert-il ?",
-      options: [
-        "C'est une obligation syndicale qui n'a pas vraiment d'utilité",
-        "Cela lui permet de se dégourdir les jambes",
-        "La ronde est préventive : elle dissuade, détecte les anomalies et vérifie les équipements de secours"
-      ],
-      correct: [2],
-      feedback: "La <strong>ronde de surveillance</strong> n'attend pas qu'il se passe quelque chose. Son objectif est triple : <strong>dissuader</strong> par la présence visible, <strong>détecter</strong> les anomalies (porte forcée, colis suspect, fuite…) et <strong>vérifier</strong> les équipements de secours (extincteurs, éclairages de sécurité, issues dégagées). En 2025, le PPS du CADAM a réalisé <strong>3 463 rondes</strong> — soit environ 9 par jour."
-    },
-    {
-      cat: "Sur le terrain",
-      q: "Quelles sont les missions de l’agent de sécurité dans une MSD ?",
-      multi: true,
-      options: [
-        "Prodiguer les premiers secours en cas de malaise",
-        "Gérer une intrusion ou un visiteur agressif",
-        "Rédiger les comptes-rendus des travailleurs sociaux",
-        "Effectuer des rondes et signaler les anomalies"
-      ],
-      correct: [0, 1, 3],
-      feedback: "Dans une MSD, l’agent de sécurité a <strong>3 missions clés</strong> : premiers secours (formé SST), gestion des conflits et des intrusions, et rondes de surveillance. <em>Rédiger les comptes-rendus des travailleurs sociaux</em> ne fait pas partie de ses attributions."
-    },
-    {
-      cat: "Dispositif",
-      q: "Dans le bureau d'un travailleur social, il y a un petit bouton rouge discret. À quoi sert-il ?",
-      options: [
-        "À appeler l'ascenseur sans se déplacer",
-        "À déclencher une alerte silencieuse vers l'agent de sécurité en cas d'agression",
-        "À activer la climatisation d'urgence"
-      ],
-      correct: [1],
-      feedback: "C'est le <strong>bouton anti-agression</strong>. En cas de situation dangereuse, le travailleur social peut déclencher une <strong>alerte silencieuse</strong> — l'usager ne l'entend pas, mais l'agent de sécurité est immédiatement prévenu. Il intervient alors discrètement pour évaluer la situation et s'interposer si nécessaire, sans aggraver la tension."
-    },
-    {
-      cat: "Le métier",
-      q: "Combien d'agents de sécurité sont déployés chaque jour sur l'ensemble des sites du Département — MSD, CADAM, PMI, MAM, CEGIDD, CJS ?",
-      options: [
-        "Environ 10 agents",
-        "Environ 20 agents",
-        "29 agents"
-      ],
-      correct: [2],
-      feedback: "<strong>29 agents de sécurité privée</strong> sont sur le terrain chaque jour pour protéger les sites départementaux. En plus de cette présence quotidienne, environ <strong>25 événements par mois</strong> organisés par le Département — cérémonies, manifestations culturelles, réunions publiques — sont également sécurisés. Un dispositif humain discret mais permanent, dont on ne mesure pas toujours l'ampleur."
-    },
-    {
-      cat: "Sur le terrain",
-      q: "Vrai ou faux : quand rien ne se passe sur le site, l'agent de sécurité n'a pas vraiment de travail.",
-      options: [
-        "Vrai — il attend juste qu'un incident survienne",
-        "Faux — c'est précisément quand tout va bien que son travail est efficace",
-        "Ça dépend du site et de l'heure"
-      ],
-      correct: [1],
-      feedback: "C'est <strong>faux</strong> — et c'est toute la logique du métier. Quand rien ne se passe, c'est souvent parce que l'agent a fait son travail : rondes régulières, présence visible, anomalies détectées tôt. En 2025, le PPS du CADAM a réalisé <strong>3 463 rondes</strong> — soit une toutes les 90 minutes environ. Ce rythme n'est pas là pour occuper l'agent : il est là pour que vous n'ayez <em>jamais</em> à vous inquiéter de ce qui se passe autour de vous."
-    }
-  ];
-
-  let QG_current = 0;
-  let QG_score = 0;
-  let QG_answered = false;
-  let QG_answers = [];
-  let QG_selectedMulti = [];
-
-  function QG_startQuiz() {
-    document.getElementById('QG_intro').classList.add('hidden');
-    document.getElementById('QG_quiz').classList.remove('hidden');
-    document.getElementById('QG_quiz').classList.add('fade-in');
-    document.getElementById('QG_qTotal').textContent = QG_questions.length;
-    QG_showQuestion();
-  }
-
-  function QG_showQuestion() {
-    QG_answered = false;
-    QG_selectedMulti = [];
-    const q = QG_questions[QG_current];
-    document.getElementById('QG_qNum').textContent = QG_current + 1;
-    document.getElementById('QG_catTag').textContent = q.cat;
-
-    const progress = (QG_current / QG_questions.length) * 100;
-    document.getElementById('QG_progressBar').style.width = progress + '%';
-
-    const container = document.getElementById('QG_questionContainer');
-    container.classList.remove('fade-in');
-    void container.offsetWidth;
-
-    let html = `<div class="category">${q.cat}</div>`;
-    html += `<h2 class="question">${q.q}</h2>`;
-    if (q.multi) {
-      html += `<div class="multi-hint">⚡ Plusieurs réponses possibles</div>`;
-    }
-    html += `<div class="options">`;
-    q.options.forEach((opt, i) => {
-      const letter = String.fromCharCode(65 + i);
-      const cls = q.multi ? 'option multi' : 'option';
-      html += `
-        <button class="${cls}" data-i="${i}" onclick="QG_select(${i})">
-          <span class="marker">${letter}</span>
-          <span>${opt}</span>
-        </button>
-      `;
-    });
-    html += `</div>`;
-    html += `
-      <div class="feedback" id="QG_feedback">
-        <div class="feedback-label" id="QG_feedbackLabel">Explication</div>
-        <p id="QG_feedbackText"></p>
-      </div>
-    `;
-    container.innerHTML = html;
-    container.classList.add('fade-in');
-
-    // Setup nav buttons
-    document.getElementById('QG_nextBtn').classList.add('hidden');
-    if (q.multi) {
-      const vb = document.getElementById('QG_validateBtn');
-      vb.classList.remove('hidden');
-      vb.disabled = true;
-    } else {
-      document.getElementById('QG_validateBtn').classList.add('hidden');
-    }
-  }
-
-  function QG_select(i) {
-    if (QG_answered) return;
-    const q = QG_questions[QG_current];
-    if (q.multi) {
-      // Toggle selection
-      const idx = QG_selectedMulti.indexOf(i);
-      const optEl = document.getElementById('qz-gard').querySelector(`.option[data-i="${i}"]`);
-      if (idx >= 0) {
-        QG_selectedMulti.splice(idx, 1);
-        optEl.classList.remove('selected');
-      } else {
-        QG_selectedMulti.push(i);
-        optEl.classList.add('selected');
-      }
-      document.getElementById('QG_validateBtn').disabled = QG_selectedMulti.length === 0;
-    } else {
-      QG_validateSingle(i);
-    }
-  }
-
-  function QG_validateSingle(i) {
-    QG_answered = true;
-    const q = QG_questions[QG_current];
-    const opts = document.getElementById('qz-gard').querySelectorAll('.option');
-    opts.forEach((opt, idx) => {
-      opt.disabled = true;
-      if (q.correct.includes(idx)) opt.classList.add('correct');
-      else if (idx === i) opt.classList.add('wrong');
-    });
-    const isCorrect = q.correct.includes(i);
-    if (isCorrect) QG_score++;
-    QG_answers.push({ q: q.q, ok: isCorrect });
-    QG_showFeedback(isCorrect);
-  }
-
-  function QG_validateMulti() {
-    QG_answered = true;
-    const q = QG_questions[QG_current];
-    const opts = document.getElementById('qz-gard').querySelectorAll('.option');
-    opts.forEach((opt, idx) => {
-      opt.disabled = true;
-      opt.classList.remove('selected');
-      const isCorrectAnswer = q.correct.includes(idx);
-      const wasSelected = QG_selectedMulti.includes(idx);
-      if (isCorrectAnswer) opt.classList.add('correct');
-      else if (wasSelected) opt.classList.add('wrong');
-    });
-    // Multi-QG_select correct = exact match between selection and correct QG_answers
-    const sortedSelected = [...QG_selectedMulti].sort().join(',');
-    const sortedCorrect = [...q.correct].sort().join(',');
-    const isCorrect = sortedSelected === sortedCorrect;
-    if (isCorrect) QG_score++;
-    QG_answers.push({ q: q.q, ok: isCorrect });
-
-    document.getElementById('QG_validateBtn').classList.add('hidden');
-    QG_showFeedback(isCorrect);
-  }
-
-  function QG_showFeedback(isCorrect) {
-    const q = QG_questions[QG_current];
-    const fb = document.getElementById('QG_feedback');
-    const lbl = document.getElementById('QG_feedbackLabel');
-    const txt = document.getElementById('QG_feedbackText');
-    lbl.textContent = isCorrect ? '✓ Bonne réponse' : '✗ Réponse incorrecte';
-    lbl.style.color = isCorrect ? 'var(--green)' : 'var(--red)';
-    fb.style.borderLeftColor = isCorrect ? 'var(--green)' : 'var(--red)';
-    txt.innerHTML = q.feedback;
-    fb.classList.add('show');
-
-    const nb = document.getElementById('QG_nextBtn');
-    nb.classList.remove('hidden');
-    if (QG_current === QG_questions.length - 1) {
-      nb.innerHTML = 'Voir mon résultat <span class="arrow">→</span>';
-    } else {
-      nb.innerHTML = 'Question suivante <span class="arrow">→</span>';
-    }
-  }
-
-  function QG_nextQuestion() {
-    if (QG_current < QG_questions.length - 1) {
-      QG_current++;
-      QG_showQuestion();
-      window.scrollTo({ top: 0, behavior: 'smooth' });
-    } else {
-      QG_showResults();
-    }
-  }
-
-  function QG_showResults() {
-    document.getElementById('QG_quiz').classList.add('hidden');
-    const r = document.getElementById('QG_results');
-    r.classList.remove('hidden');
-    r.classList.add('fade-in');
-    document.getElementById('QG_progressBar').style.width = '100%';
-
-    let n = 0;
-    const target = QG_score;
-    const num = document.getElementById('QG_scoreNum');
-    const QG_step = () => {
-      if (n < target) {
-        n++;
-        num.textContent = n;
-        setTimeout(QG_step, 100);
-      }
-    };
-    QG_step();
-
-    const pct = (QG_score / QG_questions.length) * 100;
-    let verdict, text;
-    if (pct >= 90) {
-      verdict = "Vous avez tout compris.";
-      text = "Vous avez une vision claire et réaliste du métier — loin des clichés. Vous savez que derrière la présence discrète se cache une vigilance permanente, une formation solide et une vraie polyvalence.";
-    } else if (pct >= 70) {
-      verdict = "Bon instinct — quelques surprises quand même.";
-      text = "L'essentiel est là. À retenir : un agent de sécurité n'a pas de pouvoir de police, sa présence est avant tout préventive, et sa journée peut basculer à tout moment.";
-    } else if (pct >= 50) {
-      verdict = "Des idées reçues à bousculer.";
-      text = "Le métier d'agent de sécurité est souvent mal connu — et ce quiz le prouve ! Polyvalent, formé, titulaire d'une carte professionnelle obligatoire… Discutez avec l'un d'eux au stand DCIP, vous serez surpris.";
-    } else {
-      verdict = "Un métier bien plus riche qu'il n'y paraît !";
-      text = "Pas de souci — c'est justement l'intérêt de ce quiz. L'agent de sécurité n'est ni un policier, ni un simple gardien assis. C'est un professionnel formé, polyvalent, qui joue un rôle discret mais essentiel chaque jour sur vos sites.";
-    }
-    document.getElementById('QG_verdict').textContent = verdict;
-    document.getElementById('QG_verdictText').textContent = text;
-
-    const list = document.getElementById('QG_breakdownList');
-    list.innerHTML = QG_answers.map((a, i) => `
-      <div class="breakdown-item">
-        <span class="num">${String(i + 1).padStart(2, '0')}</span>
-        <span class="label">${a.q}</span>
-        <span class="status ${a.ok ? 'ok' : 'ko'}">${a.ok ? '✓ Juste' : '✗ Faux'}</span>
-      </div>
-    `).join('');
-
-    window.scrollTo({ top: 0, behavior: 'smooth' });
-  }
-
-  function QG_restart() { showHub(); }
-</script></div>
-
-<div id="qz-surt" class="qz-panel">
-<button class="qz-back" onclick="showHub()">&#x2190; Accueil</button>
-<div class="container">
-
-  <div class="brand-row">
-    <span><span class="dot"></span>Sûreté · DCIP</span>
-    <span>2026 / Quiz</span>
-  </div>
-
-  <!-- ===================== INTRO ===================== -->
-  <section id="QS_intro" class="intro fade-in">
-    <div class="eyebrow">Quiz interactif</div>
-    <h1>Vidéoprotection, badges, <em>alarmes</em> — que savez-vous de la sûreté&nbsp;?</h1>
-    <p class="lead">
-      Caméras, badges, alarmes… Ces dispositifs font partie de votre quotidien au Département. Mais savez-vous vraiment comment ils fonctionnent, ce qu'ils peuvent filmer, et quels sont vos bons réflexes ? 8 QS_questions pour le découvrir.
-    </p>
-
-    <div class="meta-grid">
-      <div>
-        <div class="label">Questions</div>
-        <div class="value">8</div>
+        <div class="value">5</div>
       </div>
       <div>
         <div class="label">Durée</div>
@@ -2152,24 +1804,24 @@ html, body { min-height: 100%; font-family: 'Manrope', system-ui, sans-serif; -w
       </div>
     </div>
 
-    <button class="btn" onclick="QS_startQuiz()">
+    <button class="btn" onclick="QC_startQuiz()">
       Commencer le quiz
       <span class="arrow">→</span>
     </button>
   </section>
 
   <!-- ===================== QUIZ ===================== -->
-  <section id="QS_quiz" class="hidden">
+  <section id="QC_quiz" class="hidden">
     <div class="quiz-header">
-      <span class="counter">Question <strong id="QS_qNum">1</strong> / <span id="QS_qTotal">8</span></span>
-      <span id="QS_catTag">Vidéoprotection</span>
+      <span class="counter">Question <strong id="QC_qNum">1</strong> / <span id="QC_qTotal">8</span></span>
+      <span id="QC_catTag">Vidéoprotection</span>
     </div>
-    <div class="progress"><div class="progress-bar" id="QS_progressBar"></div></div>
+    <div class="progress"><div class="progress-bar" id="QC_progressBar"></div></div>
 
-    <div id="QS_questionContainer"></div>
+    <div id="QC_questionContainer"></div>
 
     <div class="nav-row">
-      <button class="btn secondary hidden" id="QS_nextBtn" onclick="QS_nextQuestion()">
+      <button class="btn secondary hidden" id="QC_nextBtn" onclick="QC_nextQuestion()">
         Question suivante
         <span class="arrow">→</span>
       </button>
@@ -2177,18 +1829,19 @@ html, body { min-height: 100%; font-family: 'Manrope', system-ui, sans-serif; -w
   </section>
 
   <!-- ===================== RESULTS ===================== -->
-  <section id="QS_results" class="hidden results">
-    <div class="QS_score-eyebrow">Résultat final</div>
-    <div class="QS_score-big"><span id="QS_scoreNum">0</span><span class="total">/8</span></div>
-    <div class="verdict" id="QS_verdict">—</div>
-    <p class="verdict-text" id="QS_verdictText">—</p>
+  <section id="QC_results" class="hidden results">
+    <div class="QC_score-eyebrow">Résultat final</div>
+    <div class="QC_score-big"><span id="QC_scoreNum">0</span><span class="total">/5</span></div>
+    <div class="verdict" id="QC_verdict">—</div>
+    <p class="verdict-text" id="QC_verdictText">—</p>
+    <div class="goodie-msg" id="QC_goodieMsg"></div>
 
     <div class="breakdown">
       <h3>Détail des réponses</h3>
-      <div id="QS_breakdownList"></div>
+      <div id="QC_breakdownList"></div>
     </div>
 
-    <button class="btn" onclick="QS_restart()">
+    <button class="btn" onclick="QC_restart()">
       Refaire le quiz
       <span class="arrow">↻</span>
     </button>
@@ -2202,99 +1855,88 @@ html, body { min-height: 100%; font-family: 'Manrope', system-ui, sans-serif; -w
 </div>
 
 <script>
-  const QS_questions = [
+  const QC_questions = [
     {
-      cat: "QS_Vidéoprotection",
-      q: "Quelle est la différence entre vidéosurveillance et vidéoprotection ?",
+      cat: "Agents de sécurité",
+      q: "Vous voyez l'agent de sécurité faire le tour complet du bâtiment à 14h, seul, sans incident en cours. À quoi cela sert-il ?",
       options: [
-        "La vidéosurveillance s\'applique aux lieux privés, la vidéoprotection aux espaces ouverts au public",
-        "La vidéoprotection concerne uniquement les établissements scolaires",
-        "La vidéosurveillance est réservée aux forces de l\'ordre"
-      ],
-      correct: 0,
-      feedback: "Ce sont deux régimes <strong>juridiquement distincts</strong>. La <strong>vidéosurveillance</strong> concerne les lieux privés (bureaux, halls d\'immeubles…), tandis que la <strong>vidéoprotection</strong> encadre les espaces ouverts au public. Les autorisations requises et les règles d\'exploitation ne sont pas les mêmes."
-    },
-    {
-      cat: "QS_Vidéoprotection",
-      q: "Qui a le droit de consulter les images des caméras de vidéoprotection ?",
-      options: [
-        "N\'importe quel agent, c\'est un outil de transparence collective",
-        "Uniquement les agents habilités désignés — accès strictement encadré",
-        "Tout responsable de service qui en fait la demande"
+        "C'est une obligation syndicale qui n'a pas vraiment d'utilité",
+        "La ronde est préventive : elle dissuade, détecte les anomalies et vérifie les équipements de secours",
+        "Cela lui permet de se dégourdir les jambes"
       ],
       correct: 1,
-      feedback: "Les images sont <strong>confidentielles</strong> et consultables uniquement par des <strong>agents spécifiquement habilités</strong> — au CADAM, ils sont 6. Même un responsable hiérarchique ne peut pas y accéder librement. Toute consultation doit être justifiée et tracée. C\'est la <strong>CNIL</strong> qui veille au respect de ces règles."
+      feedback: "La <strong>ronde de surveillance</strong> n'attend pas qu'il se passe quelque chose. Son objectif est triple : <strong>dissuader</strong> par la présence visible, <strong>détecter</strong> les anomalies (porte forcée, colis suspect...) et <strong>vérifier</strong> les équipements de secours. C'est un travail actif, même quand rien ne semble se passer."
+    },
+    {
+      cat: "Agents de sécurité",
+      q: "Dans le bureau d'un travailleur social, il y a un petit bouton rouge discret. À quoi sert-il ?",
+      options: [
+        "À appeler l'ascenseur sans se déplacer",
+        "À activer la climatisation d'urgence",
+        "À déclencher une alerte silencieuse vers l'agent de sécurité en cas d'agression"
+      ],
+      correct: 2,
+      feedback: "C'est le <strong>bouton anti-agression</strong>. En cas de situation dangereuse, le travailleur social peut déclencher une <strong>alerte silencieuse</strong> — l'usager ne l'entend pas, mais l'agent de sécurité est immédiatement prévenu et intervient discrètement pour évaluer la situation."
     },
     {
       cat: "Vidéoprotection",
-      q: "Vous avez été victime d'un incident dans votre bâtiment. Avez-vous le droit de demander à voir les images de caméra vous concernant ?",
+      q: "Quelle est la différence entre vidéosurveillance et vidéoprotection ?",
       options: [
-        "Non — les images sont confidentielles et réservées au service sécurité",
-        "Oui, mais uniquement si la police en fait la demande à votre place",
-        "Oui — toute personne filmée peut exercer son droit d'accès auprès du responsable du traitement"
+        "La vidéosurveillance s'applique aux lieux privés, la vidéoprotection aux espaces ouverts au public",
+        "La vidéoprotection concerne uniquement les établissements scolaires",
+        "La vidéosurveillance est réservée aux forces de l'ordre"
       ],
-      correct: 2,
-      feedback: "C'est un droit que très peu de gens connaissent : en tant que personne filmée, vous pouvez exercer votre <strong>droit d'accès</strong> aux images vous concernant, en vertu du RGPD. La demande se fait auprès du <strong>responsable du traitement</strong> — au Département, c'est la DCIP. Les images doivent vous être communiquées dans un délai d'un mois, à condition qu'elles n'aient pas déjà été effacées."
+      correct: 0,
+      feedback: "Ce sont deux régimes <strong>juridiquement distincts</strong>. La <strong>vidéosurveillance</strong> concerne les lieux privés (bureaux, halls d'immeubles…), tandis que la <strong>vidéoprotection</strong> encadre les espaces ouverts au public. Les autorisations et règles d'exploitation ne sont pas les mêmes."
     },
     {
-      cat: "QS_Badge & Accès",
+      cat: "Badge & Accès",
       q: "Vous perdez votre badge. Quelle est la bonne réaction ?",
       options: [
-        "Emprunter le badge d\'un collègue en attendant de le retrouver",
+        "Emprunter le badge d'un collègue en attendant de le retrouver",
         "Attendre quelques jours — il réapparaît souvent",
-        "Le signaler immédiatement pour qu\'il soit désactivé"
+        "Le signaler immédiatement pour qu'il soit désactivé"
       ],
       correct: 2,
-      feedback: "Un badge non signalé, c\'est une <strong>porte ouverte</strong> : n\'importe qui peut le ramasser et accéder à des zones protégées. La désactivation est immédiate.<br><br><strong>Comment signaler ?</strong><br>📞 Appeler le <strong>11</strong> (numéro interne) ou écrire à <strong>acces@departement06.fr</strong><br><br><strong>Si vous trouvez un badge :</strong> le déposer à la <strong>Gestion des Accès</strong> ou au <strong>Poste Permanent de Sécurité — Tour Jean Moulin</strong>."
+      feedback: "Un badge non signalé, c'est une <strong>porte ouverte</strong> : n'importe qui peut le ramasser et accéder à des zones protégées. La désactivation est immédiate.<br><br><strong>Comment signaler ?</strong><br>📞 Appeler le <strong>11</strong> (numéro interne) ou écrire à <strong>acces@departement06.fr</strong><br><br><strong>Si vous trouvez un badge :</strong> le déposer à la <strong>Gestion des Accès</strong> ou au <strong>Poste Permanent de Sécurité — Tour Jean Moulin</strong>."
     },
     {
-      cat: "QS_Badge & Accès",
-      q: "Un collègue vous demande de lui prêter votre badge pour « juste 5 minutes ». Que faites-vous ?",
+      cat: "Vigilance",
+      q: "Vous trouvez une porte de secours entrouverte qui n'aurait pas dû l'être. Que faites-vous ?",
       options: [
-        "Vous lui prêtez — c\'est un collègue de confiance",
-        "Vous refusez — le prêt de badge est interdit et dangereux",
-        "Vous acceptez uniquement s\'il s\'agit d\'une urgence"
+        "Vous la fermez et passez votre chemin — ce n'est sûrement rien",
+        "Vous attendez de voir si quelqu'un d'autre le signale",
+        "Vous signalez immédiatement la situation à la sécurité ou au poste de garde"
       ],
-      correct: 1,
-      feedback: "Le prêt de badge est <strong>formellement interdit</strong>, quelle que soit la situation. Il <strong>annule la traçabilité</strong> : en cas d\'incident, les journaux d\'accès montreront votre nom, pas le sien. Refuser avec courtoisie, c\'est protéger tout le monde."
-    },
-    {
-      cat: "QS_Alarme & Intrusion",
-      q: "Vous trouvez une porte de secours entrouverte qui n\'aurait pas dû l\'être. Que faites-vous ?",
-      options: [
-        "Vous la fermez et passez votre chemin — ce n\'est sûrement rien",
-        "Vous signalez immédiatement la situation à la sécurité ou au poste de garde",
-        "Vous attendez de voir si quelqu\'un d\'autre le signale"
-      ],
-      correct: 1,
-      feedback: "Une porte de secours ouverte anormalement est un <strong>signal d\'alerte</strong> à ne jamais ignorer. <strong>Signaler au poste de sécurité</strong> immédiatement est le bon réflexe — même si c\'est souvent une fausse alerte, le signalement coûte 30 secondes et peut éviter un incident grave."
+      correct: 2,
+      feedback: "Une porte de secours ouverte anormalement est un <strong>signal d'alerte</strong> à ne jamais ignorer. <strong>Signaler au poste de sécurité</strong> immédiatement est le bon réflexe — même si c'est souvent une fausse alerte, le signalement coûte 30 secondes et peut éviter un incident grave."
     }
   ];
 
-  let QS_current = 0;
-  let QS_score = 0;
-  let QS_answered = false;
-  let QS_answers = [];
+  let QC_current = 0;
+  let QC_score = 0;
+  let QC_answered = false;
+  let QC_answers = [];
 
-  function QS_startQuiz() {
-    document.getElementById('QS_intro').classList.add('hidden');
-    document.getElementById('QS_quiz').classList.remove('hidden');
-    document.getElementById('QS_quiz').classList.add('fade-in');
-    document.getElementById('QS_qTotal').textContent = QS_questions.length;
-    document.querySelector('.QS_score-big .total').textContent = '/' + QS_questions.length;
-    QS_showQuestion();
+  function QC_startQuiz() {
+    document.getElementById('QC_intro').classList.add('hidden');
+    document.getElementById('QC_quiz').classList.remove('hidden');
+    document.getElementById('QC_quiz').classList.add('fade-in');
+    document.getElementById('QC_qTotal').textContent = QC_questions.length;
+    document.querySelector('.QC_score-big .total').textContent = '/' + QC_questions.length;
+    QC_showQuestion();
   }
 
-  function QS_showQuestion() {
-    QS_answered = false;
-    const q = QS_questions[QS_current];
-    document.getElementById('QS_qNum').textContent = QS_current + 1;
-    document.getElementById('QS_catTag').textContent = q.cat;
+  function QC_showQuestion() {
+    QC_answered = false;
+    const q = QC_questions[QC_current];
+    document.getElementById('QC_qNum').textContent = QC_current + 1;
+    document.getElementById('QC_catTag').textContent = q.cat;
 
-    const progress = (QS_current / QS_questions.length) * 100;
-    document.getElementById('QS_progressBar').style.width = progress + '%';
+    const progress = (QC_current / QC_questions.length) * 100;
+    document.getElementById('QC_progressBar').style.width = progress + '%';
 
-    const container = document.getElementById('QS_questionContainer');
+    const container = document.getElementById('QC_questionContainer');
     container.classList.remove('fade-in');
     void container.offsetWidth;
 
@@ -2306,7 +1948,7 @@ html, body { min-height: 100%; font-family: 'Manrope', system-ui, sans-serif; -w
     q.options.forEach((opt, i) => {
       const letter = String.fromCharCode(65 + i);
       html += `
-        <button class="option" data-i="${i}" onclick="QS_select(${i})">
+        <button class="option" data-i="${i}" onclick="QC_select(${i})">
           <span class="marker">${letter}</span>
           <span>${opt}</span>
         </button>
@@ -2314,21 +1956,21 @@ html, body { min-height: 100%; font-family: 'Manrope', system-ui, sans-serif; -w
     });
     html += `</div>`;
     html += `
-      <div class="feedback" id="QS_feedback">
-        <div class="feedback-label" id="QS_feedbackLabel">Explication</div>
-        <p id="QS_feedbackText"></p>
+      <div class="feedback" id="QC_feedback">
+        <div class="feedback-label" id="QC_feedbackLabel">Explication</div>
+        <p id="QC_feedbackText"></p>
       </div>
     `;
     container.innerHTML = html;
     container.classList.add('fade-in');
-    document.getElementById('QS_nextBtn').classList.add('hidden');
+    document.getElementById('QC_nextBtn').classList.add('hidden');
   }
 
-  function QS_select(i) {
-    if (QS_answered) return;
-    QS_answered = true;
-    const q = QS_questions[QS_current];
-    const opts = document.getElementById('qz-surt').querySelectorAll('.option');
+  function QC_select(i) {
+    if (QC_answered) return;
+    QC_answered = true;
+    const q = QC_questions[QC_current];
+    const opts = document.getElementById('qz-secu').querySelectorAll('.option');
 
     opts.forEach((opt, idx) => {
       opt.disabled = true;
@@ -2337,51 +1979,51 @@ html, body { min-height: 100%; font-family: 'Manrope', system-ui, sans-serif; -w
     });
 
     const isCorrect = i === q.correct;
-    if (isCorrect) QS_score++;
-    QS_answers.push({ q: q.q, ok: isCorrect });
+    if (isCorrect) QC_score++;
+    QC_answers.push({ q: q.q, ok: isCorrect });
 
-    const fb = document.getElementById('QS_feedback');
-    const lbl = document.getElementById('QS_feedbackLabel');
-    const txt = document.getElementById('QS_feedbackText');
+    const fb = document.getElementById('QC_feedback');
+    const lbl = document.getElementById('QC_feedbackLabel');
+    const txt = document.getElementById('QC_feedbackText');
     lbl.textContent = isCorrect ? '✓ Bonne réponse' : '✗ Réponse incorrecte';
     lbl.style.color = isCorrect ? 'var(--green)' : 'var(--red)';
     txt.innerHTML = q.feedback;
     fb.classList.add('show');
 
-    document.getElementById('QS_nextBtn').classList.remove('hidden');
-    if (QS_current === QS_questions.length - 1) {
-      document.getElementById('QS_nextBtn').innerHTML = 'Voir mon résultat <span class="arrow">→</span>';
+    document.getElementById('QC_nextBtn').classList.remove('hidden');
+    if (QC_current === QC_questions.length - 1) {
+      document.getElementById('QC_nextBtn').innerHTML = 'Voir mon résultat <span class="arrow">→</span>';
     } else {
-      document.getElementById('QS_nextBtn').innerHTML = 'Question suivante <span class="arrow">→</span>';
+      document.getElementById('QC_nextBtn').innerHTML = 'Question suivante <span class="arrow">→</span>';
     }
   }
 
-  function QS_nextQuestion() {
-    if (QS_current < QS_questions.length - 1) {
-      QS_current++;
-      QS_showQuestion();
+  function QC_nextQuestion() {
+    if (QC_current < QC_questions.length - 1) {
+      QC_current++;
+      QC_showQuestion();
       window.scrollTo({ top: 0, behavior: 'smooth' });
     } else {
-      QS_showResults();
+      QC_showResults();
     }
   }
 
-  function QS_showResults() {
-    document.getElementById('QS_quiz').classList.add('hidden');
-    const r = document.getElementById('QS_results');
+  function QC_showResults() {
+    document.getElementById('QC_quiz').classList.add('hidden');
+    const r = document.getElementById('QC_results');
     r.classList.remove('hidden');
     r.classList.add('fade-in');
-    document.getElementById('QS_progressBar').style.width = '100%';
+    document.getElementById('QC_progressBar').style.width = '100%';
 
     let n = 0;
-    const target = QS_score;
-    const num = document.getElementById('QS_scoreNum');
-    const QS_step = () => {
-      if (n < target) { n++; num.textContent = n; setTimeout(QS_step, 80); }
+    const target = QC_score;
+    const num = document.getElementById('QC_scoreNum');
+    const QC_step = () => {
+      if (n < target) { n++; num.textContent = n; setTimeout(QC_step, 80); }
     };
-    QS_step();
+    QC_step();
 
-    const pct = (QS_score / QS_questions.length) * 100;
+    const pct = (QC_score / QC_questions.length) * 100;
     let verdict, text;
     if (pct >= 90) {
       verdict = "Excellent ! Vous avez tout compris.";
@@ -2396,11 +2038,20 @@ html, body { min-height: 100%; font-family: 'Manrope', system-ui, sans-serif; -w
       verdict = "Des bases à construire — mais c'est tout l'intérêt de ce quiz !";
       text = "Ce quiz est là pour ça : prendre conscience que la sûreté du bâtiment dépend aussi de vous. Trois règles d'or à retenir : signalez un badge perdu immédiatement, ne le prêtez jamais, et alertez la sécurité face à toute anomalie.";
     }
-    document.getElementById('QS_verdict').textContent = verdict;
-    document.getElementById('QS_verdictText').textContent = text;
+    document.getElementById('QC_verdict').textContent = verdict;
+    
+    document.getElementById('QC_verdictText').textContent = text;
+    const QC_goodieEl = document.getElementById('QC_goodieMsg');
+    if (QC_score === QC_questions.length) {
+      QC_goodieEl.className = 'goodie-msg win';
+      QC_goodieEl.innerHTML = '<span class="emoji">🎉</span>BRAVO vous remportez un goodie, présentez votre résultat pour le récupérer !';
+    } else {
+      QC_goodieEl.className = 'goodie-msg retry';
+      QC_goodieEl.innerHTML = '<span class="emoji">👍</span>Bien joué, pour remporter un goodie, retentez votre chance !';
+    }
 
-    const list = document.getElementById('QS_breakdownList');
-    list.innerHTML = QS_answers.map((a, i) => `
+    const list = document.getElementById('QC_breakdownList');
+    list.innerHTML = QC_answers.map((a, i) => `
       <div class="breakdown-item">
         <span class="num">${String(i + 1).padStart(2, '0')}</span>
         <span class="label">${a.q}</span>
@@ -2411,26 +2062,334 @@ html, body { min-height: 100%; font-family: 'Manrope', system-ui, sans-serif; -w
     window.scrollTo({ top: 0, behavior: 'smooth' });
   }
 
-  function QS_restart() { showHub(); }
+  function QC_restart() {
+    QC_current = 0; QC_score = 0; QC_answers = [];
+    document.getElementById('QC_results').classList.add('hidden');
+    document.getElementById('QC_intro').classList.remove('hidden');
+    document.getElementById('QC_intro').classList.add('fade-in');
+    document.getElementById('QC_progressBar').style.width = '0%';
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  }
+</script></div>
+<div id="qz-etu" class="qz-panel">
+<button class="qz-back" onclick="showHub()">&#x2190; Accueil</button>
+<div class="container">
+
+  <div class="brand-row">
+    <span><span class="dot"></span>Études &amp; Travaux · DCIP</span>
+    <span>2026 / Quiz</span>
+  </div>
+
+  <!-- ===================== INTRO ===================== -->
+  <section id="QE_intro" class="intro fade-in">
+    <div class="eyebrow">Quiz interactif</div>
+    <h1>Concevoir, bâtir, transformer — découvrez le <em>Service Études et Travaux</em>&nbsp;!</h1>
+    <p class="lead">
+      De la première esquisse à la livraison du chantier, découvrez quelques réalités du métier et des opérations pilotées par le Service Études et Travaux. 5 questions pour le découvrir.
+    </p>
+
+    <div class="meta-grid">
+      <div>
+        <div class="label">Questions</div>
+        <div class="value">5</div>
+      </div>
+      <div>
+        <div class="label">Durée</div>
+        <div class="value">~4 min</div>
+      </div>
+      <div>
+        <div class="label">Niveau</div>
+        <div class="value">Tous publics</div>
+      </div>
+      <div>
+        <div class="label">Cadre</div>
+        <div class="value">CADAM / 06</div>
+      </div>
+    </div>
+
+    <button class="btn" onclick="QE_startQuiz()">
+      Commencer le quiz
+      <span class="arrow">→</span>
+    </button>
+  </section>
+
+  <!-- ===================== QUIZ ===================== -->
+  <section id="QE_quiz" class="hidden">
+    <div class="quiz-header">
+      <span class="counter">Question <strong id="QE_qNum">1</strong> / <span id="QE_qTotal">5</span></span>
+      <span id="QE_catTag">Vidéoprotection</span>
+    </div>
+    <div class="progress"><div class="progress-bar" id="QE_progressBar"></div></div>
+
+    <div id="QE_questionContainer"></div>
+
+    <div class="nav-row">
+      <button class="btn secondary hidden" id="QE_nextBtn" onclick="QE_nextQuestion()">
+        Question suivante
+        <span class="arrow">→</span>
+      </button>
+    </div>
+  </section>
+
+  <!-- ===================== RESULTS ===================== -->
+  <section id="QE_results" class="hidden results">
+    <div class="QE_score-eyebrow">Résultat final</div>
+    <div class="QE_score-big"><span id="QE_scoreNum">0</span><span class="total">/5</span></div>
+    <div class="verdict" id="QE_verdict">—</div>
+    <p class="verdict-text" id="QE_verdictText">—</p>
+    <div class="goodie-msg" id="QE_goodieMsg"></div>
+
+    <div class="breakdown">
+      <h3>Détail des réponses</h3>
+      <div id="QE_breakdownList"></div>
+    </div>
+
+    <button class="btn" onclick="QE_restart()">
+      Refaire le quiz
+      <span class="arrow">↻</span>
+    </button>
+  </section>
+
+  <div class="footer-note">
+    <span>Quiz pédagogique — sûreté des bâtiments départementaux</span>
+    <span>Vidéoprotection · Badges · Intrusion</span>
+  </div>
+
+</div>
+
+<script>
+  const QE_questions = [
+    {
+      cat: "Le Service",
+      q: "Quelle est la mission principale du Service Études et Travaux ?",
+      options: [
+        "Assurer l'entretien des espaces verts départementaux",
+        "Organiser les manifestations départementales",
+        "Concevoir, programmer et suivre la réalisation des opérations de construction, de réhabilitation ou d'aménagement du patrimoine départemental"
+      ],
+      correct: 2,
+      feedback: "Le Service Études et Travaux pilote les <strong>opérations de construction, réhabilitation et aménagement</strong> du patrimoine bâti du Département — collèges, bâtiments administratifs, équipements publics. Un rôle central dans la vie du patrimoine départemental, de l'idée jusqu'à l'ouvrage livré."
+    },
+    {
+      cat: "Le Service",
+      q: "À quel stade d'un projet le Service Études et Travaux intervient-il ?",
+      options: [
+        "Uniquement lors des études préalables",
+        "De la phase de programmation jusqu'à la réception des travaux",
+        "Seulement après la livraison de l'ouvrage"
+      ],
+      correct: 1,
+      feedback: "Le service accompagne le projet sur <strong>toute sa durée</strong> : programmation, études, consultation des entreprises, suivi de chantier, jusqu'à la <strong>réception des travaux</strong>. Une continuité essentielle pour garantir la cohérence du projet du début à la fin."
+    },
+    {
+      cat: "Délais & Ampleur",
+      q: "Combien de temps peut s'écouler entre l'expression du besoin et la livraison d'un bâtiment public important ?",
+      options: [
+        "6 à 12 mois",
+        "1 à 2 ans",
+        "5 à 7 ans"
+      ],
+      correct: 2,
+      feedback: "Un projet public nécessite de nombreuses étapes : <strong>études, autorisations, consultation des entreprises puis travaux</strong>. Entre la définition du besoin et la livraison d'un bâtiment public important, il faut souvent compter <strong>5 à 7 ans</strong> — un temps long qui garantit la qualité et la conformité de l'ouvrage."
+    },
+    {
+      cat: "Délais & Ampleur",
+      q: "Pour une réhabilitation lourde de collège, combien d'acteurs différents peuvent être mobilisés ?",
+      options: [
+        "Entre 5 et 10",
+        "Entre 10 et 20",
+        "Plus de 20"
+      ],
+      correct: 2,
+      feedback: "<strong>Plus de 20 acteurs</strong> peuvent être mobilisés : utilisateurs, architectes, bureaux d'études, contrôleur technique, coordonnateur SPS, concessionnaires, entreprises, exploitants, etc. Une véritable coordination d'équipe est nécessaire pour mener à bien une réhabilitation lourde."
+    },
+    {
+      cat: "Réception",
+      q: "À la réception des travaux, l'opération est-elle totalement terminée ?",
+      options: [
+        "Non, plusieurs garanties continuent à s'appliquer",
+        "Oui, sauf pour l'architecte",
+        "Cela dépend du bâtiment"
+      ],
+      correct: 0,
+      feedback: "La réception marque la <strong>fin du chantier</strong>, mais plusieurs <strong>garanties continuent à protéger le maître d'ouvrage</strong> après la livraison — garantie de parfait achèvement, garantie biennale, garantie décennale. Le suivi ne s'arrête donc pas à la remise des clés."
+    }
+  ];
+
+  let QE_current = 0;
+  let QE_score = 0;
+  let QE_answered = false;
+  let QE_answers = [];
+
+  function QE_startQuiz() {
+    document.getElementById('QE_intro').classList.add('hidden');
+    document.getElementById('QE_quiz').classList.remove('hidden');
+    document.getElementById('QE_quiz').classList.add('fade-in');
+    document.getElementById('QE_qTotal').textContent = QE_questions.length;
+    document.querySelector('.QE_score-big .total').textContent = '/' + QE_questions.length;
+    QE_showQuestion();
+  }
+
+  function QE_showQuestion() {
+    QE_answered = false;
+    const q = QE_questions[QE_current];
+    document.getElementById('QE_qNum').textContent = QE_current + 1;
+    document.getElementById('QE_catTag').textContent = q.cat;
+
+    const progress = (QE_current / QE_questions.length) * 100;
+    document.getElementById('QE_progressBar').style.width = progress + '%';
+
+    const container = document.getElementById('QE_questionContainer');
+    container.classList.remove('fade-in');
+    void container.offsetWidth;
+
+    let html = `
+      <div class="category">${q.cat}</div>
+      <h2 class="question">${q.q}</h2>
+      <div class="options">
+    `;
+    q.options.forEach((opt, i) => {
+      const letter = String.fromCharCode(65 + i);
+      html += `
+        <button class="option" data-i="${i}" onclick="QE_select(${i})">
+          <span class="marker">${letter}</span>
+          <span>${opt}</span>
+        </button>
+      `;
+    });
+    html += `</div>`;
+    html += `
+      <div class="feedback" id="QE_feedback">
+        <div class="feedback-label" id="QE_feedbackLabel">Explication</div>
+        <p id="QE_feedbackText"></p>
+      </div>
+    `;
+    container.innerHTML = html;
+    container.classList.add('fade-in');
+    document.getElementById('QE_nextBtn').classList.add('hidden');
+  }
+
+  function QE_select(i) {
+    if (QE_answered) return;
+    QE_answered = true;
+    const q = QE_questions[QE_current];
+    const opts = document.querySelectorAll('.option');
+
+    opts.forEach((opt, idx) => {
+      opt.disabled = true;
+      if (idx === q.correct) opt.classList.add('correct');
+      else if (idx === i) opt.classList.add('wrong');
+    });
+
+    const isCorrect = i === q.correct;
+    if (isCorrect) QE_score++;
+    QE_answers.push({ q: q.q, ok: isCorrect });
+
+    const fb = document.getElementById('QE_feedback');
+    const lbl = document.getElementById('QE_feedbackLabel');
+    const txt = document.getElementById('QE_feedbackText');
+    lbl.textContent = isCorrect ? '✓ Bonne réponse' : '✗ Réponse incorrecte';
+    lbl.style.color = isCorrect ? 'var(--green)' : 'var(--red)';
+    txt.innerHTML = q.feedback;
+    fb.classList.add('show');
+
+    document.getElementById('QE_nextBtn').classList.remove('hidden');
+    if (QE_current === QE_questions.length - 1) {
+      document.getElementById('QE_nextBtn').innerHTML = 'Voir mon résultat <span class="arrow">→</span>';
+    } else {
+      document.getElementById('QE_nextBtn').innerHTML = 'Question suivante <span class="arrow">→</span>';
+    }
+  }
+
+  function QE_nextQuestion() {
+    if (QE_current < QE_questions.length - 1) {
+      QE_current++;
+      QE_showQuestion();
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    } else {
+      QE_showResults();
+    }
+  }
+
+  function QE_showResults() {
+    document.getElementById('QE_quiz').classList.add('hidden');
+    const r = document.getElementById('QE_results');
+    r.classList.remove('hidden');
+    r.classList.add('fade-in');
+    document.getElementById('QE_progressBar').style.width = '100%';
+
+    let n = 0;
+    const target = QE_score;
+    const num = document.getElementById('QE_scoreNum');
+    const QE_step = () => {
+      if (n < target) { n++; num.textContent = n; setTimeout(QE_step, 80); }
+    };
+    QE_step();
+
+    const pct = (QE_score / QE_questions.length) * 100;
+    let verdict, text;
+    if (pct >= 90) {
+      verdict = "Excellent ! Vous avez tout compris.";
+      text = "Badges, caméras, alarmes : vous avez les bons réflexes. Votre comportement au quotidien contribue directement à la sécurité des bâtiments et de vos collègues.";
+    } else if (pct >= 70) {
+      verdict = "Bonne intuition — quelques réflexes à affiner.";
+      text = "L'essentiel est là. Les points à retenir : signalez toujours un badge perdu sans attendre, et n'hésitez pas à refuser un prêt de badge — même à un collègue de confiance.";
+    } else if (pct >= 50) {
+      verdict = "Quelques bons réflexes à acquérir.";
+      text = "La sûreté, ça s'apprend vite avec les bonnes informations. L'essentiel : badge perdu = signalement immédiat, prêt de badge = interdit, porte anormalement ouverte = à signaler.";
+    } else {
+      verdict = "Des bases à construire — mais c'est tout l'intérêt de ce quiz !";
+      text = "Ce quiz est là pour ça : prendre conscience que la sûreté du bâtiment dépend aussi de vous. Trois règles d'or à retenir : signalez un badge perdu immédiatement, ne le prêtez jamais, et alertez la sécurité face à toute anomalie.";
+    }
+    document.getElementById('QE_verdict').textContent = verdict;
+    
+    document.getElementById('QE_verdictText').textContent = text;
+    const QE_goodieEl = document.getElementById('QE_goodieMsg');
+    if (QE_score === QE_questions.length) {
+      QE_goodieEl.className = 'goodie-msg win';
+      QE_goodieEl.innerHTML = '<span class="emoji">🎉</span>BRAVO vous remportez un goodie, présentez votre résultat pour le récupérer !';
+    } else {
+      QE_goodieEl.className = 'goodie-msg retry';
+      QE_goodieEl.innerHTML = '<span class="emoji">👍</span>Bien joué, pour remporter un goodie, retentez votre chance !';
+    }
+
+    const list = document.getElementById('QE_breakdownList');
+    list.innerHTML = QE_answers.map((a, i) => `
+      <div class="breakdown-item">
+        <span class="num">${String(i + 1).padStart(2, '0')}</span>
+        <span class="label">${a.q}</span>
+        <span class="status ${a.ok ? 'ok' : 'ko'}">${a.ok ? '✓ Juste' : '✗ Faux'}</span>
+      </div>
+    `).join('');
+
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  }
+
+  function QE_restart() {
+    QE_current = 0; QE_score = 0; QE_answers = [];
+    document.getElementById('QE_results').classList.add('hidden');
+    document.getElementById('QE_intro').classList.remove('hidden');
+    document.getElementById('QE_intro').classList.add('fade-in');
+    document.getElementById('QE_progressBar').style.width = '0%';
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  }
 </script></div>
 
 <script>
 function openQuiz(id) {
   document.getElementById("hub").style.display = "none";
-  ["feu","gard","surt"].forEach(function(q) { document.getElementById("qz-"+q).classList.remove("on"); });
+  ["feu","secu","etu"].forEach(function(q) { document.getElementById("qz-"+q).classList.remove("on"); });
   document.getElementById("qz-"+id).classList.add("on");
   window.scrollTo({top:0});
   if (id==="feu")  setTimeout(QF_startQuiz, 20);
-  if (id==="gard") setTimeout(QG_startQuiz, 20);
-  if (id==="surt") setTimeout(QS_startQuiz, 20);
+  if (id==="secu") setTimeout(QC_startQuiz, 20);
+  if (id==="etu")  setTimeout(QE_startQuiz, 20);
 }
 function showHub() {
   document.getElementById("hub").style.display = "flex";
-  ["feu","gard","surt"].forEach(function(q) { document.getElementById("qz-"+q).classList.remove("on"); });
+  ["feu","secu","etu"].forEach(function(q) { document.getElementById("qz-"+q).classList.remove("on"); });
   window.scrollTo({top:0});
 }
 </script>
-</body>
-</html>
 </body>
 </html>
