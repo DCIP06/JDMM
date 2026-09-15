@@ -1,0 +1,58 @@
+ROLL-UP « VIE D'UN PROJET IMMOBILIER » — 84 × 160 cm
+Département des Alpes-Maritimes — DCIP
+Journée des Métiers et de la Mobilité — CADAM, mercredi 23 septembre 2026
+
+
+QUEL FICHIER UTILISER
+
+  Roll-up-DCIP-84x160.pdf              POUR L'IMPRIMEUR
+      Vectoriel, à la taille réelle (840 × 1600 mm). Aucune mise à
+      l'échelle à demander : le fichier fait déjà le bon format.
+
+  Roll-up-DCIP-84x160.svg              POUR RETOUCHER
+      Vectoriel, ouvrable dans Illustrator, Affinity ou Inkscape.
+      Les textes y sont convertis en tracés : la typographie est donc
+      identique partout, mais elle ne se ré-édite pas comme du texte.
+      Pour modifier un texte, voir « POUR REFAIRE » ci-dessous.
+
+  Roll-up-DCIP-84x160-150dpi.png       POUR UN APERÇU HAUTE DÉFINITION
+      4961 × 9448 px. Convient à une validation écran ou à un montage,
+      pas à l'impression grand format — préférez le PDF.
+
+  Roll-up-DCIP-84x160-apercu-72dpi.png POUR UN ENVOI RAPIDE
+      2382 × 4536 px. Relecture, présentation, pièce jointe légère.
+
+
+CE QUI A CHANGÉ PAR RAPPORT AU 60 × 160
+
+  La hauteur ne bouge pas, la largeur gagne 40 %. Agrandir le texte
+  d'autant aurait allongé le roll-up d'une vingtaine de centimètres.
+  Le texte garde donc sa taille physique ; positions, blocs, pastilles
+  et filets suivent le format.
+
+  Ni le contenu, ni les textes, ni leurs retours à la ligne n'ont été
+  modifiés.
+
+
+POUR REFAIRE LE DOCUMENT, OU UN AUTRE FORMAT
+
+  Le roll-up est composé en HTML/CSS, pas dans un logiciel de PAO.
+  Le fichier source est rollup-84x160.html (dans assets/rollup/ du
+  dépôt) : il s'ouvre dans un navigateur et s'édite dans un éditeur
+  de texte.
+
+      python3 scripts/generer_rollup.py --largeur 100 --hauteur 200
+
+  Le dépôt : https://github.com/DCIP06/JDMM
+
+
+COULEURS DU DOCUMENT
+
+  Navy foncé    #0A2540      Ambre        #E8A33D
+  Navy moyen    #1E4D8F      Conception   #1E4D8F
+  Réalisation   #C2410C      Exploitation #0F766E
+
+  Dégradés des pastilles :
+  Conception   #3B6BAA → #0A2540
+  Réalisation  #EA580C → #7C2D12
+  Exploitation #14B8A6 → #134E4A
