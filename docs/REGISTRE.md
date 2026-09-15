@@ -185,7 +185,7 @@ conserve rien, GitHub ne conserve rien.
 | Obligation | Ce qu'il faut faire |
 |---|---|
 | Accès restreint | Ne partager le fichier qu'avec les personnes qui en ont besoin |
-| Conservation 12 mois | **Supprimer les lignes** à l'échéance : rien ne le fait tout seul |
+| Conservation 30 jours | **Supprimer les lignes** à l'échéance : rien ne le fait tout seul |
 | Registre des traitements | Inscrire ce traitement et l'échéance de purge |
 | Hébergement | OneDrive du Département — dans son propre périmètre, ce qui simplifie l'analyse |
 

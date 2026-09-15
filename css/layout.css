@@ -345,7 +345,8 @@
   letter-spacing: var(--interlettre-eyebrow);
   text-transform: uppercase;
   color: var(--texte-inverse-doux);
-  /* Masquée sous 900 px : les filtres ont besoin de toute la largeur. */
+  /* Masquée sous 900 px : « Journée des Métiers et de la Mobilité ·
+     23 septembre 2026 » ne tient pas à côté de la marque sur un téléphone. */
   display: none;
 }
 @media (min-width: 900px) {

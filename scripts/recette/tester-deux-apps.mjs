@@ -6,8 +6,9 @@ import { readFileSync } from 'node:fs';
    pas faire échouer la recette. Un compteur recopié dans le test ment au bout
    de la première modification. */
 const FICHES = JSON.parse(readFileSync(new URL('../../data/postes-dcip.json', import.meta.url), 'utf8'));
+const CONFIG = JSON.parse(readFileSync(new URL('../../data/config.json', import.meta.url), 'utf8'));
+const JOURS = CONFIG.rgpd.duree_conservation_jours;
 const NB_FICHES = FICHES.length;
-const NB_FILTRES = new Set(FICHES.map((f) => f.service)).size + 1;   // + « Tous les postes »
 const BASE = process.env.URL_BASE || 'http://127.0.0.1:8123/';
 const b = await chromium.launch({ executablePath: '/usr/bin/chromium', args: ['--no-sandbox','--disable-gpu'] });
 let ko = 0;
@@ -33,28 +34,31 @@ ok('la marque est « DCIP 06 »', (await p.locator('.barre__marque').textContent
 ok('le titre reprend « Rejoindre la DCIP »', (await p.locator('h1').first().textContent()).includes('Rejoindre la DCIP'));
 ok('la pastille reprend « Postes vacants · Mobilité interne »',
    (await p.locator('.hero-pill').first().textContent()).includes('Postes vacants'));
-const filtres = await p.locator('.nf-btn').count();
-ok(`les filtres par service sont générés (1 + ${NB_FILTRES - 1})`, filtres === NB_FILTRES, String(filtres));
-ok('« Tous les postes » est le premier filtre',
-   (await p.locator('.nf-btn').first().textContent()).includes('Tous les postes'));
-ok('les libellés sont raccourcis',
-   (await p.locator('.nav-filtres').innerText()).includes('Sécurité & Sûreté'));
-ok(`les ${NB_FICHES} fiches sont listées`, await p.locator('.poste-row').count() === NB_FICHES,
+ok('plus aucun filtre par service', await p.locator('.nf-btn').count() === 0);
+ok(`les ${NB_FICHES} fiches sont listées d'un seul tenant`,
+   await p.locator('.poste-row').count() === NB_FICHES,
    String(await p.locator('.poste-row').count()));
 ok('aucun onglet Métiers', !(await p.locator('body').innerText()).includes('Vie d\'un projet'));
 ok('aucune notion de sélection', !/ma sélection|panier/i.test(await p.locator('body').innerText()));
 await p.screenshot({ path: 'app-postes-liste.png' });
 
-console.log('\n— Filtrage par service —');
-await p.locator('.nf-btn').nth(1).click();
-await p.waitForTimeout(500);
-const apres = await p.locator('.poste-row').count();
-ok('le filtre réduit la liste', apres > 0 && apres < NB_FICHES, `${apres} sur ${NB_FICHES}`);
-ok('le filtre actif est marqué', await p.locator('.nf-btn').nth(1).getAttribute('aria-pressed') === 'true');
-await p.locator('.nf-btn').first().click();
-await p.waitForTimeout(400);
-ok('« Tous les postes » rétablit la liste', await p.locator('.poste-row').count() === NB_FICHES,
-   String(await p.locator('.poste-row').count()));
+console.log('\n— Les compteurs portent sur les postes ouverts —');
+/* Combien de fiches SONT réellement ouvertes, d'après ce qu'affiche la liste :
+   le compteur doit suivre cette valeur, jamais le nombre total de fiches. */
+const badges = await p.locator('.poste-row__tags').allInnerTexts();
+const ouverts = badges.filter((t) => /en ligne|urgent/i.test(t)).length;
+const sous = (await p.locator('.hero .sous').innerText()).replace(/\s+/g, ' ');
+ok(`l'accroche annonce ${ouverts} poste(s) ouvert(s)`,
+   sous.startsWith(`${ouverts} poste`), sous);
+ok("l'accroche dit « ouverts à la mobilité »", contient(sous, 'ouverts à la mobilité'), sous);
+ok("l'accroche ne mentionne plus le total",
+   !sous.includes(`${NB_FICHES} postes présentés`), sous);
+ok('le compteur de la liste suit les postes ouverts',
+   (await p.locator('.entete-liste .texte-faible').innerText())
+     .replace(/\s+/g, ' ').startsWith(`${ouverts} poste`),
+   await p.locator('.entete-liste .texte-faible').innerText());
+ok('la liste garde toutes les fiches, ouvertes ou pourvues',
+   await p.locator('.poste-row').count() === NB_FICHES);
 
 console.log('\n— Fiche de poste —');
 await p.locator('.poste-row').first().click();
@@ -81,7 +85,13 @@ for (const c of ['prenom','nom','direction','email']) {
   ok(`le champ ${c} est présent`, await p.locator('#' + c).count() === 1);
 }
 ok('les 4 projets de mobilité sont proposés', await p.locator('[data-projet]').count() === 4);
-ok('la mention RGPD est affichée', contient(form, 'Conservation 12 mois'));
+/* La durée de conservation se lit dans la configuration : l'écrire ici en dur
+   ferait passer le test alors que l'application annoncerait autre chose. */
+ok('la mention RGPD annonce la durée configurée',
+   contient(form, `Conservation ${JOURS} jours`), `attendu ${JOURS} jours`);
+ok('la mention RGPD nomme la DCIP', contient(form, 'Données traitées par la DCIP'));
+ok('la mention RGPD écarte tout traceur',
+   contient(form, 'Aucun traceur, aucune mesure d\'audience'));
 await p.screenshot({ path: 'app-postes-form.png' });
 
 console.log('\n— Champs obligatoires —');

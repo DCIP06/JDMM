@@ -439,52 +439,6 @@
    Repris de sources/dcip_postes.html.
    ========================================================================== */
 
-/* --- Filtres par service, dans la barre haute ----------------------------- */
-.nav-filtres {
-  display: flex;
-  align-items: center;
-  gap: 4px;
-  flex: 1;
-  overflow-x: auto;
-  scrollbar-width: none;
-  /* Le défilement horizontal des filtres ne doit pas emporter la page. */
-  overscroll-behavior-x: contain;
-}
-.nav-filtres::-webkit-scrollbar { display: none; }
-
-.nf-btn {
-  /* C'est un <button> dans l'application Postes, un <a> dans l'application
-     Quiz : sans cela, la seconde affiche ses entrées soulignées. */
-  text-decoration: none;
-  flex-shrink: 0;
-  display: inline-flex;
-  align-items: center;
-  gap: 6px;
-  min-height: 36px;
-  padding: 6px 14px;
-  border: none;
-  border-radius: var(--rayon-plein);
-  background: none;
-  color: rgba(255, 255, 255, .55);
-  font-size: var(--txt-sm);
-  font-weight: var(--graisse-moyenne);
-  white-space: nowrap;
-  transition: color var(--duree-rapide) var(--courbe),
-              background var(--duree-rapide) var(--courbe);
-}
-.nf-btn:hover { color: rgba(255, 255, 255, .9); background: rgba(255, 255, 255, .08); }
-.nf-btn.on { color: var(--texte-inverse); background: rgba(255, 255, 255, .14); }
-.nf-btn.on::after {
-  content: '';
-  position: absolute;
-  bottom: 6px;
-  width: 22px;
-  height: 2px;
-  border-radius: 1px;
-  background: var(--accent);
-}
-.nf-btn { position: relative; }
-
 /* --- Ligne de poste dans la liste ------------------------------------------ */
 .poste-row {
   display: flex;

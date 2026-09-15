@@ -55,9 +55,9 @@
     "_note_marquage": "Ordre de fiabilité du rattachement DCIP : 1) URL d'un des 7 postes de postes-dcip.json, 2) domaine d'activité listé dans dcip_domaines, 3) motif de dcip_patterns trouvé dans l'INTITULÉ ou le domaine. Les motifs ne sont volontairement PAS cherchés dans le résumé : « patrimoine » y confondait le patrimoine bâti et le patrimoine culturel (cinéma, Micro-Folie), « collège » y attrapait un poste de chef de cuisine."
   },
   "rgpd": {
-    "duree_conservation_mois": 12,
+    "duree_conservation_jours": 30,
     "contact_dpo": "À_RENSEIGNER",
-    "responsable_traitement": "Département des Alpes-Maritimes — DRH / DCIP"
+    "responsable_traitement": "Département des Alpes-Maritimes — DCIP"
   },
   "theme": {
     "defaut": "a",

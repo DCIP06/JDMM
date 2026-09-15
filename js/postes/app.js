@@ -30,13 +30,6 @@ import {
 } from '../commun/registre.js';
 import { ico, icoService } from '../commun/icones.js';
 
-/* Libellés raccourcis des filtres, repris du fichier source. */
-const RACCOURCIS = {
-  'Maintenance des bâtiments': 'Maint. bâtiments',
-  'Maintenance des collèges': 'Maint. collèges',
-  'Sécurité, Sûreté & Prévention': 'Sécurité & Sûreté',
-};
-
 /* Les quatre intentions de mobilité du formulaire d'origine. */
 const PROJETS = [
   { id: 'curiosite', libelle: 'Curiosité', icone: 'recherche' },
@@ -48,7 +41,6 @@ const PROJETS = [
 const etat = {
   config: {},
   postes: [],
-  service: null,      // filtre actif
   poste: null,        // fiche ouverte
   projet: null,
   ouvertA: 0,
@@ -88,34 +80,6 @@ function construireEntete() {
   document.getElementById('nav-tag').textContent =
     [ev.nom, ev.date].filter(Boolean).join(' · ');
 
-  const services = [];
-  etat.postes.forEach((p) => { if (!services.includes(p.service)) services.push(p.service); });
-
-  const zone = document.getElementById('nav-filtres');
-  zone.innerHTML = `
-    <button type="button" class="nf-btn" data-service="">Tous les postes</button>
-    ${services.map((s) => `
-      <button type="button" class="nf-btn" data-service="${s}">
-        <span aria-hidden="true">${icoService(s, 15)}</span>
-        <span>${RACCOURCIS[s] || s}</span>
-      </button>`).join('')}`;
-
-  zone.querySelectorAll('[data-service]').forEach((b) => {
-    b.addEventListener('click', () => {
-      etat.service = b.dataset.service || null;
-      window.location.hash = '#/';
-      router();
-    });
-  });
-  majFiltres();
-}
-
-function majFiltres() {
-  document.querySelectorAll('[data-service]').forEach((b) => {
-    const actif = (b.dataset.service || null) === etat.service;
-    b.classList.toggle('on', actif);
-    b.setAttribute('aria-pressed', String(actif));
-  });
 }
 
 /* =========================================================================
@@ -160,10 +124,7 @@ function afficher(nom, html, titreAnnonce) {
    ========================================================================= */
 
 function vueListe() {
-  majFiltres();
-  const liste = etat.service
-    ? etat.postes.filter((p) => p.service === etat.service)
-    : etat.postes;
+  const liste = etat.postes;
 
   // Les postes encore ouverts d'abord : un visiteur qui a trois minutes doit
   // voir en premier ce sur quoi il peut agir.
@@ -181,17 +142,17 @@ function vueListe() {
         <div>
           <p class="hero-pill">Postes vacants · Mobilité interne</p>
           <h1 id="titre-liste">Rejoindre la <em>DCIP</em></h1>
-          <p class="sous">${etat.postes.length} postes présentés · ${ouverts} encore ouverts
-            · Touchez une fiche pour la découvrir</p>
+          <p class="sous">${ouverts} poste${ouverts > 1 ? 's' : ''} ouvert${ouverts > 1 ? 's' : ''}
+            à la mobilité, touchez une fiche pour la découvrir</p>
         </div>
       </div>
     </div>
 
     <div class="section">
       <div class="entete-liste">
-        <h2>${etat.service || 'Tous les postes'}</h2>
-        <p class="texte-faible">${liste.length} poste${liste.length > 1 ? 's' : ''}
-          ${etat.service ? 'dans ce service' : 'de mobilité interne'}</p>
+        <h2>Tous les postes</h2>
+        <p class="texte-faible">${ouverts} poste${ouverts > 1 ? 's' : ''}
+          de mobilité interne</p>
       </div>
 
       ${etat.charge.erreur ? `
@@ -202,7 +163,7 @@ function vueListe() {
 
       <div class="pile-serree" role="list">
         ${ordonnes.length ? ordonnes.map(ligne).join('')
-          : `<p class="vide">Aucun poste vacant pour ce service actuellement.</p>`}
+          : `<p class="vide">Aucun poste vacant actuellement.</p>`}
       </div>
     </div>`, `${liste.length} postes affichés`);
 }
@@ -312,8 +273,7 @@ function vueFormulaire(id) {
   etat.projet = null;
   etat.ouvertA = Date.now();
 
-  const mois = (etat.config.rgpd || {}).duree_conservation_mois || 12;
-  const dpo = (etat.config.rgpd || {}).contact_dpo || '';
+  const jours = (etat.config.rgpd || {}).duree_conservation_jours || 30;
 
   const champ = (nom, libelle, options = {}) => `
     <div class="champ">
@@ -391,9 +351,7 @@ function vueFormulaire(id) {
               <span class="lecteur-seul">(obligatoire)</span></span>
           </label>
           <p class="mention-rgpd" id="mention-rgpd">
-            <strong>RGPD</strong> — Données traitées par la DRH du Département des Alpes-Maritimes
-            pour le suivi des mobilités internes. Conservation ${mois} mois. Droits d'accès et
-            rectification${dpo && dpo !== 'À_RENSEIGNER' ? ` auprès de ${dpo}` : ' auprès du DPO'}.
+            <strong>RGPD</strong> — Données traitées par la DCIP. Conservation ${jours} jours.
             Aucun traceur, aucune mesure d'audience.
             <a href="../mentions.html?doc=rgpd" target="_blank" rel="noopener">En savoir plus<span
               class="lecteur-seul"> (nouvelle fenêtre)</span></a>.

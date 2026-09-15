@@ -31,7 +31,7 @@ Département utilise déjà.
 | Point | Pourquoi |
 |---|---|
 | Inscription du traitement au registre | Nouveau traitement, même temporaire |
-| Durée de conservation et purge | 12 mois annoncés au visiteur ; **la purge du fichier n'a rien d'automatique** |
+| Durée de conservation et purge | 30 jours annoncés au visiteur ; **la purge du fichier n'a rien d'automatique** |
 | Liste des personnes ayant accès au fichier | L'intérêt d'un agent pour un poste est sensible en mobilité interne |
 | Mention d'information | Celle affichée dans le formulaire, à valider dans sa formulation |
 
@@ -80,8 +80,8 @@ Aucune cession, aucune revente, aucun transfert à un tiers non listé ici.
 
 ## 5. Durée de conservation
 
-**12 mois** à compter de la demande, puis suppression
-(`data/config.json` → `rgpd.duree_conservation_mois`).
+**30 jours** à compter de la demande, puis suppression
+(`data/config.json` → `rgpd.duree_conservation_jours`).
 
 Cette durée couvre la campagne de mobilité interne consécutive à l'événement.
 
