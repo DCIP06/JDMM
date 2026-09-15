@@ -26,3 +26,5 @@ package-lock.json
 # Captures produites par la recette
 app-postes-*.png
 app-quiz-*.png
+# Rapport produit par scripts/recette/audit-a11y.mjs
+audit-a11y.json
