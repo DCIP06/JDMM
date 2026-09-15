@@ -1,0 +1,254 @@
+{
+ "titre": "Vie d'un projet immobilier",
+ "sous_titre": "Du besoin premier à l'amélioration continue — les 10 étapes d'un projet et leurs intervenants.",
+ "source": "sources/timeline_rollup_60x160cm.pdf (roll-up 60 × 160 cm)",
+ "_note_couleurs": "Les couleurs sont celles du roll-up, prélevées au pixel : le visiteur retrouve le même code entre le panneau et l'écran. Cinq d'entre elles n'atteignent pas le seuil AA en petit corps (Énergie et fluides 3,5:1, Maintenance des bâtiments 3,1:1, Maintenance des collèges 3,4:1, Mission Énergies Renouvelables 3,0:1, Tous les services 3,6:1). Elles ne servent donc QUE de repère décoratif — pastille et filet — et jamais à porter du texte : le nom du service est toujours écrit en couleur de texte normale.",
+ "etapes": [
+  {
+   "id": "conception",
+   "num": 1,
+   "titre": "Conception",
+   "accroche": "Du besoin au projet",
+   "couleur": "#1E4D8F"
+  },
+  {
+   "id": "realisation",
+   "num": 2,
+   "titre": "Réalisation",
+   "accroche": "Du projet au bâtiment",
+   "couleur": "#C2410C"
+  },
+  {
+   "id": "exploitation",
+   "num": 3,
+   "titre": "Exploitation",
+   "accroche": "Le bâtiment prend vie",
+   "couleur": "#0F766E"
+  }
+ ],
+ "services": [
+  {
+   "id": "politique",
+   "nom": "Politique",
+   "couleur": "#4C1D95",
+   "est_service": false
+  },
+  {
+   "id": "direction",
+   "nom": "Direction",
+   "couleur": "#1A365D",
+   "est_service": false
+  },
+  {
+   "id": "etudes-prealables",
+   "nom": "Études préalables",
+   "couleur": "#2C5282",
+   "est_service": true
+  },
+  {
+   "id": "gestion-immobiliere-fonciere",
+   "nom": "Gestion immobilière & foncière",
+   "couleur": "#2F855A",
+   "est_service": true
+  },
+  {
+   "id": "securite-surete-prevention",
+   "nom": "Sécurité, sûreté & prévention",
+   "couleur": "#C53030",
+   "est_service": true
+  },
+  {
+   "id": "mission-energies-renouvelables",
+   "nom": "Mission Énergies Renouvelables",
+   "couleur": "#65A30D",
+   "est_service": false
+  },
+  {
+   "id": "entretien-de-proximite",
+   "nom": "Entretien de proximité",
+   "couleur": "#6B46C1",
+   "est_service": true
+  },
+  {
+   "id": "etudes-et-travaux",
+   "nom": "Études et travaux",
+   "couleur": "#2B6CB0",
+   "est_service": true
+  },
+  {
+   "id": "energie-et-fluides",
+   "nom": "Énergie et fluides",
+   "couleur": "#B7791F",
+   "est_service": true
+  },
+  {
+   "id": "maintenance-des-batiments",
+   "nom": "Maintenance des bâtiments",
+   "couleur": "#38A169",
+   "est_service": true
+  },
+  {
+   "id": "maintenance-des-colleges",
+   "nom": "Maintenance des collèges",
+   "couleur": "#319795",
+   "est_service": true
+  },
+  {
+   "id": "tous-les-services-selon-les-besoins",
+   "nom": "Tous les services selon les besoins",
+   "couleur": "#B8761A",
+   "est_service": false
+  }
+ ],
+ "phases": [
+  {
+   "num": 1,
+   "etape": "conception",
+   "titre": "Expression du besoin & cadrage",
+   "citation": "Tout commence par une idée",
+   "points": [
+    "Identification du besoin (construction, achat, rénovation)",
+    "Définition des objectifs, contraintes et premières orientations"
+   ],
+   "intervenants": [
+    "politique",
+    "direction"
+   ]
+  },
+  {
+   "num": 2,
+   "etape": "conception",
+   "titre": "Études préalables & faisabilité",
+   "citation": "On évalue la faisabilité",
+   "points": [
+    "Études techniques, réglementaires et environnementales",
+    "Diagnostic, estimation budgétaire, étude foncière et juridique",
+    "Faisabilité sécuritaire et prévention (règles ERP, accessibilité)"
+   ],
+   "intervenants": [
+    "etudes-prealables",
+    "gestion-immobiliere-fonciere",
+    "securite-surete-prevention",
+    "mission-energies-renouvelables"
+   ]
+  },
+  {
+   "num": 3,
+   "etape": "conception",
+   "titre": "Programmation & conception",
+   "citation": "On dessine le projet",
+   "points": [
+    "Définition détaillée du projet (besoins, surfaces, usages)",
+    "Conception technique, architecturale et intégration énergétique"
+   ],
+   "intervenants": [
+    "entretien-de-proximite",
+    "etudes-et-travaux",
+    "energie-et-fluides",
+    "mission-energies-renouvelables"
+   ]
+  },
+  {
+   "num": 4,
+   "etape": "realisation",
+   "titre": "Acquisition & montage administratif",
+   "citation": "On contractualise et on s'engage",
+   "points": [
+    "Achat du foncier ou du bâtiment",
+    "Montage juridique, administratif, financier et autorisations"
+   ],
+   "intervenants": [
+    "direction",
+    "gestion-immobiliere-fonciere",
+    "energie-et-fluides"
+   ]
+  },
+  {
+   "num": 5,
+   "etape": "realisation",
+   "titre": "Préparation des travaux",
+   "citation": "Le chantier se prépare",
+   "points": [
+    "Consultation des entreprises",
+    "Planification, organisation du chantier et élaboration du planning"
+   ],
+   "intervenants": [
+    "etudes-et-travaux",
+    "securite-surete-prevention"
+   ]
+  },
+  {
+   "num": 6,
+   "etape": "realisation",
+   "titre": "Réalisation des travaux",
+   "citation": "Place à la construction",
+   "points": [
+    "Suivi et pilotage du chantier, coordination des intervenants",
+    "Contrôle qualité, coûts et délais"
+   ],
+   "intervenants": [
+    "direction",
+    "etudes-et-travaux"
+   ]
+  },
+  {
+   "num": 7,
+   "etape": "realisation",
+   "titre": "Sécurité, conformité & réception",
+   "citation": "On valide et on sécurise",
+   "points": [
+    "Sécurisation du site (contrôle d'accès, vidéosurveillance, cylindres spécifiques)",
+    "Vérification des normes (ERP, incendie, accessibilité)",
+    "Commission de sécurité et réception des travaux"
+   ],
+   "intervenants": [
+    "securite-surete-prevention",
+    "etudes-et-travaux"
+   ]
+  },
+  {
+   "num": 8,
+   "etape": "exploitation",
+   "titre": "Mise en service & aménagement",
+   "citation": "Le bâtiment prend vie",
+   "points": [
+    "Installation des usagers et aménagement des locaux",
+    "Mise en fonctionnement des équipements"
+   ],
+   "intervenants": [
+    "maintenance-des-batiments",
+    "maintenance-des-colleges",
+    "energie-et-fluides"
+   ]
+  },
+  {
+   "num": 9,
+   "etape": "exploitation",
+   "titre": "Exploitation & maintenance",
+   "citation": "On veille au quotidien",
+   "points": [
+    "Maintenance préventive et corrective, suivi des équipements",
+    "Gestion énergétique"
+   ],
+   "intervenants": [
+    "entretien-de-proximite",
+    "maintenance-des-batiments",
+    "maintenance-des-colleges",
+    "energie-et-fluides"
+   ]
+  },
+  {
+   "num": 10,
+   "etape": "exploitation",
+   "titre": "Suivi & amélioration continue",
+   "citation": "On apprend et on s'améliore",
+   "points": [
+    "Optimisation du bâtiment, travaux d'amélioration ou d'adaptation",
+    "Retour d'expérience"
+   ],
+   "intervenants": [
+    "tous-les-services-selon-les-besoins"
+   ]
+  }
+ ]
+}

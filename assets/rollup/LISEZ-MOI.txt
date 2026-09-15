@@ -1,0 +1,25 @@
+ROLL-UP « VIE D'UN PROJET IMMOBILIER »
+Département des Alpes-Maritimes — DCIP
+
+  rollup-84x160.pdf    le format demandé : 84 × 160 cm
+  rollup-60x160.pdf    le format d'origine, recomposé — sert de contrôle
+
+Ce que contient le PDF
+  Un seul feuillet, à la taille réelle d'impression (pas de mise à l'échelle
+  à demander à l'imprimeur). Tout est vectoriel : textes et icônes restent
+  nets quelle que soit la taille de tirage.
+
+Comment le format a été adapté
+  La hauteur ne change pas (160 cm), la largeur gagne 40 %. Agrandir le texte
+  d'autant aurait allongé le roll-up d'une vingtaine de centimètres, et il n'y
+  avait pas d'espace vertical à reprendre sans modifier les espacements. Donc :
+  le texte garde sa taille physique, tout le reste suit le format.
+  Ni le contenu, ni les textes, ni leurs retours à la ligne n'ont changé.
+
+Pour un autre format
+  python3 scripts/generer_rollup.py --largeur 100 --hauteur 200
+
+Le document est reconstruit depuis sources/timeline_rollup_60x160cm.pdf :
+positions, couleurs, dégradés et tracés d'icônes en sont extraits, pas
+redessinés. Le PDF 60 × 160 ci-joint permet de le vérifier — il redonne
+le document d'origine.

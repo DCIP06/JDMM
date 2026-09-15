@@ -1,0 +1,292 @@
+<!doctype html>
+<html lang="fr"><head><meta charset="utf-8">
+<title>Vie d'un projet immobilier — roll-up 60 × 160 cm</title>
+<style>
+  @page { size: 600.00mm 1600.00mm; margin: 0; }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html, body { width: 600.00mm; height: 1600.00mm; }
+  body {
+    --bande: 11.007mm;
+    position: relative; background: #fff; overflow: hidden;
+    /* Nimbus Sans et TeX Gyre Heros partagent les métriques d'Helvetica :
+       le document d'origine a été composé avec la seconde. */
+    font-family: 'Nimbus Sans', 'TeX Gyre Heros', Helvetica, Arial, sans-serif;
+    color: #0A2540; -webkit-font-smoothing: antialiased;
+  }
+  div { position: absolute; white-space: nowrap; }
+
+  .bande { left: 0; top: 0; height: 1600.00mm; background: #E8A33D; }
+  .bandeau { left: var(--bande); width: calc(600.00mm - var(--bande)); }
+  .bandeau.haut { top: 0; background: linear-gradient(180deg, #0A2540, #1E4D8F); }
+  .bandeau.pied { background: linear-gradient(180deg, #1E4D8F, #0A2540); }
+  .filet { background: #E8A33D; }
+  .filet-titre { background: #E8A33D; }
+  .rail { border-radius: 99mm; }
+
+  /* Le centrage de l'original ignore la bande ambre : il porte sur la page. */
+  .centre { left: 0; width: 600.00mm; text-align: center; }
+  .centre-bloc { text-align: center; }
+  .gras { font-weight: 700; }
+  .normal { font-weight: 400; }
+  .italique { font-style: italic; }
+  .gras-italique { font-weight: 700; font-style: italic; }
+  .clair { color: #fff; }
+
+  .pastille {
+    border-radius: 50%; display: flex; align-items: center; justify-content: center;
+    color: #fff; font-weight: 700;
+  }
+  .pastille span { position: static; line-height: 1; }
+
+  .surtitre { font-weight: 700; }
+  .titre-phase { font-weight: 700; color: #0A2540; }
+  .citation { font-style: italic; }
+  .puce { color: #2A3B4D; white-space: normal; }
+  .puce .point { position: static; }
+  .intervenants { font-weight: 700; color: #7A8794; }
+
+  .badges { display: flex; align-items: center; }
+  .badge {
+    position: static; display: inline-flex; align-items: center;
+    color: #fff; font-weight: 700; white-space: nowrap; line-height: 1;
+  }
+  .icone svg { position: static; display: block; overflow: visible; }
+</style></head>
+<body>
+<div class="bande" style="width:11.007mm"></div>
+<div class="bandeau haut" style="height:204.987mm"></div>
+<div class="filet" style="top:204.987mm;height:5.033mm;left:11.007mm;width:588.993mm"></div>
+<div class="filet" style="top:1530.021mm;height:4.986mm;left:11.007mm;width:588.993mm"></div>
+<div class="bandeau pied" style="top:1535.007mm;height:64.993mm"></div>
+<div class="gras clair centre" style="top:35.449mm;font-size:23.998mm" data-largeur="528.024">DÉPARTEMENT DES ALPES-MARITIMES</div>
+<div class="filet-titre" style="top:65.993mm;left:119.989mm;width:360.021mm;height:1.223mm"></div>
+<div class="normal clair centre" style="top:78.904mm;font-size:13.001mm" data-largeur="348.544">Direction de la Construction, de l'Immobilier et du Patrimoine</div>
+<div class="gras clair centre" style="top:138.126mm;font-size:38.001mm" data-largeur="219.338">TIMELINE</div>
+<div class="gras centre" style="top:180.724mm;font-size:11.999mm;color:#E8A33D" data-largeur="260.529">D'UN PROJET IMMOBILIER</div>
+<div class="gras-italique centre" style="top:242.157mm;font-size:15.0mm;color:#0A2540" data-largeur="311.983">Du besoin premier à l'amélioration continue</div>
+<div class="gras-italique centre" style="top:261.155mm;font-size:15.0mm;color:#0A2540" data-largeur="348.686">— les 10 étapes d'un projet et leurs intervenants.</div>
+<div class="etape" style="left:30.01mm;width:176.013mm;top:289.983mm;height:54.986mm;background:#1E4D8F;border-radius:6.585mm"></div>
+<div class="gras clair centre-bloc" style="top:301.791mm;left:30.01mm;width:176.013mm;font-size:8.998mm" data-largeur="107.037">Phases 01 — 03</div>
+<div class="gras clair centre-bloc" style="top:316.909mm;left:30.01mm;width:176.013mm;font-size:16.999mm" data-largeur="140.335">CONCEPTION</div>
+<div class="italique clair centre-bloc" style="top:335.686mm;left:30.01mm;width:176.013mm;font-size:8.998mm" data-largeur="78.034">Du besoin au projet</div>
+<div class="etape" style="left:209.973mm;width:176.013mm;top:289.983mm;height:54.986mm;background:#C2410C;border-radius:6.585mm"></div>
+<div class="gras clair centre-bloc" style="top:301.791mm;left:209.973mm;width:176.013mm;font-size:8.998mm" data-largeur="107.037">Phases 04 — 07</div>
+<div class="gras clair centre-bloc" style="top:316.909mm;left:209.973mm;width:176.013mm;font-size:16.999mm" data-largeur="145.232">RÉALISATION</div>
+<div class="italique clair centre-bloc" style="top:335.686mm;left:209.973mm;width:176.013mm;font-size:8.998mm" data-largeur="86.040">Du projet au bâtiment</div>
+<div class="etape" style="left:389.984mm;width:176.013mm;top:289.983mm;height:54.986mm;background:#0F766E;border-radius:6.585mm"></div>
+<div class="gras clair centre-bloc" style="top:301.791mm;left:389.984mm;width:176.013mm;font-size:8.998mm" data-largeur="107.042">Phases 08 — 10</div>
+<div class="gras clair centre-bloc" style="top:316.909mm;left:389.984mm;width:176.013mm;font-size:16.999mm" data-largeur="158.628">EXPLOITATION</div>
+<div class="italique clair centre-bloc" style="top:335.686mm;left:389.984mm;width:176.013mm;font-size:8.998mm" data-largeur="86.548">Le bâtiment prend vie</div>
+<div class="rail" style="left:78.510mm;width:3.001mm;top:367.999mm;height:354.702mm;background:#1E4D8F"></div>
+<div class="rail" style="left:78.510mm;width:3.001mm;top:730.702mm;height:424.302mm;background:#C2410C"></div>
+<div class="rail" style="left:78.510mm;width:3.001mm;top:1163.0mm;height:302.5mm;background:#0F766E"></div>
+<div class="pastille" style="left:58.608mm;top:363.347mm;width:42.804mm;height:42.804mm;background:linear-gradient(135deg,#3B6BAA,#0A2540);border:2.342mm solid #fff"><span style="font-size:16.063mm">01</span></div>
+<div class="surtitre" style="left:134.996mm;top:364.532mm;font-size:6.693mm;color:#1E4D8F" data-largeur="122.706">PHASE 01 · CONCEPTION</div>
+<div class="titre-phase" style="left:134.996mm;top:377.789mm;font-size:12.046mm">Expression du besoin &amp; cadrage</div>
+<div class="citation" style="left:134.996mm;top:392.115mm;font-size:7.361mm;color:#1E4D8F">« Tout commence par une idée »</div>
+<div class="puce" style="left:140.311mm;top:405.502mm;font-size:7.361mm;line-height:10.724mm"><span class="point">•</span> Identification du besoin (construction, achat, rénovation)</div>
+<div class="puce" style="left:140.311mm;top:416.207mm;font-size:7.361mm;line-height:10.724mm"><span class="point">•</span> Définition des objectifs, contraintes et premières orientations</div>
+<div class="intervenants" style="left:134.996mm;top:434.611mm;font-size:6.021mm" data-largeur="61.567">INTERVENANTS</div>
+<div class="badges" style="left:198.543mm;top:431.181mm;gap:4.045mm">
+<span class="badge" style="background:#4C1D95;height:14.723mm;border-radius:7.362mm;padding:0 9.219mm;font-size:6.693mm">Politique</span>
+<span class="badge" style="background:#1A365D;height:14.723mm;border-radius:7.362mm;padding:0 9.219mm;font-size:6.693mm">Direction</span>
+</div>
+<div class="icone" style="left:524.98mm;top:368.723mm;width:32.126mm;height:32.126mm"><svg viewBox="1116.1 783.9 68.3 68.3" width="100%" height="100%"><path fill-rule="nonzero" fill="rgb(11.764526%, 30.195618%, 56.077576%)" fill-opacity="0.1" d="M 1127.132812 783.929688 L 1172.648438 783.929688 C 1178.929688 783.929688 1184.027344 790.210938 1184.027344 795.308594 L 1184.027344 840.820312 C 1184.027344 847.105469 1178.929688 852.199219 1172.648438 852.199219 L 1127.132812 852.199219 C 1120.851562 852.199219 1115.753906 845.917969 1115.753906 840.820312 L 1115.753906 795.308594 C 1115.753906 789.023438 1120.851562 783.929688 1127.132812 783.929688 Z M 1127.132812 783.929688 "/>
+<path fill="none" stroke-width="3.413647" stroke-linecap="butt" stroke-linejoin="round" stroke="rgb(11.764526%, 30.195618%, 56.077576%)" stroke-opacity="1" stroke-miterlimit="4" d="M 1150.255818 799.974254 C 1142.667446 799.974254 1136.97812 805.659672 1136.97812 813.244137 C 1136.97812 817.987847 1139.443755 821.403005 1142.667446 824.060108 L 1142.667446 827.471359 L 1157.840283 827.471359 L 1157.840283 824.060108 C 1161.060067 821.403005 1163.529609 817.987847 1163.529609 813.244137 C 1163.529609 805.659672 1157.840283 799.974254 1150.255818 799.974254 Z M 1150.255818 799.974254 " transform="matrix(0.999679, 0, 0, 0.999679, 0, 0.333227)"/>
+<path fill="none" stroke-width="3.413647" stroke-linecap="round" stroke-linejoin="miter" stroke="rgb(11.764526%, 30.195618%, 56.077576%)" stroke-opacity="1" stroke-miterlimit="4" d="M 1144.566493 831.265545 L 1155.945144 831.265545 " transform="matrix(0.999679, 0, 0, 0.999679, 0, 0.333227)"/>
+<path fill="none" stroke-width="3.413647" stroke-linecap="round" stroke-linejoin="miter" stroke="rgb(11.764526%, 30.195618%, 56.077576%)" stroke-opacity="1" stroke-miterlimit="4" d="M 1146.461632 836.005347 L 1154.046097 836.005347 " transform="matrix(0.999679, 0, 0, 0.999679, 0, 0.333227)"/></svg></div>
+<div class="pastille" style="left:58.608mm;top:453.046mm;width:42.804mm;height:42.804mm;background:linear-gradient(135deg,#3B6BAA,#0A2540);border:2.342mm solid #fff"><span style="font-size:16.063mm">02</span></div>
+<div class="surtitre" style="left:134.996mm;top:454.232mm;font-size:6.693mm;color:#1E4D8F" data-largeur="122.706">PHASE 02 · CONCEPTION</div>
+<div class="titre-phase" style="left:134.996mm;top:467.493mm;font-size:12.046mm">Études préalables &amp; faisabilité</div>
+<div class="citation" style="left:134.996mm;top:481.819mm;font-size:7.361mm;color:#1E4D8F">« On évalue la faisabilité »</div>
+<div class="puce" style="left:140.311mm;top:495.201mm;font-size:7.361mm;line-height:10.724mm"><span class="point">•</span> Études techniques, réglementaires et environnementales</div>
+<div class="puce" style="left:140.311mm;top:505.907mm;font-size:7.361mm;line-height:10.724mm"><span class="point">•</span> Diagnostic, estimation budgétaire, étude foncière et juridique</div>
+<div class="puce" style="left:140.311mm;top:516.617mm;font-size:7.361mm;line-height:10.724mm"><span class="point">•</span> Faisabilité sécuritaire et prévention (règles ERP, accessibilité)</div>
+<div class="intervenants" style="left:134.996mm;top:535.016mm;font-size:6.021mm" data-largeur="61.567">INTERVENANTS</div>
+<div class="badges" style="left:198.543mm;top:531.591mm;gap:4.045mm">
+<span class="badge" style="background:#2C5282;height:14.723mm;border-radius:7.362mm;padding:0 9.219mm;font-size:6.693mm">Études préalables</span>
+<span class="badge" style="background:#2F855A;height:14.723mm;border-radius:7.362mm;padding:0 9.219mm;font-size:6.693mm">Gestion immobilière &amp; foncière</span>
+</div>
+<div class="badges" style="left:198.543mm;top:550.326mm;gap:4.045mm">
+<span class="badge" style="background:#C53030;height:14.723mm;border-radius:7.362mm;padding:0 9.219mm;font-size:6.693mm">Sécurité, sûreté &amp; prévention</span>
+<span class="badge" style="background:#65A30D;height:14.723mm;border-radius:7.362mm;padding:0 9.219mm;font-size:6.693mm">Mission Énergies Renouvelables</span>
+</div>
+<div class="icone" style="left:524.98mm;top:458.376mm;width:32.126mm;height:32.126mm"><svg viewBox="1116.1 974.5 68.3 68.3" width="100%" height="100%"><path fill-rule="nonzero" fill="rgb(11.764526%, 30.195618%, 56.077576%)" fill-opacity="0.1" d="M 1127.132812 974.570312 L 1172.648438 974.570312 C 1178.929688 974.570312 1184.027344 980.855469 1184.027344 985.949219 L 1184.027344 1031.464844 C 1184.027344 1037.746094 1178.929688 1042.84375 1172.648438 1042.84375 L 1127.132812 1042.84375 C 1120.851562 1042.84375 1115.753906 1036.558594 1115.753906 1031.464844 L 1115.753906 985.949219 C 1115.753906 979.667969 1120.851562 974.570312 1127.132812 974.570312 Z M 1127.132812 974.570312 "/>
+<path fill="none" stroke-width="3.413647" stroke-linecap="butt" stroke-linejoin="miter" stroke="rgb(11.764526%, 30.195618%, 56.077576%)" stroke-opacity="1" stroke-miterlimit="4" d="M 1158.789807 1005.845003 C 1158.789807 1012.128269 1153.694422 1017.223654 1147.411156 1017.223654 C 1141.123982 1017.223654 1136.032504 1012.128269 1136.032504 1005.845003 C 1136.032504 999.561736 1141.123982 994.466351 1147.411156 994.466351 C 1153.694422 994.466351 1158.789807 999.561736 1158.789807 1005.845003 Z M 1158.789807 1005.845003 " transform="matrix(0.999679, 0, 0, 0.999679, 0, 0.333227)"/>
+<path fill-rule="nonzero" fill="rgb(0%, 0%, 0%)" fill-opacity="1" stroke-width="3.792941" stroke-linecap="round" stroke-linejoin="miter" stroke="rgb(11.764526%, 30.195618%, 56.077576%)" stroke-opacity="1" stroke-miterlimit="4" d="M 1155.562209 1013.999963 L 1165.424748 1023.862503 " transform="matrix(0.999679, 0, 0, 0.999679, 0, 0.333227)"/></svg></div>
+<div class="pastille" style="left:58.608mm;top:605.545mm;width:42.804mm;height:42.804mm;background:linear-gradient(135deg,#3B6BAA,#0A2540);border:2.342mm solid #fff"><span style="font-size:16.063mm">03</span></div>
+<div class="surtitre" style="left:134.996mm;top:606.73mm;font-size:6.693mm;color:#1E4D8F" data-largeur="122.706">PHASE 03 · CONCEPTION</div>
+<div class="titre-phase" style="left:134.996mm;top:619.992mm;font-size:12.046mm">Programmation &amp; conception</div>
+<div class="citation" style="left:134.996mm;top:634.318mm;font-size:7.361mm;color:#1E4D8F">« On dessine le projet »</div>
+<div class="puce" style="left:140.311mm;top:647.7mm;font-size:7.361mm;line-height:10.724mm"><span class="point">•</span> Définition détaillée du projet (besoins, surfaces, usages)</div>
+<div class="puce" style="left:140.311mm;top:658.411mm;font-size:7.361mm;line-height:10.724mm"><span class="point">•</span> Conception technique, architecturale et intégration énergétique</div>
+<div class="intervenants" style="left:134.996mm;top:676.809mm;font-size:6.021mm" data-largeur="61.567">INTERVENANTS</div>
+<div class="badges" style="left:198.543mm;top:673.384mm;gap:4.045mm">
+<span class="badge" style="background:#6B46C1;height:14.723mm;border-radius:7.362mm;padding:0 9.219mm;font-size:6.693mm">Entretien de proximité</span>
+<span class="badge" style="background:#2B6CB0;height:14.723mm;border-radius:7.362mm;padding:0 9.219mm;font-size:6.693mm">Études et travaux</span>
+<span class="badge" style="background:#B7791F;height:14.723mm;border-radius:7.362mm;padding:0 9.219mm;font-size:6.693mm">Énergie et fluides</span>
+</div>
+<div class="badges" style="left:198.543mm;top:692.119mm;gap:4.045mm">
+<span class="badge" style="background:#65A30D;height:14.723mm;border-radius:7.362mm;padding:0 9.219mm;font-size:6.693mm">Mission Énergies Renouvelables</span>
+</div>
+<div class="icone" style="left:524.98mm;top:610.917mm;width:32.126mm;height:32.126mm"><svg viewBox="1116.1 1298.8 68.3 68.3" width="100%" height="100%"><path fill-rule="nonzero" fill="rgb(11.764526%, 30.195618%, 56.077576%)" fill-opacity="0.1" d="M 1127.132812 1298.679688 L 1172.648438 1298.679688 C 1178.929688 1298.679688 1184.027344 1304.960938 1184.027344 1310.058594 L 1184.027344 1355.570312 C 1184.027344 1361.851562 1178.929688 1366.949219 1172.648438 1366.949219 L 1127.132812 1366.949219 C 1120.851562 1366.949219 1115.753906 1360.667969 1115.753906 1355.570312 L 1115.753906 1310.058594 C 1115.753906 1303.773438 1120.851562 1298.679688 1127.132812 1298.679688 Z M 1127.132812 1298.679688 "/>
+<path fill="none" stroke-width="3.413647" stroke-linecap="butt" stroke-linejoin="miter" stroke="rgb(11.764526%, 30.195618%, 56.077576%)" stroke-opacity="1" stroke-miterlimit="4" d="M 1136.032504 1317.730238 L 1164.475225 1317.730238 C 1165.522436 1317.730238 1166.370364 1318.777449 1166.370364 1319.625377 L 1166.370364 1346.176866 C 1166.370364 1347.224077 1165.522436 1348.068098 1164.475225 1348.068098 L 1136.032504 1348.068098 C 1134.985293 1348.068098 1134.137365 1347.024794 1134.137365 1346.176866 L 1134.137365 1319.625377 C 1134.137365 1318.578166 1134.985293 1317.730238 1136.032504 1317.730238 Z M 1136.032504 1317.730238 " transform="matrix(0.999679, 0, 0, 0.999679, 0, 0.333227)"/>
+<path fill="none" stroke-width="3.413647" stroke-linecap="butt" stroke-linejoin="miter" stroke="rgb(11.764526%, 30.195618%, 56.077576%)" stroke-opacity="1" stroke-miterlimit="4" d="M 1134.133457 1327.209842 L 1166.374272 1327.209842 " transform="matrix(0.999679, 0, 0, 0.999679, 0, 0.333227)"/>
+<path fill="none" stroke-width="3.413647" stroke-linecap="butt" stroke-linejoin="miter" stroke="rgb(11.764526%, 30.195618%, 56.077576%)" stroke-opacity="1" stroke-miterlimit="4" d="M 1142.667446 1327.209842 L 1142.667446 1348.075913 " transform="matrix(0.999679, 0, 0, 0.999679, 0, 0.333227)"/>
+<path fill="none" stroke-width="3.413647" stroke-linecap="butt" stroke-linejoin="miter" stroke="rgb(11.764526%, 30.195618%, 56.077576%)" stroke-opacity="1" stroke-miterlimit="4" d="M 1154.046097 1334.798215 L 1154.046097 1348.075913 " transform="matrix(0.999679, 0, 0, 0.999679, 0, 0.333227)"/>
+<path fill="none" stroke-width="3.413647" stroke-linecap="butt" stroke-linejoin="miter" stroke="rgb(11.764526%, 30.195618%, 56.077576%)" stroke-opacity="1" stroke-miterlimit="4" d="M 1154.046097 1334.798215 L 1166.374272 1334.798215 " transform="matrix(0.999679, 0, 0, 0.999679, 0, 0.333227)"/></svg></div>
+<div class="pastille" style="left:58.608mm;top:730.048mm;width:42.804mm;height:42.804mm;background:linear-gradient(135deg,#EA580C,#7C2D12);border:2.342mm solid #fff"><span style="font-size:16.063mm">04</span></div>
+<div class="surtitre" style="left:134.996mm;top:731.228mm;font-size:6.693mm;color:#C2410C" data-largeur="125.457">PHASE 04 · RÉALISATION</div>
+<div class="titre-phase" style="left:134.996mm;top:744.495mm;font-size:12.046mm">Acquisition &amp; montage administratif</div>
+<div class="citation" style="left:134.996mm;top:758.816mm;font-size:7.361mm;color:#C2410C">« On contractualise et on s'engage »</div>
+<div class="puce" style="left:140.311mm;top:772.203mm;font-size:7.361mm;line-height:10.724mm"><span class="point">•</span> Achat du foncier ou du bâtiment</div>
+<div class="puce" style="left:140.311mm;top:782.908mm;font-size:7.361mm;line-height:10.724mm"><span class="point">•</span> Montage juridique, administratif, financier et autorisations</div>
+<div class="intervenants" style="left:134.996mm;top:801.312mm;font-size:6.021mm" data-largeur="61.567">INTERVENANTS</div>
+<div class="badges" style="left:198.543mm;top:797.882mm;gap:4.045mm">
+<span class="badge" style="background:#1A365D;height:14.723mm;border-radius:7.362mm;padding:0 9.219mm;font-size:6.693mm">Direction</span>
+<span class="badge" style="background:#2F855A;height:14.723mm;border-radius:7.362mm;padding:0 9.219mm;font-size:6.693mm">Gestion immobilière &amp; foncière</span>
+<span class="badge" style="background:#B7791F;height:14.723mm;border-radius:7.362mm;padding:0 9.219mm;font-size:6.693mm">Énergie et fluides</span>
+</div>
+<div class="icone" style="left:524.98mm;top:735.424mm;width:32.126mm;height:32.126mm"><svg viewBox="1116.1 1563.5 68.3 68.3" width="100%" height="100%"><path fill-rule="nonzero" fill="rgb(76.077271%, 25.489807%, 4.705811%)" fill-opacity="0.1" d="M 1127.132812 1563.28125 L 1172.648438 1563.28125 C 1178.929688 1563.28125 1184.027344 1569.5625 1184.027344 1574.660156 L 1184.027344 1620.171875 C 1184.027344 1626.457031 1178.929688 1631.550781 1172.648438 1631.550781 L 1127.132812 1631.550781 C 1120.851562 1631.550781 1115.753906 1625.269531 1115.753906 1620.171875 L 1115.753906 1574.660156 C 1115.753906 1568.375 1120.851562 1563.28125 1127.132812 1563.28125 Z M 1127.132812 1563.28125 "/>
+<path fill="none" stroke-width="3.413647" stroke-linecap="round" stroke-linejoin="round" stroke="rgb(76.077271%, 25.489807%, 4.705811%)" stroke-opacity="1" stroke-miterlimit="4" d="M 1133.187841 1595.690525 L 1140.772306 1588.10606 L 1146.461632 1593.791478 M 1154.046097 1593.791478 L 1159.73933 1588.10606 L 1167.323795 1595.690525 " transform="matrix(0.999679, 0, 0, 0.999679, 0, 0.333227)"/>
+<path fill="none" stroke-width="3.413647" stroke-linecap="round" stroke-linejoin="round" stroke="rgb(76.077271%, 25.489807%, 4.705811%)" stroke-opacity="1" stroke-miterlimit="4" d="M 1140.772306 1599.484711 L 1146.461632 1605.170129 L 1149.306295 1602.329374 L 1154.046097 1607.069176 L 1156.89076 1604.228421 L 1159.73933 1607.069176 L 1164.475225 1602.329374 " transform="matrix(0.999679, 0, 0, 0.999679, 0, 0.333227)"/>
+<path fill-rule="nonzero" fill="rgb(0%, 0%, 0%)" fill-opacity="1" stroke-width="3.413647" stroke-linecap="round" stroke-linejoin="miter" stroke="rgb(76.077271%, 25.489807%, 4.705811%)" stroke-opacity="1" stroke-miterlimit="4" d="M 1161.63447 1601.379851 L 1167.323795 1595.690525 " transform="matrix(0.999679, 0, 0, 0.999679, 0, 0.333227)"/>
+<path fill-rule="nonzero" fill="rgb(0%, 0%, 0%)" fill-opacity="1" stroke-width="3.413647" stroke-linecap="round" stroke-linejoin="miter" stroke="rgb(76.077271%, 25.489807%, 4.705811%)" stroke-opacity="1" stroke-miterlimit="4" d="M 1133.187841 1601.379851 L 1138.87326 1595.690525 " transform="matrix(0.999679, 0, 0, 0.999679, 0, 0.333227)"/></svg></div>
+<div class="pastille" style="left:58.608mm;top:837.146mm;width:42.804mm;height:42.804mm;background:linear-gradient(135deg,#EA580C,#7C2D12);border:2.342mm solid #fff"><span style="font-size:16.063mm">05</span></div>
+<div class="surtitre" style="left:134.996mm;top:838.331mm;font-size:6.693mm;color:#C2410C" data-largeur="125.457">PHASE 05 · RÉALISATION</div>
+<div class="titre-phase" style="left:134.996mm;top:851.593mm;font-size:12.046mm">Préparation des travaux</div>
+<div class="citation" style="left:134.996mm;top:865.919mm;font-size:7.361mm;color:#C2410C">« Le chantier se prépare »</div>
+<div class="puce" style="left:140.311mm;top:879.301mm;font-size:7.361mm;line-height:10.724mm"><span class="point">•</span> Consultation des entreprises</div>
+<div class="puce" style="left:140.311mm;top:890.007mm;font-size:7.361mm;line-height:10.724mm"><span class="point">•</span> Planification, organisation du chantier et élaboration du planning</div>
+<div class="intervenants" style="left:134.996mm;top:908.41mm;font-size:6.021mm" data-largeur="61.567">INTERVENANTS</div>
+<div class="badges" style="left:198.543mm;top:904.985mm;gap:4.045mm">
+<span class="badge" style="background:#2B6CB0;height:14.723mm;border-radius:7.362mm;padding:0 9.219mm;font-size:6.693mm">Études et travaux</span>
+<span class="badge" style="background:#C53030;height:14.723mm;border-radius:7.362mm;padding:0 9.219mm;font-size:6.693mm">Sécurité, sûreté &amp; prévention</span>
+</div>
+<div class="icone" style="left:524.98mm;top:842.48mm;width:32.126mm;height:32.126mm"><svg viewBox="1116.1 1791.1 68.3 68.3" width="100%" height="100%"><path fill-rule="nonzero" fill="rgb(76.077271%, 25.489807%, 4.705811%)" fill-opacity="0.1" d="M 1127.132812 1790.898438 L 1172.648438 1790.898438 C 1178.929688 1790.898438 1184.027344 1797.183594 1184.027344 1802.277344 L 1184.027344 1847.792969 C 1184.027344 1854.074219 1178.929688 1859.171875 1172.648438 1859.171875 L 1127.132812 1859.171875 C 1120.851562 1859.171875 1115.753906 1852.886719 1115.753906 1847.792969 L 1115.753906 1802.277344 C 1115.753906 1795.996094 1120.851562 1790.898438 1127.132812 1790.898438 Z M 1127.132812 1790.898438 "/>
+<path fill="none" stroke-width="3.413647" stroke-linecap="butt" stroke-linejoin="round" stroke="rgb(76.077271%, 25.489807%, 4.705811%)" stroke-opacity="1" stroke-miterlimit="4" d="M 1133.187841 1834.763334 C 1133.187841 1823.384682 1140.772306 1813.901171 1150.255818 1813.901171 C 1159.73933 1813.901171 1167.323795 1823.384682 1167.323795 1834.763334 L 1167.323795 1837.604089 L 1133.187841 1837.604089 Z M 1133.187841 1834.763334 " transform="matrix(0.999679, 0, 0, 0.999679, 0, 0.333227)"/>
+<path fill="none" stroke-width="3.413647" stroke-linecap="round" stroke-linejoin="miter" stroke="rgb(76.077271%, 25.489807%, 4.705811%)" stroke-opacity="1" stroke-miterlimit="4" d="M 1144.566493 1814.850694 L 1144.566493 1827.174961 " transform="matrix(0.999679, 0, 0, 0.999679, 0, 0.333227)"/>
+<path fill="none" stroke-width="3.413647" stroke-linecap="round" stroke-linejoin="miter" stroke="rgb(76.077271%, 25.489807%, 4.705811%)" stroke-opacity="1" stroke-miterlimit="4" d="M 1155.945144 1814.850694 L 1155.945144 1827.174961 " transform="matrix(0.999679, 0, 0, 0.999679, 0, 0.333227)"/>
+<path fill="none" stroke-width="3.413647" stroke-linecap="round" stroke-linejoin="miter" stroke="rgb(76.077271%, 25.489807%, 4.705811%)" stroke-opacity="1" stroke-miterlimit="4" d="M 1131.288795 1841.398275 L 1169.218935 1841.398275 " transform="matrix(0.999679, 0, 0, 0.999679, 0, 0.333227)"/></svg></div>
+<div class="pastille" style="left:58.608mm;top:944.146mm;width:42.804mm;height:42.804mm;background:linear-gradient(135deg,#EA580C,#7C2D12);border:2.342mm solid #fff"><span style="font-size:16.063mm">06</span></div>
+<div class="surtitre" style="left:134.996mm;top:945.331mm;font-size:6.693mm;color:#C2410C" data-largeur="125.457">PHASE 06 · RÉALISATION</div>
+<div class="titre-phase" style="left:134.996mm;top:958.593mm;font-size:12.046mm">Réalisation des travaux</div>
+<div class="citation" style="left:134.996mm;top:972.919mm;font-size:7.361mm;color:#C2410C">« Place à la construction »</div>
+<div class="puce" style="left:140.311mm;top:986.301mm;font-size:7.361mm;line-height:10.724mm"><span class="point">•</span> Suivi et pilotage du chantier, coordination des intervenants</div>
+<div class="puce" style="left:140.311mm;top:997.007mm;font-size:7.361mm;line-height:10.724mm"><span class="point">•</span> Contrôle qualité, coûts et délais</div>
+<div class="intervenants" style="left:134.996mm;top:1015.41mm;font-size:6.021mm" data-largeur="61.567">INTERVENANTS</div>
+<div class="badges" style="left:198.543mm;top:1011.985mm;gap:4.045mm">
+<span class="badge" style="background:#1A365D;height:14.723mm;border-radius:7.362mm;padding:0 9.219mm;font-size:6.693mm">Direction</span>
+<span class="badge" style="background:#2B6CB0;height:14.723mm;border-radius:7.362mm;padding:0 9.219mm;font-size:6.693mm">Études et travaux</span>
+</div>
+<div class="icone" style="left:524.98mm;top:949.49mm;width:32.126mm;height:32.126mm"><svg viewBox="1116.1 2018.6 68.3 68.3" width="100%" height="100%"><path fill-rule="nonzero" fill="rgb(76.077271%, 25.489807%, 4.705811%)" fill-opacity="0.1" d="M 1127.132812 2018.304688 L 1172.648438 2018.304688 C 1178.929688 2018.304688 1184.027344 2024.589844 1184.027344 2029.6875 L 1184.027344 2075.199219 C 1184.027344 2081.480469 1178.929688 2086.578125 1172.648438 2086.578125 L 1127.132812 2086.578125 C 1120.851562 2086.578125 1115.753906 2080.292969 1115.753906 2075.199219 L 1115.753906 2029.6875 C 1115.753906 2023.402344 1120.851562 2018.304688 1127.132812 2018.304688 Z M 1127.132812 2018.304688 "/>
+<path fill-rule="nonzero" fill="rgb(0%, 0%, 0%)" fill-opacity="1" stroke-width="3.413647" stroke-linecap="round" stroke-linejoin="miter" stroke="rgb(76.077271%, 25.489807%, 4.705811%)" stroke-opacity="1" stroke-miterlimit="4" d="M 1138.87326 2035.69109 L 1165.424748 2047.069741 " transform="matrix(0.999679, 0, 0, 0.999679, 0, 0.333227)"/>
+<path fill="none" stroke-width="3.413647" stroke-linecap="butt" stroke-linejoin="miter" stroke="rgb(76.077271%, 25.489807%, 4.705811%)" stroke-opacity="1" stroke-miterlimit="4" d="M 1149.306295 2045.174601 L 1158.785899 2045.174601 L 1158.785899 2051.81345 L 1149.306295 2051.81345 Z M 1149.306295 2045.174601 " transform="matrix(0.999679, 0, 0, 0.999679, 0, 0.333227)"/>
+<path fill="none" stroke-width="3.413647" stroke-linecap="round" stroke-linejoin="miter" stroke="rgb(76.077271%, 25.489807%, 4.705811%)" stroke-opacity="1" stroke-miterlimit="4" d="M 1138.87326 2071.72609 L 1138.87326 2035.69109 " transform="matrix(0.999679, 0, 0, 0.999679, 0, 0.333227)"/>
+<path fill="none" stroke-width="3.413647" stroke-linecap="round" stroke-linejoin="miter" stroke="rgb(76.077271%, 25.489807%, 4.705811%)" stroke-opacity="1" stroke-miterlimit="4" d="M 1138.87326 2035.69109 L 1165.424748 2035.69109 " transform="matrix(0.999679, 0, 0, 0.999679, 0, 0.333227)"/>
+<path fill="none" stroke-width="3.413647" stroke-linecap="round" stroke-linejoin="miter" stroke="rgb(76.077271%, 25.489807%, 4.705811%)" stroke-opacity="1" stroke-miterlimit="4" d="M 1154.046097 2035.69109 L 1154.046097 2045.174601 " transform="matrix(0.999679, 0, 0, 0.999679, 0, 0.333227)"/>
+<path fill="none" stroke-width="3.413647" stroke-linecap="round" stroke-linejoin="miter" stroke="rgb(76.077271%, 25.489807%, 4.705811%)" stroke-opacity="1" stroke-miterlimit="4" d="M 1133.187841 2071.72609 L 1144.566493 2071.72609 " transform="matrix(0.999679, 0, 0, 0.999679, 0, 0.333227)"/></svg></div>
+<div class="pastille" style="left:58.608mm;top:1033.846mm;width:42.804mm;height:42.804mm;background:linear-gradient(135deg,#EA580C,#7C2D12);border:2.342mm solid #fff"><span style="font-size:16.063mm">07</span></div>
+<div class="surtitre" style="left:134.996mm;top:1035.031mm;font-size:6.693mm;color:#C2410C" data-largeur="125.457">PHASE 07 · RÉALISATION</div>
+<div class="titre-phase" style="left:134.996mm;top:1048.293mm;font-size:12.046mm">Sécurité, conformité &amp; réception</div>
+<div class="citation" style="left:134.996mm;top:1062.619mm;font-size:7.361mm;color:#C2410C">« On valide et on sécurise »</div>
+<div class="puce" style="left:140.311mm;top:1076.001mm;font-size:7.361mm;line-height:10.724mm"><span class="point">•</span> Sécurisation du site (contrôle d'accès, vidéosurveillance, cylindres<br>spécifiques)</div>
+<div class="puce" style="left:140.311mm;top:1097.417mm;font-size:7.361mm;line-height:10.724mm"><span class="point">•</span> Vérification des normes (ERP, incendie, accessibilité)</div>
+<div class="puce" style="left:140.311mm;top:1108.122mm;font-size:7.361mm;line-height:10.724mm"><span class="point">•</span> Commission de sécurité et réception des travaux</div>
+<div class="intervenants" style="left:134.996mm;top:1126.526mm;font-size:6.021mm" data-largeur="61.567">INTERVENANTS</div>
+<div class="badges" style="left:198.543mm;top:1123.096mm;gap:4.045mm">
+<span class="badge" style="background:#C53030;height:14.723mm;border-radius:7.362mm;padding:0 9.219mm;font-size:6.693mm">Sécurité, sûreté &amp; prévention</span>
+<span class="badge" style="background:#2B6CB0;height:14.723mm;border-radius:7.362mm;padding:0 9.219mm;font-size:6.693mm">Études et travaux</span>
+</div>
+<div class="icone" style="left:524.98mm;top:1039.189mm;width:32.126mm;height:32.126mm"><svg viewBox="1116.1 2209.3 68.3 68.3" width="100%" height="100%"><path fill-rule="nonzero" fill="rgb(76.077271%, 25.489807%, 4.705811%)" fill-opacity="0.1" d="M 1127.132812 2208.945312 L 1172.648438 2208.945312 C 1178.929688 2208.945312 1184.027344 2215.226562 1184.027344 2220.324219 L 1184.027344 2265.835938 C 1184.027344 2272.121094 1178.929688 2277.214844 1172.648438 2277.214844 L 1127.132812 2277.214844 C 1120.851562 2277.214844 1115.753906 2270.933594 1115.753906 2265.835938 L 1115.753906 2220.324219 C 1115.753906 2214.039062 1120.851562 2208.945312 1127.132812 2208.945312 Z M 1127.132812 2208.945312 "/>
+<path fill="none" stroke-width="3.413647" stroke-linecap="butt" stroke-linejoin="round" stroke="rgb(76.077271%, 25.489807%, 4.705811%)" stroke-opacity="1" stroke-miterlimit="4" d="M 1150.255818 2226.396815 L 1136.032504 2233.031757 L 1136.032504 2244.410408 C 1136.032504 2251.994873 1141.717922 2258.633722 1150.255818 2260.532769 C 1158.789807 2258.633722 1164.475225 2251.994873 1164.475225 2244.410408 L 1164.475225 2233.031757 Z M 1150.255818 2226.396815 " transform="matrix(0.999679, 0, 0, 0.999679, 0, 0.333227)"/>
+<path fill="none" stroke-width="3.413647" stroke-linecap="round" stroke-linejoin="round" stroke="rgb(76.077271%, 25.489807%, 4.705811%)" stroke-opacity="1" stroke-miterlimit="4" d="M 1143.616969 2243.460885 L 1148.360679 2248.204594 L 1156.89076 2239.666698 " transform="matrix(0.999679, 0, 0, 0.999679, 0, 0.333227)"/></svg></div>
+<div class="pastille" style="left:58.608mm;top:1162.346mm;width:42.804mm;height:42.804mm;background:linear-gradient(135deg,#14B8A6,#134E4A);border:2.342mm solid #fff"><span style="font-size:16.063mm">08</span></div>
+<div class="surtitre" style="left:134.996mm;top:1163.531mm;font-size:6.693mm;color:#0F766E" data-largeur="131.558">PHASE 08 · EXPLOITATION</div>
+<div class="titre-phase" style="left:134.996mm;top:1176.793mm;font-size:12.046mm">Mise en service &amp; aménagement</div>
+<div class="citation" style="left:134.996mm;top:1191.119mm;font-size:7.361mm;color:#0F766E">« Le bâtiment prend vie »</div>
+<div class="puce" style="left:140.311mm;top:1204.501mm;font-size:7.361mm;line-height:10.724mm"><span class="point">•</span> Installation des usagers et aménagement des locaux</div>
+<div class="puce" style="left:140.311mm;top:1215.207mm;font-size:7.361mm;line-height:10.724mm"><span class="point">•</span> Mise en fonctionnement des équipements</div>
+<div class="intervenants" style="left:134.996mm;top:1233.61mm;font-size:6.021mm" data-largeur="61.567">INTERVENANTS</div>
+<div class="badges" style="left:198.543mm;top:1230.18mm;gap:4.045mm">
+<span class="badge" style="background:#38A169;height:14.723mm;border-radius:7.362mm;padding:0 9.219mm;font-size:6.693mm">Maintenance des bâtiments</span>
+<span class="badge" style="background:#319795;height:14.723mm;border-radius:7.362mm;padding:0 9.219mm;font-size:6.693mm">Maintenance des collèges</span>
+<span class="badge" style="background:#B7791F;height:14.723mm;border-radius:7.362mm;padding:0 9.219mm;font-size:6.693mm">Énergie et fluides</span>
+</div>
+<div class="icone" style="left:524.98mm;top:1167.694mm;width:32.126mm;height:32.126mm"><svg viewBox="1116.1 2482.5 68.3 68.3" width="100%" height="100%"><path fill-rule="nonzero" fill="rgb(5.882263%, 46.273804%, 43.136597%)" fill-opacity="0.1" d="M 1127.132812 2482.046875 L 1172.648438 2482.046875 C 1178.929688 2482.046875 1184.027344 2488.332031 1184.027344 2493.429688 L 1184.027344 2538.941406 C 1184.027344 2545.222656 1178.929688 2550.320312 1172.648438 2550.320312 L 1127.132812 2550.320312 C 1120.851562 2550.320312 1115.753906 2544.035156 1115.753906 2538.941406 L 1115.753906 2493.429688 C 1115.753906 2487.144531 1120.851562 2482.046875 1127.132812 2482.046875 Z M 1127.132812 2482.046875 "/>
+<path fill="none" stroke-width="3.413647" stroke-linecap="butt" stroke-linejoin="miter" stroke="rgb(5.882263%, 46.273804%, 43.136597%)" stroke-opacity="1" stroke-miterlimit="4" d="M 1148.360679 2516.646202 C 1148.360679 2520.315348 1145.387069 2523.288959 1141.717922 2523.288959 C 1138.056591 2523.288959 1135.082981 2520.315348 1135.082981 2516.646202 C 1135.082981 2512.984871 1138.056591 2510.01126 1141.717922 2510.01126 C 1145.387069 2510.01126 1148.360679 2512.984871 1148.360679 2516.646202 Z M 1148.360679 2516.646202 " transform="matrix(0.999679, 0, 0, 0.999679, 0, 0.333227)"/>
+<path fill="none" stroke-width="3.413647" stroke-linecap="round" stroke-linejoin="miter" stroke="rgb(5.882263%, 46.273804%, 43.136597%)" stroke-opacity="1" stroke-miterlimit="4" d="M 1148.360679 2516.646202 L 1167.323795 2516.646202 " transform="matrix(0.999679, 0, 0, 0.999679, 0, 0.333227)"/>
+<path fill="none" stroke-width="3.413647" stroke-linecap="round" stroke-linejoin="miter" stroke="rgb(5.882263%, 46.273804%, 43.136597%)" stroke-opacity="1" stroke-miterlimit="4" d="M 1159.73933 2516.646202 L 1159.73933 2523.288959 " transform="matrix(0.999679, 0, 0, 0.999679, 0, 0.333227)"/>
+<path fill="none" stroke-width="3.413647" stroke-linecap="round" stroke-linejoin="miter" stroke="rgb(5.882263%, 46.273804%, 43.136597%)" stroke-opacity="1" stroke-miterlimit="4" d="M 1165.424748 2516.646202 L 1165.424748 2522.339435 " transform="matrix(0.999679, 0, 0, 0.999679, 0, 0.333227)"/></svg></div>
+<div class="pastille" style="left:58.608mm;top:1286.844mm;width:42.804mm;height:42.804mm;background:linear-gradient(135deg,#14B8A6,#134E4A);border:2.342mm solid #fff"><span style="font-size:16.063mm">09</span></div>
+<div class="surtitre" style="left:134.996mm;top:1288.029mm;font-size:6.693mm;color:#0F766E" data-largeur="131.558">PHASE 09 · EXPLOITATION</div>
+<div class="titre-phase" style="left:134.996mm;top:1301.291mm;font-size:12.046mm">Exploitation &amp; maintenance</div>
+<div class="citation" style="left:134.996mm;top:1315.617mm;font-size:7.361mm;color:#0F766E">« On veille au quotidien »</div>
+<div class="puce" style="left:140.311mm;top:1329.003mm;font-size:7.361mm;line-height:10.724mm"><span class="point">•</span> Maintenance préventive et corrective, suivi des équipements</div>
+<div class="puce" style="left:140.311mm;top:1339.709mm;font-size:7.361mm;line-height:10.724mm"><span class="point">•</span> Gestion énergétique</div>
+<div class="intervenants" style="left:134.996mm;top:1358.113mm;font-size:6.021mm" data-largeur="61.567">INTERVENANTS</div>
+<div class="badges" style="left:198.543mm;top:1354.683mm;gap:4.045mm">
+<span class="badge" style="background:#6B46C1;height:14.723mm;border-radius:7.362mm;padding:0 9.219mm;font-size:6.693mm">Entretien de proximité</span>
+<span class="badge" style="background:#38A169;height:14.723mm;border-radius:7.362mm;padding:0 9.219mm;font-size:6.693mm">Maintenance des bâtiments</span>
+</div>
+<div class="badges" style="left:198.543mm;top:1373.422mm;gap:4.045mm">
+<span class="badge" style="background:#319795;height:14.723mm;border-radius:7.362mm;padding:0 9.219mm;font-size:6.693mm">Maintenance des collèges</span>
+<span class="badge" style="background:#B7791F;height:14.723mm;border-radius:7.362mm;padding:0 9.219mm;font-size:6.693mm">Énergie et fluides</span>
+</div>
+<div class="icone" style="left:524.98mm;top:1292.201mm;width:32.126mm;height:32.126mm"><svg viewBox="1116.1 2747.2 68.3 68.3" width="100%" height="100%"><path fill-rule="nonzero" fill="rgb(5.882263%, 46.273804%, 43.136597%)" fill-opacity="0.1" d="M 1127.132812 2746.648438 L 1172.648438 2746.648438 C 1178.929688 2746.648438 1184.027344 2752.929688 1184.027344 2758.027344 L 1184.027344 2803.539062 C 1184.027344 2809.824219 1178.929688 2814.917969 1172.648438 2814.917969 L 1127.132812 2814.917969 C 1120.851562 2814.917969 1115.753906 2808.636719 1115.753906 2803.539062 L 1115.753906 2758.027344 C 1115.753906 2751.742188 1120.851562 2746.648438 1127.132812 2746.648438 Z M 1127.132812 2746.648438 "/>
+<path fill-rule="nonzero" fill="rgb(0%, 0%, 0%)" fill-opacity="1" stroke-width="3.413647" stroke-linecap="round" stroke-linejoin="miter" stroke="rgb(5.882263%, 46.273804%, 43.136597%)" stroke-opacity="1" stroke-miterlimit="4" d="M 1150.255818 2763.319106 L 1150.255818 2769.008431 M 1150.255818 2793.664781 L 1150.255818 2799.350199 M 1132.238318 2781.336606 L 1137.927644 2781.336606 M 1162.580086 2781.336606 L 1168.269411 2781.336606 M 1137.548616 2768.629403 L 1141.530362 2772.61115 M 1158.977367 2790.058154 L 1162.959113 2794.043808 M 1137.548616 2794.043808 L 1141.530362 2790.058154 M 1158.977367 2772.61115 L 1162.959113 2768.629403 " transform="matrix(0.999679, 0, 0, 0.999679, 0, 0.333227)"/>
+<path fill="none" stroke-width="3.413647" stroke-linecap="butt" stroke-linejoin="miter" stroke="rgb(5.882263%, 46.273804%, 43.136597%)" stroke-opacity="1" stroke-miterlimit="4" d="M 1156.89076 2781.336606 C 1156.89076 2785.001844 1153.921057 2787.971547 1150.255818 2787.971547 C 1146.59058 2787.971547 1143.616969 2785.001844 1143.616969 2781.336606 C 1143.616969 2777.66746 1146.59058 2774.697757 1150.255818 2774.697757 C 1153.921057 2774.697757 1156.89076 2777.66746 1156.89076 2781.336606 Z M 1156.89076 2781.336606 " transform="matrix(0.999679, 0, 0, 0.999679, 0, 0.333227)"/></svg></div>
+<div class="pastille" style="left:58.608mm;top:1428.646mm;width:42.804mm;height:42.804mm;background:linear-gradient(135deg,#14B8A6,#134E4A);border:2.342mm solid #fff"><span style="font-size:16.063mm">10</span></div>
+<div class="surtitre" style="left:134.996mm;top:1429.831mm;font-size:6.693mm;color:#0F766E" data-largeur="131.558">PHASE 10 · EXPLOITATION</div>
+<div class="titre-phase" style="left:134.996mm;top:1443.093mm;font-size:12.046mm">Suivi &amp; amélioration continue</div>
+<div class="citation" style="left:134.996mm;top:1457.419mm;font-size:7.361mm;color:#0F766E">« On apprend et on s'améliore »</div>
+<div class="puce" style="left:140.311mm;top:1470.801mm;font-size:7.361mm;line-height:10.724mm"><span class="point">•</span> Optimisation du bâtiment, travaux d'amélioration ou d'adaptation</div>
+<div class="puce" style="left:140.311mm;top:1481.512mm;font-size:7.361mm;line-height:10.724mm"><span class="point">•</span> Retour d'expérience</div>
+<div class="intervenants" style="left:134.996mm;top:1499.91mm;font-size:6.021mm" data-largeur="61.567">INTERVENANTS</div>
+<div class="badges" style="left:198.543mm;top:1496.485mm;gap:4.045mm">
+<span class="badge" style="background:#B8761A;height:14.723mm;border-radius:7.362mm;padding:0 9.219mm;font-size:6.693mm">Tous les services selon les besoins</span>
+</div>
+<div class="icone" style="left:524.98mm;top:1434.018mm;width:32.126mm;height:32.126mm"><svg viewBox="1116.1 3048.7 68.3 68.3" width="100%" height="100%"><path fill-rule="nonzero" fill="rgb(5.882263%, 46.273804%, 43.136597%)" fill-opacity="0.1" d="M 1127.132812 3048.015625 L 1172.648438 3048.015625 C 1178.929688 3048.015625 1184.027344 3054.296875 1184.027344 3059.394531 L 1184.027344 3104.90625 C 1184.027344 3111.191406 1178.929688 3116.285156 1172.648438 3116.285156 L 1127.132812 3116.285156 C 1120.851562 3116.285156 1115.753906 3110.003906 1115.753906 3104.90625 L 1115.753906 3059.394531 C 1115.753906 3053.109375 1120.851562 3048.015625 1127.132812 3048.015625 Z M 1127.132812 3048.015625 "/>
+<path fill="none" stroke-width="3.413647" stroke-linecap="round" stroke-linejoin="miter" stroke="rgb(5.882263%, 46.273804%, 43.136597%)" stroke-opacity="1" stroke-miterlimit="4" d="M 1135.082981 3082.800529 C 1134.973571 3078.619499 1136.591277 3074.583048 1139.557073 3071.632883 C 1142.522868 3068.686625 1146.57495 3067.096271 1150.752071 3067.233033 C 1154.9331 3067.373703 1158.871864 3069.229768 1161.63447 3072.371401 " transform="matrix(0.999679, 0, 0, 0.999679, 0, 0.333227)"/>
+<path fill="none" stroke-width="3.413647" stroke-linecap="round" stroke-linejoin="miter" stroke="rgb(5.882263%, 46.273804%, 43.136597%)" stroke-opacity="1" stroke-miterlimit="4" d="M 1165.424748 3082.800529 C 1165.534158 3086.981558 1163.916452 3091.021917 1160.950656 3093.964267 C 1157.984861 3096.914432 1153.932779 3098.504787 1149.755658 3098.364116 C 1145.574629 3098.227354 1141.639772 3096.367382 1138.87326 3093.229656 " transform="matrix(0.999679, 0, 0, 0.999679, 0, 0.333227)"/>
+<path fill-rule="nonzero" fill="rgb(5.882263%, 46.273804%, 43.136597%)" fill-opacity="1" d="M 1140.40625 3099.207031 L 1133.769531 3091.621094 L 1144.199219 3091.621094 Z M 1140.40625 3099.207031 "/>
+<path fill-rule="nonzero" fill="rgb(5.882263%, 46.273804%, 43.136597%)" fill-opacity="1" d="M 1159.367188 3065.078125 L 1166 3072.664062 L 1155.574219 3072.664062 Z M 1159.367188 3065.078125 "/></svg></div>
+<div class="gras clair centre" style="top:1555.222mm;font-size:11.999mm" data-largeur="572.709">UNE EXPERTISE COMPLÈTE AU SERVICE DU PATRIMOINE DÉPARTEMENTAL</div>
+<div class="italique centre" style="top:1579.688mm;font-size:8.998mm;color:#E8A33D" data-largeur="286.592">10 phases · 3 grandes étapes · 8 services</div>
+<script>
+/* L'interlettrage n'est pas transcrit : il est MESURÉ. Chaque bloc portant
+   data-largeur est étiré jusqu'à la largeur relevée sur le roll-up d'origine,
+   par dichotomie sur letter-spacing. Recopier une valeur en em aurait dérivé
+   à la moindre substitution de police. */
+(function () {
+  var MM = 96 / 25.4;
+  document.querySelectorAll('[data-largeur]').forEach(function (el) {
+    var cible = parseFloat(el.dataset.largeur) * MM;
+    if (!(cible > 0)) return;
+    el.style.letterSpacing = '0px';
+    var nature = el.getBoundingClientRect().width;
+    if (el.classList.contains('centre') || el.classList.contains('centre-bloc')) {
+      // Un bloc centré occupe toute sa boîte : on mesure le texte lui-même.
+      var s = document.createElement('span');
+      s.textContent = el.textContent;
+      s.style.cssText = 'position:absolute;visibility:hidden;white-space:nowrap;font:'
+        + getComputedStyle(el).font;
+      document.body.appendChild(s);
+      nature = s.getBoundingClientRect().width;
+      s.remove();
+    }
+    var n = el.textContent.trim().length - 1;
+    if (n < 1 || nature <= 0) return;
+    var pas = (cible - nature) / n;
+    if (Math.abs(pas) < 0.01) return;
+    el.style.letterSpacing = pas + 'px';
+    /* letter-spacing ajoute aussi une chasse après le dernier signe : on
+       compense par un retrait équivalent, sinon un texte centré dérive. */
+    if (el.classList.contains('centre') || el.classList.contains('centre-bloc')) {
+      el.style.textIndent = pas + 'px';
+    }
+  });
+  document.documentElement.dataset.pret = '1';
+})();
+</script>
+</body></html>
