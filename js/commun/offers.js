@@ -227,7 +227,9 @@ export function croiserPostesEtOffres(postes, charge) {
     if (!offre) {
       // La fiche existe mais l'annonce n'est plus en ligne : on l'affiche
       // quand même (elle documente le métier) en le disant clairement.
-      return { ...poste, en_ligne: false, offre: null, statut: { code: 'retiree', libelle: "Annonce retirée du site", urgent: false, expiree: true } };
+      // Le code reste `retiree` (c'est ce que l'on constate : l'annonce a
+      // disparu du site) ; le libellé montré au visiteur dit « pourvu ».
+      return { ...poste, en_ligne: false, offre: null, statut: { code: 'retiree', libelle: 'Poste pourvu', urgent: false, expiree: true } };
     }
     return {
       ...poste,

@@ -18,6 +18,7 @@ export const ICONES = {
   // Services de la DCIP
   energie:    (t) => svg('<path d="M13 2 4.5 13.5H11l-1 8.5 8.5-11.5H12l1-8.5Z"/>', t),
   etudes:     (t) => svg('<path d="M3 19 19 3l2.5 2.5L5.5 21.5 3 19Z"/><path d="M15.5 6.5 18 9"/><path d="M12 10l1.6 1.6"/><path d="M8.5 13.5 10 15"/>', t),
+  batiments:  (t) => svg('<path d="M3.5 21V6.5l7-3.5v18"/><path d="M10.5 10.5H20V21"/><path d="M6 8.5h1.5"/><path d="M6 12.5h1.5"/><path d="M6 16.5h1.5"/><path d="M14 14h2.5"/><path d="M14 17.5h2.5"/>', t),
   colleges:   (t) => svg('<path d="M3 21h18"/><path d="M5 21V9l7-5 7 5v12"/><path d="M9.5 21v-5h5v5"/><path d="M9.5 12h5"/>', t),
   surete:     (t) => svg('<rect x="4.5" y="10.5" width="15" height="10" rx="2"/><path d="M8 10.5V7a4 4 0 0 1 8 0v3.5"/><circle cx="12" cy="15.5" r="1.2"/>', t),
 
@@ -67,6 +68,7 @@ export function ico(nom, taille = 20) {
 const PAR_SERVICE = {
   'Énergie et fluides': 'energie',
   'Études et travaux': 'etudes',
+  'Maintenance des bâtiments': 'batiments',
   'Maintenance des collèges': 'colleges',
   'Sécurité, Sûreté & Prévention': 'surete',
 };

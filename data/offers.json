@@ -1,8 +1,8 @@
 {
- "generated_at": "2026-09-12T04:15:26Z",
+ "generated_at": "2026-09-15T19:25:49Z",
  "source": "https://www.departement06.fr/offres-demploi",
  "count": 60,
- "count_dcip": 7,
+ "count_dcip": 8,
  "offers": [
   {
    "id": "agent-forestier-des-parcs-naturels-departementaux-secteur-ouest-hf-21279",
@@ -309,8 +309,9 @@
    "publie_le": "2026-09-04",
    "resume": "Au sein d'une équipe composée de 17 agents, le chargé d'opérations, sous l'autorité du chef de service, participe à la conception du programme de travaux et fait réaliser par des entreprises les opérations de rénovation, d'aménagements et d…",
    "dcip": true,
-   "service": "",
-   "appariement": "domaine",
+   "service": "Maintenance des bâtiments",
+   "poste_dcip_id": "charge-doperations-de-batiment-tce-dcip-32747",
+   "appariement": "url",
    "candidature_permanente": false
   },
   {
@@ -604,29 +605,6 @@
    "candidature_permanente": false
   },
   {
-   "id": "charge-de-projets-cinematographiques-et-audiovisuels-hf-xx",
-   "titre": "Chargé de projets cinématographiques et audiovisuels H/F (xx)",
-   "url": "https://www.departement06.fr/offres-demploi/charge-de-projets-cinematographiques-et-audiovisuels-hf-xx",
-   "domaine": "Culture et patrimoine",
-   "categorie": "B",
-   "categories": [
-    "B",
-    "A"
-   ],
-   "filiere": "CULTURELLE",
-   "filieres": [
-    "CULTURELLE"
-   ],
-   "deadline": "2026-10-04",
-   "deadline_label": "4 octobre 2026",
-   "publie_le": "2026-09-03",
-   "resume": "Sous l'autorité du Directeur de la Culture et de la responsable de la section cinéma, vous participerez à la conception, à la coordination et à la mise en œuvre des actions, événements et projets portés par la Direction. Vous assurerez leur suivi…",
-   "dcip": false,
-   "service": "",
-   "appariement": "",
-   "candidature_permanente": false
-  },
-  {
    "id": "infirmier-en-soins-generaux-cegidd-hf-32324",
    "titre": "Infirmier en soins généraux CeGIDD H/F (32324)",
    "url": "https://www.departement06.fr/offres-demploi/infirmier-en-soins-generaux-cegidd-hf-32324",
@@ -889,30 +867,6 @@
    "deadline_label": "30 septembre 2026",
    "publie_le": "2026-08-14",
    "resume": "Le juriste défend les droits et intérêts du département auprès des juridictions, conseille les services dans toutes les implications de fait ou de droit relatives aux procédures judiciaires et assiste les services au plan juridique dans la conduite…",
-   "dcip": false,
-   "service": "",
-   "appariement": "",
-   "candidature_permanente": false
-  },
-  {
-   "id": "responsable-de-la-micro-folie-hf-34035",
-   "titre": "Responsable de la Micro-Folie H/F (34035)",
-   "url": "https://www.departement06.fr/offres-demploi/responsable-de-la-micro-folie-hf-34035",
-   "domaine": "Culture et patrimoine",
-   "categorie": "B",
-   "categories": [
-    "B",
-    "A"
-   ],
-   "filiere": "CULTURELLE",
-   "filieres": [
-    "CULTURELLE",
-    "ADMINISTRATIVE"
-   ],
-   "deadline": "2026-09-30",
-   "deadline_label": "30 septembre 2026",
-   "publie_le": "2026-08-13",
-   "resume": "Au sein de la direction de la culture du Département des Alpes-Maritimes et sous l'autorité de la directrice de la médiathèque départementale (basée à Nice), le ou la responsable de la Micro-Folie départementale assure en pleine autonomie le bon…",
    "dcip": false,
    "service": "",
    "appariement": "",
@@ -1335,6 +1289,51 @@
    "deadline_label": "Candidature permanente",
    "publie_le": "2026-04-01",
    "resume": "En qualité de médecin, vous pouvez exercer vos missions dans différentes structures départementales en territoires ou en central (notamment au service départemental de protection maternelle et infantile, en centres de santé, en maison départementale…",
+   "dcip": false,
+   "service": "",
+   "appariement": "",
+   "candidature_permanente": true
+  },
+  {
+   "id": "charge-de-projets-etudes-et-marches-hf-33932",
+   "titre": "Chargé de projets études et marchés H/F (33932)",
+   "url": "https://www.departement06.fr/offres-demploi/charge-de-projets-etudes-et-marches-hf-33932",
+   "domaine": "Patrimoine bâti",
+   "categorie": "A",
+   "categories": [
+    "A"
+   ],
+   "filiere": "TECHNIQUE",
+   "filieres": [
+    "TECHNIQUE"
+   ],
+   "deadline": "2026-09-30",
+   "deadline_label": "30 septembre 2026",
+   "publie_le": "2026-03-20",
+   "resume": "Au sein du service de la maintenance des collèges, le chargé d'études et marchés vient renforcer l'équipe en place. Il prépare et met en œuvre les projets depuis l'élaboration du programme jusqu'au parfait achèvement de l'ouvrage. Il s'agit d…",
+   "dcip": true,
+   "service": "Maintenance des collèges",
+   "poste_dcip_id": "charge-de-projets-etudes-et-marches-hf-33932",
+   "appariement": "url",
+   "candidature_permanente": false
+  },
+  {
+   "id": "sage-femme-hf",
+   "titre": "Sage femme H/F",
+   "url": "https://www.departement06.fr/offres-demploi/sage-femme-hf",
+   "domaine": "",
+   "categorie": "A",
+   "categories": [
+    "A"
+   ],
+   "filiere": "MEDICO-SOCIALE",
+   "filieres": [
+    "MEDICO-SOCIALE"
+   ],
+   "deadline": "",
+   "deadline_label": "Candidature permanente",
+   "publie_le": "2025-08-29",
+   "resume": "Au sein de la PMI, la sage femme participe à la mise en œuvre de la politique du Département en référence à l'article L2112 du code de la santé publique relative à la protection et à la promotion de la santé, de la famille et de l'enfance en ce qui…",
    "dcip": false,
    "service": "",
    "appariement": "",

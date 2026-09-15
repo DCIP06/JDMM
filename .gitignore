@@ -19,3 +19,10 @@ design/mes/
 design/captures/
 # Classeur du registre : jamais sur GitHub (il reçoit des données personnelles)
 local/
+# Dépendances de la recette (installées à la demande, cf. scripts/recette/LISEZMOI.md)
+node_modules/
+package.json
+package-lock.json
+# Captures produites par la recette
+app-postes-*.png
+app-quiz-*.png

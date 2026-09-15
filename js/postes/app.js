@@ -210,7 +210,7 @@ function vueListe() {
 function ligne(p) {
   const s = p.statut || {};
   const etiquette = s.expiree
-    ? `<span class="badge badge--neutre">${s.code === 'retiree' ? 'Retirée' : 'Close'}</span>`
+    ? `<span class="badge badge--neutre">${s.code === 'retiree' ? 'Pourvue' : 'Close'}</span>`
     : (s.urgent ? `<span class="badge badge--alerte">Urgent</span>`
                 : `<span class="badge badge--succes">En ligne</span>`);
   return `
@@ -288,9 +288,10 @@ function vueFiche(id) {
       <div class="pile-serree" style="margin-top:var(--pas-3)">
         <a class="bouton bouton--primaire bouton--large" href="#/demande/${p.id}">
           ${ico('etincelle', 18)} Je suis intéressé(e) par ce poste</a>
+        ${p.en_ligne === false ? '' : `
         <a class="bouton bouton--valide bouton--large" href="${p.url}" target="_blank" rel="noopener">
           Postuler en ligne ${ico('chevron', 16)}
-          <span class="lecteur-seul">(nouvelle fenêtre, site du Département)</span></a>
+          <span class="lecteur-seul">(nouvelle fenêtre, site du Département)</span></a>`}
         <a class="bouton bouton--secondaire bouton--large" href="#/">Voir les autres postes</a>
       </div>
 
@@ -512,10 +513,11 @@ function vueEnvoye(bilan, contact) {
 
       <div class="pile-serree">
         <a class="bouton bouton--primaire bouton--large" href="#/">Voir les autres postes</a>
+        ${p.en_ligne === false ? '' : `
         <a class="bouton bouton--secondaire bouton--large" href="${p.url}"
            target="_blank" rel="noopener">
           ${ico('lien', 18)} Postuler en ligne
-          <span class="lecteur-seul">(nouvelle fenêtre, site du Département)</span></a>
+          <span class="lecteur-seul">(nouvelle fenêtre, site du Département)</span></a>`}
       </div>
     </div>`, bilan.message);
 

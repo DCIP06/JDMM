@@ -10,7 +10,7 @@ l'Immobilier et du Patrimoine) à la **Journée des Métiers et de la Mobilité*
 
 | Application | En ligne | Ce qu'elle fait |
 |---|---|---|
-| **Postes vacants** | <https://dcip06.github.io/JDMM/postes/> | Les 7 fiches DCIP. On ouvre une fiche, on la reçoit par courriel. |
+| **Postes vacants** | <https://dcip06.github.io/JDMM/postes/> | Les fiches de postes DCIP. On ouvre une fiche, on se déclare intéressé. |
 | **Trois quiz** | <https://dcip06.github.io/JDMM/quiz/> | Prévention incendie, gardiennage, sûreté — 20 questions. |
 
 **Pack pour le stand** — QR codes, affichettes A5 et raccourcis de bureau :
@@ -24,7 +24,7 @@ Elles reproduisent le contenu et le parcours des deux fichiers de référence,
 
 ## Le parcours d'un visiteur
 
-**Postes** — il scanne, voit les 7 fiches (filtrables par service), en ouvre une, lit
+**Postes** — il scanne, voit les fiches (filtrables par service), en ouvre une, lit
 missions et profil, puis clique **« Je suis intéressé(e) par ce poste »**.
 Il renseigne **prénom, nom, direction et adresse — tous obligatoires**, éventuellement son
 projet de mobilité et un message, accepte d'être recontacté, et **enregistre sa demande**.
@@ -87,7 +87,7 @@ postes/             application « Postes vacants »
 quiz/               application « Trois quiz »
 mentions.html       visionneuse des documents de docs/
 data/               contenu éditorial (JSON) — c'est ici qu'on modifie les textes
-  postes-dcip.json    les 7 fiches
+  postes-dcip.json    les fiches de postes
   quiz.json           les 3 quiz
   config.json         date, adresses, clés
   offers.json         ⚠️ généré chaque nuit par le robot, ne pas éditer

@@ -1,5 +1,13 @@
 /* Recette des deux applications distinctes. */
 import { chromium } from 'playwright-core';
+import { readFileSync } from 'node:fs';
+
+/* Les effectifs attendus se DÉDUISENT des données : une fiche ajoutée ne doit
+   pas faire échouer la recette. Un compteur recopié dans le test ment au bout
+   de la première modification. */
+const FICHES = JSON.parse(readFileSync(new URL('../../data/postes-dcip.json', import.meta.url), 'utf8'));
+const NB_FICHES = FICHES.length;
+const NB_FILTRES = new Set(FICHES.map((f) => f.service)).size + 1;   // + « Tous les postes »
 const BASE = process.env.URL_BASE || 'http://127.0.0.1:8123/';
 const b = await chromium.launch({ executablePath: '/usr/bin/chromium', args: ['--no-sandbox','--disable-gpu'] });
 let ko = 0;
@@ -26,12 +34,12 @@ ok('le titre reprend « Rejoindre la DCIP »', (await p.locator('h1').first().te
 ok('la pastille reprend « Postes vacants · Mobilité interne »',
    (await p.locator('.hero-pill').first().textContent()).includes('Postes vacants'));
 const filtres = await p.locator('.nf-btn').count();
-ok('les filtres par service sont générés (1 + 4)', filtres === 5, String(filtres));
+ok(`les filtres par service sont générés (1 + ${NB_FILTRES - 1})`, filtres === NB_FILTRES, String(filtres));
 ok('« Tous les postes » est le premier filtre',
    (await p.locator('.nf-btn').first().textContent()).includes('Tous les postes'));
 ok('les libellés sont raccourcis',
    (await p.locator('.nav-filtres').innerText()).includes('Sécurité & Sûreté'));
-ok('les 7 fiches sont listées', await p.locator('.poste-row').count() === 7,
+ok(`les ${NB_FICHES} fiches sont listées`, await p.locator('.poste-row').count() === NB_FICHES,
    String(await p.locator('.poste-row').count()));
 ok('aucun onglet Métiers', !(await p.locator('body').innerText()).includes('Vie d\'un projet'));
 ok('aucune notion de sélection', !/ma sélection|panier/i.test(await p.locator('body').innerText()));
@@ -41,11 +49,12 @@ console.log('\n— Filtrage par service —');
 await p.locator('.nf-btn').nth(1).click();
 await p.waitForTimeout(500);
 const apres = await p.locator('.poste-row').count();
-ok('le filtre réduit la liste', apres > 0 && apres < 7, `${apres} sur 7`);
+ok('le filtre réduit la liste', apres > 0 && apres < NB_FICHES, `${apres} sur ${NB_FICHES}`);
 ok('le filtre actif est marqué', await p.locator('.nf-btn').nth(1).getAttribute('aria-pressed') === 'true');
 await p.locator('.nf-btn').first().click();
 await p.waitForTimeout(400);
-ok('« Tous les postes » rétablit la liste', await p.locator('.poste-row').count() === 7);
+ok('« Tous les postes » rétablit la liste', await p.locator('.poste-row').count() === NB_FICHES,
+   String(await p.locator('.poste-row').count()));
 
 console.log('\n— Fiche de poste —');
 await p.locator('.poste-row').first().click();
