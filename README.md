@@ -11,7 +11,7 @@ l'Immobilier et du Patrimoine) à la **Journée des Métiers et de la Mobilité*
 | Application | En ligne | Ce qu'elle fait |
 |---|---|---|
 | **Postes vacants** | <https://dcip06.github.io/JDMM/postes/> | Les fiches de postes DCIP. On ouvre une fiche, on se déclare intéressé. |
-| **Trois quiz** | <https://dcip06.github.io/JDMM/quiz/> | Prévention incendie, gardiennage, sûreté — 20 questions. |
+| **Trois quiz** | <https://dcip06.github.io/JDMM/quiz/> | Prévention incendie (8 questions), sécurité humaine & matériel (5), études & travaux (5). |
 
 **Pack pour le stand** — QR codes, affichettes A5 et raccourcis de bureau :
 <https://dcip06.github.io/JDMM/assets/pack-stand/> (ou `assets/pack-stand.zip` en un seul
@@ -71,8 +71,8 @@ python3 -m http.server 8000
 ## Contrôles
 
 ```bash
-node scripts/test-logique.mjs               # logique métier, sans navigateur
 python3 scripts/sync_offers.py --dry-run    # collecte des offres, sans écriture
+python3 scripts/generer_fiches.py --lister  # offres DCIP publiées sans fiche
 ```
 
 Recette dans un navigateur : voir `scripts/recette/LISEZMOI.md`.
@@ -87,7 +87,7 @@ postes/             application « Postes vacants »
 quiz/               application « Trois quiz »
 mentions.html       visionneuse des documents de docs/
 data/               contenu éditorial (JSON) — c'est ici qu'on modifie les textes
-  postes-dcip.json    les fiches de postes
+  postes-dcip.json    les fiches de postes (13, dont 8 ouvertes)
   quiz.json           les 3 quiz
   config.json         date, adresses, clés
   offers.json         ⚠️ généré chaque nuit par le robot, ne pas éditer
@@ -112,10 +112,10 @@ collectivité, et le projet vivra plus longtemps que n'importe quelle version de
 l'application elle-même. Le seul appel externe est l'enregistrement d'une demande, au
 moment où le visiteur clique.
 
-Les 52 offres du Département sont récupérées chaque nuit par un robot, mais **ne sont pas
-affichées** : elles servent uniquement à savoir si chaque fiche est encore en ligne et
-jusqu'à quand. Sans cela, l'application enverrait des visiteurs vers des candidatures
-closes — 4 des 7 le sont déjà.
+Les offres du Département (60 au dernier relevé) sont récupérées chaque nuit par un robot,
+mais **ne sont pas affichées** : elles servent uniquement à savoir si chaque fiche est encore
+en ligne et jusqu'à quand. Sans cela, l'application enverrait des visiteurs vers des
+candidatures closes — 5 des 13 fiches le sont déjà, et s'affichent « Poste pourvu ».
 
 ---
 
@@ -128,8 +128,6 @@ closes — 4 des 7 le sont déjà.
   lieu.
 - **Logo officiel** — les icônes sont provisoires, le SVG reste à réclamer.
 - **Contact DPO** à renseigner, et inscription du traitement au registre (voir `docs/RGPD.md`).
-- **3 fiches sur 7 sont encore en ligne** ; 4 offres DCIP publiées n'ont pas de fiche.
-  Arbitrage DCIP.
 - Le dépôt est sous un **compte personnel**. Un transfert vers une organisation du
   Département changera les URL, donc les QR codes.
 

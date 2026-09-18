@@ -250,5 +250,122 @@
    "Permis B indispensable"
   ],
   "deadline_source": "30 septembre 2026"
+ },
+ {
+  "id": "assistant-de-gestion-service-maintenance-des-colleges-dcip-31438",
+  "titre": "Assistant de gestion service maintenance des collèges DCIP",
+  "service": "Maintenance des collèges",
+  "ico": "🏫",
+  "tag": "",
+  "cat": "C",
+  "contrat": "Cat. C",
+  "filiere": "Filière administrative",
+  "lieu": "Nice — CADAM",
+  "url": "https://www.departement06.fr/offres-demploi/assistant-de-gestion-service-maintenance-des-colleges-dcip-31438",
+  "desc": "Au sein du service maintenance des collèges, l'assistant(e) de gestion a en charge le secrétariat du service sous l'autorité du chef de service. Il/Elle assiste le chef, son adjoint et les chargés d'opérations en matière de gestion administrative technique et financière des dossiers courants et gère la logistique pour le bon fonctionnement du service. Il/Elle est le point d'entrée central du service, l'assistant(e) de gestion dans ce service technique se voit confier un panel de missions très riches. Libre dans son organisation, il/elle aime le travail en équipe dont Il/Elle coordonne le versant administratif.",
+  "missions": [
+   "Vous assisterez les chargés d'opérations dans leurs missions de suivi administratif, financier et comptable des marchés",
+   "Vous créerez, renseignerez et tiendrez à jour les tableaux de bord du service",
+   "Vous suivrez les échéanciers et ferez les relances nécessaires",
+   "Vous assurerez le lien administratif avec les intervenants extérieurs et les services départementaux"
+  ],
+  "profils": [
+   "Vous possédez des notions de marchés publics travaux et services ou appétences (formations CNFPT ou interne)",
+   "Vous disposez de capacités rédactionnelles",
+   "Vous disposez d'un sens de l'organisation, d'une capacité de planification et un esprit d'initiative",
+   "Vous faites preuve d'application (soin, sérieux, rigueur, méthode)",
+   "Vous êtes fiable et avez une conscience professionnelle",
+   "Vous faites preuve d'un esprit d'équipe, de sociabilité"
+  ],
+  "deadline_source": "30 septembre 2026"
+ },
+ {
+  "id": "charge-de-mission-energies-thermiques-renouvelables-hf-33329",
+  "titre": "Chargé de mission énergies thermiques renouvelables H/F",
+  "service": "Mission énergies renouvelables",
+  "ico": "⚡",
+  "tag": "",
+  "cat": "A",
+  "contrat": "Cat. A",
+  "filiere": "Filière technique",
+  "lieu": "Nice — CADAM",
+  "url": "https://www.departement06.fr/offres-demploi/charge-de-mission-energies-thermiques-renouvelables-hf-33329",
+  "desc": "Au sein du service Mission énergies renouvelable, le chargé de mission assure l'animation, la promotion et le suivi technique du Contrat Chaleur Renouvelable territorial (CCRt) afin de favoriser le développement de projets de chaleur renouvelable sur le territoire. Il accompagne les porteurs de projets depuis l'émergence de l'idée jusqu'à la mise en œuvre opérationnelle, tout en garantissant la qualité technique des études, la bonne utilisation des financements publics et la cohérence avec les objectifs du Fonds Chaleur.",
+  "missions": [
+   "Vous identifierez et contacterez des porteurs de projet potentiels (hôtels, bailleurs sociaux, établissements de santé, communes…) pour leur proposer un accompagnement au titre du CCRt.",
+   "Vous rencontrerez les porteurs de projets intéressés afin d'identifier leurs besoins et contraintes et définirez avec eux les solutions de chaleur renouvelable envisageables.",
+   "Vous réaliserez des notes d'opportunité permettant une première évaluation de la pertinence technico-économique des solutions identifiées.",
+   "Vous accompagnerez les porteurs de projet convaincus dans la mise en œuvre de leur projet : appuierez la rédaction des cahiers des charges des prestataires, analyserez les offres et devis, suivrez les opérations sur le terrain, identifierez les aides financières complémentaires à l'enveloppe du CCRt et appuierez le montage des demandes de subvention.",
+   "Vous suivrez et contribuerez à l'instruction des dossiers de demande de financement déposés auprès du Département au titre du Fonds Chaleur, notamment en challengeant les bureaux d'études techniques sur leurs livrables.",
+   "Vous participerez et contribuerez aux réunions et événements du réseau régional des animateurs CCRt et de ses partenaires (ADEME, COFOR, Région…)."
+  ],
+  "profils": [
+   "Titulaire d'un diplôme d'études supérieures (Bac+5), spécialisé dans le domaine des énergies renouvelables ou dans la thermique du bâtiment (CVC).",
+   "Titulaire du permis B",
+   "Vous faites preuve d'autonomie, de dynamisme et de force de proposition, et vous faites preuve d'un réel esprit d'initiative.",
+   "Vous faites preuve d'aisance relationnelle et de diplomatie, et vous savez vous adapter à des interlocuteurs variés.",
+   "Vous disposez de bonnes capacités rédactionnelles.",
+   "Vous faites preuve d'une grande aptitude analytique et de rigueur."
+  ],
+  "deadline_source": "30 septembre 2026"
+ },
+ {
+  "id": "ingenieur-charge-detudes-batimentaires-hf-34007",
+  "titre": "Ingénieur chargé d'études bâtimentaires H/F",
+  "service": "Maintenance des bâtiments",
+  "ico": "🏢",
+  "tag": "",
+  "cat": "A",
+  "contrat": "Cat. A",
+  "filiere": "Filière technique",
+  "lieu": "Nice — CADAM",
+  "url": "https://www.departement06.fr/offres-demploi/ingenieur-charge-detudes-batimentaires-hf-34007",
+  "desc": "Au sein du service maintenance des bâtiments, l'ingénieur chargé d'études bâtimentaires assure les études et la rédaction des marchés de travaux et des accords cadre pour les opérations de maintenance, de réhabilitation, de rénovation et d'extension de locaux ou bâtiments.",
+  "missions": [
+   "Vous élaborerez des cahiers des charges et assurerez un rôle de conseil en fonction des contraintes réglementaires et des enjeux de transition écologique",
+   "Vous rédigerez les documents nécessaires à la passation des marchés de prestations intellectuelles, de travaux et d'accords-cadres, notamment les dossiers de consultation des entreprises (CCTP, quantitatifs, estimatifs, …) ainsi que les rapports d'analyse d'offres",
+   "Vous proposerez des modes de réalisation et des modalités de rédaction des documents pour la passation des marchés",
+   "Vous préparerez ou contrôlerez les avenants et leurs rapports justificatifs, instruirez les demandes de rémunération complémentaire et proposerez les réponses adaptées",
+   "Vous suivrez, analyserez, contrôlerez et validerez les études ainsi que les dossiers établis par les prestataires extérieurs."
+  ],
+  "profils": [
+   "Etre titulaire d'un diplôme d'ingénieur ou d'un Bac +5 dans le domaine du bâtiment.",
+   "Permis B obligatoire",
+   "Vous possédez une bonne connaissance des techniques du bâtiment tous corps d'état, des pathologies du bâtiment ainsi que de la réglementation de la construction et de la qualité environnementale du bâtiment (QEB)",
+   "Vous maîtrisez les principes des marchés publics",
+   "Vous faites preuve d'une bonne aisance informatique",
+   "Vous êtes organisé, méthodique et rigoureux"
+  ],
+  "deadline_source": "30 septembre 2026"
+ },
+ {
+  "id": "charge-detudes-et-de-projet-renovation-globale-hf-33931",
+  "titre": "Chargé d'études et de projet rénovation globale H/F",
+  "service": "Maintenance des collèges",
+  "ico": "🏫",
+  "tag": "",
+  "cat": "B / A",
+  "contrat": "Cat. B/A",
+  "filiere": "Filière technique",
+  "lieu": "Nice — CADAM",
+  "url": "https://www.departement06.fr/offres-demploi/charge-detudes-et-de-projet-renovation-globale-hf-33931",
+  "desc": "Au sein du service de la maintenance des collèges, le chargé d'études et de projet rénovation globale aura pour mission la mise en œuvre et le suivi d'un plan pluriannuel de rénovation et de réhabilitation des collèges. Il définira un programme d'intervention pour chaque établissement et sera le garant de l'exécution de ce plan. Il sera également amené à prendre en charge certaines opérations de rénovation dans son exécution, sous l'autorité du chef de service.",
+  "missions": [
+   "Vous définirez un programme d'interventions pour chaque établissement et réaliserez (ou ferez réaliser) les chiffrages.",
+   "Vous définirez et piloterez dans le temps le plan de rénovation global.",
+   "Vous planifierez les opérations de rénovation et de réhabilitation.",
+   "Vous établirez les plannings pluriannuels correspondants.",
+   "Vous impulserez et suivrez la réalisation des projets.",
+   "Vous piloterez certaines opérations jusqu'à leur réception."
+  ],
+  "profils": [
+   "Vous êtes issu(e) d'une formation en bâtiment, en génie civil ou en économie de la construction (bac +2 minimum).",
+   "Permis B indispensable",
+   "Vous maîtrisez la réglementation liée aux marchés publics.",
+   "Vous faites preuve d'un sens critique constructif ainsi que d'une capacité d'analyse et de synthèse.",
+   "Vous avez une bonne connaissance des techniques du bâtiment tous corps d'état et de la réglementation de la construction.",
+   "Vous manifestez une appétence pour la qualité environnementale du bâtiment (QEB)."
+  ],
+  "deadline_source": "30 septembre 2026"
  }
 ]

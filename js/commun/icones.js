@@ -71,6 +71,9 @@ const PAR_SERVICE = {
   'Maintenance des bâtiments': 'batiments',
   'Maintenance des collèges': 'colleges',
   'Sécurité, Sûreté & Prévention': 'surete',
+  // La mission énergies renouvelables n'est pas un service de la DCIP, mais
+  // le site publie ses postes sous ce nom : l'icône de l'énergie convient.
+  'Mission énergies renouvelables': 'energie',
 };
 export function icoService(service, taille = 20) {
   return ico(PAR_SERVICE[service] || 'postes', taille);

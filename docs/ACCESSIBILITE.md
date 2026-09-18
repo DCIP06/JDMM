@@ -148,8 +148,8 @@ Si vous constatez un défaut d'accessibilité vous empêchant d'accéder à un c
 Les tests sont dans le dépôt et s'exécutent sans compte ni service tiers :
 
 ```bash
-python3 -m http.server 8123        # servir l'application
-node scripts/test-logique.mjs      # 24 assertions sur la logique métier
+python3 -m http.server 8123                 # servir l'application
+node scripts/recette/tester-deux-apps.mjs   # les deux parcours, de bout en bout
 ```
 
 Les contrôles de navigateur (axe-core, parcours, clavier, Lighthouse) nécessitent
