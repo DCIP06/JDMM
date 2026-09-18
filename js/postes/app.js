@@ -171,7 +171,7 @@ function vueListe() {
 function ligne(p) {
   const s = p.statut || {};
   const etiquette = s.expiree
-    ? `<span class="badge badge--neutre">${s.code === 'retiree' ? 'Pourvue' : 'Close'}</span>`
+    ? `<span class="badge badge--neutre">${s.code === 'retiree' ? 'Pourvu' : 'Close'}</span>`
     : (s.urgent ? `<span class="badge badge--alerte">Urgent</span>`
                 : `<span class="badge badge--succes">En ligne</span>`);
   return `
