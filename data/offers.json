@@ -1,9 +1,31 @@
 {
- "generated_at": "2026-09-17T04:16:54Z",
+ "generated_at": "2026-09-19T04:15:45Z",
  "source": "https://www.departement06.fr/offres-demploi",
  "count": 60,
  "count_dcip": 8,
  "offers": [
+  {
+   "id": "infirmier-mobile-dispositif-de-prevention-de-lexploitation-sexuelle-des-mineurs-du",
+   "titre": "INFIRMIER MOBILE DISPOSITIF DE PREVENTION DE L'EXPLOITATION SEXUELLE DES MINEURS DU CARREFOUR SANTE JEUNE",
+   "url": "https://www.departement06.fr/offres-demploi/infirmier-mobile-dispositif-de-prevention-de-lexploitation-sexuelle-des-mineurs-du",
+   "domaine": "Social",
+   "categorie": "A",
+   "categories": [
+    "A"
+   ],
+   "filiere": "MEDICO-SOCIALE",
+   "filieres": [
+    "MEDICO-SOCIALE"
+   ],
+   "deadline": "2026-09-30",
+   "deadline_label": "30 septembre 2026",
+   "publie_le": "2026-09-18",
+   "resume": "L'infirmier mobile dispositif de prévention de l'exploitation sexuelle des mineurs au Carrefour Santé Jeunes en SDPMI participe à la mise en oeuvre de la politique du Conseil Départemental des Alpes-Maritimes en assurant sur son territoire d…",
+   "dcip": false,
+   "service": "",
+   "appariement": "",
+   "candidature_permanente": false
+  },
   {
    "id": "charge-de-projets-cinematographiques-et-audiovisuels-hf-xx",
    "titre": "Chargé de projets cinématographiques et audiovisuels H/F (xx)",
@@ -851,29 +873,6 @@
    "candidature_permanente": false
   },
   {
-   "id": "regisseur-du-laboratoire-veterinaire-departemental-hf-30183",
-   "titre": "Régisseur du Laboratoire vétérinaire départemental H/F (30183)",
-   "url": "https://www.departement06.fr/offres-demploi/regisseur-du-laboratoire-veterinaire-departemental-hf-30183",
-   "domaine": "Finances et contrôle de gestion",
-   "categorie": "C",
-   "categories": [
-    "C",
-    "B"
-   ],
-   "filiere": "ADMINISTRATIVE",
-   "filieres": [
-    "ADMINISTRATIVE"
-   ],
-   "deadline": "2026-09-18",
-   "deadline_label": "18 septembre 2026",
-   "publie_le": "2026-08-18",
-   "resume": "Le régisseur assure la gestion de la régie de recettes du Laboratoire (comptabilité recettes).",
-   "dcip": false,
-   "service": "",
-   "appariement": "",
-   "candidature_permanente": false
-  },
-  {
    "id": "juriste-hf-22525",
    "titre": "Juriste H/F (22525)",
    "url": "https://www.departement06.fr/offres-demploi/juriste-hf-22525",
@@ -935,8 +934,9 @@
    "publie_le": "2026-07-30",
    "resume": "Au sein du service maintenance des collèges, l'assistant(e) de gestion a en charge le secrétariat du service sous l'autorité du chef de service. Il/Elle assiste le chef, son adjoint et les chargés d'opérations en matière de gestion administrative…",
    "dcip": true,
-   "service": "",
-   "appariement": "motif:DCIP",
+   "service": "Maintenance des collèges",
+   "poste_dcip_id": "assistant-de-gestion-service-maintenance-des-colleges-dcip-31438",
+   "appariement": "url",
    "candidature_permanente": false
   },
   {
@@ -1024,8 +1024,9 @@
    "publie_le": "2026-07-22",
    "resume": "Au sein du service Mission énergies renouvelable, le chargé de mission assure l'animation, la promotion et le suivi technique du Contrat Chaleur Renouvelable territorial (CCRt) afin de favoriser le développement de projets de chaleur renouvelable…",
    "dcip": true,
-   "service": "",
-   "appariement": "domaine",
+   "service": "Mission énergies renouvelables",
+   "poste_dcip_id": "charge-de-mission-energies-thermiques-renouvelables-hf-33329",
+   "appariement": "url",
    "candidature_permanente": false
   },
   {
@@ -1091,8 +1092,9 @@
    "publie_le": "2026-06-29",
    "resume": "Au sein du service maintenance des bâtiments, l'ingénieur chargé d'études bâtimentaires assure les études et la rédaction des marchés de travaux et des accords cadre pour les opérations de maintenance, de réhabilitation, de rénovation et d'extension…",
    "dcip": true,
-   "service": "",
-   "appariement": "domaine",
+   "service": "Maintenance des bâtiments",
+   "poste_dcip_id": "ingenieur-charge-detudes-batimentaires-hf-34007",
+   "appariement": "url",
    "candidature_permanente": false
   },
   {
@@ -1180,8 +1182,9 @@
    "publie_le": "2026-06-17",
    "resume": "Au sein du service de la maintenance des collèges, le chargé d'études et de projet rénovation globale aura pour mission la mise en œuvre et le suivi d'un plan pluriannuel de rénovation et de réhabilitation des collèges. Il définira un programme d…",
    "dcip": true,
-   "service": "",
-   "appariement": "domaine",
+   "service": "Maintenance des collèges",
+   "poste_dcip_id": "charge-detudes-et-de-projet-renovation-globale-hf-33931",
+   "appariement": "url",
    "candidature_permanente": false
   },
   {
