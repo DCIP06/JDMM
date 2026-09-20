@@ -65,7 +65,8 @@
   },
   "registre": {
     "endpoint": "À_RENSEIGNER",
+    "email_destination": "À_RENSEIGNER",
     "libelle_destination": "Fichier Excel partagé du Département (OneDrive)"
   },
-  "_note_registre": "endpoint : adresse du flux Power Automate qui reçoit une demande et ajoute une ligne dans le fichier Excel partagé du Département, sur son OneDrive. Marche à suivre : docs/REGISTRE.md. AUCUNE donnée personnelle n'est stockée dans ce dépôt ni dans l'application : la demande traverse le navigateur du visiteur puis part directement vers le fichier du Département, qui en reste seul détenteur. Tant que cette valeur vaut À_RENSEIGNER, l'application le dit à l'écran au lieu de laisser croire à un enregistrement."
+  "_note_registre": "Deux destinations possibles, dans cet ordre de priorité. 1) endpoint : adresse du flux Power Automate qui ajoute une ligne dans le fichier Excel partagé du Département, sur son OneDrive (déclencheur HTTP, licence Premium requise). 2) email_destination : à défaut de flux, la demande part par COURRIEL vers cette boîte du Département, depuis la messagerie du visiteur — aucun mot de passe n'est en jeu, et c'est volontaire : un identifiant SMTP placé ici serait lisible par quiconque ouvre la page, le code étant servi en clair depuis un dépôt public. En contrepartie, l'envoi appartient au visiteur : l'application annonce un message PRÊT, jamais une demande enregistrée. Marche à suivre : docs/REGISTRE.md. AUCUNE donnée personnelle n'est stockée dans ce dépôt ni dans l'application. Tant que les deux valeurs sont à À_RENSEIGNER, l'application le dit à l'écran au lieu de laisser croire à un enregistrement."
 }

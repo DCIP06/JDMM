@@ -43,7 +43,10 @@ Le pire qu'un tiers puisse en faire est d'y écrire des demandes fictives.
 
 ---
 
-## Installation, une fois
+## Voie 1 — le flux Power Automate (installation, une fois)
+
+> Cette voie demande la licence **Premium** qu'exige le déclencheur HTTP. Si elle n'est pas
+> disponible, sauter à la **voie 2, le courriel**, plus bas.
 
 ### 1. Le fichier Excel
 
@@ -133,6 +136,57 @@ Poussez. Comptez une à deux minutes de déploiement, puis **dix minutes** de ca
 
 ---
 
+## Voie 2 — le courriel, sans licence Premium
+
+Si le déclencheur HTTP de Power Automate n'est pas ouvert, la demande part **par courriel**
+vers une boîte du Département. Trois quarts d'heure de mise en place, aucune licence.
+
+### Ce qu'il ne faut PAS faire : mettre un compte SMTP dans l'application
+
+C'est la première idée qui vient, et c'est une porte ouverte. L'application est servie **en
+clair** depuis un dépôt **public** : un identifiant SMTP placé dans son code serait lisible
+par n'importe quel visiteur, qui pourrait alors écrire **au nom du Département**. Un navigateur
+ne sait d'ailleurs pas parler SMTP — il faudrait un serveur intermédiaire, donc un secret à
+garder quelque part.
+
+La voie retenue n'a **aucun secret** : le message part de la **messagerie du visiteur**.
+
+### 1. Créer la boîte
+
+Une adresse dédiée à l'événement, côté Département — par exemple `jdmm@departement06.fr`.
+Une boîte partagée convient : plusieurs agents peuvent la relever.
+
+### 2. Renseigner l'application
+
+```json
+"registre": {
+  "endpoint": "À_RENSEIGNER",
+  "email_destination": "jdmm@departement06.fr"
+}
+```
+
+L'`endpoint` est prioritaire : tant qu'il vaut `À_RENSEIGNER`, c'est le courriel qui prend
+le relais. L'application change alors de vocabulaire — le bouton dit **« Préparer mon
+message »**, l'écran de confirmation dit que le message **reste à envoyer**, et garde un
+bouton pour rouvrir la messagerie si elle ne s'est pas ouverte seule.
+
+### 3. Facultatif — alimenter le tableau automatiquement
+
+Les courriels ont un format fixe (`— POSTE —`, `— DEMANDEUR —`, `Direction  :`, un champ par
+ligne). Un flux Power Automate déclenché **« à la réception d'un courriel »** — connecteur
+Outlook **standard**, sans licence Premium — peut les découper et ajouter la ligne dans le
+classeur. Sans ce flux, la boîte fait office de registre et un agent recopie.
+
+### Ce que cette voie coûte
+
+L'envoi appartient au visiteur : **il doit appuyer sur « Envoyer »** dans sa messagerie. Une
+partie ne le fera pas. L'application ne prétend donc jamais que la demande est enregistrée —
+elle dit que le message est prêt. Sur un téléphone professionnel avec Outlook configuré, le
+geste est immédiat ; sur un appareil sans messagerie, le bouton de repli reste affiché et le
+visiteur peut se signaler à un agent.
+
+---
+
 ## Vérifier
 
 1. Sur le site, enregistrez une demande de test avec vos vraies coordonnées.
@@ -140,6 +194,11 @@ Poussez. Comptez une à deux minutes de déploiement, puis **dix minutes** de ca
    encore raccordé »*, qui signale un `endpoint` manquant.
 3. Ouvrez le fichier Excel : une ligne doit être apparue, horodatée.
 4. Dans Power Automate, l'historique du flux doit montrer une exécution réussie.
+
+Par la **voie courriel**, le contrôle est le même à deux détails près : l'écran doit dire
+*« Dernier geste : envoyer le message »*, et la messagerie doit s'ouvrir avec le message
+déjà rédigé. Le test n'est concluant **qu'une fois le message réellement envoyé** et reçu
+dans la boîte du Département.
 
 **Faites ce test au moins deux jours avant l'événement.**
 
@@ -164,12 +223,14 @@ la connexion revient, tant qu'il n'a pas fermé son navigateur. L'écran le dit.
 
 | Solution | Ce que ça change |
 |---|---|
-| **Microsoft Forms** | Un formulaire Forms écrit nativement dans un Excel sur OneDrive, sans licence supplémentaire. L'application ouvrirait le formulaire au lieu d'écrire elle-même — le poste peut y être pré-rempli par l'URL. Moins intégré visuellement, mais zéro développement et conformité gérée par Microsoft. |
+| **Le courriel** | Retenu, et déjà implémenté : voir « Voie 2 » plus haut. Aucune licence, aucun secret, le parcours reste dans l'application jusqu'au dernier geste. |
+| **Microsoft Forms** | Un formulaire Forms écrit nativement dans un Excel sur OneDrive, sans licence supplémentaire. L'application ouvrirait le formulaire au lieu d'écrire elle-même — le poste peut y être pré-rempli par l'URL. Moins intégré visuellement, mais conformité gérée par Microsoft. |
 | **Saisie manuelle sur le stand** | Un agent note les demandes dans le fichier au fur et à mesure. L'application affiche déjà le message qui invite à se signaler. |
 | **Une liste SharePoint** | Mêmes contraintes de licence pour l'écriture depuis l'extérieur. |
 
 Le module `js/commun/registre.js` est agnostique : il envoie un JSON en `POST` et attend
-`{"ok": true}`. Changer de destination ne demande que de modifier `registre.endpoint`.
+`{"ok": true}`. Changer de destination ne demande que de modifier `registre.endpoint` — ou,
+pour la voie courriel, `registre.email_destination`.
 
 ---
 

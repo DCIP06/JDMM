@@ -18,9 +18,20 @@
    Rien de sensible ne circule dans l'application — l'adresse du flux ne
    permet que d'ajouter une ligne, jamais de lire le fichier.
 
-   L'adresse du flux vit dans data/config.json → registre.endpoint. Tant
-   qu'elle est vide, l'application le dit franchement plutôt que de laisser
-   croire à un enregistrement qui n'a pas lieu.
+   L'adresse du flux vit dans data/config.json → registre.endpoint.
+
+   SANS FLUX : LE COURRIEL. Si le Département ne dispose pas de la licence que
+   demande le déclencheur HTTP, `registre.email_destination` prend le relais :
+   la demande part alors en **courriel** vers une boîte du Département, depuis
+   la messagerie du visiteur. Aucun mot de passe n'est en jeu — c'est le point
+   important, un identifiant SMTP placé ici serait lisible par quiconque ouvre
+   la page, et permettrait d'écrire au nom du Département.
+   En contrepartie, l'envoi appartient au visiteur : il doit appuyer sur
+   « Envoyer » dans sa messagerie. L'application ne prétend donc jamais que la
+   demande est enregistrée, elle dit que le message est prêt.
+
+   Tant que ni l'une ni l'autre adresse n'est renseignée, l'application le dit
+   franchement plutôt que de laisser croire à un enregistrement qui n'a pas lieu.
 
    RGPD : le fichier appartient au Département et relève de sa responsabilité
    de traitement. Voir docs/RGPD.md.
@@ -101,6 +112,49 @@ function ligne(poste, contact) {
   };
 }
 
+/** Le corps du courriel, tel que l'agent du Département le lira. */
+function corpsCourriel(demande) {
+  const lignes = [
+    'Demande transmise depuis l’application du stand DCIP (Journée des Métiers et de la Mobilité).',
+    '',
+    '— POSTE —',
+    `Intitulé   : ${demande.poste_titre}`,
+    `Service    : ${demande.poste_service}`,
+    `Catégorie  : ${demande.poste_categorie}`,
+    `Annonce    : ${demande.poste_url}`,
+    '',
+    '— DEMANDEUR —',
+    `Prénom     : ${demande.prenom}`,
+    `Nom        : ${demande.nom}`,
+    `Direction  : ${demande.direction}`,
+    `Courriel   : ${demande.email}`,
+    demande.projet ? `Échéance   : ${demande.projet}` : null,
+    '',
+    demande.message ? `— MESSAGE —\n${demande.message}\n` : null,
+    `Horodatage : ${demande.horodatage}`,
+  ];
+  // `null` = champ absent, à retirer ; `''` = ligne vide voulue, à conserver.
+  return lignes.filter((l) => l !== null).join('\n');
+}
+
+/**
+ * Construit le lien `mailto:`. Les champs gardent un ordre fixe et un libellé
+ * fixe : un flux Power Automate standard (« à la réception d'un courriel »,
+ * sans licence Premium) peut ainsi les retrouver pour alimenter le tableau.
+ *
+ * Un mailto trop long est tronqué en silence par certaines messageries : le
+ * message libre est donc borné, le reste tient dans quelques centaines de
+ * caractères.
+ */
+export function lienCourriel(destination, poste, contact) {
+  const demande = ligne(poste, contact);
+  if (demande.message.length > 800) demande.message = `${demande.message.slice(0, 800)}…`;
+  const objet = `Demande JDMM — ${demande.poste_titre}`;
+  return `mailto:${encodeURIComponent(destination)}`
+       + `?subject=${encodeURIComponent(objet)}`
+       + `&body=${encodeURIComponent(corpsCourriel(demande))}`;
+}
+
 async function transmettre(endpoint, demande) {
   const arret = new AbortController();
   const minuteur = setTimeout(() => arret.abort(), TIMEOUT_MS);
@@ -140,12 +194,31 @@ async function transmettre(endpoint, demande) {
  * qui s'est réellement passé. Une demande qui n'a pas pu partir est mise en
  * file et rejouée au retour du réseau — on ne perd jamais une demande.
  */
-export async function enregistrerDemande({ poste, contact }) {
-  const config = await chargerConfig();
+export async function enregistrerDemande({ poste, contact, config: configFournie }) {
+  // La configuration est acceptée en paramètre pour que le chemin « courriel »
+  // n'ait aucune attente à traverser : les messageries n'ouvrent un `mailto:`
+  // que dans la continuité du clic, et un `await` de trop suffit à le perdre.
+  const config = configFournie || await chargerConfig();
+  const renseigne = (v) => v && v !== 'À_RENSEIGNER';
   const endpoint = (config.registre || {}).endpoint || '';
+  const destinataire = (config.registre || {}).email_destination || '';
   const demande = ligne(poste, contact);
 
-  if (!endpoint || endpoint === 'À_RENSEIGNER') {
+  if (!renseigne(endpoint) && renseigne(destinataire)) {
+    // Le courriel part de la messagerie du visiteur : on ouvre le message,
+    // mais c'est lui qui l'envoie. L'écran de confirmation le dit, et garde
+    // le lien sous la main si la messagerie ne s'est pas ouverte.
+    const lien = lienCourriel(destinataire, poste, contact);
+    try { window.location.href = lien; } catch { /* le bouton de repli reste */ }
+    enregistrerEnvoi();
+    return {
+      ok: false, configure: true, misEnFile: false, mode: 'courriel', lien, demande,
+      message: 'Votre messagerie s’ouvre avec le message déjà rédigé. '
+             + 'Il ne partira que lorsque vous aurez appuyé sur « Envoyer ».',
+    };
+  }
+
+  if (!renseigne(endpoint)) {
     // Ce n'est pas une panne : c'est l'état normal avant que le point de
     // collecte existe. On le dit, sans faire croire à un enregistrement.
     return {

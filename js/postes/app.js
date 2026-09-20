@@ -38,6 +38,9 @@ const PROJETS = [
   { id: 'informe',   libelle: 'Me tenir informé', icone: 'courriel' },
 ];
 
+/** Une valeur de config.json qui vaut encore « À_RENSEIGNER » n'est pas renseignée. */
+const renseigne = (v) => Boolean(v) && v !== 'À_RENSEIGNER';
+
 const etat = {
   config: {},
   postes: [],
@@ -274,6 +277,8 @@ function vueFormulaire(id) {
   etat.ouvertA = Date.now();
 
   const jours = (etat.config.rgpd || {}).duree_conservation_jours || 30;
+  const reg = etat.config.registre || {};
+  const parCourriel = !renseigne(reg.endpoint) && renseigne(reg.email_destination);
 
   const champ = (nom, libelle, options = {}) => `
     <div class="champ">
@@ -362,7 +367,10 @@ function vueFormulaire(id) {
         <p class="champ__erreur" id="err-general" hidden></p>
 
         <button type="submit" class="bouton bouton--primaire bouton--large" id="envoyer">
-          Enregistrer ma demande</button>
+          ${parCourriel ? 'Préparer mon message' : 'Enregistrer ma demande'}</button>
+        ${parCourriel ? `<p class="texte-faible" style="text-align:center">
+          Votre messagerie s'ouvrira avec le message déjà rédigé&nbsp;; vous n'aurez
+          qu'à appuyer sur « Envoyer ».</p>` : ''}
         <a class="bouton bouton--secondaire bouton--large" href="#/poste/${p.id}">
           ← Retour à la fiche</a>
       </form>
@@ -422,10 +430,12 @@ async function soumettre() {
 
   const bouton = document.getElementById('envoyer');
   bouton.disabled = true;
-  bouton.innerHTML = 'Enregistrement…';
-  annoncer('Enregistrement en cours.');
+  const parCourriel = !renseigne((etat.config.registre || {}).endpoint)
+                   && renseigne((etat.config.registre || {}).email_destination);
+  bouton.innerHTML = parCourriel ? 'Ouverture de la messagerie…' : 'Enregistrement…';
+  annoncer(parCourriel ? 'Ouverture de la messagerie.' : 'Enregistrement en cours.');
 
-  const bilan = await enregistrerDemande({ poste: etat.poste, contact });
+  const bilan = await enregistrerDemande({ poste: etat.poste, contact, config: etat.config });
   vueEnvoye(bilan, contact);
 }
 
@@ -437,14 +447,16 @@ async function soumettre() {
  * L'écran dit ce qui s'est réellement passé.
  *  · enregistré        → la DCIP a la demande, elle recontacte ;
  *  · mis en file       → la demande partira au retour du réseau, rien n'est perdu ;
+ *  · courriel          → le message est PRÊT, c'est le visiteur qui l'envoie ;
  *  · registre absent   → on ne fait pas croire à un enregistrement.
  */
 function vueEnvoye(bilan, contact) {
   const p = etat.poste;
   const enFile = enAttente();
 
+  const courriel = bilan.mode === 'courriel';
   const ton = bilan.ok ? 'succes' : (bilan.configure ? 'accent' : 'alerte');
-  const icone = bilan.ok ? 'coche' : (bilan.configure ? 'horloge' : 'alerte');
+  const icone = bilan.ok ? 'coche' : (courriel ? 'courriel' : (bilan.configure ? 'horloge' : 'alerte'));
 
   afficher('envoye', `
     <div class="section pile" style="text-align:center;padding-top:var(--pas-7)">
@@ -452,7 +464,9 @@ function vueEnvoye(bilan, contact) {
         <span class="rond-succes rond-succes--${ton}" aria-hidden="true">${ico(icone, 32)}</span>
       </p>
       <div>
-        <h1>${bilan.ok ? 'Demande enregistrée&nbsp;!' : (bilan.misEnFile ? 'Demande conservée' : 'À signaler sur place')}</h1>
+        <h1>${bilan.ok ? 'Demande enregistrée&nbsp;!'
+              : (courriel ? 'Dernier geste&nbsp;: envoyer le message'
+              : (bilan.misEnFile ? 'Demande conservée' : 'À signaler sur place'))}</h1>
         <p class="texte-doux" style="margin-top:var(--pas-3);line-height:1.6">
           ${bilan.ok ? `Merci ${contact.prenom}. ` : ''}${bilan.message}
         </p>
@@ -470,7 +484,13 @@ function vueEnvoye(bilan, contact) {
         sur cet appareil.</p>` : ''}
 
       <div class="pile-serree">
-        <a class="bouton bouton--primaire bouton--large" href="#/">Voir les autres postes</a>
+        ${courriel ? `
+        <a class="bouton bouton--primaire bouton--large" href="${bilan.lien}">
+          ${ico('courriel', 18)} Ouvrir le message</a>
+        <p class="texte-faible">Votre messagerie ne s'est pas ouverte&nbsp;? Ce bouton la
+          rouvre. Sinon, signalez-vous auprès d'un agent du stand.</p>` : ''}
+        <a class="bouton bouton--${courriel ? 'secondaire' : 'primaire'} bouton--large"
+           href="#/">Voir les autres postes</a>
         ${p.en_ligne === false ? '' : `
         <a class="bouton bouton--secondaire bouton--large" href="${p.url}"
            target="_blank" rel="noopener">

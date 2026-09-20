@@ -129,6 +129,63 @@ ok('les coordonnées saisies sont rappelées',
 ok('on peut revenir aux autres postes', await p.locator('a[href="#/"]').count() >= 1);
 await p.screenshot({ path: 'app-postes-conf.png' });
 
+/* Le mode courriel ne s'active que si `email_destination` est renseigné dans
+   config.json. Plutôt que de modifier le dépôt le temps du test, on sert une
+   configuration détournée à la page : c'est le seul chemin qui vérifie ce que
+   verra le visiteur le jour où le Département aura donné sa boîte. */
+console.log('\n— Enregistrement par courriel —');
+const BOITE = 'jdmm-recette@departement06.fr';
+/* Contexte dédié, service worker BLOQUÉ : sans cela le SW sert la requête
+   lui-même et l'interception ne voit jamais passer config.json. */
+const ctxMail = await b.newContext({ viewport: { width: 390, height: 844 }, deviceScaleFactor: 2,
+  isMobile: true, hasTouch: true, locale: 'fr-FR', serviceWorkers: 'block' });
+await ctxMail.route('**/data/config.json*', async (route) => {
+  const copie = JSON.parse(JSON.stringify(CONFIG));
+  copie.registre.email_destination = BOITE;
+  await route.fulfill({ contentType: 'application/json', body: JSON.stringify(copie) });
+});
+const pm = await ctxMail.newPage();
+const erreursMail = [];
+pm.on('console', (m) => { if (m.type() === 'error') erreursMail.push(m.text()); });
+pm.on('pageerror', (e) => erreursMail.push('EXCEPTION ' + e.message));
+await pm.goto(BASE + 'postes/', { waitUntil: 'networkidle' });
+await pm.waitForTimeout(900);
+await pm.locator('.poste-row').first().click();
+await pm.waitForTimeout(500);
+await pm.locator('text=Je suis intéressé').first().click();
+await pm.waitForTimeout(500);
+ok('le bouton annonce un message, pas un enregistrement',
+   contient(await pm.locator('#envoyer').textContent(), 'Préparer mon message'));
+await pm.locator('#prenom').fill('Camille');
+await pm.locator('#nom').fill('Durand');
+await pm.locator('#direction').fill('Direction des ressources humaines');
+await pm.locator('#email').fill('camille.durand@departement06.fr');
+await pm.locator('#rgpd').check();
+await pm.waitForTimeout(3200);
+await pm.locator('#envoyer').click();
+await pm.waitForTimeout(900);
+const confMail = await pm.locator('#vue').innerText();
+ok('l\'écran dit que le message reste à envoyer',
+   contient(confMail, 'envoyer le message') && contient(confMail, 'appuyé sur'), confMail.slice(0, 140));
+ok('il ne prétend pas que la demande est enregistrée',
+   !contient(confMail, 'Demande enregistrée'), confMail.slice(0, 140));
+const lienMail = await pm.locator('a[href^="mailto:"]').first().getAttribute('href');
+const mail = new URL(lienMail);
+ok('le message est adressé à la boîte du Département',
+   decodeURIComponent(mail.pathname) === BOITE, decodeURIComponent(mail.pathname));
+const corps = mail.searchParams.get('body') || '';
+ok('il porte le poste, le demandeur et l\'annonce',
+   contient(corps, 'Camille') && contient(corps, 'Durand')
+   && contient(corps, 'camille.durand@departement06.fr')
+   && corps.includes('departement06.fr/offres-demploi'));
+ok('les libellés sont fixes, donc exploitables par un flux',
+   ['— POSTE —', '— DEMANDEUR —', 'Direction  :', 'Horodatage :'].every((m) => corps.includes(m)));
+/* Certaines messageries tronquent un mailto trop long. 2 000 caractères est
+   la limite basse constatée ; on se garde une marge. */
+ok('le lien reste sous 1 800 caractères', lienMail.length < 1800, String(lienMail.length));
+ok('aucune erreur de page sur ce chemin', erreursMail.length === 0, erreursMail.slice(0, 2).join(' | '));
+await ctxMail.close();
+
 console.log('\n— Application QUIZ —');
 erreurs.length = 0;
 await p.goto(BASE + 'quiz/', { waitUntil: 'networkidle' });
