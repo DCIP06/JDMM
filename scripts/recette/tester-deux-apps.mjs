@@ -123,6 +123,15 @@ await p.locator('#email').fill('camille.durand@departement06.fr');
 await p.locator('#envoyer').click(); await p.waitForTimeout(250);
 ok('le consentement manquant est signalé', await p.locator('#err-rgpd').isVisible());
 
+if (MODE === 'flux') {
+  /* On répond à la place du registre : la recette contrôle ce que fait
+     l'application d'une réponse, pas si le serveur distant est joignable —
+     et depuis 127.0.0.1 l'origine ne serait de toute façon pas autorisée. */
+  await p.route('**/demande', async (route) => {
+    await route.fulfill({ status: 200, contentType: 'application/json',
+                          body: JSON.stringify({ ok: true, reference: 'JDMM-0001' }) });
+  });
+}
 console.log(`\n— Enregistrement (mode en place : ${MODE}) —`);
 await p.locator('#rgpd').check();
 await p.locator('[data-projet]').nth(1).click();
@@ -154,6 +163,7 @@ const ctxMail = await b.newContext({ viewport: { width: 390, height: 844 }, devi
   isMobile: true, hasTouch: true, locale: 'fr-FR', serviceWorkers: 'block' });
 await ctxMail.route('**/data/config.json*', async (route) => {
   const copie = JSON.parse(JSON.stringify(CONFIG));
+  copie.registre.endpoint = 'À_RENSEIGNER';      // le flux prime : on l'écarte ici
   copie.registre.email_destination = BOITE;
   await route.fulfill({ contentType: 'application/json', body: JSON.stringify(copie) });
 });
