@@ -56,10 +56,16 @@ const etat = {
 async function demarrer() {
   appliquerTheme();
 
-  etat.config = await chargerConfig();
-  const [fiches, charge] = await Promise.all([chargerPostesDcip(), chargerOffres()]);
-  etat.postes = croiserPostesEtOffres(fiches, charge);
-  etat.charge = charge;
+  /* Deux temps, et c'est délibéré. Attendre les offres du Département (53 ko)
+     avant de rien afficher laissait l'écran vide jusqu'à 11 secondes sur le
+     réseau d'un hall d'exposition : le visiteur qui scanne le QR croyait que
+     la page était cassée et la rechargeait. Les fiches (17 ko) suffisent à
+     afficher la liste ; les offres ne servent qu'à dire si une annonce est
+     encore en ligne, et cette précision arrive quelques secondes plus tard. */
+  const [config, fiches] = await Promise.all([chargerConfig(), chargerPostesDcip()]);
+  etat.config = config;
+  etat.charge = { offers: [], enAttente: true, depuisCache: false, erreur: null };
+  etat.postes = croiserPostesEtOffres(fiches, etat.charge);
 
   construireEntete();
   surveillerReseau(() => etat.charge && etat.charge.depuisCache,
@@ -67,6 +73,14 @@ async function demarrer() {
   window.addEventListener('hashchange', router);
   router();
   enregistrerServiceWorker();
+
+  // Les statuts arrivent ensuite, et la vue affichée se remet à jour d'elle-même.
+  chargerOffres().then((charge) => {
+    etat.charge = charge;
+    etat.postes = croiserPostesEtOffres(fiches, charge);
+    if (etat.poste) etat.poste = etat.postes.find((x) => x.id === etat.poste.id) || etat.poste;
+    router();
+  });
 
   // Une demande qui n'a pas pu partir est rejouée dès que le réseau revient.
   activerRejeuAutomatique((bilan) => {
@@ -136,6 +150,9 @@ function vueListe() {
     return rang(a) - rang(b) || a.titre.localeCompare(b.titre, 'fr');
   });
 
+  // Tant que les offres ne sont pas arrivées, on compte les fiches — annoncer
+  // des postes « ouverts » sans l'avoir vérifié serait une affirmation gratuite.
+  const enAttente = Boolean(etat.charge && etat.charge.enAttente);
   const ouverts = etat.postes.filter((p) => !(p.statut && p.statut.expiree)).length;
   const f = evaluerFraicheur(etat.charge, (etat.config.offres || {}).fraicheur_alerte_heures ?? 72);
 
@@ -145,8 +162,10 @@ function vueListe() {
         <div>
           <p class="hero-pill">Postes vacants · Mobilité interne</p>
           <h1 id="titre-liste">Rejoindre la <em>DCIP</em></h1>
-          <p class="sous">${ouverts} poste${ouverts > 1 ? 's' : ''} ouvert${ouverts > 1 ? 's' : ''}
-            à la mobilité, touchez une fiche pour la découvrir</p>
+          <p class="sous">${enAttente
+            ? `${liste.length} fiches de poste, touchez-en une pour la découvrir`
+            : `${ouverts} poste${ouverts > 1 ? 's' : ''} ouvert${ouverts > 1 ? 's' : ''}
+               à la mobilité, touchez une fiche pour la découvrir`}</p>
         </div>
       </div>
     </div>
@@ -154,15 +173,16 @@ function vueListe() {
     <div class="section">
       <div class="entete-liste">
         <h2>Tous les postes</h2>
-        <p class="texte-faible">${ouverts} poste${ouverts > 1 ? 's' : ''}
-          de mobilité interne</p>
+        <p class="texte-faible">${enAttente ? `${liste.length} fiches`
+          : `${ouverts} poste${ouverts > 1 ? 's' : ''} de mobilité interne`}</p>
       </div>
 
       ${etat.charge.erreur ? `
         <div class="bandeau bandeau--alerte" style="margin-bottom:var(--pas-3)">
           ${ico('alerte', 16)}<span>Impossible de vérifier si les annonces sont encore
           en ligne. Les fiches ci-dessous restent consultables.</span></div>`
-        : `<p class="texte-faible" style="margin-bottom:var(--pas-3)">${f.libelle}</p>`}
+        : `<p class="texte-faible" style="margin-bottom:var(--pas-3)">${
+            enAttente ? 'Vérification des annonces en cours…' : f.libelle}</p>`}
 
       <div class="pile-serree" role="list">
         ${ordonnes.length ? ordonnes.map(ligne).join('')
@@ -173,10 +193,14 @@ function vueListe() {
 
 function ligne(p) {
   const s = p.statut || {};
-  const etiquette = s.expiree
-    ? `<span class="badge badge--neutre">${s.code === 'retiree' ? 'Pourvu' : 'Close'}</span>`
-    : (s.urgent ? `<span class="badge badge--alerte">Urgent</span>`
-                : `<span class="badge badge--succes">En ligne</span>`);
+  // Pas de badge tant que le statut n'est pas vérifié : un badge énigmatique
+  // vaut moins que pas de badge, et la ligne de métadonnées le dit déjà.
+  const etiquette = s.inconnu
+    ? ''
+    : (s.expiree
+      ? `<span class="badge badge--neutre">${s.code === 'retiree' ? 'Pourvu' : 'Close'}</span>`
+      : (s.urgent ? `<span class="badge badge--alerte">Urgent</span>`
+                  : `<span class="badge badge--succes">En ligne</span>`));
   return `
     <div role="listitem">
       <a class="poste-row" href="#/poste/${p.id}">

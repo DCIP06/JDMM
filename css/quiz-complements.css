@@ -109,6 +109,24 @@ body:has(.quiz[data-quiz="gard"]) { background: #0B0E14; }
 .card-etu  .card-cat { color: #0F766E; }   /* accent du quiz    → 5,0:1 */
 .card-ener .card-cat { color: #12863D; }   /* 3,3:1             → 4,7:1 */
 
+/* Même cause, effet plus visible : le bouton « Commencer » de ces deux cartes
+   restait transparent quand les deux autres portaient un aplat teinté. Sur le
+   hub, deux quiz sur quatre semblaient inactifs. On leur rend l'aplat prévu,
+   dans la teinte de leur quiz. */
+.card-secu .card-btn { background: #EFF6FF; color: #1D4ED8; }   /* 6,2:1 */
+.card-etu  .card-btn { background: #ECFAF8; color: #0B5F59; }   /* 7,0:1 */
+.card-secu:active .card-btn { background: #2E64E6; color: #fff; }
+.card-etu:active  .card-btn { background: #0F766E; color: #fff; }
+.card-ener:active .card-btn { background: #12863D; color: #fff; }
+@media (hover: hover) {
+  .card-secu:hover .card-btn { background: #2E64E6; color: #fff; }
+  .card-etu:hover  .card-btn { background: #0F766E; color: #fff; }
+  .card-ener:hover .card-btn { background: #12863D; color: #fff; }
+  .card-secu:hover { border-color: #90A8F8; }
+  .card-etu:hover  { border-color: #7FCFC6; }
+  .card-ener:hover { border-color: #86DCA6; }
+}
+
 /* Le bouton principal porte du blanc sur l'accent vif : 3,8:1 sur l'orange.
    Le noir passe sur les trois accents (5,5 · 5,7 · 4,6). */
 .quiz .btn { color: #000000; }

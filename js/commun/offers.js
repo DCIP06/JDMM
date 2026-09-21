@@ -217,6 +217,20 @@ export function statutEcheance(offre) {
  * sur l'intitulé serait fragile : les titres varient (« H/F », numéro d'offre).
  */
 export function croiserPostesEtOffres(postes, charge) {
+  /* Les offres du Département pèsent trois fois les fiches : la liste
+     s'affiche avant qu'elles soient arrivées, et on la complète ensuite.
+     Pendant cet intervalle le statut est INCONNU, et il faut le dire — une
+     fiche sans offre en regard est « pourvue », ce qui serait faux de toutes
+     les annoncer ainsi le temps d'un chargement. */
+  if (!charge || charge.enAttente) {
+    return postes.map((poste) => ({
+      ...poste,
+      en_ligne: null,
+      offre: null,
+      statut: { code: 'inconnu', libelle: 'Vérification de l’annonce…', urgent: false, expiree: false, inconnu: true },
+    }));
+  }
+
   const parCle = new Map();
   (charge.offers || []).forEach((offre) => {
     parCle.set(cleDepuisUrl(offre.url), offre);
