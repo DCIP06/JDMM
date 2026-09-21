@@ -16,8 +16,21 @@
 <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
 <meta name="apple-mobile-web-app-title" content="Quiz DCIP">
 
-<link rel="preload" as="font" type="font/woff2" crossorigin href="../assets/fonts/fraunces-normal-latin.woff2">
-<link rel="preload" as="font" type="font/woff2" crossorigin href="../assets/fonts/manrope-normal-latin.woff2">
+<!-- Les modules sont annoncés ici, tous ensemble. Sans cela le navigateur les
+     découvre les uns après les autres, en descendant l'arbre des imports : sur
+     le réseau d'un hall d'exposition, ces trois allers-retours retardaient de
+     six secondes la première requête de données, et l'écran restait vide.
+
+     Les polices ne sont plus préchargées : 60 ko en priorité haute passaient
+     devant le contenu. `font-display: swap` affiche le texte immédiatement,
+     la police arrive ensuite. -->
+<link rel="modulepreload" href="../js/quiz/app.js">
+<link rel="modulepreload" href="../js/quiz/moteur.js">
+<link rel="modulepreload" href="../js/commun/offers.js">
+<link rel="modulepreload" href="../js/commun/interface.js">
+<link rel="modulepreload" href="../js/commun/icones.js">
+<link rel="modulepreload" href="../js/commun/store.js">
+
 <link rel="stylesheet" href="../css/polices.css">
 <link rel="stylesheet" href="../themes/tokens.css">
 <link rel="stylesheet" href="../themes/a.css">
