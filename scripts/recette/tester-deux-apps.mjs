@@ -12,6 +12,14 @@ const DONNEES_QUIZ = JSON.parse(readFileSync(new URL('../../data/quiz.json', imp
 const QUIZ = DONNEES_QUIZ.quiz;
 const HUB = DONNEES_QUIZ.hub;
 const NB_FICHES = FICHES.length;
+/* Trois destinations possibles pour une demande, et la recette doit contrôler
+   CELLE QUI EST EN PLACE : un test qui suppose « pas encore raccordé » passe
+   au rouge le jour où le registre est enfin branché — exactement l'inverse de
+   ce qu'on veut. Les deux autres modes sont couverts plus bas, en détournant
+   la configuration. */
+const renseigne = (v) => Boolean(v) && v !== 'À_RENSEIGNER';
+const MODE = renseigne(CONFIG.registre.endpoint) ? 'flux'
+           : renseigne(CONFIG.registre.email_destination) ? 'courriel' : 'absent';
 const BASE = process.env.URL_BASE || 'http://127.0.0.1:8123/';
 const b = await chromium.launch({ executablePath: '/usr/bin/chromium', args: ['--no-sandbox','--disable-gpu'] });
 let ko = 0;
@@ -81,8 +89,9 @@ await p.locator('a[href^="#/demande/"]').click();
 await p.waitForTimeout(600);
 const form = await p.locator('#vue').innerText();
 ok('le titre est « Je suis intéressé(e) »', contient(form, 'Je suis intéressé(e)'));
-ok('le bouton dit « Enregistrer ma demande »',
-   contient(await p.locator('#envoyer').textContent(), 'Enregistrer ma demande'));
+const LIBELLE_BOUTON = MODE === 'courriel' ? 'Préparer mon message' : 'Enregistrer ma demande';
+ok(`le bouton dit « ${LIBELLE_BOUTON} » (mode ${MODE})`,
+   contient(await p.locator('#envoyer').textContent(), LIBELLE_BOUTON));
 ok('le poste sélectionné est rappelé', contient(form, 'Poste sélectionné'));
 for (const c of ['prenom','nom','direction','email']) {
   ok(`le champ ${c} est présent`, await p.locator('#' + c).count() === 1);
@@ -114,17 +123,19 @@ await p.locator('#email').fill('camille.durand@departement06.fr');
 await p.locator('#envoyer').click(); await p.waitForTimeout(250);
 ok('le consentement manquant est signalé', await p.locator('#err-rgpd').isVisible());
 
-console.log('\n— Enregistrement (registre non raccordé) —');
+console.log(`\n— Enregistrement (mode en place : ${MODE}) —`);
 await p.locator('#rgpd').check();
 await p.locator('[data-projet]').nth(1).click();
 await p.waitForTimeout(3200);
 await p.locator('#envoyer').click();
 await p.waitForTimeout(900);
 const conf = await p.locator('#vue').innerText();
-ok('la confirmation s\'affiche',
-   contient(conf, 'À signaler sur place') || contient(conf, 'Demande enregistrée'));
-ok('elle ne fait pas croire à un enregistrement',
-   contient(conf, "n’est pas encore raccordé"), conf.slice(0, 140));
+const ATTENDU = { flux: 'Demande enregistrée', courriel: 'envoyer le message',
+                  absent: 'À signaler sur place' }[MODE];
+ok('la confirmation s\'affiche', contient(conf, ATTENDU), conf.slice(0, 140));
+ok('elle dit ce qui s\'est réellement passé',
+   MODE === 'flux' ? contient(conf, 'enregistrée')
+   : !contient(conf, 'Demande enregistrée'), conf.slice(0, 140));
 ok('le poste d\'intérêt est rappelé', contient(conf, "Poste d'intérêt"));
 ok('les coordonnées saisies sont rappelées',
    contient(conf, 'Camille Durand') && contient(conf, 'camille.durand@departement06.fr'));
@@ -187,6 +198,40 @@ ok('les libellés sont fixes, donc exploitables par un flux',
 ok('le lien reste sous 1 800 caractères', lienMail.length < 1800, String(lienMail.length));
 ok('aucune erreur de page sur ce chemin', erreursMail.length === 0, erreursMail.slice(0, 2).join(' | '));
 await ctxMail.close();
+
+/* Le mode « pas encore raccordé » reste couvert même une fois le registre
+   branché : c'est le filet qui garantit qu'on n'annoncera jamais un
+   enregistrement qui n'a pas eu lieu. */
+console.log('\n— Enregistrement quand rien n\'est raccordé —');
+const ctxVide = await b.newContext({ viewport: { width: 390, height: 844 }, deviceScaleFactor: 2,
+  isMobile: true, hasTouch: true, locale: 'fr-FR', serviceWorkers: 'block' });
+await ctxVide.route('**/data/config.json*', async (route) => {
+  const copie = JSON.parse(JSON.stringify(CONFIG));
+  copie.registre.endpoint = 'À_RENSEIGNER';
+  copie.registre.email_destination = 'À_RENSEIGNER';
+  await route.fulfill({ contentType: 'application/json', body: JSON.stringify(copie) });
+});
+const pv = await ctxVide.newPage();
+await pv.goto(BASE + 'postes/', { waitUntil: 'networkidle' });
+await pv.waitForTimeout(900);
+await pv.locator('.poste-row').first().click(); await pv.waitForTimeout(500);
+await pv.locator('text=Je suis intéressé').first().click(); await pv.waitForTimeout(500);
+ok('le bouton reprend « Enregistrer ma demande »',
+   contient(await pv.locator('#envoyer').textContent(), 'Enregistrer ma demande'));
+await pv.locator('#prenom').fill('Camille');
+await pv.locator('#nom').fill('Durand');
+await pv.locator('#direction').fill('Direction des ressources humaines');
+await pv.locator('#email').fill('camille.durand@departement06.fr');
+await pv.locator('#rgpd').check();
+await pv.waitForTimeout(3200);
+await pv.locator('#envoyer').click();
+await pv.waitForTimeout(900);
+const confVide = await pv.locator('#vue').innerText();
+ok('l\'application renvoie vers un agent', contient(confVide, 'À signaler sur place'));
+ok('elle ne fait croire à aucun enregistrement',
+   contient(confVide, 'n’est pas encore raccordé'), confVide.slice(0, 140));
+ok('aucun lien mailto n\'est proposé', await pv.locator('a[href^="mailto:"]').count() === 0);
+await ctxVide.close();
 
 console.log('\n— Application QUIZ —');
 erreurs.length = 0;
