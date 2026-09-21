@@ -65,7 +65,7 @@ export async function rendreHub(cible) {
     </div>
 
     <div class="hub-foot">
-      <span>DCIP — Sécurité, Sûreté &amp; Prévention</span>
+      <span>DCIP — Construction, Immobilier et Patrimoine</span>
       <span>Département des Alpes-Maritimes</span>
     </div>`;
 }
@@ -118,13 +118,17 @@ function remonter() {
   window.scrollTo({ top: 0, behavior: 'instant' in window ? 'instant' : 'auto' });
 }
 
-/** Coque commune aux trois écrans d'un quiz. */
+/** Coque commune aux trois écrans d'un quiz.
+ *
+ * La marque vient du quiz, elle n'est pas écrite ici : le hub couvre quatre
+ * services et la coque annonçait « Sécurité, Sûreté & Prévention » sur les
+ * quatre — un visiteur du quiz Études & Travaux lisait le nom d'un service
+ * qui n'est pas le sien, de l'intro jusqu'à l'écran de résultats. */
 function coque(quiz, contenu) {
   return `
     <a class="qz-back" href="#/">← Tous les quiz</a>
     <div class="container">
-      <div class="brand-row"><span class="dot" aria-hidden="true"></span>DCIP ·
-        Sécurité, Sûreté &amp; Prévention</div>
+      <div class="brand-row"><span class="dot" aria-hidden="true"></span>${quiz.marque}</div>
       ${contenu}
       <div class="footer-note">
         ${(quiz.pied || []).map((x) => `<span>${x}</span>`).join('')}

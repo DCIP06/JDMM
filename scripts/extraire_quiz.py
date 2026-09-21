@@ -30,11 +30,14 @@ RACINE = Path(__file__).resolve().parent.parent
 SOURCE = RACINE / 'sources' / 'quiz-hub.html'
 SORTIE = RACINE / 'data' / 'quiz.json'
 
-# Les trois quiz du hub : ancre dans le document, préfixe de leurs variables.
+# Les quiz du hub : ancre dans le document, préfixe de leurs variables.
+# Les préfixes ne suivent aucune logique (QC pour « sécurité », QR pour
+# « énergies renouvelables ») : ils sont relevés dans la source, pas déduits.
 QUIZ = [
     {'id': 'feu',  'ancre': 'qz-feu',  'prefixe': 'QF', 'slug': 'prevention-incendie'},
     {'id': 'secu', 'ancre': 'qz-secu', 'prefixe': 'QC', 'slug': 'securite-humaine-materiel'},
     {'id': 'etu',  'ancre': 'qz-etu',  'prefixe': 'QE', 'slug': 'etudes-et-travaux'},
+    {'id': 'ener', 'ancre': 'qz-ener', 'prefixe': 'QR', 'slug': 'energies-renouvelables'},
 ]
 
 
@@ -128,14 +131,17 @@ def entete_hub(source: str) -> dict:
     }
 
 
-# Le hub livré reprend, sous le quiz « Études & Travaux », le pied de page du
-# quiz sûreté : « Vidéoprotection · Badges · Intrusion » sous un quiz qui parle
-# de chantiers. Copier-coller manifeste, corrigé ici à partir du contenu réel
-# du quiz (sa marque et les catégories de ses questions). À supprimer dès que
-# la DCIP corrige sa source.
+# Le hub livré recopie le pied de page du quiz sûreté sous DEUX autres quiz :
+# « Vidéoprotection · Badges · Intrusion » s'affiche, juste sous le score, à la
+# fin d'un quiz qui parle de chantiers et d'un autre qui parle d'énergie. Le
+# gabarit a été dupliqué sans que ce bloc soit repris. Corrigé ici à partir du
+# contenu réel de chaque quiz — sa marque et les catégories de ses questions.
+# À supprimer dès que la DCIP corrige sa source.
 PIEDS_CORRIGES = {
-    'etu': ['Quiz pédagogique — conduite d’opérations de bâtiment',
-            'Programmation · Chantier · Réception'],
+    'etu':  ['Quiz pédagogique — conduite d’opérations de bâtiment',
+             'Programmation · Chantier · Réception'],
+    'ener': ['Quiz pédagogique — transition énergétique du patrimoine',
+             'Confort d’été · Sobriété · Économies d’eau'],
 }
 
 

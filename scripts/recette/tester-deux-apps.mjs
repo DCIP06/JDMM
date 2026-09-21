@@ -8,7 +8,9 @@ import { readFileSync } from 'node:fs';
 const FICHES = JSON.parse(readFileSync(new URL('../../data/postes-dcip.json', import.meta.url), 'utf8'));
 const CONFIG = JSON.parse(readFileSync(new URL('../../data/config.json', import.meta.url), 'utf8'));
 const JOURS = CONFIG.rgpd.duree_conservation_jours;
-const QUIZ = JSON.parse(readFileSync(new URL('../../data/quiz.json', import.meta.url), 'utf8')).quiz;
+const DONNEES_QUIZ = JSON.parse(readFileSync(new URL('../../data/quiz.json', import.meta.url), 'utf8'));
+const QUIZ = DONNEES_QUIZ.quiz;
+const HUB = DONNEES_QUIZ.hub;
 const NB_FICHES = FICHES.length;
 const BASE = process.env.URL_BASE || 'http://127.0.0.1:8123/';
 const b = await chromium.launch({ executablePath: '/usr/bin/chromium', args: ['--no-sandbox','--disable-gpu'] });
@@ -191,10 +193,14 @@ erreurs.length = 0;
 await p.goto(BASE + 'quiz/', { waitUntil: 'networkidle' });
 await p.waitForTimeout(900);
 ok('la page se charge sans erreur', erreurs.length === 0, erreurs.slice(0,2).join(' | '));
-ok('les 3 quiz sont proposés', await p.locator('.quiz-card').count() === 3,
+/* Le compte vient du fichier de données : la DCIP a ajouté un quatrième quiz
+   le 21/09, un chiffre écrit en dur ici l'aurait signalé comme une panne. */
+ok(`les ${QUIZ.length} quiz sont proposés`, await p.locator('.quiz-card').count() === QUIZ.length,
    String(await p.locator('.quiz-card').count()));
+/* Le titre est celui du fichier source, pas une chaîne figée ici : la DCIP l'a
+   déjà changé une fois (« Testez vos connaissances » → « À la découverte… »). */
 ok('le hub reprend le titre du fichier source',
-   contient(await p.locator('.hub-title').textContent(), 'Testez vos connaissances'));
+   contient(await p.locator('.hub-title').innerText(), HUB.titre), HUB.titre);
 /* Les compteurs des cartes doivent égaler le nombre réel de questions de
    chaque quiz — le hub livré annonçait 9 questions là où il y en a 8. */
 const ATTENDUS = QUIZ.map((q) => `${q.questions.length} questions`);

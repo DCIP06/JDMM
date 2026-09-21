@@ -1348,12 +1348,12 @@ html, body { min-height: 100%; font-family: 'Manrope', system-ui, sans-serif; -w
 #qz-etu { background: transparent; }
 
 
-#qz-feu, #qz-secu, #qz-etu {
+#qz-feu, #qz-secu, #qz-etu, #qz-ener {
   background: #F6F4EF !important;
 }
 
 
-#qz-feu, #qz-secu, #qz-etu {
+#qz-feu, #qz-secu, #qz-etu, #qz-ener {
   --bg:        #F6F4EF !important;
   --bg-2:      #F6F4EF !important;
   --surface:   #FFFFFF !important;
@@ -1385,14 +1385,419 @@ html, body { min-height: 100%; font-family: 'Manrope', system-ui, sans-serif; -w
 }
 .goodie-msg .emoji { margin-right: 8px; }
 
+#qz-ener {
+  min-height: 100%;
+  position: relative;
+}
+#qz-ener {
+    --bg:        #0A0D14;
+    --bg-2:      #0F1320;
+    --surface:   #141824;
+    --surface-2: #1A2030;
+    --line:      #222840;
+    --text:      #E8EDF8;
+    --text-mute: #8A96B0;
+    --text-soft: #505870;
+    --accent:    #16A34A;
+    --accent-2:  #4ADE80;
+    --gold:      #F4C95D;
+    --green:     #5BBF7A;
+    --red:       #D9534F;
+    --shadow: 0 30px 80px -20px rgba(0,0,0,.6), 0 8px 24px -8px rgba(0,0,0,.4);
+  }
+
+  
+
+  #qz-ener * { box-sizing: border-box; margin: 0; padding: 0; }
+
+  #qz-ener, #qz-ener {
+    background: var(--bg);
+    color: var(--text);
+    font-family: 'Manrope', system-ui, sans-serif;
+    font-weight: 400;
+    line-height: 1.55;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    min-height: 100vh;
+  }
+
+  #qz-ener {
+    background:
+      var(--bg);
+    background-attachment: fixed;
+    position: relative;
+    overflow-x: hidden;
+  }
+
+  #qz-ener::before {
+    content: '';
+    position: fixed;
+    inset: 0;
+    pointer-events: none;
+    z-index: 1;
+    opacity: .35;
+    mix-blend-mode: overlay;
+    background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='200' height='200'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2' stitchTiles='stitch'/><feColorMatrix values='0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 .5 0'/></filter><rect width='100%25' height='100%25' filter='url(%23n)'/></svg>");
+  }
+
+  #qz-ener .container {
+    max-width: 760px;
+    margin: 0 auto;
+    padding: clamp(20px, 4vw, 48px) clamp(16px, 4vw, 32px) 80px;
+    position: relative;
+    z-index: 2;
+  }
+
+  #qz-ener /* ---------- HEADER ---------- */
+  .brand-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: clamp(40px, 8vw, 72px);
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 11px;
+    letter-spacing: .12em;
+    text-transform: uppercase;
+    color: var(--text-soft);
+  }
+  #qz-ener .brand-row .dot {
+    display: inline-block;
+    width: 6px; height: 6px;
+    background: var(--accent);
+    border-radius: 50%;
+    margin-right: 8px;
+    box-shadow: 0 0 12px var(--accent);
+    animation: pulse 1.8s ease-in-out infinite;
+  }
+  @keyframes pulse {
+    0%, 100% { opacity: 1; transform: scale(1); }
+    50% { opacity: .5; transform: scale(.85); }
+  }
+
+  #qz-ener /* ---------- INTRO ---------- */
+  .intro { text-align: left; margin-bottom: 56px; }
+  #qz-ener .intro .eyebrow {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 12px;
+    letter-spacing: .18em;
+    text-transform: uppercase;
+    color: var(--accent);
+    margin-bottom: 24px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+  }
+  #qz-ener .intro .eyebrow::after {
+    content: '';
+    flex: 1;
+    height: 1px;
+    background: linear-gradient(90deg, var(--accent), transparent);
+    max-width: 120px;
+  }
+  #qz-ener .intro h1 {
+    font-family: 'Fraunces', serif;
+    font-weight: 400;
+    font-size: clamp(36px, 7vw, 64px);
+    line-height: 1.02;
+    letter-spacing: -.02em;
+    margin-bottom: 28px;
+    font-variation-settings: "opsz" 144, "SOFT" 50;
+  }
+  #qz-ener .intro h1 em {
+    font-style: italic;
+    color: var(--accent-2);
+    font-variation-settings: "opsz" 144, "SOFT" 100;
+  }
+  #qz-ener .intro p.lead {
+    font-size: clamp(16px, 2.2vw, 19px);
+    color: var(--text-mute);
+    max-width: 580px;
+    margin-bottom: 36px;
+  }
+
+  #qz-ener .meta-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+    gap: 1px;
+    background: var(--line);
+    border: 1px solid var(--line);
+    margin-bottom: 48px;
+  }
+  #qz-ener .meta-grid > div { background: var(--bg); padding: 18px 20px; }
+  #qz-ener .meta-grid .label {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 10px;
+    letter-spacing: .14em;
+    text-transform: uppercase;
+    color: var(--text-soft);
+    margin-bottom: 6px;
+  }
+  #qz-ener .meta-grid .value {
+    font-family: 'Fraunces', serif;
+    font-size: 20px;
+    color: var(--text);
+    font-weight: 500;
+  }
+
+  #qz-ener .btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 12px;
+    padding: 18px 32px;
+    background: var(--accent);
+    color: #fff;
+    border: none;
+    font-family: 'Manrope', sans-serif;
+    font-size: 15px;
+    font-weight: 600;
+    letter-spacing: .02em;
+    cursor: pointer;
+    transition: all .25s cubic-bezier(.2,.7,.2,1);
+  }
+  #qz-ener .btn:hover {
+    background: var(--accent-2);
+    transform: translateY(-2px);
+    box-shadow: 0 20px 40px -10px rgba(61, 111, 232, .5);
+  }
+  #qz-ener .btn .arrow { transition: transform .3s ease; }
+  #qz-ener .btn:hover .arrow { transform: translateX(4px); }
+  #qz-ener .btn.secondary {
+    background: transparent;
+    color: var(--text);
+    border: 1px solid var(--line);
+  }
+  #qz-ener .btn.secondary:hover {
+    background: var(--surface);
+    border-color: var(--accent);
+    box-shadow: none;
+  }
+
+  #qz-ener /* ---------- QUIZ ---------- */
+  .quiz-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 32px;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 11px;
+    letter-spacing: .14em;
+    text-transform: uppercase;
+    color: var(--text-soft);
+  }
+  #qz-ener .quiz-header .counter { color: var(--text); }
+  #qz-ener .quiz-header .counter strong { color: var(--accent); font-weight: 700; }
+
+  #qz-ener .progress {
+    height: 2px;
+    background: var(--line);
+    margin-bottom: 56px;
+    overflow: hidden;
+  }
+  #qz-ener .progress-bar {
+    height: 100%;
+    background: linear-gradient(90deg, var(--accent), var(--gold));
+    width: 0%;
+    transition: width .5s cubic-bezier(.2,.7,.2,1);
+  }
+
+  #qz-ener .category {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 11px;
+    letter-spacing: .18em;
+    text-transform: uppercase;
+    color: var(--gold);
+    margin-bottom: 20px;
+  }
+
+  #qz-ener .question {
+    font-family: 'Fraunces', serif;
+    font-weight: 400;
+    font-size: clamp(24px, 4.5vw, 36px);
+    line-height: 1.15;
+    letter-spacing: -.01em;
+    margin-bottom: 40px;
+    font-variation-settings: "opsz" 144, "SOFT" 30;
+  }
+
+  #qz-ener .options {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 32px;
+  }
+
+  #qz-ener .option {
+    display: flex;
+    align-items: flex-start;
+    gap: 16px;
+    padding: 18px 22px;
+    background: var(--surface);
+    border: 1px solid var(--line);
+    cursor: pointer;
+    transition: all .2s ease;
+    text-align: left;
+    color: var(--text);
+    font-family: inherit;
+    font-size: 16px;
+    line-height: 1.45;
+    width: 100%;
+  }
+  #qz-ener .option:hover:not(:disabled) {
+    border-color: var(--accent);
+    background: var(--surface-2);
+    transform: translateX(4px);
+  }
+  #qz-ener .option:disabled { cursor: default; }
+  #qz-ener .option .marker {
+    flex-shrink: 0;
+    width: 24px; height: 24px;
+    border: 1px solid var(--line);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 11px;
+    color: var(--text-mute);
+    transition: all .2s ease;
+    margin-top: 1px;
+  }
+  #qz-ener .option:hover:not(:disabled) .marker { border-color: var(--accent); color: var(--accent); }
+  #qz-ener .option.correct { border-color: var(--green); background: rgba(91, 191, 122, .08); }
+  #qz-ener .option.correct .marker { background: var(--green); border-color: var(--green); color: #0A0D14; }
+  #qz-ener .option.wrong { border-color: var(--red); background: rgba(217, 83, 79, .08); }
+  #qz-ener .option.wrong .marker { background: var(--red); border-color: var(--red); color: #fff; }
+
+  #qz-ener .feedback {
+    border-left: 2px solid var(--accent);
+    padding: 16px 0 16px 20px;
+    margin-bottom: 36px;
+    opacity: 0;
+    max-height: 0;
+    overflow: hidden;
+    transition: opacity .4s ease, max-height .4s ease, padding .4s ease, margin .4s ease;
+  }
+  #qz-ener .feedback.show { opacity: 1; max-height: 600px; padding: 16px 0 16px 20px; margin-bottom: 36px; }
+  #qz-ener .feedback .feedback-label {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 11px;
+    letter-spacing: .14em;
+    text-transform: uppercase;
+    color: var(--accent);
+    margin-bottom: 10px;
+  }
+  #qz-ener .feedback p { color: var(--text-mute); font-size: 15px; line-height: 1.6; }
+  #qz-ener .feedback p strong { color: var(--text); font-weight: 600; }
+
+  #qz-ener .nav-row { display: flex; justify-content: flex-end; gap: 12px; }
+
+  #qz-ener /* ---------- RESULTS ---------- */
+  .results { text-align: left; }
+  #qz-ener .results .score-eyebrow {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 12px;
+    letter-spacing: .18em;
+    text-transform: uppercase;
+    color: var(--accent);
+    margin-bottom: 24px;
+  }
+  #qz-ener .score-big {
+    font-family: 'Fraunces', serif;
+    font-size: clamp(80px, 18vw, 160px);
+    line-height: .9;
+    letter-spacing: -.04em;
+    margin-bottom: 8px;
+    font-variation-settings: "opsz" 144;
+    color: var(--text);
+  }
+  #qz-ener .score-big .total { color: var(--text-soft); font-size: .5em; }
+  #qz-ener .verdict {
+    font-family: 'Fraunces', serif;
+    font-size: clamp(22px, 3.5vw, 32px);
+    line-height: 1.2;
+    margin-bottom: 24px;
+    font-style: italic;
+    color: var(--gold);
+  }
+  #qz-ener .verdict-text { color: var(--text-mute); font-size: 17px; max-width: 580px; margin-bottom: 48px; }
+
+  #qz-ener .breakdown { border-top: 1px solid var(--line); padding-top: 32px; margin-bottom: 40px; }
+  #qz-ener .breakdown h3 {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 11px;
+    letter-spacing: .18em;
+    text-transform: uppercase;
+    color: var(--text-soft);
+    margin-bottom: 20px;
+    font-weight: 500;
+  }
+  #qz-ener .breakdown-item {
+    display: flex;
+    align-items: baseline;
+    gap: 16px;
+    padding: 14px 0;
+    border-bottom: 1px solid var(--line);
+    font-size: 15px;
+  }
+  #qz-ener .breakdown-item:last-child { border-bottom: none; }
+  #qz-ener .breakdown-item .num { font-family: 'JetBrains Mono', monospace; font-size: 12px; color: var(--text-soft); width: 24px; flex-shrink: 0; }
+  #qz-ener .breakdown-item .label { flex: 1; color: var(--text); }
+  #qz-ener .breakdown-item .status { font-family: 'JetBrains Mono', monospace; font-size: 11px; letter-spacing: .1em; text-transform: uppercase; }
+  #qz-ener .breakdown-item .status.ok { color: var(--green); }
+  #qz-ener .breakdown-item .status.ko { color: var(--red); }
+
+  #qz-ener .footer-note {
+    border-top: 1px solid var(--line);
+    margin-top: 80px;
+    padding-top: 24px;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 10px;
+    letter-spacing: .14em;
+    text-transform: uppercase;
+    color: var(--text-soft);
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 12px;
+  }
+
+  #qz-ener .fade-in { animation: fadeIn .5s cubic-bezier(.2,.7,.2,1) both; }
+  @keyframes fadeIn {
+    from { opacity: 0; transform: translateY(12px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+  #qz-ener .hidden { display: none !important; }
+
+  @media (max-width: 540px) {
+    #qz-ener .nav-row { flex-direction: column-reverse; }
+    #qz-ener .nav-row .btn { width: 100%; justify-content: center; }
+    #qz-ener .meta-grid { grid-template-columns: 1fr 1fr; }
+    #qz-ener .brand-row { font-size: 10px; }
+  }
+
+#qz-ener {
+  --bg:        #F6F4EF;
+  --bg-2:      #F6F4EF;
+  --surface:   #FFFFFF;
+  --surface-2: #FBFAF7;
+  --line:      #E8E5DF;
+  --text:      #1A1A18;
+  --text-mute: #6E665B;
+  --text-soft: #948C7E;
+}
+#qz-ener { background: var(--bg); }
+
+.card-ener .card-cat{color:#16A34A;}
+.card-ener .card-btn{background:#EFFDF4;color:#166534;}
+
 </style>
 </head>
 <body>
 
 <div id="hub">
-  <div class="hub-tag"><span class="dot"></span>DCIP &middot; Forum des M&eacute;tiers &middot; 10 juin 2026</div>
+  <div class="hub-tag"><span class="dot"></span>DCIP &middot; Forum des M&eacute;tiers &middot; 23 septembre 2026</div>
   <div class="hub-eyebrow">Quiz interactif</div>
-  <h1 class="hub-title">Testez vos connaissances<br>dans le domaine de la s&eacute;curit&eacute;</h1>
+  <h1 class="hub-title">&Agrave; la d&eacute;couverte<br>des missions de la DCIP</h1>
   <p class="hub-play">Jouez et remportez des goodies&nbsp;!</p>
   <p class="hub-select">&mdash; S&eacute;lectionnez votre quiz &mdash;</p>
   <div class="quiz-grid">
@@ -1405,7 +1810,7 @@ html, body { min-height: 100%; font-family: 'Manrope', system-ui, sans-serif; -w
     </div>
     <div class="quiz-card card-secu" onclick="openQuiz('secu')">
       <span class="card-ico">&#x1F6E1;&#xFE0F;</span><div class="card-cat">S&eacute;curit&eacute; humaine &amp; mat&eacute;riel</div>
-      <div class="card-title">Agents, cam&eacute;ras &amp; badges</div>
+      <div class="card-title">S&eacute;curit&eacute; en action</div>
       <div class="card-desc">Rondes, bouton anti-agression, vid&eacute;oprotection, badges&hellip; Le meilleur des deux mondes de la s&eacute;curit&eacute; au quotidien.</div>
       <div class="card-meta"><span>5 questions</span><span>~3 min</span></div>
       <button class="card-btn">Commencer <span class="arr">&rarr;</span></button>
@@ -1414,6 +1819,13 @@ html, body { min-height: 100%; font-family: 'Manrope', system-ui, sans-serif; -w
       <span class="card-ico">&#x1F3D7;&#xFE0F;</span><div class="card-cat">&Eacute;tudes &amp; Travaux</div>
       <div class="card-title">D&eacute;couverte du Service &Eacute;tudes et Travaux</div>
       <div class="card-desc">De la premi&egrave;re esquisse &agrave; la livraison du chantier&hellip; d&eacute;couvrez les coulisses des grands projets du D&eacute;partement.</div>
+      <div class="card-meta"><span>5 questions</span><span>~3 min</span></div>
+      <button class="card-btn">Commencer <span class="arr">&rarr;</span></button>
+    </div>
+    <div class="quiz-card card-ener" onclick="openQuiz('ener')">
+      <span class="card-ico">&#x1F331;</span><div class="card-cat">&Eacute;nergies Renouvelables</div>
+      <div class="card-title">La Mission &Eacute;nergies Renouvelables</div>
+      <div class="card-desc">R&eacute;novation &eacute;nerg&eacute;tique, confort d&rsquo;&eacute;t&eacute;, &eacute;conomies d&rsquo;eau&hellip; D&eacute;couvrez la transition &eacute;cologique du patrimoine d&eacute;partemental.</div>
       <div class="card-meta"><span>5 questions</span><span>~3 min</span></div>
       <button class="card-btn">Commencer <span class="arr">&rarr;</span></button>
     </div>
@@ -1569,14 +1981,14 @@ html, body { min-height: 100%; font-family: 'Manrope', system-ui, sans-serif; -w
     },
     {
       cat: "Gestes",
-      q: "Lors de l'évacuation, peut-on prendre l'ascenseur ?",
+      q: "Lors de l'évacuation d'un bâtiment de bureaux classique (hors IGH), peut-on prendre l'ascenseur ?",
       options: [
         "Oui, c'est plus rapide qu'un escalier",
         "Oui, si le feu est à un autre étage",
         "Non — les ascenseurs sont strictement interdits en cas d'incendie"
       ],
       correct: 2,
-      feedback: "<strong>L'ascenseur est interdit</strong> en cas d'incendie. Les fumées s'engouffrent dans la gaine, la cabine peut s'arrêter à l'étage du feu, et l'alimentation électrique peut être coupée à tout moment. Seuls les <strong>ascenseurs « pompiers »</strong> (présents en IGH) peuvent être utilisés par les secours. L'évacuation se fait <strong>toujours par les escaliers</strong>."
+      feedback: "<strong>Dans un bâtiment de bureaux classique, <strong>l'ascenseur est interdit</strong> en cas d'incendie : les fumées s'engouffrent dans la gaine, la cabine peut s'arrêter à l'étage du feu, et l'alimentation électrique peut être coupée à tout moment. L'évacuation se fait <strong>toujours par les escaliers</strong>.<br><br><em>À noter :</em> dans un <strong>IGH</strong> (Immeuble de Grande Hauteur), le règlement de sécurité prévoit un fonctionnement différent, autorisant l'usage de l'ascenseur sur les étages non concernés par le sinistre — un cas particulier, distinct de la règle générale évaluée ici."
     },
     {
       cat: "Gestes",
@@ -2328,17 +2740,17 @@ html, body { min-height: 100%; font-family: 'Manrope', system-ui, sans-serif; -w
     const pct = (QE_score / QE_questions.length) * 100;
     let verdict, text;
     if (pct >= 90) {
-      verdict = "Excellent ! Vous avez tout compris.";
-      text = "Badges, caméras, alarmes : vous avez les bons réflexes. Votre comportement au quotidien contribue directement à la sécurité des bâtiments et de vos collègues.";
+      verdict = "Excellent ! Vous connaissez bien le service.";
+      text = "Programmation, conduite d'opérations, réception des travaux : vous avez saisi les grandes étapes qui rythment la vie d'un projet piloté par le Service Études et Travaux.";
     } else if (pct >= 70) {
-      verdict = "Bonne intuition — quelques réflexes à affiner.";
-      text = "L'essentiel est là. Les points à retenir : signalez toujours un badge perdu sans attendre, et n'hésitez pas à refuser un prêt de badge — même à un collègue de confiance.";
+      verdict = "Bonne vision d'ensemble — quelques détails à affiner.";
+      text = "L'essentiel est là. Retenez surtout la durée des grands projets publics et le nombre d'acteurs mobilisés : la coordination est au cœur du métier.";
     } else if (pct >= 50) {
-      verdict = "Quelques bons réflexes à acquérir.";
-      text = "La sûreté, ça s'apprend vite avec les bonnes informations. L'essentiel : badge perdu = signalement immédiat, prêt de badge = interdit, porte anormalement ouverte = à signaler.";
+      verdict = "Quelques repères à consolider.";
+      text = "Le Service Études et Travaux pilote des opérations longues et complexes, de la programmation jusqu'à la réception — et même après, avec les garanties qui continuent de s'appliquer.";
     } else {
       verdict = "Des bases à construire — mais c'est tout l'intérêt de ce quiz !";
-      text = "Ce quiz est là pour ça : prendre conscience que la sûreté du bâtiment dépend aussi de vous. Trois règles d'or à retenir : signalez un badge perdu immédiatement, ne le prêtez jamais, et alertez la sécurité face à toute anomalie.";
+      text = "Ce quiz est là pour ça : découvrir l'ampleur et la durée des projets pilotés par le Service Études et Travaux, de la première esquisse à la livraison du chantier.";
     }
     document.getElementById('QE_verdict').textContent = verdict;
     
@@ -2374,19 +2786,323 @@ html, body { min-height: 100%; font-family: 'Manrope', system-ui, sans-serif; -w
   }
 </script></div>
 
+<div id="qz-ener" class="qz-panel">
+<button class="qz-back" onclick="showHub()">&#x2190; Accueil</button>
+<div class="container">
+
+  <div class="brand-row">
+    <span><span class="dot"></span>Énergies Renouvelables · DCIP</span>
+    <span>2026 / Quiz</span>
+  </div>
+
+  <!-- ===================== INTRO ===================== -->
+  <section id="QR_intro" class="intro fade-in">
+    <div class="eyebrow">Quiz interactif</div>
+    <h1>Sobriété, confort d’été, énergies vertes — la <em>Mission Énergies Renouvelables</em> en 5 questions&nbsp;!</h1>
+    <p class="lead">
+      Rénovation énergétique, confort d’été, économies d’eau… Découvrez comment le Département réduit l’empreinte environnementale de son patrimoine bâti.
+    </p>
+
+    <div class="meta-grid">
+      <div>
+        <div class="label">Questions</div>
+        <div class="value">5</div>
+      </div>
+      <div>
+        <div class="label">Durée</div>
+        <div class="value">~4 min</div>
+      </div>
+      <div>
+        <div class="label">Niveau</div>
+        <div class="value">Tous publics</div>
+      </div>
+      <div>
+        <div class="label">Cadre</div>
+        <div class="value">CADAM / 06</div>
+      </div>
+    </div>
+
+    <button class="btn" onclick="QR_startQuiz()">
+      Commencer le quiz
+      <span class="arrow">→</span>
+    </button>
+  </section>
+
+  <!-- ===================== QUIZ ===================== -->
+  <section id="QR_quiz" class="hidden">
+    <div class="quiz-header">
+      <span class="counter">Question <strong id="QR_qNum">1</strong> / <span id="QR_qTotal">5</span></span>
+      <span id="QR_catTag">Vidéoprotection</span>
+    </div>
+    <div class="progress"><div class="progress-bar" id="QR_progressBar"></div></div>
+
+    <div id="QR_questionContainer"></div>
+
+    <div class="nav-row">
+      <button class="btn secondary hidden" id="QR_nextBtn" onclick="QR_nextQuestion()">
+        Question suivante
+        <span class="arrow">→</span>
+      </button>
+    </div>
+  </section>
+
+  <!-- ===================== RESULTS ===================== -->
+  <section id="QR_results" class="hidden results">
+    <div class="QR_score-eyebrow">Résultat final</div>
+    <div class="QR_score-big"><span id="QR_scoreNum">0</span><span class="total">/5</span></div>
+    <div class="verdict" id="QR_verdict">—</div>
+    <p class="verdict-text" id="QR_verdictText">—</p>
+    <div class="goodie-msg" id="QR_goodieMsg"></div>
+
+    <div class="breakdown">
+      <h3>Détail des réponses</h3>
+      <div id="QR_breakdownList"></div>
+    </div>
+
+    <button class="btn" onclick="QR_restart()">
+      Refaire le quiz
+      <span class="arrow">↻</span>
+    </button>
+  </section>
+
+  <div class="footer-note">
+    <span>Quiz pédagogique — sûreté des bâtiments départementaux</span>
+    <span>Vidéoprotection · Badges · Intrusion</span>
+  </div>
+
+</div>
+
+<script>
+  const QR_questions = [
+    {
+      cat: "La Mission",
+      q: "Quel est le rôle de la Mission Énergies Renouvelables ?",
+      options: [
+        "Assurer la maintenance des installations techniques",
+        "Accompagner et suivre les projets de rénovation énergétique et de déploiement d'énergies renouvelables, piloter la maîtrise énergétique des bâtiments et mesurer l'impact des rénovations",
+        "Élaborer et suivre le Plan de Mobilité des agents départementaux"
+      ],
+      correct: 1,
+      feedback: "La Mission Énergies Renouvelables agit pour <strong>réduire les consommations d'énergie</strong> et les <strong>émissions de gaz à effet de serre</strong> du patrimoine départemental. Elle contribue à une démarche globale de transition écologique : maîtrise énergétique, énergies renouvelables, confort d'été, préservation de l'eau et évaluation des bénéfices environnementaux."
+    },
+    {
+      cat: "Confort d'été",
+      q: "Quels travaux permettent le plus efficacement d'améliorer le confort d'été des occupants ?",
+      options: [
+        "Isolation thermique, protections solaires extérieures, vitrages performants et végétalisation des abords",
+        "Augmentation de la puissance de chauffage",
+        "Installer davantage de plantes dans les bureaux et les salles de classe"
+      ],
+      correct: 0,
+      feedback: "Pour limiter la surchauffe estivale, la solution la plus efficace consiste à <strong>empêcher la chaleur d'entrer</strong> dans les bâtiments. Protections solaires extérieures, isolation, vitrages performants et végétalisation des abords maintiennent des températures plus confortables tout en limitant le recours à la climatisation."
+    },
+    {
+      cat: "Résultats",
+      q: "Quelle a été la baisse des émissions de CO₂ du patrimoine départemental entre 2019 et 2025 ?",
+      options: [
+        "0 %",
+        "-10 %",
+        "-20 %"
+      ],
+      correct: 2,
+      feedback: "Grâce aux rénovations énergétiques et au déploiement d'énergies renouvelables, le Département a vu les émissions de CO₂ de son patrimoine baisser de <strong>20 % depuis 2019</strong>. Cela représente <strong>2 360 tonnes de CO₂ non émises chaque année</strong> — l'équivalent de 1 150 allers-retours Paris–New York en avion par an."
+    },
+    {
+      cat: "Résultats",
+      q: "Quelle a été la baisse des consommations d'eau du CADAM en 2024 par rapport à 2019 ?",
+      options: [
+        "-25 %",
+        "-40 %",
+        "-55 %"
+      ],
+      correct: 2,
+      feedback: "L'optimisation des équipements a permis de réduire de <strong>plus de la moitié (-55 %)</strong> les consommations d'eau du CADAM depuis 2019. Une baisse significative qui contribue à préserver la ressource et à maîtriser les dépenses."
+    },
+    {
+      cat: "Bons réflexes",
+      q: "Un simple degré de plus sur la consigne de chauffage (ou de moins sur la climatisation) peut faire varier la consommation d'énergie d'environ :",
+      options: [
+        "1 %",
+        "5 %",
+        "7 %"
+      ],
+      correct: 2,
+      feedback: "Un seul degré de consigne peut faire varier la consommation d'énergie finale de <strong>+/- 7 %</strong>. À l'échelle du patrimoine départemental, cet écart représente un <strong>potentiel d'économie d'énergie significatif</strong> — un geste simple aux effets concrets."
+    }
+  ];
+
+  let QR_current = 0;
+  let QR_score = 0;
+  let QR_answered = false;
+  let QR_answers = [];
+
+  function QR_startQuiz() {
+    document.getElementById('QR_intro').classList.add('hidden');
+    document.getElementById('QR_quiz').classList.remove('hidden');
+    document.getElementById('QR_quiz').classList.add('fade-in');
+    document.getElementById('QR_qTotal').textContent = QR_questions.length;
+    document.querySelector('.QR_score-big .total').textContent = '/' + QR_questions.length;
+    QR_showQuestion();
+  }
+
+  function QR_showQuestion() {
+    QR_answered = false;
+    const q = QR_questions[QR_current];
+    document.getElementById('QR_qNum').textContent = QR_current + 1;
+    document.getElementById('QR_catTag').textContent = q.cat;
+
+    const progress = (QR_current / QR_questions.length) * 100;
+    document.getElementById('QR_progressBar').style.width = progress + '%';
+
+    const container = document.getElementById('QR_questionContainer');
+    container.classList.remove('fade-in');
+    void container.offsetWidth;
+
+    let html = `
+      <div class="category">${q.cat}</div>
+      <h2 class="question">${q.q}</h2>
+      <div class="options">
+    `;
+    q.options.forEach((opt, i) => {
+      const letter = String.fromCharCode(65 + i);
+      html += `
+        <button class="option" data-i="${i}" onclick="QR_select(${i})">
+          <span class="marker">${letter}</span>
+          <span>${opt}</span>
+        </button>
+      `;
+    });
+    html += `</div>`;
+    html += `
+      <div class="feedback" id="QR_feedback">
+        <div class="feedback-label" id="QR_feedbackLabel">Explication</div>
+        <p id="QR_feedbackText"></p>
+      </div>
+    `;
+    container.innerHTML = html;
+    container.classList.add('fade-in');
+    document.getElementById('QR_nextBtn').classList.add('hidden');
+  }
+
+  function QR_select(i) {
+    if (QR_answered) return;
+    QR_answered = true;
+    const q = QR_questions[QR_current];
+    const opts = document.querySelectorAll('.option');
+
+    opts.forEach((opt, idx) => {
+      opt.disabled = true;
+      if (idx === q.correct) opt.classList.add('correct');
+      else if (idx === i) opt.classList.add('wrong');
+    });
+
+    const isCorrect = i === q.correct;
+    if (isCorrect) QR_score++;
+    QR_answers.push({ q: q.q, ok: isCorrect });
+
+    const fb = document.getElementById('QR_feedback');
+    const lbl = document.getElementById('QR_feedbackLabel');
+    const txt = document.getElementById('QR_feedbackText');
+    lbl.textContent = isCorrect ? '✓ Bonne réponse' : '✗ Réponse incorrecte';
+    lbl.style.color = isCorrect ? 'var(--green)' : 'var(--red)';
+    txt.innerHTML = q.feedback;
+    fb.classList.add('show');
+
+    document.getElementById('QR_nextBtn').classList.remove('hidden');
+    if (QR_current === QR_questions.length - 1) {
+      document.getElementById('QR_nextBtn').innerHTML = 'Voir mon résultat <span class="arrow">→</span>';
+    } else {
+      document.getElementById('QR_nextBtn').innerHTML = 'Question suivante <span class="arrow">→</span>';
+    }
+  }
+
+  function QR_nextQuestion() {
+    if (QR_current < QR_questions.length - 1) {
+      QR_current++;
+      QR_showQuestion();
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    } else {
+      QR_showResults();
+    }
+  }
+
+  function QR_showResults() {
+    document.getElementById('QR_quiz').classList.add('hidden');
+    const r = document.getElementById('QR_results');
+    r.classList.remove('hidden');
+    r.classList.add('fade-in');
+    document.getElementById('QR_progressBar').style.width = '100%';
+
+    let n = 0;
+    const target = QR_score;
+    const num = document.getElementById('QR_scoreNum');
+    const QR_step = () => {
+      if (n < target) { n++; num.textContent = n; setTimeout(QR_step, 80); }
+    };
+    QR_step();
+
+    const pct = (QR_score / QR_questions.length) * 100;
+    let verdict, text;
+    if (pct >= 90) {
+      verdict = "Excellent ! Vous maîtrisez le sujet.";
+      text = "Confort d'été, sobriété énergétique, économies d'eau : vous avez les bons repères sur les actions menées par la Mission Énergies Renouvelables pour le patrimoine départemental.";
+    } else if (pct >= 70) {
+      verdict = "Bonne intuition — quelques chiffres à retenir.";
+      text = "L'essentiel est là. Retenez surtout l'impact d'un simple degré de consigne (+/- 7 %) et les résultats obtenus sur les émissions de CO₂ et les consommations d'eau.";
+    } else if (pct >= 50) {
+      verdict = "Quelques repères à consolider.";
+      text = "La transition énergétique du patrimoine départemental passe par des gestes simples et des travaux ciblés : isolation, protections solaires, maîtrise des consignes de température.";
+    } else {
+      verdict = "Des bases à construire — mais c'est tout l'intérêt de ce quiz !";
+      text = "Ce quiz est là pour ça : découvrir comment la Mission Énergies Renouvelables agit au quotidien pour réduire l'empreinte environnementale du patrimoine départemental.";
+    }
+    document.getElementById('QR_verdict').textContent = verdict;
+    document.getElementById('QR_verdictText').textContent = text;
+    const QR_goodieEl = document.getElementById('QR_goodieMsg');
+    if (QR_score === QR_questions.length) {
+      QR_goodieEl.className = 'goodie-msg win';
+      QR_goodieEl.innerHTML = '<span class="emoji">🎉</span>BRAVO vous remportez un goodie, présentez votre résultat pour le récupérer !';
+    } else {
+      QR_goodieEl.className = 'goodie-msg retry';
+      QR_goodieEl.innerHTML = '<span class="emoji">👍</span>Bien joué, pour remporter un goodie, retentez votre chance !';
+    }
+
+    const list = document.getElementById('QR_breakdownList');
+    list.innerHTML = QR_answers.map((a, i) => `
+      <div class="breakdown-item">
+        <span class="num">${String(i + 1).padStart(2, '0')}</span>
+        <span class="label">${a.q}</span>
+        <span class="status ${a.ok ? 'ok' : 'ko'}">${a.ok ? '✓ Juste' : '✗ Faux'}</span>
+      </div>
+    `).join('');
+
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  }
+
+  function QR_restart() {
+    QR_current = 0; QR_score = 0; QR_answers = [];
+    document.getElementById('QR_results').classList.add('hidden');
+    document.getElementById('QR_intro').classList.remove('hidden');
+    document.getElementById('QR_intro').classList.add('fade-in');
+    document.getElementById('QR_progressBar').style.width = '0%';
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  }
+</script></div>
+
 <script>
 function openQuiz(id) {
   document.getElementById("hub").style.display = "none";
-  ["feu","secu","etu"].forEach(function(q) { document.getElementById("qz-"+q).classList.remove("on"); });
+  ["feu","secu","etu","ener"].forEach(function(q) { document.getElementById("qz-"+q).classList.remove("on"); });
   document.getElementById("qz-"+id).classList.add("on");
   window.scrollTo({top:0});
   if (id==="feu")  setTimeout(QF_startQuiz, 20);
   if (id==="secu") setTimeout(QC_startQuiz, 20);
   if (id==="etu")  setTimeout(QE_startQuiz, 20);
+  if (id==="ener") setTimeout(QR_startQuiz, 20);
 }
 function showHub() {
   document.getElementById("hub").style.display = "flex";
-  ["feu","secu","etu"].forEach(function(q) { document.getElementById("qz-"+q).classList.remove("on"); });
+  ["feu","secu","etu","ener"].forEach(function(q) { document.getElementById("qz-"+q).classList.remove("on"); });
   window.scrollTo({top:0});
 }
 </script>

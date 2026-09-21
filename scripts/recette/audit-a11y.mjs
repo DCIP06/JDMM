@@ -4,6 +4,11 @@
 import { chromium } from 'playwright-core';
 import fs from 'node:fs';
 
+/* Les écrans de quiz sont audités POUR CHAQUE quiz : chacun a sa palette, et
+   n'auditer que le premier laissait les trois autres hors du contrôle — c'est
+   ainsi qu'un vert à 3,3:1 est arrivé en ligne avec le quatrième quiz. */
+const QUIZ = JSON.parse(fs.readFileSync('data/quiz.json', 'utf8')).quiz;
+
 const axe = fs.readFileSync('node_modules/axe-core/axe.min.js', 'utf8');
 const b = await chromium.launch({ executablePath: '/usr/bin/chromium', args: ['--no-sandbox','--disable-gpu'] });
 
@@ -22,18 +27,28 @@ const ECRANS = [
     await p.locator('#envoyer').click(); await p.waitForTimeout(300);
   }],
   ['Quiz · hub', 'quiz/', null],
-  ['Quiz · intro', 'quiz/', async (p) => {
-    await p.locator('.quiz-card').first().click(); await p.waitForTimeout(600);
-  }],
-  ['Quiz · question', 'quiz/', async (p) => {
-    await p.locator('.quiz-card').first().click(); await p.waitForTimeout(500);
-    await p.locator('#qz-commencer').click(); await p.waitForTimeout(500);
-  }],
-  ['Quiz · correction', 'quiz/', async (p) => {
-    await p.locator('.quiz-card').first().click(); await p.waitForTimeout(500);
-    await p.locator('#qz-commencer').click(); await p.waitForTimeout(400);
-    await p.locator('.option').nth(1).click(); await p.waitForTimeout(500);
-  }],
+  ...QUIZ.flatMap((q, i) => [
+    [`Quiz ${q.id} · intro`, 'quiz/', async (p) => {
+      await p.locator('.quiz-card').nth(i).click(); await p.waitForTimeout(600);
+    }],
+    [`Quiz ${q.id} · question`, 'quiz/', async (p) => {
+      await p.locator('.quiz-card').nth(i).click(); await p.waitForTimeout(500);
+      await p.locator('#qz-commencer').click(); await p.waitForTimeout(500);
+    }],
+    [`Quiz ${q.id} · correction`, 'quiz/', async (p) => {
+      await p.locator('.quiz-card').nth(i).click(); await p.waitForTimeout(500);
+      await p.locator('#qz-commencer').click(); await p.waitForTimeout(400);
+      await p.locator('.option').nth(1).click(); await p.waitForTimeout(500);
+    }],
+    [`Quiz ${q.id} · résultats`, 'quiz/', async (p) => {
+      await p.locator('.quiz-card').nth(i).click(); await p.waitForTimeout(500);
+      await p.locator('#qz-commencer').click(); await p.waitForTimeout(400);
+      for (let n = 0; n < q.questions.length; n++) {
+        await p.locator('.option').first().click(); await p.waitForTimeout(280);
+        await p.locator('#qz-suivant').click(); await p.waitForTimeout(320);
+      }
+    }],
+  ]),
   ['Mentions · RGPD', 'mentions.html?doc=rgpd', null],
 ];
 

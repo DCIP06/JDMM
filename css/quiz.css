@@ -5,7 +5,7 @@
    « #qz-feu … » sur « .quiz[data-quiz] » pour que les trois quiz partagent
    un seul jeu de règles.
 
-   15 sélecteurs du fichier source étaient annulés par un commentaire placé à
+   19 sélecteurs du fichier source étaient annulés par un commentaire placé à
    l'intérieur du sélecteur — ils sont réparés ici. Sans cela, l'écran d'intro,
    l'en-tête de question, l'écran de résultats, l'animation d'apparition et
    tout le bloc responsive sous 540 px n'étaient jamais appliqués.
@@ -90,6 +90,16 @@
   color: #8a6a12;
 }
 .goodie-msg .emoji { margin-right: 8px; }
+@keyframes pulse {
+    0%, 100% { opacity: 1; transform: scale(1); }
+    50% { opacity: .5; transform: scale(.85); }
+  }
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(12px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+.card-ener .card-cat {color:#16A34A;}
+.card-ener .card-btn {background:#EFFDF4;color:#166534;}
 
 /* ---------- Palettes, une par quiz ---------- */
 .quiz[data-quiz="feu"] {
@@ -153,6 +163,31 @@
     --qz-text-soft: #505870;
     --qz-accent:    #0F766E;
     --qz-accent-2:  #14B8A6;
+    --qz-amber:      #F4C95D;
+    --qz-green:     #5BBF7A;
+    --qz-red:       #D9534F;
+    --qz-shadow: 0 30px 80px -20px rgba(0,0,0,.6), 0 8px 24px -8px rgba(0,0,0,.4);
+  
+  --qz-bg:        #F6F4EF;
+  --qz-bg-2:      #F6F4EF;
+  --qz-surface:   #FFFFFF;
+  --qz-surface-2: #FBFAF7;
+  --qz-line:      #E8E5DF;
+  --qz-text:      #1A1A18;
+  --qz-text-mute: #6E665B;
+  --qz-text-soft: #948C7E;
+}
+.quiz[data-quiz="ener"] {
+    --qz-bg:        #0A0D14;
+    --qz-bg-2:      #0F1320;
+    --qz-surface:   #141824;
+    --qz-surface-2: #1A2030;
+    --qz-line:      #222840;
+    --qz-text:      #E8EDF8;
+    --qz-text-mute: #8A96B0;
+    --qz-text-soft: #505870;
+    --qz-accent:    #16A34A;
+    --qz-accent-2:  #4ADE80;
     --qz-amber:      #F4C95D;
     --qz-green:     #5BBF7A;
     --qz-red:       #D9534F;
@@ -235,13 +270,14 @@
 .quiz .footer-note { border-top: 1px solid var(--qz-line); margin-top: 80px; padding-top: 24px; font-family: 'JetBrains Mono', monospace; font-size: 10px; letter-spacing: .14em; text-transform: uppercase; color: var(--qz-text-soft); display: flex; justify-content: space-between; flex-wrap: wrap; gap: 12px; }
 .quiz .fade-in { animation: fadeIn .5s cubic-bezier(.2,.7,.2,1) both; }
 .quiz .hidden { display: none !important; }
-.quiz { background: transparent; }
-.quiz[data-quiz="secu"] .intro h1 em, .quiz[data-quiz="etu"] .intro h1 em { font-style: italic; color: var(--qz-accent-2); font-variation-settings: "opsz" 144, "SOFT" 100; }
-.quiz[data-quiz="secu"] .btn, .quiz[data-quiz="etu"] .btn { display: inline-flex; align-items: center; gap: 12px; padding: 18px 32px; background: var(--qz-accent); color: #fff; border: none; font-family: 'Manrope', sans-serif; font-size: 15px; font-weight: 600; letter-spacing: .02em; cursor: pointer; transition: all .25s cubic-bezier(.2,.7,.2,1); }
-.quiz[data-quiz="secu"] .btn:hover, .quiz[data-quiz="etu"] .btn:hover { background: var(--qz-accent-2); transform: translateY(-2px); box-shadow: 0 20px 40px -10px rgba(61, 111, 232, .5); }
-.quiz[data-quiz="secu"] .option.correct .marker, .quiz[data-quiz="etu"] .option.correct .marker { background: var(--qz-green); border-color: var(--qz-green); color: #0A0D14; }
+.quiz[data-quiz="feu"], .quiz[data-quiz="secu"], .quiz[data-quiz="etu"] { background: transparent; }
+.quiz[data-quiz="secu"] .intro h1 em, .quiz[data-quiz="etu"] .intro h1 em, .quiz[data-quiz="ener"] .intro h1 em { font-style: italic; color: var(--qz-accent-2); font-variation-settings: "opsz" 144, "SOFT" 100; }
+.quiz[data-quiz="secu"] .btn, .quiz[data-quiz="etu"] .btn, .quiz[data-quiz="ener"] .btn { display: inline-flex; align-items: center; gap: 12px; padding: 18px 32px; background: var(--qz-accent); color: #fff; border: none; font-family: 'Manrope', sans-serif; font-size: 15px; font-weight: 600; letter-spacing: .02em; cursor: pointer; transition: all .25s cubic-bezier(.2,.7,.2,1); }
+.quiz[data-quiz="secu"] .btn:hover, .quiz[data-quiz="etu"] .btn:hover, .quiz[data-quiz="ener"] .btn:hover { background: var(--qz-accent-2); transform: translateY(-2px); box-shadow: 0 20px 40px -10px rgba(61, 111, 232, .5); }
+.quiz[data-quiz="secu"] .option.correct .marker, .quiz[data-quiz="etu"] .option.correct .marker, .quiz[data-quiz="ener"] .option.correct .marker { background: var(--qz-green); border-color: var(--qz-green); color: #0A0D14; }
 .quiz { background: #F6F4EF !important; }
 .quiz { --qz-bg: #F6F4EF !important; --qz-bg-2: #F6F4EF !important; --qz-surface: #FFFFFF !important; --qz-surface-2: #FBFAF7 !important; --qz-line: #E8E5DF !important; --qz-text: #1A1A18 !important; }
+.quiz[data-quiz="ener"] { background: var(--qz-bg); }
 
 /* ---------- Adaptations d'écran ---------- */
 @media (max-width: 540px) {

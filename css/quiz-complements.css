@@ -101,14 +101,13 @@ body:has(.quiz[data-quiz="gard"]) { background: #0B0E14; }
 .card-meta span { color: #757575; }/* #bbb → 1,9:1 devenait 4,6:1 */
 
 .card-feu  .card-cat { color: #D53F15; }   /* 3,8:1 → 4,6:1 */
-.card-gard .card-cat { color: #1B6DF5; }   /* 3,7:1 → 4,6:1 */
-.card-surt .card-cat { color: #3A6DE8; }   /* 4,5:1 → 4,6:1 */
-
-/* Sur les fonds sombres, le gris le plus discret servait aussi aux libellés
-   de l'écran d'intro : il faut l'éclaircir. */
-.quiz[data-quiz="feu"]  { --qz-text-soft: #847B6D; }   /* 3,4:1 → 4,6:1 */
-.quiz[data-quiz="gard"] { --qz-text-soft: #717D90; }   /* 3,4:1 → 4,6:1 */
-.quiz[data-quiz="surt"] { --qz-text-soft: #707B99; }   /* 2,8:1 → 4,6:1 */
+/* Le CSS de la source nomme encore ces deux cartes « gard » et « surt », noms
+   que son propre balisage n'emploie plus : les catégories « Sécurité humaine »
+   et « Études & Travaux » tombaient sur la couleur de texte par défaut, sans
+   accent. On les rétablit — dans l'accent du quiz, au seuil AA. */
+.card-secu .card-cat { color: #3569E7; }   /* accent du quiz    → 4,9:1 */
+.card-etu  .card-cat { color: #0F766E; }   /* accent du quiz    → 5,0:1 */
+.card-ener .card-cat { color: #12863D; }   /* 3,3:1             → 4,7:1 */
 
 /* Le bouton principal porte du blanc sur l'accent vif : 3,8:1 sur l'orange.
    Le noir passe sur les trois accents (5,5 · 5,7 · 4,6). */
@@ -190,3 +189,47 @@ body:has(.quiz[data-quiz="gard"]) { background: #0B0E14; }
   background: var(--qz-surface);
   border-color: var(--qz-accent);
 }
+
+/* ==========================================================================
+   Le quatrième quiz, et l'écran que personne n'auditait
+   --------------------------------------------------------------------------
+   La DCIP a livré le 21/09 un quatrième quiz, « Énergies Renouvelables ».
+   Sa palette verte n'avait aucun correctif, et l'audit a révélé au passage que
+   l'écran de RÉSULTATS n'était contrôlé sur aucun quiz : la recette s'arrêtait
+   à l'écran de correction. C'est pourtant l'écran que tout visiteur atteint.
+
+   Mesuré sur le fond clair #F6F4EF, seuil 4,5:1 (petit texte) :
+
+     verdict, ambre       #F4C95D  1,43:1  →  #8E680A  4,6:1  (illisible)
+     « ✓ Juste »          #5BBF7A  2,08:1  →  #307C48  4,7:1
+     « ✗ Faux »           #D9534F  3,60:1  →  #CF312D  4,6:1
+     message de lot       #8A6A12  4,37:1  →  #856611  4,7:1  (sur #F6EED9)
+     surtitre du score    l'accent de chaque quiz, comme les autres surtitres
+     énergies, texte doux #948C7E  3,03:1  →  #746D60  4,7:1
+
+   Et en blanc sur aplat, pour les boutons (15 px, graisse 600) :
+
+     bouton énergies      blanc sur #16A34A  3,30:1  →  #12863D  4,7:1
+     survol énergies      blanc sur #4ADE80  1,74:1  →  #188540  4,7:1
+   ========================================================================== */
+
+/* --- Le quiz « Énergies Renouvelables » ----------------------------------- */
+.quiz[data-quiz="ener"] { --qz-text-soft: #746D60; }
+.quiz[data-quiz="ener"] .eyebrow { color: #117F3A; }
+.quiz[data-quiz="ener"] .intro h1 em { color: #12863D; }
+.quiz[data-quiz="ener"] .btn:not(.secondary) { background: #12863D; }
+.quiz[data-quiz="ener"] .btn:not(.secondary):hover { background: #188540; }
+
+/* --- L'écran de résultats, commun aux quatre quiz ------------------------- */
+.quiz .verdict { color: #8E680A; }        /* le même ambre que .category */
+/* La palette pose « .quiz .breakdown-item .status.ok » (spécificité 0,3,0) :
+   il faut la même portée, sinon la correction ne s'applique jamais. */
+.quiz .breakdown-item .status.ok { color: #307C48; }
+.quiz .breakdown-item .status.ko { color: #CF312D; }
+.quiz .goodie-msg.win, .quiz .goodie-msg.retry { color: #856611; }
+
+/* Le surtitre du score reprend l'accent du quiz : mêmes valeurs que les
+   surtitres d'intro, pour que les deux écrans restent cohérents. */
+.quiz[data-quiz="feu"]  .score-eyebrow { color: #CA3B14; }
+.quiz[data-quiz="secu"] .score-eyebrow { color: #3065E6; }
+.quiz[data-quiz="ener"] .score-eyebrow { color: #117F3A; }
