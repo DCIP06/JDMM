@@ -1,0 +1,291 @@
+<!doctype html>
+<html lang="fr" data-theme="a">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<!-- Cette page n'a rien à faire dans un moteur de recherche : elle ne sert
+     qu'aux personnes qui tiennent le stand, et elle leur est transmise. -->
+<meta name="robots" content="noindex, nofollow, noarchive">
+<meta name="referrer" content="no-referrer">
+<title>Suivi des demandes</title>
+
+<link rel="stylesheet" href="../css/polices.css">
+<link rel="stylesheet" href="../themes/tokens.css">
+<link rel="stylesheet" href="../themes/a.css">
+<link rel="stylesheet" href="../css/base.css">
+<style>
+  /* La page est autonome : elle n'emprunte à l'application que ses polices et
+     ses couleurs, pour ne pas dépendre de composants faits pour d'autres écrans.
+
+     ⚠️ AUCUNE donnée n'est stockée ici. Cette page est un écran : elle demande
+     la liste au service qui la détient, l'affiche, et n'en garde rien. Ce
+     fichier est public — les demandes, elles, ne le sont jamais. */
+  body { margin: 0; background: var(--fond, #F6F4EF); color: var(--texte, #1A1A18);
+         font-family: 'Manrope', system-ui, sans-serif; }
+  .barre { background: #042C53; color: #fff; padding: 14px 16px; position: sticky; top: 0; z-index: 5; }
+  .barre__interieur { max-width: 1180px; margin: 0 auto; display: flex; align-items: center;
+                      justify-content: space-between; gap: 12px; }
+  .titre-barre { font-weight: 700; letter-spacing: .01em; }
+  main { max-width: 1180px; margin: 0 auto; padding: 16px; }
+  .carte { background: #fff; border: 1px solid #E8E5DF; border-radius: 12px; }
+  .bouton { display: inline-flex; align-items: center; justify-content: center; gap: 8px;
+            background: #0F766E; color: #fff; border: none; border-radius: 8px;
+            padding: 12px 18px; font: inherit; font-weight: 600; cursor: pointer;
+            min-height: 46px; text-decoration: none; }
+  .bouton:disabled { opacity: .6; cursor: progress; }
+  .bouton--clair { background: #fff; color: #042C53; border: 1px solid #D8D3C8; }
+  .champ { width: 100%; padding: 12px 14px; border: 1px solid #D8D3C8; border-radius: 8px;
+           font: inherit; background: #fff; min-height: 46px; }
+  .champ:focus-visible, .bouton:focus-visible { outline: 3px solid #378ADD; outline-offset: 2px; }
+  .note { color: #6B6459; font-size: 13px; }
+  .alerte { background: #FCEBEB; border-left: 4px solid #C0320A; padding: 12px 14px;
+            border-radius: 6px; margin-bottom: 14px; }
+  .chiffres { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+              gap: 10px; margin-bottom: 14px; }
+  .chiffre { background: #fff; border: 1px solid #E8E5DF; border-radius: 10px; padding: 12px 14px; }
+  .chiffre b { display: block; font-size: 30px; line-height: 1.1; color: #042C53; }
+  .chiffre span { font-size: 13px; color: #6B6459; }
+  .outils { display: flex; gap: 10px; flex-wrap: wrap; align-items: center; margin-bottom: 14px; }
+  .outils .champ { flex: 1 1 220px; }
+  .ligne { background: #fff; border: 1px solid #E8E5DF; border-radius: 10px; padding: 14px;
+           margin-bottom: 10px; display: grid; grid-template-columns: 1fr auto; gap: 2px 12px;
+           align-items: baseline; }
+  .quand { grid-column: 2; grid-row: 1; text-align: right; font-family: 'JetBrains Mono', monospace;
+           font-size: 12px; color: #6B6459; white-space: nowrap; }
+  .bloc-qui { grid-column: 1; grid-row: 1; }
+  .bloc-poste { grid-column: 1 / -1; margin-top: 8px; }
+  .bloc-contact { grid-column: 1 / -1; margin-top: 6px; }
+  .qui { font-weight: 700; font-size: 17px; }
+  .meta { color: #6B6459; font-size: 14px; word-break: break-word; }
+  .msg { grid-column: 1 / -1; margin-top: 8px; padding: 10px 12px; background: #F6F4EF;
+         border-radius: 8px; font-size: 14px; }
+  .vide { text-align: center; padding: 48px 16px; color: #6B6459; }
+  .pastille { display: inline-block; width: 8px; height: 8px; border-radius: 50%;
+              background: #1D9E75; margin-right: 6px; vertical-align: middle; }
+  /* Sur grand écran, une vraie grille se lit mieux qu'une pile de cartes ;
+     sur un téléphone de stand, c'est l'inverse. Deux mises en page. */
+  @media (min-width: 900px) {
+    .ligne { grid-template-columns: 130px 1.1fr 1.4fr 1fr; }
+    .quand, .bloc-qui, .bloc-poste, .bloc-contact {
+      grid-column: auto; grid-row: auto; margin-top: 0; text-align: left;
+    }
+  }
+</style>
+</head>
+<body>
+
+<header class="barre">
+  <div class="barre__interieur">
+    <span class="titre-barre">Suivi des demandes</span>
+    <button class="bouton" id="telecharger" hidden>⬇ Classeur Excel</button>
+  </div>
+</header>
+
+<main>
+  <section id="ecran-connexion" class="carte" style="max-width:420px;margin:8vh auto;padding:28px">
+    <h1 style="margin:0 0 6px;font-size:22px">Suivi des demandes</h1>
+    <p class="note" style="margin:0 0 20px">Accès réservé</p>
+    <div class="alerte" id="erreur" hidden></div>
+    <form id="formulaire">
+      <label for="identifiant" style="display:block;font-weight:600;margin-bottom:6px">Identifiant</label>
+      <input class="champ" type="text" id="identifiant" name="identifiant"
+             autocomplete="username" autocapitalize="none" spellcheck="false" autofocus required>
+      <label for="motdepasse" style="display:block;font-weight:600;margin:14px 0 6px">Mot de passe</label>
+      <input class="champ" type="password" id="motdepasse" name="motdepasse"
+             autocomplete="current-password" required>
+      <button class="bouton" style="width:100%;margin-top:18px" id="valider">Consulter</button>
+    </form>
+    <p class="note" style="margin-top:18px">
+      Cette page affiche des données personnelles. Ne pas la laisser ouverte sans surveillance,
+      et ne pas diffuser cette adresse.
+    </p>
+  </section>
+
+  <section id="ecran-liste" hidden>
+    <div class="chiffres">
+      <div class="chiffre"><b id="total">0</b><span id="libelle-total">demande reçue</span></div>
+      <div class="chiffre"><b id="postes">0</b><span id="libelle-postes">poste concerné</span></div>
+      <div class="chiffre"><b style="font-size:19px;padding-top:6px" id="derniere">—</b><span>dernière demande</span></div>
+    </div>
+    <div class="outils">
+      <input class="champ" id="filtre" type="search" placeholder="Filtrer par nom, direction ou poste…"
+             aria-label="Filtrer les demandes">
+      <button class="bouton bouton--clair" id="telecharger2">⬇ Télécharger le tableau</button>
+      <span class="note" id="etat"><span class="pastille"></span>mise à jour automatique</span>
+    </div>
+    <div id="liste"></div>
+    <p class="note" style="margin-top:22px">
+      Données personnelles — conservation 30 jours, puis effacement automatique. Le classeur
+      téléchargé reflète les demandes reçues au moment du téléchargement.
+    </p>
+  </section>
+</main>
+
+<script>
+/* Le service qui détient les demandes. Cette page ne fait que l'interroger :
+   elle n'enregistre rien, et elle est servie depuis un dépôt public — aucune
+   donnée personnelle ne peut donc s'y trouver. */
+const SERVICE = 'https://suivi.partage-document.com';
+const CLE_JETON = 'suivi-jeton';
+
+const $ = (id) => document.getElementById(id);
+const echapper = (t) => String(t ?? '').replace(/[&<>"']/g, (c) =>
+  ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
+
+/* Le jeton vit dans sessionStorage, pas dans localStorage : il disparaît à la
+   fermeture de l'onglet. Sur un téléphone posé sur un stand, c'est ce qu'on veut. */
+const jeton = {
+  lire()  { try { return sessionStorage.getItem(CLE_JETON); } catch { return null; } },
+  ecrire(v) { try { sessionStorage.setItem(CLE_JETON, v); } catch { /* mode privé */ } },
+  oublier() { try { sessionStorage.removeItem(CLE_JETON); } catch { /* idem */ } },
+};
+
+async function appeler(chemin, options = {}) {
+  const j = jeton.lire();
+  return fetch(SERVICE + chemin, {
+    ...options,
+    headers: { ...(options.headers || {}), ...(j ? { Authorization: `Bearer ${j}` } : {}) },
+  });
+}
+
+/* ---------------------------------------------------------------- connexion */
+
+$('formulaire').addEventListener('submit', async (e) => {
+  e.preventDefault();
+  const bouton = $('valider');
+  bouton.disabled = true; bouton.textContent = 'Vérification…';
+  $('erreur').hidden = true;
+  try {
+    const r = await fetch(SERVICE + '/jeton', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ identifiant: $('identifiant').value, motdepasse: $('motdepasse').value }),
+    });
+    const d = await r.json().catch(() => ({}));
+    if (!r.ok || !d.jeton) throw new Error(d.erreur || 'Identifiant ou mot de passe incorrect.');
+    jeton.ecrire(d.jeton);
+    $('motdepasse').value = '';
+    afficherListe();
+  } catch (err) {
+    // Une panne de réseau et un mauvais mot de passe ne se disent pas pareil :
+    // sinon on cherche son mot de passe alors que c'est la connexion qui manque.
+    $('erreur').textContent = err instanceof TypeError
+      ? 'Le service ne répond pas. Vérifiez votre connexion, puis réessayez.'
+      : err.message;
+    $('erreur').hidden = false;
+  } finally {
+    bouton.disabled = false; bouton.textContent = 'Consulter';
+  }
+});
+
+/* ------------------------------------------------------------------- liste */
+
+function afficherListe() {
+  $('ecran-connexion').hidden = true;
+  $('ecran-liste').hidden = false;
+  $('telecharger').hidden = false;
+  rafraichir();
+}
+
+function deconnecter() {
+  jeton.oublier();
+  $('ecran-liste').hidden = true;
+  $('telecharger').hidden = true;
+  $('ecran-connexion').hidden = false;
+  $('erreur').textContent = 'Votre accès a expiré. Reconnectez-vous.';
+  $('erreur').hidden = false;
+}
+
+function dessiner(demandes) {
+  if (!demandes.length) {
+    $('liste').innerHTML = `<div class="carte vide">
+      <p style="font-size:18px;margin:0 0 6px">Aucune demande pour l'instant.</p>
+      <p class="note" style="margin:0">Cette page se met à jour toute seule, inutile de la recharger.</p></div>`;
+    return;
+  }
+  $('liste').innerHTML = demandes.map((d) => `
+    <article class="ligne" data-recherche="${echapper(`${d.prenom} ${d.nom} ${d.direction} ${d.poste_titre}`.toLowerCase())}">
+      <div class="quand">${echapper(d.recu_le_lisible)}</div>
+      <div class="bloc-qui">
+        <div class="qui">${echapper(d.prenom)} ${echapper(d.nom)}</div>
+        <div class="meta">${echapper(d.direction)}</div>
+      </div>
+      <div class="bloc-poste">
+        <div>${echapper(d.poste_titre)}</div>
+        ${d.poste_service ? `<div class="meta">Service ${echapper(d.poste_service)}</div>` : ''}
+      </div>
+      <div class="bloc-contact meta">
+        <a href="mailto:${echapper(d.email)}">${echapper(d.email)}</a>
+        ${d.projet ? `<div>Échéance : ${echapper(d.projet)}</div>` : ''}
+      </div>
+      ${d.message ? `<div class="msg">${echapper(d.message)}</div>` : ''}
+    </article>`).join('');
+  filtrer();
+}
+
+function filtrer() {
+  const q = $('filtre').value.trim().toLowerCase();
+  let vus = 0;
+  document.querySelectorAll('.ligne').forEach((l) => {
+    const ok = !q || l.dataset.recherche.includes(q);
+    l.hidden = !ok; if (ok) vus++;
+  });
+  $('etat').innerHTML = q
+    ? `${vus} demande${vus > 1 ? 's' : ''} correspond${vus > 1 ? 'ent' : ''}`
+    : '<span class="pastille"></span>mise à jour automatique';
+}
+$('filtre').addEventListener('input', filtrer);
+
+let derniereVue = -1;
+async function rafraichir() {
+  if (!jeton.lire()) return;
+  try {
+    const r = await appeler('/api/demandes', { cache: 'no-store' });
+    if (r.status === 401) { deconnecter(); return; }
+    if (!r.ok) return;
+    const { compte, demandes } = await r.json();
+    $('total').textContent = compte.total;
+    $('libelle-total').textContent = `demande${compte.total > 1 ? 's' : ''} reçue${compte.total > 1 ? 's' : ''}`;
+    $('postes').textContent = compte.par_poste.length;
+    $('libelle-postes').textContent = `poste${compte.par_poste.length > 1 ? 's' : ''} concerné${compte.par_poste.length > 1 ? 's' : ''}`;
+    $('derniere').textContent = demandes[0] ? demandes[0].recu_le_lisible : '—';
+    if (compte.total !== derniereVue) { dessiner(demandes); derniereVue = compte.total; }
+  } catch { /* réseau capricieux : on retentera dans 20 s */ }
+}
+setInterval(rafraichir, 20000);
+document.addEventListener('visibilitychange', () => { if (!document.hidden) rafraichir(); });
+
+/* ------------------------------------------------------------ téléchargement */
+
+async function telecharger(bouton) {
+  const libelle = bouton.textContent;
+  bouton.disabled = true; bouton.textContent = 'Préparation…';
+  try {
+    const r = await appeler('/tableau.xlsx');
+    if (r.status === 401) { deconnecter(); return; }
+    if (!r.ok) throw new Error('indisponible');
+    /* Le fichier ne peut pas être ouvert par un simple lien : il faut porter
+       le jeton dans l'en-tête. On récupère donc le contenu, puis on déclenche
+       l'enregistrement — en reprenant le nom que le service a choisi. */
+    const entete = r.headers.get('Content-Disposition') || '';
+    const nom = (entete.match(/filename="?([^"]+)"?/) || [])[1]
+      || `demandes-${new Date().toISOString().slice(0, 10)}.xlsx`;
+    const url = URL.createObjectURL(await r.blob());
+    const a = document.createElement('a');
+    a.href = url; a.download = nom; document.body.appendChild(a); a.click();
+    a.remove(); URL.revokeObjectURL(url);
+  } catch {
+    alert("Le classeur n'a pas pu être téléchargé. Réessayez dans un instant.");
+  } finally {
+    bouton.disabled = false; bouton.textContent = libelle;
+  }
+}
+$('telecharger').addEventListener('click', (e) => telecharger(e.currentTarget));
+$('telecharger2').addEventListener('click', (e) => telecharger(e.currentTarget));
+
+/* Un jeton encore valable évite de redemander le mot de passe à chaque
+   ouverture d'onglet pendant la journée. */
+if (jeton.lire()) afficherListe();
+</script>
+</body>
+</html>

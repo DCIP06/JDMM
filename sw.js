@@ -133,16 +133,15 @@ self.addEventListener('activate', (evenement) => {
 self.addEventListener('fetch', (evenement) => {
   const requete = evenement.request;
 
-  // On ne touche qu'aux lectures. Les envois de formulaire (Web3Forms, EmailJS)
-  // doivent passer directement au réseau — la mise en file est gérée côté
-  // application, dans mailer.js, pas ici.
+  // On ne touche qu'aux lectures. Le dépôt d'une demande doit passer droit au
+  // réseau — la mise en file est gérée côté application, dans registre.js.
   if (requete.method !== 'GET') return;
 
   const url = new URL(requete.url);
 
-  // Requêtes vers d'autres origines : plus aucune au chargement depuis que les
-  // polices sont servies par l'application. Seul le SDK EmailJS en émet, au
-  // moment d'un envoi — on le laisse au navigateur.
+  // Requêtes vers d'autres origines : aucune au chargement, depuis que les
+  // polices sont servies par l'application. Il en part au moment d'une demande
+  // et depuis l'écran de suivi — on les laisse au navigateur.
   if (url.origin !== self.location.origin) return;
 
   // Données applicatives : réseau d'abord.
