@@ -64,9 +64,9 @@
     "switcher_visible": true
   },
   "registre": {
-    "endpoint": "https://jdmm.connect3s.fr/demande",
+    "endpoint": "https://suivi.partage-document.com/demande",
     "email_destination": "jdigregorio@departement06.fr",
-    "libelle_destination": "Registre du stand, hébergé par CONNECT 3S"
+    "libelle_destination": "Suivi des demandes du stand"
   },
-  "_note_registre": "Deux destinations possibles, dans cet ordre de priorité. 1) endpoint : le registre du stand (FastAPI + SQLite, hébergé sur le matériel de CONNECT 3S, exposé par un tunnel Cloudflare). Il enregistre la demande et la rend consultable en direct par la DCIP, avec export Excel. Cette adresse ne permet QUE d'ajouter une ligne : elle ne donne accès à aucune donnée déjà enregistrée. 2) email_destination : à défaut de registre, la demande part par courriel depuis la messagerie du visiteur — aucun mot de passe n'est en jeu, et c'est volontaire, le code étant servi en clair depuis un dépôt public. Marche à suivre : docs/REGISTRE.md. AUCUNE donnée personnelle n'est stockée dans ce dépôt ni dans l'application : la demande traverse le navigateur du visiteur et part directement au registre."
+  "_note_registre": "Deux destinations possibles, dans cet ordre de priorité. 1) endpoint : le suivi des demandes du stand. Il enregistre la demande et la rend consultable par la DCIP pendant la journée, avec export en classeur. Cette adresse ne permet QUE d'ajouter une ligne : elle ne donne accès à aucune donnée déjà enregistrée, et la consultation demande un identifiant et un mot de passe. 2) email_destination : à défaut, la demande part par courriel depuis la messagerie du visiteur — aucun mot de passe n'est en jeu, et c'est volontaire, le code étant servi en clair depuis un dépôt public. Marche à suivre : docs/REGISTRE.md. AUCUNE donnée personnelle n'est stockée dans ce dépôt ni dans l'application : la demande traverse le navigateur du visiteur et part directement au suivi."
 }
