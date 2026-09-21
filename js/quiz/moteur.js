@@ -23,7 +23,14 @@ export function memoriserConfig(c) { config = c || {}; }
 async function charger() {
   if (catalogue) return catalogue;
   try {
-    const reponse = await fetch(new URL('../../data/quiz.json', import.meta.url), { cache: 'no-cache' });
+    // La page a pu lancer la requête avant que ce module n'existe : on reprend
+    // sa promesse plutôt que de redemander le fichier (voir quiz/index.html).
+    const chemin = new URL('../../data/quiz.json', import.meta.url);
+    const avance = (window.__donneesPrechargees || {})['quiz.json'];
+    if (avance) delete window.__donneesPrechargees['quiz.json'];
+    const reponse = avance
+      ? await avance.catch(() => fetch(chemin, { cache: 'no-cache' }))
+      : await fetch(chemin, { cache: 'no-cache' });
     const brut = await reponse.json();
     // Le fichier porte les textes du hub ET les quiz ; une ancienne version
     // n'était qu'un tableau, on l'accepte encore.

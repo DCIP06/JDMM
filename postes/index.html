@@ -31,6 +31,23 @@
 <link rel="modulepreload" href="../js/commun/icones.js">
 <link rel="modulepreload" href="../js/commun/store.js">
 
+<script>
+/* Les données partent ici, à la lecture de l'en-tête, et non quand les modules
+   ont fini de se charger et de s'exécuter. Sur le réseau d'un hall, config.json
+   et postes-dcip.json n'étaient demandés qu'à 5,5 s d'une page ouverte depuis 0,
+   alors que rien n'empêchait de les demander dès la première seconde.
+   offers.js consomme ces promesses si elles existent, et refait la requête
+   normalement sinon : la page reste correcte si ce bloc disparaît.
+   Un `catch` est attaché tout de suite, sans quoi un réseau absent produirait
+   un rejet non traité avant que le module ne soit là pour le recevoir. */
+window.__donneesPrechargees = {};
+for (const nom of ['config.json', 'postes-dcip.json']) {
+  const promesse = fetch(new URL('../data/' + nom, document.baseURI), { cache: 'no-cache' });
+  promesse.catch(() => {});
+  window.__donneesPrechargees[nom] = promesse;
+}
+</script>
+
 <link rel="stylesheet" href="../css/polices.css">
 <link rel="stylesheet" href="../themes/tokens.css">
 <link rel="stylesheet" href="../themes/a.css">

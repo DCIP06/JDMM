@@ -30,8 +30,21 @@ let promesseDetails = null;
    Chargement
    ------------------------------------------------------------------------- */
 
+/* La page a pu lancer la requête avant que ce module n'existe (voir le script
+   d'en-tête de postes/index.html). On récupère alors sa promesse plutôt que de
+   redemander le fichier ; elle n'est consommée qu'une fois. */
+function requete(chemin) {
+  const nom = chemin.split('/').pop().split('?')[0];
+  const avance = (window.__donneesPrechargees || {})[nom];
+  if (avance) {
+    delete window.__donneesPrechargees[nom];
+    return avance.catch(() => fetch(chemin, { cache: 'no-cache' }));
+  }
+  return fetch(chemin, { cache: 'no-cache' });
+}
+
 async function chargerJSON(chemin) {
-  const reponse = await fetch(chemin, { cache: 'no-cache' });
+  const reponse = await requete(chemin);
   if (!reponse.ok) throw new Error(`${chemin} : HTTP ${reponse.status}`);
   const donnees = await reponse.json();
   // Le service worker marque les réponses servies hors ligne (voir sw.js).
