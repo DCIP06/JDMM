@@ -231,7 +231,13 @@ export async function enregistrerDemande({ poste, contact, config: configFournie
   const resultat = await transmettre(endpoint, demande);
 
   if (!resultat.ok) {
-    empilerEnvoi({ poste, contact });
+    /* On empile la demande DÉJÀ COMPOSÉE, horodatage compris. Recomposer au
+       rejeu lui donnerait une nouvelle heure, donc une nouvelle empreinte
+       côté registre, donc une deuxième ligne pour une seule personne. Le cas
+       n'a rien de théorique : un envoi qui « échoue » côté navigateur a très
+       bien pu arriver à destination — c'est exactement ce que fait un blocage
+       CORS, ou une coupure au moment de la réponse. */
+    empilerEnvoi({ poste, contact, demande });
     return {
       ok: false, configure: true, misEnFile: true, demande, motif: resultat.motif,
       message: 'Votre demande est conservée et sera transmise dès le retour du réseau. '
@@ -265,10 +271,12 @@ export async function rejouerFile() {
     if (!endpoint || endpoint === 'À_RENSEIGNER') {
       return { rejouees: 0, restantes: fileEnvois().length };
     }
-    for (const demande of fileEnvois()) {
-      const r = await transmettre(endpoint, ligne(demande.poste, demande.contact));
+    for (const attente of fileEnvois()) {
+      // `attente.demande` est la ligne d'origine ; le repli ne sert que pour
+      // une file écrite par une version antérieure de l'application.
+      const r = await transmettre(endpoint, attente.demande || ligne(attente.poste, attente.contact));
       if (!r.ok) break;              // inutile d'insister sur les suivantes
-      depilerEnvoi(demande.id_file);
+      depilerEnvoi(attente.id_file);
       rejouees += 1;
     }
   } finally {
