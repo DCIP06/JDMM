@@ -17,9 +17,9 @@
   /* La page est autonome : elle n'emprunte à l'application que ses polices et
      ses couleurs, pour ne pas dépendre de composants faits pour d'autres écrans.
 
-     ⚠️ AUCUNE donnée n'est stockée ici. Cette page est un écran : elle demande
-     la liste au service qui la détient, l'affiche, et n'en garde rien. Ce
-     fichier est public — les demandes, elles, ne le sont jamais. */
+     Cette page est un écran : elle demande la liste au service qui la détient
+     et l'affiche. Ce fichier est public — les demandes, elles, ne le sont
+     jamais, et ne sont conservées que pour la durée du salon. */
   body { margin: 0; background: var(--fond, #F6F4EF); color: var(--texte, #1A1A18);
          font-family: 'Manrope', system-ui, sans-serif; }
   .barre { background: #042C53; color: #fff; padding: 14px 16px; position: sticky; top: 0; z-index: 5; }
@@ -115,9 +115,9 @@
     </div>
     <div id="liste"></div>
     <p class="note" style="margin-top:22px">
-      Données personnelles traitées par la DCIP, conservées le jour de l'événement uniquement
-      et supprimées le soir même. Le classeur téléchargé reflète les demandes reçues au moment
-      du téléchargement — pensez à le récupérer avant la suppression.
+      Données personnelles traitées par la DCIP et conservées pour la durée du salon
+      uniquement, puis supprimées. Le classeur téléchargé reflète les demandes reçues au
+      moment du téléchargement — pensez à le récupérer avant la suppression.
     </p>
   </section>
 </main>

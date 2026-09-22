@@ -105,8 +105,8 @@ ok('les 4 projets de mobilité sont proposés', await p.locator('[data-projet]')
 ok('la mention RGPD reprend la phrase configurée',
    contient(form, CONFIG.rgpd.conservation_phrase), CONFIG.rgpd.conservation_phrase);
 ok('la mention RGPD nomme la DCIP', contient(form, 'par la DCIP'));
-ok("la mention RGPD annonce la suppression le jour même",
-   contient(form, 'supprimées le soir même'));
+ok("la mention RGPD borne la conservation à la durée du salon",
+   contient(form, 'durée du salon') && contient(form, 'supprimées'));
 ok('la mention RGPD écarte tout traceur',
    contient(form, 'Aucun traceur, aucune mesure d\'audience'));
 await p.screenshot({ path: 'app-postes-form.png' });

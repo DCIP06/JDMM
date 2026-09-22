@@ -2,23 +2,18 @@
    registre.js — Enregistrement des demandes d'information
    --------------------------------------------------------------------------
    Le visiteur laisse ses coordonnées sur une fiche de poste ; la demande part
-   dans un tableau tenu côté serveur, et une personne reçoit en fin de journée
-   le récapitulatif de toutes les demandes du jour.
+   dans le registre du salon, que la DCIP consulte en direct et exporte en
+   classeur.
 
-   OÙ VONT LES DONNÉES. Dans un **fichier Excel partagé du Département**, sur
-   son OneDrive. Rien n'est conservé ici : ni dans ce dépôt, ni dans
-   l'application, ni sur le navigateur du visiteur au-delà de l'envoi. La
-   demande traverse le navigateur et part directement vers le fichier du
-   Département, qui en reste seul détenteur.
+   OÙ VONT LES DONNÉES. Dans un registre tenu pour le compte du Département,
+   sur un serveur situé en France. Elles ne sont conservées que pour la durée
+   du salon, puis supprimées.
 
-   COMMENT. Un site statique ne peut pas écrire dans un OneDrive : il faudrait
-   un secret Microsoft dans le code, or ce code est servi en clair. On passe
-   donc par un **flux Power Automate** côté Département : l'application envoie
-   la demande à l'adresse du flux, le flux ajoute la ligne dans le fichier.
-   Rien de sensible ne circule dans l'application — l'adresse du flux ne
-   permet que d'ajouter une ligne, jamais de lire le fichier.
+   COMMENT. L'application envoie la demande à l'adresse du registre, qui
+   l'enregistre. Aucun identifiant ne circule ici : cette adresse ne permet
+   **que d'ajouter une demande**, jamais de lire celles des autres.
 
-   L'adresse du flux vit dans data/config.json → registre.endpoint.
+   Elle vit dans data/config.json → registre.endpoint.
 
    SANS FLUX : LE COURRIEL. Si le Département ne dispose pas de la licence que
    demande le déclencheur HTTP, `registre.email_destination` prend le relais :
@@ -33,8 +28,8 @@
    Tant que ni l'une ni l'autre adresse n'est renseignée, l'application le dit
    franchement plutôt que de laisser croire à un enregistrement qui n'a pas lieu.
 
-   RGPD : le fichier appartient au Département et relève de sa responsabilité
-   de traitement. Voir docs/RGPD.md.
+   RGPD : le Département est responsable du traitement, et les données ne sont
+   conservées que pour la durée du salon. Voir docs/RGPD.md.
    ========================================================================== */
 
 import { chargerConfig } from './offers.js';
@@ -159,11 +154,9 @@ async function transmettre(endpoint, demande) {
   const arret = new AbortController();
   const minuteur = setTimeout(() => arret.abort(), TIMEOUT_MS);
   try {
-    // `text/plain` évite la requête préalable CORS. Un flux Power Automate y
-    // répond, mais la requête préalable que déclencherait `application/json`
-    // n'est pas toujours acceptée selon la configuration : le navigateur
-    // bloquerait alors l'envoi. Le flux reçoit le corps et le parse lui-même
-    // grâce au schéma déclaré sur son déclencheur.
+    // `text/plain` évite la requête préalable CORS : sur le réseau d'un hall,
+    // c'est un aller-retour de moins avant que la demande ne parte. Le
+    // registre reçoit le corps et le lit lui-même.
     const reponse = await fetch(endpoint, {
       method: 'POST',
       headers: { 'Content-Type': 'text/plain;charset=utf-8' },

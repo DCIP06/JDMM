@@ -9,15 +9,14 @@ Département des Alpes-Maritimes — Direction de la Construction, de l'Immobili
 
 ## L'essentiel
 
-**Les demandes ne sont pas conservées.** Elles vivent le temps de la journée, servent à ce
-qu'un agent de la DCIP vous recontacte, et sont supprimées le soir même.
+**Les données ne sont conservées que pour la durée du salon.** Elles servent à ce qu'un agent
+de la DCIP vous recontacte, et sont supprimées le soir même.
 
-**Rien n'est stocké dans l'application ni sur GitHub**, où le code est pourtant public : les
-pages ne font que transmettre et afficher. Aucun cookie, aucun traceur, aucune mesure
-d'audience, aucun service tiers appelé au chargement.
+Aucun cookie, aucun traceur, aucune mesure d'audience, aucun service tiers appelé au
+chargement de l'application.
 
 ```
-Téléphone du visiteur  ──►  registre du stand  ──►  la DCIP consulte, puis supprime
+Téléphone du visiteur  ──►  registre du salon  ──►  la DCIP consulte, puis supprime
    (saisie du formulaire)    (serveur en France)      (accès par mot de passe, le jour même)
 ```
 
@@ -28,8 +27,8 @@ Téléphone du visiteur  ──►  registre du stand  ──►  la DCIP consul
 **Département des Alpes-Maritimes** — Direction de la Construction, de l'Immobilier et du
 Patrimoine. CADAM, 147 boulevard du Mercantour, 06200 Nice.
 
-**CONNECT 3S** (Cagnes-sur-Mer) intervient comme **sous-traitant** au sens de l'article 28 :
-l'entreprise héberge le registre pendant l'événement, sur un serveur situé en France, et
+Un **prestataire technique mandaté par le Département** intervient comme sous-traitant au sens
+de l'article 28 : il héberge le registre pendant le salon, sur un serveur situé en France, et
 n'exploite les données à aucune autre fin.
 
 ## 2. Finalité et base légale
@@ -53,8 +52,8 @@ aucune revente, aucun transfert à un tiers.
 
 ## 5. Durée de conservation
 
-**La journée de l'événement**, et rien de plus. Les demandes sont supprimées le soir même par
-la DCIP, après avoir été remises au service concerné.
+**La durée du salon**, et rien de plus. Les données sont supprimées le soir même par la DCIP,
+après avoir été remises au service concerné.
 
 ## 6. Vos droits
 
@@ -62,8 +61,8 @@ Droit d'accès, de rectification, d'effacement, de limitation, d'opposition et d
 consentement à tout moment, auprès du délégué à la protection des données du Département. Le
 retrait ne remet pas en cause ce qui a été envoyé avant.
 
-Compte tenu de la durée de conservation, une demande d'effacement formulée après la journée
-est sans objet : les données n'existent plus.
+Compte tenu de la durée de conservation, une demande d'effacement formulée après le salon est
+sans objet : les données n'existent plus.
 
 ## 7. Stockage sur votre appareil
 
@@ -82,6 +81,3 @@ Effacer les données de votre navigateur les supprime définitivement.
 - Les polices sont servies par l'application elle-même : aucune requête ne part vers un
   domaine tiers au chargement, donc aucune exposition de votre adresse IP.
 
----
-
-CONNECT 3S — Cagnes-sur-Mer (06) — connect3s.fr

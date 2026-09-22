@@ -43,21 +43,21 @@ de fois qu'on veut.
 
 ## Où vivent les données
 
-Sur un serveur **situé en France**, tenu par CONNECT 3S pour le compte du Département.
+Sur un serveur **situé en France**, tenu pour le compte du Département par son prestataire
+technique.
 
-**Ni fichier Excel hébergé, ni OneDrive, ni service de stockage tiers.** Le classeur n'est pas
-conservé quelque part : il est **fabriqué au moment du téléchargement**, à partir du registre,
-et n'existe ensuite que dans les mains de la DCIP.
+**Ni fichier Excel hébergé, ni OneDrive, ni service de stockage tiers.** Le classeur est
+**fabriqué au moment du téléchargement**, à partir du registre, et n'existe ensuite que dans
+les mains de la DCIP.
 
-**Rien n'est stocké sur GitHub**, où le site est pourtant public : les pages ne font que
-transmettre et afficher.
+**Les données ne sont conservées que pour la durée du salon**, puis supprimées le soir même.
 
 ---
 
 ## Le soir de l'événement — à faire
 
-Les demandes sont annoncées au visiteur comme conservées **la journée seulement**. Rien ne les
-supprime tout seul.
+Les données sont annoncées au visiteur comme conservées **pour la durée du salon seulement**.
+Rien ne les supprime tout seul.
 
 1. **Télécharger le classeur** depuis l'écran de suivi, et le remettre au service concerné.
 2. **Vider le registre.**
@@ -96,6 +96,3 @@ La destination des demandes se change dans `data/config.json` → `registre` :
 Le module `js/commun/registre.js` envoie un JSON et attend `{"ok": true}` : changer de
 destination ne demande rien d'autre que de modifier ces deux valeurs.
 
----
-
-CONNECT 3S — Cagnes-sur-Mer (06) — connect3s.fr

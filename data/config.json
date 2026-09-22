@@ -55,12 +55,12 @@
     "_note_marquage": "Ordre de fiabilité du rattachement DCIP : 1) URL d'un des 7 postes de postes-dcip.json, 2) domaine d'activité listé dans dcip_domaines, 3) motif de dcip_patterns trouvé dans l'INTITULÉ ou le domaine. Les motifs ne sont volontairement PAS cherchés dans le résumé : « patrimoine » y confondait le patrimoine bâti et le patrimoine culturel (cinéma, Micro-Folie), « collège » y attrapait un poste de chef de cuisine."
   },
   "rgpd": {
-    "conservation": "le jour de l'événement uniquement",
-    "conservation_phrase": "Données traitées par la DCIP, conservées le jour de l'événement uniquement et supprimées le soir même.",
+    "conservation": "la durée du salon",
+    "conservation_phrase": "Données traitées par la DCIP et conservées pour la durée du salon uniquement, puis supprimées.",
     "duree_conservation_jours": 1,
     "contact_dpo": "À_RENSEIGNER",
     "responsable_traitement": "Département des Alpes-Maritimes — DCIP",
-    "_note": "La durée annoncée aux visiteurs est la JOURNÉE de l'événement : les demandes sont supprimées le soir même par la DCIP. `duree_conservation_jours` reste à 1 pour les traitements qui attendent un nombre ; la phrase affichée est `conservation_phrase`, elle seule fait foi vis-à-vis du visiteur."
+    "_note": "La durée annoncée aux visiteurs est celle du SALON : les données sont supprimées le soir même par la DCIP. `duree_conservation_jours` reste à 1 pour les traitements qui attendent un nombre ; la phrase affichée est `conservation_phrase`, elle seule fait foi vis-à-vis du visiteur."
   },
   "theme": {
     "defaut": "a",
