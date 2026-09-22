@@ -3,132 +3,85 @@
 Application **Métiers & Mobilité DCIP** — Journée des Métiers et de la Mobilité, CADAM.
 Département des Alpes-Maritimes — Direction de la Construction, de l'Immobilier et du Patrimoine.
 
-*Dernière mise à jour : 4 septembre 2026.*
+*Dernière mise à jour : 22 septembre 2026.*
 
 ---
 
-## Où vont les données
+## L'essentiel
 
-Les coordonnées des visiteurs sont écrites dans un **fichier Excel appartenant au
-Département**, hébergé sur son OneDrive.
+**Les demandes ne sont pas conservées.** Elles vivent le temps de la journée, servent à ce
+qu'un agent de la DCIP vous recontacte, et sont supprimées le soir même.
 
-**Rien n'est conservé par l'application ni sur GitHub.** Le code, hébergé publiquement, ne
-fait que transmettre : il n'a ni base de données, ni fichier, ni journal. La demande traverse
-le navigateur du visiteur et part directement vers le fichier du Département.
+**Rien n'est stocké dans l'application ni sur GitHub**, où le code est pourtant public : les
+pages ne font que transmettre et afficher. Aucun cookie, aucun traceur, aucune mesure
+d'audience, aucun service tiers appelé au chargement.
 
 ```
-Téléphone du visiteur  ──►  flux Power Automate  ──►  Excel sur le OneDrive du Département
-   (saisie du formulaire)      (du Département)           (une ligne par demande)
+Téléphone du visiteur  ──►  registre du stand  ──►  la DCIP consulte, puis supprime
+   (saisie du formulaire)    (serveur en France)      (accès par mot de passe, le jour même)
 ```
-
-Conséquence pour l'analyse : **les données restent dans le périmètre Microsoft 365 du
-Département**, sous sa propre responsabilité de traitement et ses propres règles. Aucun
-prestataire tiers ne s'interpose, et il n'y a pas de transfert hors des outils que le
-Département utilise déjà.
-
-### Ce qui reste à valider par le DPO
-
-| Point | Pourquoi |
-|---|---|
-| Inscription du traitement au registre | Nouveau traitement, même temporaire |
-| Durée de conservation et purge | 30 jours annoncés au visiteur ; **la purge du fichier n'a rien d'automatique** |
-| Liste des personnes ayant accès au fichier | L'intérêt d'un agent pour un poste est sensible en mobilité interne |
-| Mention d'information | Celle affichée dans le formulaire, à valider dans sa formulation |
 
 ---
 
 ## 1. Responsable du traitement
 
-**Département des Alpes-Maritimes**
-Direction des Ressources Humaines / Direction de la Construction, de l'Immobilier et du Patrimoine
-CADAM — 147 boulevard du Mercantour, 06200 Nice
+**Département des Alpes-Maritimes** — Direction de la Construction, de l'Immobilier et du
+Patrimoine. CADAM, 147 boulevard du Mercantour, 06200 Nice.
 
-**Délégué à la protection des données** : `À_RENSEIGNER` (voir `data/config.json` → `rgpd.contact_dpo`)
+**CONNECT 3S** (Cagnes-sur-Mer) intervient comme **sous-traitant** au sens de l'article 28 :
+l'entreprise héberge le registre pendant l'événement, sur un serveur situé en France, et
+n'exploite les données à aucune autre fin.
 
-## 2. Finalité
+## 2. Finalité et base légale
 
-Permettre à un visiteur du stand de recevoir par courriel le récapitulatif des offres d'emploi
-qu'il a sélectionnées, et permettre à la DCIP d'assurer le suivi de cette demande.
-
-**Base légale** : consentement de la personne (article 6.1.a du RGPD), recueilli par une case
-à cocher **non pré-cochée** avant tout envoi.
+Permettre à un agent intéressé par un poste de la DCIP d'être recontacté à l'issue de la
+journée. Base légale : **le consentement**, recueilli par une case à cocher, retirable à tout
+moment.
 
 ## 3. Données collectées
 
-| Donnée | Caractère | Origine |
-|---|---|---|
-| Prénom | **Obligatoire** | Saisi par le visiteur |
-| Nom | **Obligatoire** | Saisi par le visiteur |
-| Direction d'affectation actuelle | **Obligatoire** | Saisie par le visiteur |
-| Projet de mobilité | Facultatif | Choisi par le visiteur |
-| Message libre | Facultatif | Saisi par le visiteur |
-| Poste concerné | Déduite | La fiche ouverte au moment de la demande |
-| Horodatage de la demande | Déduite | Généré à l'enregistrement |
+Prénom, nom, direction d'affectation, adresse professionnelle, poste concerné, et le message
+laissé s'il y en a un.
 
-**Aucune autre donnée n'est collectée.** Pas d'adresse IP conservée par l'application, pas de
-profil, pas de données sensibles au sens de l'article 9.
+**Aucune autre donnée.** Pas d'adresse IP conservée, pas de profil, aucune donnée sensible au
+sens de l'article 9.
 
 ## 4. Destinataires
 
-- les agents de la DCIP à qui le **fichier Excel** est partagé, et eux seuls ;
-- aucun prestataire tiers : le fichier vit dans le OneDrive du Département.
-
-Aucun courriel n'est envoyé au visiteur, et l'application ne transmet la demande à personne
-d'autre qu'au fichier du Département.
-
-Aucune cession, aucune revente, aucun transfert à un tiers non listé ici.
+Les agents de la DCIP à qui l'accès de consultation a été remis, et eux seuls. Aucune cession,
+aucune revente, aucun transfert à un tiers.
 
 ## 5. Durée de conservation
 
-**30 jours** à compter de la demande, puis suppression
-(`data/config.json` → `rgpd.duree_conservation_jours`).
+**La journée de l'événement**, et rien de plus. Les demandes sont supprimées le soir même par
+la DCIP, après avoir été remises au service concerné.
 
-Cette durée couvre la campagne de mobilité interne consécutive à l'événement.
-
-> ⚠️ **La purge n'est pas automatique.** Il faut supprimer les lignes du fichier Excel à
-> l'échéance. Inscrivez cette date dans le registre des traitements. Voir `docs/REGISTRE.md`.
-
-## 6. Droits des personnes
+## 6. Vos droits
 
 Droit d'accès, de rectification, d'effacement, de limitation, d'opposition et de retrait du
-consentement à tout moment, en écrivant au DPO du Département.
+consentement à tout moment, auprès du délégué à la protection des données du Département. Le
+retrait ne remet pas en cause ce qui a été envoyé avant.
 
-Le retrait du consentement ne remet pas en cause la licéité de ce qui a été envoyé avant.
+Compte tenu de la durée de conservation, une demande d'effacement formulée après la journée
+est sans objet : les données n'existent plus.
 
-## 7. Traceurs et stockage local
+## 7. Stockage sur votre appareil
 
-**Aucun cookie. Aucun traceur. Aucune mesure d'audience. Aucun service tiers chargé au démarrage.**
+L'application n'utilise **aucun cookie**. Elle garde sur votre seul appareil, sans jamais le
+transmettre, votre choix d'affichage, vos scores aux quiz, et une demande qui n'aurait pas pu
+partir faute de réseau — pour la renvoyer quand il revient.
 
-L'application utilise le `localStorage` du navigateur — un espace propre à l'appareil du
-visiteur, que l'application ne transmet à personne — pour trois choses seulement :
-
-| Clé | Contenu | Pourquoi |
-|---|---|---|
-| `jdmm.preferences` | Thème, mode haute lisibilité | Ne pas redemander à chaque visite |
-| `jdmm.quiz` | Scores des quiz | Afficher sa progression |
-| `jdmm.file-envois` | Demande en attente d'envoi | Rejouer l'envoi au retour du réseau |
-| `jdmm.horodatages-envois` | Dates des 3 derniers envois | Limiter les abus (3 envois par heure) |
-
-Ces informations restent sur l'appareil et **sont effaçables à tout moment** depuis
-l'application (bouton « Effacer mes données ») ou en vidant les données du site dans le navigateur.
-
-**Les polices sont servies par l'application elle-même** (`assets/fonts/`, sous licence SIL
-Open Font License). Aucun appel à Google Fonts, donc aucune exposition de l'adresse IP du
-visiteur à un tiers. Au chargement d'une page, **aucune requête ne quitte le domaine de
-l'application** : pas de CDN, pas de police distante, pas de mesure d'audience.
-
-La seule requête externe possible est l'envoi du formulaire, vers le prestataire de courriel,
-et uniquement au moment où le visiteur clique — c'est l'objet de l'avertissement en tête de
-document.
+Effacer les données de votre navigateur les supprime définitivement.
 
 ## 8. Sécurité
 
-- Site servi exclusivement en **HTTPS** (GitHub Pages, TLS 1.3).
-- Aucune donnée personnelle stockée dans le dépôt, aucune clé privée versionnée.
-- L'adresse du flux de collecte figure dans le code, servi en clair, mais elle ne permet
-  **que d'ajouter une ligne** : ni lecture du fichier, ni modification, ni suppression. Le
-  pire qu'un tiers puisse en faire est d'y écrire des demandes fictives.
-- **Aucun secret Microsoft ne figure dans le code.** C'est précisément la raison du passage
-  par un flux : un accès direct au OneDrive aurait exigé d'y placer un identifiant.
-- Mesures anti-abus : champ leurre, délai minimum avant soumission, plafond de 3 envois par
-  navigateur et par heure.
+- Tout est servi en **HTTPS**.
+- La consultation des demandes exige un identifiant et un mot de passe, absents du code.
+- L'adresse qui reçoit les demandes ne permet **que d'en ajouter une** : ni lecture de celles
+  des autres, ni modification, ni suppression.
+- Les polices sont servies par l'application elle-même : aucune requête ne part vers un
+  domaine tiers au chargement, donc aucune exposition de votre adresse IP.
+
+---
+
+CONNECT 3S — Cagnes-sur-Mer (06) — connect3s.fr

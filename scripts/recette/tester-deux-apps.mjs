@@ -7,7 +7,6 @@ import { readFileSync } from 'node:fs';
    de la première modification. */
 const FICHES = JSON.parse(readFileSync(new URL('../../data/postes-dcip.json', import.meta.url), 'utf8'));
 const CONFIG = JSON.parse(readFileSync(new URL('../../data/config.json', import.meta.url), 'utf8'));
-const JOURS = CONFIG.rgpd.duree_conservation_jours;
 const DONNEES_QUIZ = JSON.parse(readFileSync(new URL('../../data/quiz.json', import.meta.url), 'utf8'));
 const QUIZ = DONNEES_QUIZ.quiz;
 const HUB = DONNEES_QUIZ.hub;
@@ -99,11 +98,15 @@ for (const c of ['prenom','nom','direction','email']) {
   ok(`le champ ${c} est présent`, await p.locator('#' + c).count() === 1);
 }
 ok('les 4 projets de mobilité sont proposés', await p.locator('[data-projet]').count() === 4);
-/* La durée de conservation se lit dans la configuration : l'écrire ici en dur
-   ferait passer le test alors que l'application annoncerait autre chose. */
-ok('la mention RGPD annonce la durée configurée',
-   contient(form, `Conservation ${JOURS} jours`), `attendu ${JOURS} jours`);
-ok('la mention RGPD nomme la DCIP', contient(form, 'Données traitées par la DCIP'));
+/* La mention se lit dans la configuration : l'écrire ici en dur ferait passer
+   le test alors que l'application annoncerait autre chose. Ce n'est plus un
+   nombre de jours mais une phrase — « le jour de l'événement uniquement » se
+   dit mal en chiffres. */
+ok('la mention RGPD reprend la phrase configurée',
+   contient(form, CONFIG.rgpd.conservation_phrase), CONFIG.rgpd.conservation_phrase);
+ok('la mention RGPD nomme la DCIP', contient(form, 'par la DCIP'));
+ok("la mention RGPD annonce la suppression le jour même",
+   contient(form, 'supprimées le soir même'));
 ok('la mention RGPD écarte tout traceur',
    contient(form, 'Aucun traceur, aucune mesure d\'audience'));
 await p.screenshot({ path: 'app-postes-form.png' });

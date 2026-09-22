@@ -309,7 +309,12 @@ function vueFormulaire(id) {
   etat.projet = null;
   etat.ouvertA = Date.now();
 
-  const jours = (etat.config.rgpd || {}).duree_conservation_jours || 30;
+  /* La mention vient de la configuration, en toutes lettres : la durée n'est
+     plus un nombre de jours mais « la journée de l'événement », et une phrase
+     dit cela mieux qu'un chiffre. */
+  const rgpd = etat.config.rgpd || {};
+  const mentionRgpd = rgpd.conservation_phrase
+    || `Données traitées par la DCIP. Conservation ${rgpd.duree_conservation_jours || 30} jours.`;
   const reg = etat.config.registre || {};
   const parCourriel = !renseigne(reg.endpoint) && renseigne(reg.email_destination);
 
@@ -389,7 +394,7 @@ function vueFormulaire(id) {
               <span class="lecteur-seul">(obligatoire)</span></span>
           </label>
           <p class="mention-rgpd" id="mention-rgpd">
-            <strong>RGPD</strong> — Données traitées par la DCIP. Conservation ${jours} jours.
+            <strong>RGPD</strong> — ${mentionRgpd}
             Aucun traceur, aucune mesure d'audience.
             <a href="../mentions.html?doc=rgpd" target="_blank" rel="noopener">En savoir plus<span
               class="lecteur-seul"> (nouvelle fenêtre)</span></a>.
