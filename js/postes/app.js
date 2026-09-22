@@ -199,8 +199,10 @@ function ligne(p) {
     ? ''
     : (s.expiree
       ? `<span class="badge badge--neutre">${s.code === 'retiree' ? 'Pourvu' : 'Close'}</span>`
-      : (s.urgent ? `<span class="badge badge--alerte">Urgent</span>`
-                  : `<span class="badge badge--succes">En ligne</span>`));
+      : (s.code === 'a_pourvoir'
+        ? `<span class="badge badge--succes">À pourvoir</span>`
+        : (s.urgent ? `<span class="badge badge--alerte">Urgent</span>`
+                    : `<span class="badge badge--succes">En ligne</span>`)));
   return `
     <div role="listitem">
       <a class="poste-row" href="#/poste/${p.id}">
@@ -286,6 +288,11 @@ function vueFiche(id) {
       ${s.expiree ? `<p class="texte-faible">Cette annonce n'est plus en ligne. Vous pouvez tout
         de même vous signaler : la DCIP saura que ce métier vous intéresse et pourra vous
         prévenir de la prochaine ouverture.</p>` : ''}
+
+      ${p.sans_annonce ? `<p class="texte-faible">Ce poste est à pourvoir${
+        p.mobilite ? ` en mobilité ${p.mobilite}` : ''} et ne fait pas l'objet d'une annonce
+        sur le site du Département : déclarez-vous intéressé(e) ci-dessus, la DCIP vous
+        recontactera.</p>` : ''}
     </div>`, p.titre);
 }
 

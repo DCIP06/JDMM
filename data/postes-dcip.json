@@ -367,5 +367,178 @@
    "Vous manifestez une appétence pour la qualité environnementale du bâtiment (QEB)."
   ],
   "deadline_source": "30 septembre 2026"
+ },
+ {
+  "id": "ingenieur-e-renovation-energetique-des-batiments",
+  "titre": "Ingénieur(e) rénovation énergétique des bâtiments",
+  "service": "Mission énergies renouvelables",
+  "ico": "⚡",
+  "tag": "",
+  "cat": "A",
+  "contrat": "Cat. A",
+  "filiere": "Filière technique",
+  "lieu": "Nice — CADAM",
+  "url": "",
+  "sans_annonce": true,
+  "mobilite": "interne et externe",
+  "reference": "DCIP/2026-13",
+  "desc": "Piloter, en lien avec la stratégie patrimoniale de la collectivité et le dispositif Eco Energie Tertiaire, les opérations de rénovation énergétique des bâtiments départementaux Capitaliser les données patrimoniales et les consommations énergétiques associées en proposant des actions priorisées de rénovation du patrimoine En lien avec les services de la direction, vous devrez analyser et émettre des avis techniques…",
+  "missions": [
+   "Vous faites des études techniques pour élaborer les programmes d’études et de travaux d'aménagement, de rénovation, de restructuration et d'extension sur le patrimoine bâti départemental",
+   "Vous faites des études économiques des projets en coût global",
+   "Vous aidez à la rédaction d'un référentiel de performance énergétique pour les projets de rénovations",
+   "Vous rédigerez les documents pour la passation des marchés de prestations intellectuelles, de travaux et d’accord cadre, notamment les dossiers de consultation des entreprises et les rapports d’analyse d’offres",
+   "Vous supervisez toutes procédures réglementaires attachées à l’acte de bâtir",
+   "Vous conduisez et ordonnancez un chantier en intégrant son impact environnemental",
+   "Vous proposez des modes de réalisation et de rédaction de documents pour la passation des marchés",
+   "Vous préparez toutes déclarations et autorisations liées à l’ouverture d’un chantier, préparez ou contrôlez les avenants et leurs rapports justificatifs, instruisez les demandes de rémunération complémentaires et proposez les réponses"
+  ],
+  "profils": [
+   "Vous êtes titulaire d’un diplôme d’ingénieur ou d’un Bac +5 dans le domaine du bâtiment tous corps d'état ou dans le domaine de la maîtrise de l'énergie appliquée aux enjeux du bâtiment",
+   "Vous avez de l’expérience en maîtrise d’œuvre de conception ou d’exécution et/ou en maîtrise d’ouvrage publique de bâtiment",
+   "Vous avez une connaissance des marchés publics",
+   "Vous avez une bonne connaissance des techniques du bâtiment tout corps d'état, de la réglementation de la construction et de la qualité environnementale du bâtiment (QEB)",
+   "Compétences en économie de la construction ou en ordonnancement, planification et coordination (OPC) appréciées",
+   "Qualités attendues (savoir être)"
+  ],
+  "deadline_source": ""
+ },
+ {
+  "id": "charge-e-d-operations-colleges",
+  "titre": "Chargé(e) d’opérations collèges",
+  "service": "Maintenance des collèges",
+  "ico": "🏫",
+  "tag": "",
+  "cat": "B",
+  "contrat": "Cat. B",
+  "filiere": "Filière technique",
+  "lieu": "Nice — CADAM",
+  "url": "",
+  "sans_annonce": true,
+  "mobilite": "interne et externe",
+  "reference": "DCIP/2026-23",
+  "desc": "Au sein d'une équipe du service maintenance, le chargé d'opérations conçoit et fait réaliser par des entreprises divers travaux d'extension, de restructuration, de réhabilitation, de grosses réparations, d'aménagement et d'entretien concernant le patrimoine bâti composé de collèges, école, gymnases et salles de sports.",
+  "missions": [
+   "Il réalise ou fait réaliser des études de diagnostic sur les bâtiments",
+   "Il établit les programmes et les estimations des travaux d'entretien, de grosses réparations et d'aménagement",
+   "Il élabore les pièces techniques des dossiers de consultations des entreprises ou des prestataires intellectuels",
+   "Il optimise les plans d'entretien et met à jour l'inventaire du patrimoine bâti (suivi sur la solution logicielle BATIGAM)",
+   "Il veille au respect des réglementations qui s’appliquent aux ERP à chaque étape des opérations (sécurité incendie, accessibilité)",
+   "Il représente le maître d'ouvrage lors des réunions de chantier et coordonne l'activité des entreprises et des prestataires intellectuels",
+   "Il rédige les comptes-rendus et établit les plannings d'intervention des entreprises",
+   "Il vérifie la bonne exécution des travaux tous corps d'état, leur conformité par rapport aux cahiers des charges et assure le suivi administratif et financier des opérations"
+  ],
+  "profils": [
+   "Avoir une bonne connaissance des métiers et des corps d'état du bâtiment",
+   "Connaître les réglementations qui s'appliquent aux ERP",
+   "Savoir apprécier la conformité des réalisations au regard des cahiers des charges",
+   "Maîtrise des outils bureautique",
+   "Qualités attendues (savoir être)",
+   "Faire preuve de rigueur et de méthode"
+  ],
+  "deadline_source": ""
+ },
+ {
+  "id": "charge-de-coordination-fonctionnelle",
+  "titre": "Chargé de coordination fonctionnelle",
+  "service": "Maintenance des collèges",
+  "ico": "🏫",
+  "tag": "",
+  "cat": "B",
+  "contrat": "Cat. B",
+  "filiere": "Filière technique ou administrative",
+  "lieu": "Nice — CADAM",
+  "url": "",
+  "sans_annonce": true,
+  "mobilite": "interne",
+  "reference": "DCIP/2026-25",
+  "desc": "L’agent en charge de la coordination technique assure, sous l’autorité du chef de service, le suivi et le contrôle des marchés à bons de commande de travaux et de de fournitures. Ces marchés couvrent l’ensemble des corps d’état du bâtiment, les travaux de voirie et d’espaces verts et également les prestations de service tels que les contrôles périodiques des équipements sportifs.",
+  "missions": [
+   "Il(elle) assure le suivi administratif des marchés en lien avec les assistantes du service",
+   "Il(elle) assure leur suivi d’exécution financière, en lien avec le bureau financier et avec les assistantes du service",
+   "Il(elle) rédige les bons de commande en lien avec les techniciens du service et renseigne les divers tableaux de suivi internes",
+   "Il(elle) assure le lien avec les différents titulaires des marchés à bons de commande, réalise le suivi du plan général et des plans particuliers de prévention et en assure la mise à jour régulière",
+   "Il(elle) assiste le chef de service lors des opérations de renouvellement des marchés",
+   "Sur le logiciel Batigam",
+   "Il(elle) accompagne, forme et assiste les utilisateurs au sein des établissements scolaires",
+   "Il(elle) assiste et conseille les services"
+  ],
+  "profils": [
+   "Diplôme de niveau II (bac +2)",
+   "Maîtrise des principaux logiciels génériques (bureautique, messagerie, navigateur)",
+   "Connaissance des règles en matière de commande publique",
+   "Des connaissances dans le domaine bâtimentaire sont appréciées",
+   "Qualités attendues (savoir être)",
+   "Méthode, rigueur, organisation, persévérance"
+  ],
+  "deadline_source": ""
+ },
+ {
+  "id": "technicien-specialise-ascenseurs",
+  "titre": "Technicien spécialisé ascenseurs",
+  "service": "Maintenance des collèges",
+  "ico": "🏫",
+  "tag": "",
+  "cat": "B",
+  "contrat": "Cat. B",
+  "filiere": "Filière technique",
+  "lieu": "Nice — CADAM",
+  "url": "",
+  "sans_annonce": true,
+  "mobilite": "",
+  "desc": "Le technicien spécialisé ascenseurs assure le suivi technique, réglementaire et contractuel du parc d’ascenseurs des collèges et des gymnases qui leur sont rattachés (ascenseurs, monte charges accompagnés ou non et plateformes élévatrices PMR) Il veille à la conformité réglementaire, à la disponibilité et au bon niveau de service des équipements en assurant le suivi des prestations réalisées par les entreprises…",
+  "missions": [
+   "Organiser et contrôler la maintenance des matériels et / ou des équipements et installations",
+   "Contrôler l'application de la réglementation",
+   "Réceptionner des travaux, contrôler des pièces relatives à l’exécution du chantier et élaborer les dossiers post-réception",
+   "Planifier et coordonner les chantiers réalisés en régie ou par des entreprises et représenter le maître d’oeuvre aux réunions",
+   "Recueillir, centraliser et analyser les informations provenant du terrain",
+   "Programmer et planifier les activités et/ou travaux",
+   "Enregistrer et/ou gérer les incidents d'exploitation liés à son domaine de compétence",
+   "Faire un pré-diagnostic et qualifier l'incident"
+  ],
+  "profils": [
+   "Techniques de maintenance et d'entretien des matériels, appareils, équipements",
+   "Réglementation en matière d’hygiène et de sécurité adaptées au secteur",
+   "Contrôles réglementaires des équipements techniques",
+   "Assurer le suivi et la traçabilité des actions de contrôle",
+   "Organiser des contrôles techniques règlementaires",
+   "Guider et contrôler l’exécution des travaux et leur conformité aux règles de l’art et aux exigences de sécurité"
+  ],
+  "deadline_source": ""
+ },
+ {
+  "id": "charge-d-operation-plomberie-legionellose",
+  "titre": "Chargé d’opération plomberie légionellose",
+  "service": "Énergie et fluides",
+  "ico": "⚡",
+  "tag": "",
+  "cat": "B / C",
+  "contrat": "Cat. B/C",
+  "filiere": "Filière technique",
+  "lieu": "Nice — CADAM",
+  "url": "",
+  "sans_annonce": true,
+  "mobilite": "interne et externe",
+  "reference": "DCIP/2026-36",
+  "desc": "Au sein d’une équipe composée de 17 agents, le chargé d'études CVC gère les contrats de maintenance des équipements techniques de sa spécialité.",
+  "missions": [
+   "Analyser et prioriser les demandes d'interventions",
+   "Assurer la liaison avec les prestataires de maintenance et travaux",
+   "Assurer la lecture et l’interprétation des schémas hydrauliques, aérauliques et GTB",
+   "Contrôler et valider techniquement les diagnostics et préconisations des entreprises",
+   "Proposer des solutions d’optimisation (réglages, équilibrages, meilleures pratiques)",
+   "Suivre les résultats annuels des analyses légionnelles des sites et mettre en place les actions correctives avec les exploitants si besoin",
+   "Réaliser des interventions techniques de réglage (automates de régulation, vannes…)"
+  ],
+  "profils": [
+   "Technicien BTS ou DTU en génie climatique ou bâtiment",
+   "Diplômes attendus ou obligatoires : BTS domaine FED ou BTS Bâtiment",
+   "Expérience souhaitée : 3 à 5 ans d’expérience en bâtiment ou CVC",
+   "Bonne maîtrise des outils informatiques",
+   "Être formé aux conformités réglementaires",
+   "Être sensibilisé au confort des usagers"
+  ],
+  "deadline_source": ""
  }
 ]

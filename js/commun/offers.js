@@ -249,7 +249,20 @@ export function croiserPostesEtOffres(postes, charge) {
     parCle.set(cleDepuisUrl(offre.url), offre);
   });
 
+  /* Certains postes sont à pourvoir en mobilité interne SANS être publiés sur
+     le site du Département : leur fiche vient d'un document de la DCIP. Sans
+     ce cas, l'absence d'annonce en regard les ferait afficher « Poste pourvu »
+     — l'exact inverse de ce qu'ils sont. */
+
   return postes.map((poste) => {
+    if (poste.sans_annonce) {
+      return {
+        ...poste,
+        en_ligne: false,          // rien vers quoi renvoyer : pas de bouton « Postuler »
+        offre: null,
+        statut: { code: 'a_pourvoir', libelle: 'Poste à pourvoir', urgent: false, expiree: false },
+      };
+    }
     const offre = parCle.get(cleDepuisUrl(poste.url));
     if (!offre) {
       // La fiche existe mais l'annonce n'est plus en ligne : on l'affiche

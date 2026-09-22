@@ -1,5 +1,13 @@
 # Cache local du scraper (régénérable, volumineux)
 data/.cache/
+# Les fiches de poste transmises par la DCIP ne sont PAS publiées : ce dépôt
+# est public, et ces documents portent des informations internes que
+# l'application n'affiche pas — cotation IFSE, astreintes, rattachement
+# hiérarchique, numéro de vacance — ainsi que le nom de l'agent qui les a
+# rédigées dans leurs propriétés. Seul le contenu extrait vers
+# data/postes-dcip.json est destiné à être vu.
+sources/fiches-dcip/
+
 # Secrets — ne JAMAIS versionner
 .env
 *.key
