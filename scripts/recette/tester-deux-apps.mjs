@@ -56,10 +56,10 @@ await p.screenshot({ path: 'app-postes-liste.png' });
 console.log('\n— Les compteurs portent sur les postes ouverts —');
 /* Combien de fiches SONT réellement ouvertes, d'après ce qu'affiche la liste :
    le compteur doit suivre cette valeur, jamais le nombre total de fiches.
-   Tout poste ouvert porte « Disponible », qu'il soit publié sur le site ou
-   ouvert en mobilité interne ; « Urgent » reste distingué. */
+   Tout poste ouvert porte « Disponible » — publié sur le site ou ouvert en
+   mobilité interne, échéance proche ou non. */
 const badges = await p.locator('.poste-row__tags').allInnerTexts();
-const ouverts = badges.filter((t) => /disponible|urgent/i.test(t)).length;
+const ouverts = badges.filter((t) => /disponible/i.test(t)).length;
 const sous = (await p.locator('.hero .sous').innerText()).replace(/\s+/g, ' ');
 ok(`l'accroche annonce ${ouverts} poste(s) ouvert(s)`,
    sous.startsWith(`${ouverts} poste`), sous);

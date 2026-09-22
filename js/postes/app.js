@@ -195,17 +195,16 @@ function ligne(p) {
   const s = p.statut || {};
   // Pas de badge tant que le statut n'est pas vérifié : un badge énigmatique
   // vaut moins que pas de badge, et la ligne de métadonnées le dit déjà.
-  /* Un seul mot pour tout poste ouvert : « Disponible ». Le visiteur cherche à
-     savoir s'il peut s'y intéresser, pas si l'annonce est publiée sur le site —
-     distinction interne qui ne lui apprenait rien. Seule l'urgence reste
-     distinguée : elle, elle change ce qu'il a à faire aujourd'hui. */
+  /* Un seul mot pour tout poste ouvert : « Disponible ». Le badge répond à une
+     seule question — puis-je m'y intéresser ? Le reste (annonce publiée ou
+     mobilité interne, échéance proche ou lointaine) se lit dans la ligne de
+     métadonnées juste au-dessus, qui dit « Plus que 3 jours » ou « Dernier jour
+     pour postuler » : l'urgence y est mieux placée, avec sa durée. */
   const etiquette = s.inconnu
     ? ''
     : (s.expiree
       ? `<span class="badge badge--neutre">${s.code === 'retiree' ? 'Pourvu' : 'Close'}</span>`
-      : (s.urgent
-        ? `<span class="badge badge--alerte">Urgent</span>`
-        : `<span class="badge badge--succes">Disponible</span>`));
+      : `<span class="badge badge--succes">Disponible</span>`);
   return `
     <div role="listitem">
       <a class="poste-row" href="#/poste/${p.id}">
