@@ -1,9 +1,144 @@
 {
- "generated_at": "2026-09-24T04:16:04Z",
+ "generated_at": "2026-09-25T04:16:22Z",
  "source": "https://www.departement06.fr/offres-demploi",
  "count": 60,
- "count_dcip": 7,
+ "count_dcip": 9,
  "offers": [
+  {
+   "id": "agent-forestier-des-parcs-naturels-departementaux-secteur-est-hf-21278",
+   "titre": "Agent forestier des Parcs naturels départementaux - secteur Est H/F (21278)",
+   "url": "https://www.departement06.fr/offres-demploi/agent-forestier-des-parcs-naturels-departementaux-secteur-est-hf-21278",
+   "domaine": "Environnement - Ecologie",
+   "categorie": "C",
+   "categories": [
+    "C"
+   ],
+   "filiere": "TECHNIQUE",
+   "filieres": [
+    "TECHNIQUE"
+   ],
+   "deadline": "2026-10-24",
+   "deadline_label": "24 octobre 2026",
+   "publie_le": "2026-09-24",
+   "resume": "Au sein de ce secteur, l'agent forestier assure l'entretien, la sécurité et l'aménagement des espaces naturels, en garantissant leur propreté, leur accessibilité et leur valorisation, tout en contribuant à la préservation de l'environnement, à l…",
+   "dcip": false,
+   "service": "",
+   "appariement": "",
+   "candidature_permanente": false
+  },
+  {
+   "id": "chef-cuisinier-hf-33698",
+   "titre": "Chef cuisinier H/F (33698)",
+   "url": "https://www.departement06.fr/offres-demploi/chef-cuisinier-hf-33698",
+   "domaine": "Communication - Evènementiel",
+   "categorie": "B",
+   "categories": [
+    "B"
+   ],
+   "filiere": "TECHNIQUE",
+   "filieres": [
+    "TECHNIQUE"
+   ],
+   "deadline": "2026-10-24",
+   "deadline_label": "24 octobre 2026",
+   "publie_le": "2026-09-24",
+   "resume": "Au sein du service protocole, le chef cuisinier assure une prestation de restauration de qualité, de la conception des menus à la réalisation des plats, dans le respect des normes d'hygiène et de sécurité alimentaire, tout en garantissant la gestion…",
+   "dcip": false,
+   "service": "",
+   "appariement": "",
+   "candidature_permanente": false
+  },
+  {
+   "id": "chef-de-projet-batiment-rehabilitation-agence-06-hf",
+   "titre": "Chef de projet bâtiment / réhabilitation Agence 06 H/F",
+   "url": "https://www.departement06.fr/offres-demploi/chef-de-projet-batiment-rehabilitation-agence-06-hf",
+   "domaine": "Développement",
+   "categorie": "A",
+   "categories": [
+    "A"
+   ],
+   "filiere": "TECHNIQUE",
+   "filieres": [
+    "TECHNIQUE"
+   ],
+   "deadline": "2026-10-30",
+   "deadline_label": "30 octobre 2026",
+   "publie_le": "2026-09-24",
+   "resume": "Le chef de projet bâtiment/ réhabilitation est une personne ressource qui assure le pilotage des projets communaux que l'Agence06 accompagne. Son objectif est de fournir aux collectivités l'appui en ingénierie et en expertise nécessaires pour…",
+   "dcip": true,
+   "service": "",
+   "appariement": "motif:bâtiment",
+   "candidature_permanente": false
+  },
+  {
+   "id": "responsable-ressources-humaines-agence-06-hf",
+   "titre": "Responsable Ressources Humaines Agence 06 H/F",
+   "url": "https://www.departement06.fr/offres-demploi/responsable-ressources-humaines-agence-06-hf",
+   "domaine": "Développement",
+   "categorie": "B",
+   "categories": [
+    "B",
+    "A"
+   ],
+   "filiere": "ADMINISTRATIVE",
+   "filieres": [
+    "ADMINISTRATIVE"
+   ],
+   "deadline": "2026-10-24",
+   "deadline_label": "24 octobre 2026",
+   "publie_le": "2026-09-24",
+   "resume": "Au sein de la Direction de l'Agence06, et en lien direct avec la Direction des Ressources humaines du Département des Alpes Maritimes, le/la Responsable Ressources Humaines (RH) est chargé de l'application de la politique et de la stratégie en…",
+   "dcip": false,
+   "service": "",
+   "appariement": "",
+   "candidature_permanente": false
+  },
+  {
+   "id": "charge-detudes-cvc-maintenance-hf",
+   "titre": "Chargé d'études CVC maintenance H/F",
+   "url": "https://www.departement06.fr/offres-demploi/charge-detudes-cvc-maintenance-hf",
+   "domaine": "Patrimoine bâti",
+   "categorie": "B",
+   "categories": [
+    "B",
+    "A"
+   ],
+   "filiere": "TECHNIQUE",
+   "filieres": [
+    "TECHNIQUE"
+   ],
+   "deadline": "2026-10-30",
+   "deadline_label": "30 octobre 2026",
+   "publie_le": "2026-09-24",
+   "resume": "Au sein du service énergie fluides, composé d'une équipe de 17 agents, le chargé d'études CVC gère les contrats de maintenance des équipements techniques de sa spécialité. Il pilote la mise en place de la GMAO pour le suivi de la maintenance des…",
+   "dcip": true,
+   "service": "Énergie et fluides",
+   "poste_dcip_id": "charge-detudes-cvc-maintenance-hf",
+   "appariement": "url",
+   "candidature_permanente": false
+  },
+  {
+   "id": "charge-de-projet-protocole-hf-33082",
+   "titre": "Chargé de projet protocole H/F (33082)",
+   "url": "https://www.departement06.fr/offres-demploi/charge-de-projet-protocole-hf-33082",
+   "domaine": "Communication - Evènementiel",
+   "categorie": "B",
+   "categories": [
+    "B"
+   ],
+   "filiere": "TECHNIQUE",
+   "filieres": [
+    "TECHNIQUE"
+   ],
+   "deadline": "2026-10-23",
+   "deadline_label": "23 octobre 2026",
+   "publie_le": "2026-09-24",
+   "resume": "Au sein du service du protocole, le chargé de projet propose et coordonne les actions de communication du Conseil départemental. Il a en charge l'organisation matérielle de l'ensemble des manifestations, des réceptions et des cérémonies organisées…",
+   "dcip": false,
+   "service": "",
+   "appariement": "",
+   "candidature_permanente": false
+  },
   {
    "id": "conseillers-autonomie-allo-mda-hf-34022",
    "titre": "Conseillers autonomie ALLO MDA H/F (34022)",
@@ -1208,139 +1343,6 @@
    "poste_dcip_id": "charge-detudes-et-de-projet-renovation-globale-hf-33931",
    "appariement": "url",
    "candidature_permanente": false
-  },
-  {
-   "id": "charge-de-mission-protection-de-lenfance-hf-33001",
-   "titre": "Chargé de mission protection de l'enfance H/F (33001)",
-   "url": "https://www.departement06.fr/offres-demploi/charge-de-mission-protection-de-lenfance-hf-33001",
-   "domaine": "Social",
-   "categorie": "A",
-   "categories": [
-    "A"
-   ],
-   "filiere": "ADMINISTRATIVE",
-   "filieres": [
-    "ADMINISTRATIVE"
-   ],
-   "deadline": "2026-09-30",
-   "deadline_label": "30 septembre 2026",
-   "publie_le": "2026-06-16",
-   "resume": "Au sein de la direction, le chargé de mission protection de l'enfance assure le pilotage opérationnel et stratégique de la direction en garantissant la coordination efficace entre les services, la fiabilité du suivi des dossiers, et la production d…",
-   "dcip": false,
-   "service": "",
-   "appariement": "",
-   "candidature_permanente": false
-  },
-  {
-   "id": "psychologue-centre-de-sante-puget-theniers-hf-33936",
-   "titre": "Psychologue Centre de santé Puget-Théniers H/F (33936)",
-   "url": "https://www.departement06.fr/offres-demploi/psychologue-centre-de-sante-puget-theniers-hf-33936",
-   "domaine": "Santé",
-   "categorie": "A",
-   "categories": [
-    "A"
-   ],
-   "filiere": "MEDICO-SOCIALE",
-   "filieres": [
-    "MEDICO-SOCIALE"
-   ],
-   "deadline": "2026-09-30",
-   "deadline_label": "30 septembre 2026",
-   "publie_le": "2026-06-08",
-   "resume": "Dans ce cadre, le psychologue participera à l'amélioration de la prise en charge des patients du territoire et sera à l'écoute de leurs aidants. Il apportera son expertise et son expérience en éducation thérapeutique à la prise en charge coordonnée…",
-   "dcip": false,
-   "service": "",
-   "appariement": "",
-   "candidature_permanente": false
-  },
-  {
-   "id": "referent-suivi-parcours-mna-hf-32215",
-   "titre": "Référent suivi parcours MNA H/F (32215)",
-   "url": "https://www.departement06.fr/offres-demploi/referent-suivi-parcours-mna-hf-32215",
-   "domaine": "Social",
-   "categorie": "B",
-   "categories": [
-    "B",
-    "A"
-   ],
-   "filiere": "ADMINISTRATIVE",
-   "filieres": [
-    "ADMINISTRATIVE"
-   ],
-   "deadline": "2026-09-30",
-   "deadline_label": "30 septembre 2026",
-   "publie_le": "2026-06-04",
-   "resume": "Au sein de la section Suivi des enfants confiés, le référent suivi parcours des MNA assure l'accompagnement et le suivi des enfants, adolescents et jeunes adultes confiés, en coordonnant les acteurs internes et externes, afin de répondre à leurs…",
-   "dcip": false,
-   "service": "",
-   "appariement": "",
-   "candidature_permanente": false
-  },
-  {
-   "id": "appreciateur-de-la-minorite-hf-32847",
-   "titre": "Appréciateur de la minorité H/F (32847)",
-   "url": "https://www.departement06.fr/offres-demploi/appreciateur-de-la-minorite-hf-32847",
-   "domaine": "Social",
-   "categorie": "A",
-   "categories": [
-    "A"
-   ],
-   "filiere": "ADMINISTRATIVE",
-   "filieres": [
-    "ADMINISTRATIVE"
-   ],
-   "deadline": "2026-09-30",
-   "deadline_label": "30 septembre 2026",
-   "publie_le": "2026-05-11",
-   "resume": "Au sein de la section Appréciations, mise à l'abri et évaluations, l'appréciateur de la minorité assure l'évaluation objective et rigoureuse de la minorité et de la vulnérabilité de personnes se déclarant mineures et isolées, en collaboration avec…",
-   "dcip": false,
-   "service": "",
-   "appariement": "",
-   "candidature_permanente": false
-  },
-  {
-   "id": "chef-du-service-parcours-et-pilotage-protection-de-lenfance-de-30238",
-   "titre": "Chef du service Parcours et pilotage protection de l'enfance DE (30238)",
-   "url": "https://www.departement06.fr/offres-demploi/chef-du-service-parcours-et-pilotage-protection-de-lenfance-de-30238",
-   "domaine": "Social",
-   "categorie": "A",
-   "categories": [
-    "A"
-   ],
-   "filiere": "ADMINISTRATIVE",
-   "filieres": [
-    "ADMINISTRATIVE"
-   ],
-   "deadline": "2026-09-30",
-   "deadline_label": "30 septembre 2026",
-   "publie_le": "2026-04-03",
-   "resume": "Sous la responsabilité de la directrice de l'enfance, le chef du service assure le pilotage du dispositif global de protection de l'enfance en lien étroit avec l'ensemble des services de sa direction, la direction des territoires et de l'action…",
-   "dcip": false,
-   "service": "",
-   "appariement": "",
-   "candidature_permanente": false
-  },
-  {
-   "id": "medecin-hf",
-   "titre": "Médecin (H/F)",
-   "url": "https://www.departement06.fr/offres-demploi/medecin-hf",
-   "domaine": "Santé",
-   "categorie": "A",
-   "categories": [
-    "A"
-   ],
-   "filiere": "MEDICO-SOCIALE",
-   "filieres": [
-    "MEDICO-SOCIALE"
-   ],
-   "deadline": "",
-   "deadline_label": "Candidature permanente",
-   "publie_le": "2026-04-01",
-   "resume": "En qualité de médecin, vous pouvez exercer vos missions dans différentes structures départementales en territoires ou en central (notamment au service départemental de protection maternelle et infantile, en centres de santé, en maison départementale…",
-   "dcip": false,
-   "service": "",
-   "appariement": "",
-   "candidature_permanente": true
   }
  ]
 }
