@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-09-25T04:16:22Z",
+ "generated_at": "2026-09-26T04:15:36Z",
  "source": "https://www.departement06.fr/offres-demploi",
  "count": 60,
  "count_dcip": 9,
@@ -986,28 +986,6 @@
    "candidature_permanente": false
   },
   {
-   "id": "charge-de-mission-aupres-du-directeur-general-des-services-hf-34041",
-   "titre": "Chargé de mission auprès du Directeur Général des Services H/F (34041)",
-   "url": "https://www.departement06.fr/offres-demploi/charge-de-mission-aupres-du-directeur-general-des-services-hf-34041",
-   "domaine": "Affaires générales",
-   "categorie": "A",
-   "categories": [
-    "A"
-   ],
-   "filiere": "ADMINISTRATIVE",
-   "filieres": [
-    "ADMINISTRATIVE"
-   ],
-   "deadline": "2026-09-25",
-   "deadline_label": "25 septembre 2026",
-   "publie_le": "2026-08-26",
-   "resume": "Au sein de la direction général des services, le chargé de mission appuie le DGS dans le pilotage, la coordination et le suivi des dossiers stratégiques, transversaux et prioritaires de la collectivité.Il contribue à préparer les éléments d…",
-   "dcip": false,
-   "service": "",
-   "appariement": "",
-   "candidature_permanente": false
-  },
-  {
    "id": "responsable-de-lunite-mediation-hf-30323",
    "titre": "Responsable de l'unité médiation H/F (30323)",
    "url": "https://www.departement06.fr/offres-demploi/responsable-de-lunite-mediation-hf-30323",
@@ -1342,6 +1320,28 @@
    "service": "Maintenance des collèges",
    "poste_dcip_id": "charge-detudes-et-de-projet-renovation-globale-hf-33931",
    "appariement": "url",
+   "candidature_permanente": false
+  },
+  {
+   "id": "charge-de-mission-protection-de-lenfance-hf-33001",
+   "titre": "Chargé de mission protection de l'enfance H/F (33001)",
+   "url": "https://www.departement06.fr/offres-demploi/charge-de-mission-protection-de-lenfance-hf-33001",
+   "domaine": "Social",
+   "categorie": "A",
+   "categories": [
+    "A"
+   ],
+   "filiere": "ADMINISTRATIVE",
+   "filieres": [
+    "ADMINISTRATIVE"
+   ],
+   "deadline": "2026-09-30",
+   "deadline_label": "30 septembre 2026",
+   "publie_le": "2026-06-16",
+   "resume": "Au sein de la direction, le chargé de mission protection de l'enfance assure le pilotage opérationnel et stratégique de la direction en garantissant la coordination efficace entre les services, la fiabilité du suivi des dossiers, et la production d…",
+   "dcip": false,
+   "service": "",
+   "appariement": "",
    "candidature_permanente": false
   }
  ]
