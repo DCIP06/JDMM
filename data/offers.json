@@ -1,9 +1,31 @@
 {
- "generated_at": "2026-09-29T04:17:03Z",
+ "generated_at": "2026-10-01T04:18:04Z",
  "source": "https://www.departement06.fr/offres-demploi",
- "count": 60,
- "count_dcip": 9,
+ "count": 36,
+ "count_dcip": 2,
  "offers": [
+  {
+   "id": "aide-magasinier-hf-30378",
+   "titre": "Aide-magasinier H/F (30378)",
+   "url": "https://www.departement06.fr/offres-demploi/aide-magasinier-hf-30378",
+   "domaine": "Logistique",
+   "categorie": "C",
+   "categories": [
+    "C"
+   ],
+   "filiere": "TECHNIQUE",
+   "filieres": [
+    "TECHNIQUE"
+   ],
+   "deadline": "2026-10-14",
+   "deadline_label": "14 octobre 2026",
+   "publie_le": "2026-09-30",
+   "resume": "Au sein du service parc automobile, chargé du pilotage et de l'entretien du parc de véhicule légers de la collectivité, l'aide magasinier assiste et remplace le cas échéant le magasinier en cas d'absence afin d'assurer la continuité du…",
+   "dcip": false,
+   "service": "",
+   "appariement": "",
+   "candidature_permanente": false
+  },
   {
    "id": "responsable-de-la-micro-folie-hf-34035",
    "titre": "Responsable de la Micro-Folie H/F (34035)",
@@ -186,28 +208,6 @@
    "candidature_permanente": false
   },
   {
-   "id": "infirmier-mobile-dispositif-de-prevention-de-lexploitation-sexuelle-des-mineurs-du",
-   "titre": "INFIRMIER MOBILE DISPOSITIF DE PREVENTION DE L'EXPLOITATION SEXUELLE DES MINEURS DU CARREFOUR SANTE JEUNE",
-   "url": "https://www.departement06.fr/offres-demploi/infirmier-mobile-dispositif-de-prevention-de-lexploitation-sexuelle-des-mineurs-du",
-   "domaine": "Social",
-   "categorie": "A",
-   "categories": [
-    "A"
-   ],
-   "filiere": "MEDICO-SOCIALE",
-   "filieres": [
-    "MEDICO-SOCIALE"
-   ],
-   "deadline": "2026-09-30",
-   "deadline_label": "30 septembre 2026",
-   "publie_le": "2026-09-18",
-   "resume": "L'infirmier mobile dispositif de prévention de l'exploitation sexuelle des mineurs au Carrefour Santé Jeunes en SDPMI participe à la mise en oeuvre de la politique du Conseil Départemental des Alpes-Maritimes en assurant sur son territoire d…",
-   "dcip": false,
-   "service": "",
-   "appariement": "",
-   "candidature_permanente": false
-  },
-  {
    "id": "charge-de-projets-cinematographiques-et-audiovisuels-hf-xx",
    "titre": "Chargé de projets cinématographiques et audiovisuels H/F (xx)",
    "url": "https://www.departement06.fr/offres-demploi/charge-de-projets-cinematographiques-et-audiovisuels-hf-xx",
@@ -225,28 +225,6 @@
    "deadline_label": "4 octobre 2026",
    "publie_le": "2026-09-16",
    "resume": "Sous l'autorité du Directeur de la Culture et de la responsable de la section cinéma, vous participerez à la conception, à la coordination et à la mise en œuvre des actions, événements et projets portés par la Direction. Vous assurerez leur suivi…",
-   "dcip": false,
-   "service": "",
-   "appariement": "",
-   "candidature_permanente": false
-  },
-  {
-   "id": "agent-polyvalent-dentretien-la-creche-en-renfort-hf",
-   "titre": "Agent polyvalent d'entretien à la crèche en RENFORT H/F",
-   "url": "https://www.departement06.fr/offres-demploi/agent-polyvalent-dentretien-la-creche-en-renfort-hf",
-   "domaine": "Entretien",
-   "categorie": "C",
-   "categories": [
-    "C"
-   ],
-   "filiere": "TECHNIQUE",
-   "filieres": [
-    "TECHNIQUE"
-   ],
-   "deadline": "2026-09-30",
-   "deadline_label": "30 septembre 2026",
-   "publie_le": "2026-09-16",
-   "resume": "L'agent polyvalent d'entretien assure la propreté, l'hygiène et le bon fonctionnement des locaux et des équipements, tout en contribuant au confort et au bien-être des enfants.",
    "dcip": false,
    "service": "",
    "appariement": "",
@@ -342,94 +320,6 @@
    "candidature_permanente": false
   },
   {
-   "id": "cesf-volant-dt2-hf-20760",
-   "titre": "CESF Volant DT2 H/F (20760)",
-   "url": "https://www.departement06.fr/offres-demploi/cesf-volant-dt2-hf-20760",
-   "domaine": "Social",
-   "categorie": "A",
-   "categories": [
-    "A"
-   ],
-   "filiere": "MEDICO-SOCIALE",
-   "filieres": [
-    "MEDICO-SOCIALE"
-   ],
-   "deadline": "2026-09-30",
-   "deadline_label": "30 septembre 2026",
-   "publie_le": "2026-09-07",
-   "resume": "Au sein de la MSD, le Conseiller en économie sociale et familiale accompagne les ménages en difficulté afin de prévenir le surendettement et favoriser leur maintien ou accès au logement, en développant leurs compétences en gestion budgétaire et en…",
-   "dcip": false,
-   "service": "",
-   "appariement": "",
-   "candidature_permanente": false
-  },
-  {
-   "id": "educateur-specialise-msd-les-paillons-dt4-hf-20499",
-   "titre": "Educateur spécialisé MSD Les Paillons DT4 H/F (20499)",
-   "url": "https://www.departement06.fr/offres-demploi/educateur-specialise-msd-les-paillons-dt4-hf-20499",
-   "domaine": "Social",
-   "categorie": "A",
-   "categories": [
-    "A"
-   ],
-   "filiere": "MEDICO-SOCIALE",
-   "filieres": [
-    "MEDICO-SOCIALE"
-   ],
-   "deadline": "2026-09-30",
-   "deadline_label": "30 septembre 2026",
-   "publie_le": "2026-09-07",
-   "resume": "Au sein de la Maison des Solidarités Départementale des Paillons, l'assistant social, rattaché à l'équipe pluridisciplinaire, aide à résoudre des problèmes divers d'ordre social, administratif, socio-économique posés par différents publics en…",
-   "dcip": false,
-   "service": "",
-   "appariement": "",
-   "candidature_permanente": false
-  },
-  {
-   "id": "infirmier-pmi-nice-lyautey-dt4-hf-31252",
-   "titre": "Infirmier PMI Nice Lyautey DT4 H/F (31252)",
-   "url": "https://www.departement06.fr/offres-demploi/infirmier-pmi-nice-lyautey-dt4-hf-31252",
-   "domaine": "Social",
-   "categorie": "A",
-   "categories": [
-    "A"
-   ],
-   "filiere": "MEDICO-SOCIALE",
-   "filieres": [
-    "MEDICO-SOCIALE"
-   ],
-   "deadline": "2026-09-30",
-   "deadline_label": "30 septembre 2026",
-   "publie_le": "2026-09-07",
-   "resume": "L'infirmier à la Protection Maternelle et Infantile de Nice Lyautey, contribue à la prévention et à la promotion de la santé des enfants, des familles et de la population, en assurant un suivi médical, éducatif et organisationnel dans le cadre des…",
-   "dcip": false,
-   "service": "",
-   "appariement": "",
-   "candidature_permanente": false
-  },
-  {
-   "id": "puericultrice-pmi-les-paillons-dt4-hf-21016",
-   "titre": "Puéricultrice PMI Les Paillons DT4 H/F (21016)",
-   "url": "https://www.departement06.fr/offres-demploi/puericultrice-pmi-les-paillons-dt4-hf-21016",
-   "domaine": "Social",
-   "categorie": "A",
-   "categories": [
-    "A"
-   ],
-   "filiere": "MEDICO-SOCIALE",
-   "filieres": [
-    "MEDICO-SOCIALE"
-   ],
-   "deadline": "2026-09-30",
-   "deadline_label": "30 septembre 2026",
-   "publie_le": "2026-09-07",
-   "resume": "Au sein de la Protection Maternelle et Infantile des Paillons, la puéricultrice assure la protection, la santé et le développement harmonieux des jeunes enfants, tout en accompagnant et soutenant les parents dans leurs responsabilités éducatives",
-   "dcip": false,
-   "service": "",
-   "appariement": "",
-   "candidature_permanente": false
-  },
-  {
    "id": "agent-de-bibliotheque-collection-adultes-valberg-hf-33090",
    "titre": "Agent de bibliothèque-collection adultes à Valberg H/F (33090)",
    "url": "https://www.departement06.fr/offres-demploi/agent-de-bibliotheque-collection-adultes-valberg-hf-33090",
@@ -449,29 +339,6 @@
    "dcip": false,
    "service": "",
    "appariement": "",
-   "candidature_permanente": false
-  },
-  {
-   "id": "charge-doperations-de-batiment-tce-dcip-32747",
-   "titre": "Chargé d'opérations de bâtiment TCE DCIP (32747)",
-   "url": "https://www.departement06.fr/offres-demploi/charge-doperations-de-batiment-tce-dcip-32747",
-   "domaine": "Patrimoine bâti",
-   "categorie": "B",
-   "categories": [
-    "B"
-   ],
-   "filiere": "TECHNIQUE",
-   "filieres": [
-    "TECHNIQUE"
-   ],
-   "deadline": "2026-09-30",
-   "deadline_label": "30 septembre 2026",
-   "publie_le": "2026-09-04",
-   "resume": "Au sein d'une équipe composée de 17 agents, le chargé d'opérations, sous l'autorité du chef de service, participe à la conception du programme de travaux et fait réaliser par des entreprises les opérations de rénovation, d'aménagements et d…",
-   "dcip": true,
-   "service": "Maintenance des bâtiments",
-   "poste_dcip_id": "charge-doperations-de-batiment-tce-dcip-32747",
-   "appariement": "url",
    "candidature_permanente": false
   },
   {
@@ -519,51 +386,6 @@
    "candidature_permanente": false
   },
   {
-   "id": "educateur-specialise-msd-les-vallees-dt3-hf-20234",
-   "titre": "Educateur spécialisé MSD Les Vallées DT3 H/F (20234)",
-   "url": "https://www.departement06.fr/offres-demploi/educateur-specialise-msd-les-vallees-dt3-hf-20234",
-   "domaine": "Social",
-   "categorie": "A",
-   "categories": [
-    "A"
-   ],
-   "filiere": "MEDICO-SOCIALE",
-   "filieres": [
-    "MEDICO-SOCIALE"
-   ],
-   "deadline": "2026-09-30",
-   "deadline_label": "30 septembre 2026",
-   "publie_le": "2026-09-04",
-   "resume": "Au sein de la Maison des Solidarités Départementale Les Vallées, l'éducateur spécialisé a un rôle à part entière auprès des familles et des jeunes en difficulté. Il apporte un soutien éducatif aux mineurs, aux jeunes majeurs et à leur famille dans…",
-   "dcip": false,
-   "service": "",
-   "appariement": "",
-   "candidature_permanente": false
-  },
-  {
-   "id": "adjoint-antenne-departementale-de-recueil-devaluation-et-de-traitement-des",
-   "titre": "Adjoint Antenne départementale de recueil, d'évaluation et de traitement des informations préoccupantes H/F (33440)",
-   "url": "https://www.departement06.fr/offres-demploi/adjoint-antenne-departementale-de-recueil-devaluation-et-de-traitement-des",
-   "domaine": "Social",
-   "categorie": "A",
-   "categories": [
-    "A"
-   ],
-   "filiere": "MEDICO-SOCIALE",
-   "filieres": [
-    "MEDICO-SOCIALE",
-    "ADMINISTRATIVE"
-   ],
-   "deadline": "2026-09-30",
-   "deadline_label": "30 septembre 2026",
-   "publie_le": "2026-09-04",
-   "resume": "Au sein d'une équipe de 13 agents, l'adjoint assure la coordination opérationnelle de l'activité de l'ADRET, garantit la qualité du suivi des situations, le respect des délais et des procédures, sécurise le dispositif et les professionnels. Son…",
-   "dcip": false,
-   "service": "",
-   "appariement": "",
-   "candidature_permanente": false
-  },
-  {
    "id": "chef-dequipe-mecanique-poids-lourds-30626",
    "titre": "Chef d'équipe mécanique poids lourds (30626)",
    "url": "https://www.departement06.fr/offres-demploi/chef-dequipe-mecanique-poids-lourds-30626",
@@ -603,50 +425,6 @@
    "deadline_label": "4 octobre 2026",
    "publie_le": "2026-09-04",
    "resume": "Au sein du service des Maisons du Département, le conseiller numérique sensibilise le public aux enjeux du numérique et de l'intelligence artificielle, et favorise des usages responsables, citoyens et critiques (lutte contre les fausses informations…",
-   "dcip": false,
-   "service": "",
-   "appariement": "",
-   "candidature_permanente": false
-  },
-  {
-   "id": "infirmier-dispositif-de-prevention-et-dexploitation-sexuelle-au-carrefour-sante",
-   "titre": "Infirmier Dispositif de Prévention et d'Exploitation Sexuelle au Carrefour Santé Jeunes SDPMI H/F (33359)",
-   "url": "https://www.departement06.fr/offres-demploi/infirmier-dispositif-de-prevention-et-dexploitation-sexuelle-au-carrefour-sante",
-   "domaine": "Social",
-   "categorie": "A",
-   "categories": [
-    "A"
-   ],
-   "filiere": "MEDICO-SOCIALE",
-   "filieres": [
-    "MEDICO-SOCIALE"
-   ],
-   "deadline": "2026-09-30",
-   "deadline_label": "30 septembre 2026",
-   "publie_le": "2026-09-04",
-   "resume": "L'infirmier au sein du Dispositif de Prévention et d'Exploitation Sexuelle au Carrefour Santé Jeunes en SDPMI contribue à la prévention et à la promotion de la santé la santé auprès de divers publics selon les orientations définies au sein de la…",
-   "dcip": false,
-   "service": "",
-   "appariement": "",
-   "candidature_permanente": false
-  },
-  {
-   "id": "psychologue-placement-familialadoption-renfort-de-hf",
-   "titre": "Psychologue placement familial/adoption Renfort /DE (H/F)",
-   "url": "https://www.departement06.fr/offres-demploi/psychologue-placement-familialadoption-renfort-de-hf",
-   "domaine": "Social",
-   "categorie": "A",
-   "categories": [
-    "A"
-   ],
-   "filiere": "MEDICO-SOCIALE",
-   "filieres": [
-    "MEDICO-SOCIALE"
-   ],
-   "deadline": "2026-09-30",
-   "deadline_label": "30 septembre 2026",
-   "publie_le": "2026-09-04",
-   "resume": "Au sein du service placement familial et adoption, le psychologue participe à la mise en œuvre de la politique du Département en faveur de la famille et de l'enfance, conçoit un travail clinique auprès des enfants et des adultes, met en œuvre les…",
    "dcip": false,
    "service": "",
    "appariement": "",
@@ -810,96 +588,6 @@
    "candidature_permanente": false
   },
   {
-   "id": "responsable-fonctionnel-du-systeme-dinformation-financier-hf-34000",
-   "titre": "Responsable fonctionnel du système d'information financier H/F (34000)",
-   "url": "https://www.departement06.fr/offres-demploi/responsable-fonctionnel-du-systeme-dinformation-financier-hf-34000",
-   "domaine": "Finances et contrôle de gestion",
-   "categorie": "A",
-   "categories": [
-    "A"
-   ],
-   "filiere": "ADMINISTRATIVE",
-   "filieres": [
-    "ADMINISTRATIVE",
-    "TECHNIQUE"
-   ],
-   "deadline": "2026-09-30",
-   "deadline_label": "30 septembre 2026",
-   "publie_le": "2026-08-31",
-   "resume": "Le responsable fonctionnel du système d'information financier garantit le bon fonctionnement, l'optimisation et l'appropriation du système d'information financier par l'ensemble des utilisateurs, en assurant son paramétrage, son évolution, sa…",
-   "dcip": false,
-   "service": "",
-   "appariement": "",
-   "candidature_permanente": false
-  },
-  {
-   "id": "controleur-de-gestion-du-suivi-des-esms-de-la-protection-de-lenfance-hf-33173",
-   "titre": "Contrôleur de gestion du suivi des ESMS de la protection de l'enfance H/F (33173)",
-   "url": "https://www.departement06.fr/offres-demploi/controleur-de-gestion-du-suivi-des-esms-de-la-protection-de-lenfance-hf-33173",
-   "domaine": "Finances et contrôle de gestion",
-   "categorie": "A",
-   "categories": [
-    "A"
-   ],
-   "filiere": "ADMINISTRATIVE",
-   "filieres": [
-    "ADMINISTRATIVE"
-   ],
-   "deadline": "2026-09-30",
-   "deadline_label": "30 septembre 2026",
-   "publie_le": "2026-08-29",
-   "resume": "Au sein de la section gestion administrative et financière des établissements et services, le contrôleur de gestion du suivi des ESMS de la protection de l'enfance, contribue à la structuration, à la fiabilisation et à l'optimisation du pilotage…",
-   "dcip": false,
-   "service": "",
-   "appariement": "",
-   "candidature_permanente": false
-  },
-  {
-   "id": "ingenieur-charge-detudes-courants-forts-et-faibles-dcip-hf-30269",
-   "titre": "Ingénieur chargé d'études courants forts et faibles DCIP H/F (30269)",
-   "url": "https://www.departement06.fr/offres-demploi/ingenieur-charge-detudes-courants-forts-et-faibles-dcip-hf-30269",
-   "domaine": "Patrimoine bâti",
-   "categorie": "A",
-   "categories": [
-    "A"
-   ],
-   "filiere": "TECHNIQUE",
-   "filieres": [
-    "TECHNIQUE"
-   ],
-   "deadline": "2026-09-30",
-   "deadline_label": "30 septembre 2026",
-   "publie_le": "2026-08-29",
-   "resume": "Au sein du service énergie et fluides, l'ingénieur chargé d'études conçoit, fait réaliser, en régie directe ou par des entreprises, des travaux de création de locaux, de restructuration ou rénovation concernant le patrimoine bâti. Il gère les…",
-   "dcip": true,
-   "service": "Énergie et fluides",
-   "poste_dcip_id": "ingenieur-charge-detudes-courants-forts-et-faibles-dcip-hf-30269",
-   "appariement": "url",
-   "candidature_permanente": false
-  },
-  {
-   "id": "responsable-de-lunite-mediation-hf-30323",
-   "titre": "Responsable de l'unité médiation H/F (30323)",
-   "url": "https://www.departement06.fr/offres-demploi/responsable-de-lunite-mediation-hf-30323",
-   "domaine": "Culture et patrimoine",
-   "categorie": "B",
-   "categories": [
-    "B"
-   ],
-   "filiere": "CULTURELLE",
-   "filieres": [
-    "CULTURELLE"
-   ],
-   "deadline": "2026-09-30",
-   "deadline_label": "30 septembre 2026",
-   "publie_le": "2026-08-19",
-   "resume": "Sous la direction du chef de service, le/la responsable de l'unité de médiation culturelle assure la conception, le développement et la mise en œuvre d'une politique de médiation culturelle innovante et adaptée à tous les publics, afin de valoriser…",
-   "dcip": false,
-   "service": "",
-   "appariement": "",
-   "candidature_permanente": false
-  },
-  {
    "id": "juriste-hf-22525",
    "titre": "Juriste H/F (22525)",
    "url": "https://www.departement06.fr/offres-demploi/juriste-hf-22525",
@@ -912,414 +600,10 @@
    "filieres": [
     "ADMINISTRATIVE"
    ],
-   "deadline": "2026-09-30",
-   "deadline_label": "30 septembre 2026",
+   "deadline": "2026-10-16",
+   "deadline_label": "16 octobre 2026",
    "publie_le": "2026-08-14",
    "resume": "Le juriste défend les droits et intérêts du département auprès des juridictions, conseille les services dans toutes les implications de fait ou de droit relatives aux procédures judiciaires et assiste les services au plan juridique dans la conduite…",
-   "dcip": false,
-   "service": "",
-   "appariement": "",
-   "candidature_permanente": false
-  },
-  {
-   "id": "directeur-de-la-maison-departementale-de-lautonomie-hf-30276",
-   "titre": "Directeur de la Maison Départementale de l'Autonomie H/F (30276)",
-   "url": "https://www.departement06.fr/offres-demploi/directeur-de-la-maison-departementale-de-lautonomie-hf-30276",
-   "domaine": "Social",
-   "categorie": "A",
-   "categories": [
-    "A"
-   ],
-   "filiere": "ADMINISTRATIVE",
-   "filieres": [
-    "ADMINISTRATIVE"
-   ],
-   "deadline": "2026-09-30",
-   "deadline_label": "30 septembre 2026",
-   "publie_le": "2026-08-11",
-   "resume": "Le directeur, épaulé de deux adjointes, est également directeur du GIP MDPH, il définit les orientations stratégiques dans le champ de l'autonomie et du handicap et veille à l'égalité de traitement sur le territoire. Il pilote et valorise la mise en…",
-   "dcip": false,
-   "service": "",
-   "appariement": "",
-   "candidature_permanente": false
-  },
-  {
-   "id": "assistant-de-gestion-service-maintenance-des-colleges-dcip-31438",
-   "titre": "Assistant de gestion service maintenance des collèges DCIP (31438)",
-   "url": "https://www.departement06.fr/offres-demploi/assistant-de-gestion-service-maintenance-des-colleges-dcip-31438",
-   "domaine": "Affaires générales",
-   "categorie": "C",
-   "categories": [
-    "C"
-   ],
-   "filiere": "ADMINISTRATIVE",
-   "filieres": [
-    "ADMINISTRATIVE"
-   ],
-   "deadline": "2026-09-30",
-   "deadline_label": "30 septembre 2026",
-   "publie_le": "2026-07-30",
-   "resume": "Au sein du service maintenance des collèges, l'assistant(e) de gestion a en charge le secrétariat du service sous l'autorité du chef de service. Il/Elle assiste le chef, son adjoint et les chargés d'opérations en matière de gestion administrative…",
-   "dcip": true,
-   "service": "Maintenance des collèges",
-   "poste_dcip_id": "assistant-de-gestion-service-maintenance-des-colleges-dcip-31438",
-   "appariement": "url",
-   "candidature_permanente": false
-  },
-  {
-   "id": "ingenieur-conduite-doperations-de-batiments-opc-suivi-de-chantier-hf-30249",
-   "titre": "Ingénieur conduite d'opérations de bâtiments OPC - Suivi de chantier H/F (30249)",
-   "url": "https://www.departement06.fr/offres-demploi/ingenieur-conduite-doperations-de-batiments-opc-suivi-de-chantier-hf-30249",
-   "domaine": "Patrimoine bâti",
-   "categorie": "A",
-   "categories": [
-    "A"
-   ],
-   "filiere": "TECHNIQUE",
-   "filieres": [
-    "TECHNIQUE"
-   ],
-   "deadline": "2026-09-30",
-   "deadline_label": "30 septembre 2026",
-   "publie_le": "2026-07-23",
-   "resume": "Au sein du service études et travaux, l'ingénieur conduite d'opérations de bâtiments assure la conduite d'opérations de construction, de rénovation et de restructuration de locaux ou bâtiments.",
-   "dcip": true,
-   "service": "Études et travaux",
-   "poste_dcip_id": "ingenieur-conduite-doperations-de-batiments-opc-suivi-de-chantier-hf-30249",
-   "appariement": "url",
-   "candidature_permanente": false
-  },
-  {
-   "id": "controleur-responsable-dun-centre-dexploitation-sur-greolieres-hf-31344",
-   "titre": "Contrôleur responsable d'un centre d'exploitation sur Gréolières H/F (31344)",
-   "url": "https://www.departement06.fr/offres-demploi/controleur-responsable-dun-centre-dexploitation-sur-greolieres-hf-31344",
-   "domaine": "Infrastructures et réseaux",
-   "categorie": "B",
-   "categories": [
-    "B"
-   ],
-   "filiere": "TECHNIQUE",
-   "filieres": [
-    "TECHNIQUE"
-   ],
-   "deadline": "2026-09-30",
-   "deadline_label": "30 septembre 2026",
-   "publie_le": "2026-07-23",
-   "resume": "Au sein de l'ARD, le contrôleur responsable de centres d'exploitation a pour mission d'encadrer, piloter et suivre l'activité générale du centre d'exploitation de Gréolières et d'assurer la mise en œuvre des travaux neufs.",
-   "dcip": false,
-   "service": "",
-   "appariement": "",
-   "candidature_permanente": false
-  },
-  {
-   "id": "responsable-de-section-gestion-adm-et-financiere-des-ets-et-services-hf-30744",
-   "titre": "Responsable de section gestion adm et financière des ets et services H/F (30744)",
-   "url": "https://www.departement06.fr/offres-demploi/responsable-de-section-gestion-adm-et-financiere-des-ets-et-services-hf-30744",
-   "domaine": "Social",
-   "categorie": "A",
-   "categories": [
-    "A"
-   ],
-   "filiere": "ADMINISTRATIVE",
-   "filieres": [
-    "ADMINISTRATIVE"
-   ],
-   "deadline": "2026-09-30",
-   "deadline_label": "30 septembre 2026",
-   "publie_le": "2026-07-23",
-   "resume": "Au sein de la Section gestion administrative et financière des établissements et services, le responsable assure une gestion stratégique, réglementaire et financière optimale des établissements et services sociaux et médico-sociaux (ESSMS) relevant…",
-   "dcip": false,
-   "service": "",
-   "appariement": "",
-   "candidature_permanente": false
-  },
-  {
-   "id": "charge-de-mission-energies-thermiques-renouvelables-hf-33329",
-   "titre": "Chargé de mission énergies thermiques renouvelables H/F (33329)",
-   "url": "https://www.departement06.fr/offres-demploi/charge-de-mission-energies-thermiques-renouvelables-hf-33329",
-   "domaine": "Patrimoine bâti",
-   "categorie": "A",
-   "categories": [
-    "A"
-   ],
-   "filiere": "TECHNIQUE",
-   "filieres": [
-    "TECHNIQUE"
-   ],
-   "deadline": "2026-09-30",
-   "deadline_label": "30 septembre 2026",
-   "publie_le": "2026-07-22",
-   "resume": "Au sein du service Mission énergies renouvelable, le chargé de mission assure l'animation, la promotion et le suivi technique du Contrat Chaleur Renouvelable territorial (CCRt) afin de favoriser le développement de projets de chaleur renouvelable…",
-   "dcip": true,
-   "service": "Mission énergies renouvelables",
-   "poste_dcip_id": "charge-de-mission-energies-thermiques-renouvelables-hf-33329",
-   "appariement": "url",
-   "candidature_permanente": false
-  },
-  {
-   "id": "adjoint-au-chef-du-service-des-initiatives-jeunesse-et-sport-et-epn-et-responsable",
-   "titre": "Adjoint au chef du service des initiatives , jeunesse et sport et EPN et responsable de la section des EPN H/F (33292)",
-   "url": "https://www.departement06.fr/offres-demploi/adjoint-au-chef-du-service-des-initiatives-jeunesse-et-sport-et-epn-et-responsable",
-   "domaine": "Education - Animation - Jeunesse",
-   "categorie": "A",
-   "categories": [
-    "A"
-   ],
-   "filiere": "ADMINISTRATIVE",
-   "filieres": [
-    "ADMINISTRATIVE"
-   ],
-   "deadline": "2026-09-30",
-   "deadline_label": "30 septembre 2026",
-   "publie_le": "2026-07-16",
-   "resume": "Au sein du service des initiatives jeunesse et sport et des écoles de pleine nature (EPN), l'adjoint à la cheffe de service définit les règles de gestion et de fonctionnement des 4 écoles départementales pour l'accueil des enfants des écoles…",
-   "dcip": false,
-   "service": "",
-   "appariement": "",
-   "candidature_permanente": false
-  },
-  {
-   "id": "charge-de-coordination-fonctionnelle-hf",
-   "titre": "Chargé de coordination fonctionnelle H/F",
-   "url": "https://www.departement06.fr/offres-demploi/charge-de-coordination-fonctionnelle-hf",
-   "domaine": "Finances et contrôle de gestion",
-   "categorie": "B",
-   "categories": [
-    "B"
-   ],
-   "filiere": "ADMINISTRATIVE",
-   "filieres": [
-    "ADMINISTRATIVE",
-    "TECHNIQUE"
-   ],
-   "deadline": "2026-09-30",
-   "deadline_label": "30 septembre 2026",
-   "publie_le": "2026-07-03",
-   "resume": "Au sein du service de la maintenance des collèges, le chargé de coordination fonctionnelle, assure, sous l'autorité du chef de service, le suivi et le contrôle des marchés à bons de commande de travaux et de de fournitures. Ces marchés couvrent l…",
-   "dcip": false,
-   "service": "",
-   "appariement": "",
-   "candidature_permanente": false
-  },
-  {
-   "id": "ingenieur-charge-detudes-batimentaires-hf-34007",
-   "titre": "Ingénieur chargé d'études bâtimentaires H/F (34007)",
-   "url": "https://www.departement06.fr/offres-demploi/ingenieur-charge-detudes-batimentaires-hf-34007",
-   "domaine": "Patrimoine bâti",
-   "categorie": "A",
-   "categories": [
-    "A"
-   ],
-   "filiere": "TECHNIQUE",
-   "filieres": [
-    "TECHNIQUE"
-   ],
-   "deadline": "2026-09-30",
-   "deadline_label": "30 septembre 2026",
-   "publie_le": "2026-06-29",
-   "resume": "Au sein du service maintenance des bâtiments, l'ingénieur chargé d'études bâtimentaires assure les études et la rédaction des marchés de travaux et des accords cadre pour les opérations de maintenance, de réhabilitation, de rénovation et d'extension…",
-   "dcip": true,
-   "service": "Maintenance des bâtiments",
-   "poste_dcip_id": "ingenieur-charge-detudes-batimentaires-hf-34007",
-   "appariement": "url",
-   "candidature_permanente": false
-  },
-  {
-   "id": "referent-budgetaire-financier-et-administratif-hf-30409",
-   "titre": "Référent budgétaire, financier et administratif H/F (30409)",
-   "url": "https://www.departement06.fr/offres-demploi/referent-budgetaire-financier-et-administratif-hf-30409",
-   "domaine": "Social",
-   "categorie": "A",
-   "categories": [
-    "A"
-   ],
-   "filiere": "ADMINISTRATIVE",
-   "filieres": [
-    "ADMINISTRATIVE"
-   ],
-   "deadline": "2026-09-30",
-   "deadline_label": "30 septembre 2026",
-   "publie_le": "2026-06-23",
-   "resume": "Le chargé budgétaire et administratif assure la maîtrise et le pilotage du budget ainsi que le suivi administratif et financier des conventions, en soutien à la prise de décision des instances départementales.",
-   "dcip": false,
-   "service": "",
-   "appariement": "",
-   "candidature_permanente": false
-  },
-  {
-   "id": "psychologue-placement-familialadoption-de-21034-hf",
-   "titre": "Psychologue placement familial/adoption DE (21034) (H/F)",
-   "url": "https://www.departement06.fr/offres-demploi/psychologue-placement-familialadoption-de-21034-hf",
-   "domaine": "Social",
-   "categorie": "A",
-   "categories": [
-    "A"
-   ],
-   "filiere": "MEDICO-SOCIALE",
-   "filieres": [
-    "MEDICO-SOCIALE"
-   ],
-   "deadline": "2026-09-30",
-   "deadline_label": "30 septembre 2026",
-   "publie_le": "2026-06-22",
-   "resume": "Au sein du service placement familial et adoption, le psychologue participe à la mise en œuvre de la politique du Département en faveur de la famille et de l'enfance, conçoit un travail clinique auprès des enfants et des adultes, met en œuvre les…",
-   "dcip": false,
-   "service": "",
-   "appariement": "",
-   "candidature_permanente": false
-  },
-  {
-   "id": "assistant-la-coordinatrice-mise-labri-hf-33358",
-   "titre": "Assistant à la coordinatrice mise à l'abri H/F (33358)",
-   "url": "https://www.departement06.fr/offres-demploi/assistant-la-coordinatrice-mise-labri-hf-33358",
-   "domaine": "Social",
-   "categorie": "C",
-   "categories": [
-    "C"
-   ],
-   "filiere": "ADMINISTRATIVE",
-   "filieres": [
-    "ADMINISTRATIVE"
-   ],
-   "deadline": "2026-09-30",
-   "deadline_label": "30 septembre 2026",
-   "publie_le": "2026-06-19",
-   "resume": "Au sein de la section, l'assistant à la coordinatrice mise à l'abri, assure le soutien administratif et la coordination des activités du service afin de garantir un suivi efficace des situations et une prise en charge adaptée des enfants,…",
-   "dcip": false,
-   "service": "",
-   "appariement": "",
-   "candidature_permanente": false
-  },
-  {
-   "id": "charge-detudes-et-de-projet-renovation-globale-hf-33931",
-   "titre": "Chargé d'études et de projet rénovation globale H/F (33931)",
-   "url": "https://www.departement06.fr/offres-demploi/charge-detudes-et-de-projet-renovation-globale-hf-33931",
-   "domaine": "Patrimoine bâti",
-   "categorie": "B",
-   "categories": [
-    "B",
-    "A"
-   ],
-   "filiere": "TECHNIQUE",
-   "filieres": [
-    "TECHNIQUE"
-   ],
-   "deadline": "2026-09-30",
-   "deadline_label": "30 septembre 2026",
-   "publie_le": "2026-06-17",
-   "resume": "Au sein du service de la maintenance des collèges, le chargé d'études et de projet rénovation globale aura pour mission la mise en œuvre et le suivi d'un plan pluriannuel de rénovation et de réhabilitation des collèges. Il définira un programme d…",
-   "dcip": true,
-   "service": "Maintenance des collèges",
-   "poste_dcip_id": "charge-detudes-et-de-projet-renovation-globale-hf-33931",
-   "appariement": "url",
-   "candidature_permanente": false
-  },
-  {
-   "id": "charge-de-mission-protection-de-lenfance-hf-33001",
-   "titre": "Chargé de mission protection de l'enfance H/F (33001)",
-   "url": "https://www.departement06.fr/offres-demploi/charge-de-mission-protection-de-lenfance-hf-33001",
-   "domaine": "Social",
-   "categorie": "A",
-   "categories": [
-    "A"
-   ],
-   "filiere": "ADMINISTRATIVE",
-   "filieres": [
-    "ADMINISTRATIVE"
-   ],
-   "deadline": "2026-09-30",
-   "deadline_label": "30 septembre 2026",
-   "publie_le": "2026-06-16",
-   "resume": "Au sein de la direction, le chargé de mission protection de l'enfance assure le pilotage opérationnel et stratégique de la direction en garantissant la coordination efficace entre les services, la fiabilité du suivi des dossiers, et la production d…",
-   "dcip": false,
-   "service": "",
-   "appariement": "",
-   "candidature_permanente": false
-  },
-  {
-   "id": "psychologue-centre-de-sante-puget-theniers-hf-33936",
-   "titre": "Psychologue Centre de santé Puget-Théniers H/F (33936)",
-   "url": "https://www.departement06.fr/offres-demploi/psychologue-centre-de-sante-puget-theniers-hf-33936",
-   "domaine": "Santé",
-   "categorie": "A",
-   "categories": [
-    "A"
-   ],
-   "filiere": "MEDICO-SOCIALE",
-   "filieres": [
-    "MEDICO-SOCIALE"
-   ],
-   "deadline": "2026-09-30",
-   "deadline_label": "30 septembre 2026",
-   "publie_le": "2026-06-08",
-   "resume": "Dans ce cadre, le psychologue participera à l'amélioration de la prise en charge des patients du territoire et sera à l'écoute de leurs aidants. Il apportera son expertise et son expérience en éducation thérapeutique à la prise en charge coordonnée…",
-   "dcip": false,
-   "service": "",
-   "appariement": "",
-   "candidature_permanente": false
-  },
-  {
-   "id": "referent-suivi-parcours-mna-hf-32215",
-   "titre": "Référent suivi parcours MNA H/F (32215)",
-   "url": "https://www.departement06.fr/offres-demploi/referent-suivi-parcours-mna-hf-32215",
-   "domaine": "Social",
-   "categorie": "B",
-   "categories": [
-    "B",
-    "A"
-   ],
-   "filiere": "ADMINISTRATIVE",
-   "filieres": [
-    "ADMINISTRATIVE"
-   ],
-   "deadline": "2026-09-30",
-   "deadline_label": "30 septembre 2026",
-   "publie_le": "2026-06-04",
-   "resume": "Au sein de la section Suivi des enfants confiés, le référent suivi parcours des MNA assure l'accompagnement et le suivi des enfants, adolescents et jeunes adultes confiés, en coordonnant les acteurs internes et externes, afin de répondre à leurs…",
-   "dcip": false,
-   "service": "",
-   "appariement": "",
-   "candidature_permanente": false
-  },
-  {
-   "id": "appreciateur-de-la-minorite-hf-32847",
-   "titre": "Appréciateur de la minorité H/F (32847)",
-   "url": "https://www.departement06.fr/offres-demploi/appreciateur-de-la-minorite-hf-32847",
-   "domaine": "Social",
-   "categorie": "A",
-   "categories": [
-    "A"
-   ],
-   "filiere": "ADMINISTRATIVE",
-   "filieres": [
-    "ADMINISTRATIVE"
-   ],
-   "deadline": "2026-09-30",
-   "deadline_label": "30 septembre 2026",
-   "publie_le": "2026-05-11",
-   "resume": "Au sein de la section Appréciations, mise à l'abri et évaluations, l'appréciateur de la minorité assure l'évaluation objective et rigoureuse de la minorité et de la vulnérabilité de personnes se déclarant mineures et isolées, en collaboration avec…",
-   "dcip": false,
-   "service": "",
-   "appariement": "",
-   "candidature_permanente": false
-  },
-  {
-   "id": "chef-du-service-parcours-et-pilotage-protection-de-lenfance-de-30238",
-   "titre": "Chef du service Parcours et pilotage protection de l'enfance DE (30238)",
-   "url": "https://www.departement06.fr/offres-demploi/chef-du-service-parcours-et-pilotage-protection-de-lenfance-de-30238",
-   "domaine": "Social",
-   "categorie": "A",
-   "categories": [
-    "A"
-   ],
-   "filiere": "ADMINISTRATIVE",
-   "filieres": [
-    "ADMINISTRATIVE"
-   ],
-   "deadline": "2026-09-30",
-   "deadline_label": "30 septembre 2026",
-   "publie_le": "2026-04-03",
-   "resume": "Sous la responsabilité de la directrice de l'enfance, le chef du service assure le pilotage du dispositif global de protection de l'enfance en lien étroit avec l'ensemble des services de sa direction, la direction des territoires et de l'action…",
    "dcip": false,
    "service": "",
    "appariement": "",
@@ -1342,6 +626,182 @@
    "deadline_label": "Candidature permanente",
    "publie_le": "2026-04-01",
    "resume": "En qualité de médecin, vous pouvez exercer vos missions dans différentes structures départementales en territoires ou en central (notamment au service départemental de protection maternelle et infantile, en centres de santé, en maison départementale…",
+   "dcip": false,
+   "service": "",
+   "appariement": "",
+   "candidature_permanente": true
+  },
+  {
+   "id": "sage-femme-hf",
+   "titre": "Sage femme H/F",
+   "url": "https://www.departement06.fr/offres-demploi/sage-femme-hf",
+   "domaine": "",
+   "categorie": "A",
+   "categories": [
+    "A"
+   ],
+   "filiere": "MEDICO-SOCIALE",
+   "filieres": [
+    "MEDICO-SOCIALE"
+   ],
+   "deadline": "",
+   "deadline_label": "Candidature permanente",
+   "publie_le": "2025-08-29",
+   "resume": "Au sein de la PMI, la sage femme participe à la mise en œuvre de la politique du Département en référence à l'article L2112 du code de la santé publique relative à la protection et à la promotion de la santé, de la famille et de l'enfance en ce qui…",
+   "dcip": false,
+   "service": "",
+   "appariement": "",
+   "candidature_permanente": true
+  },
+  {
+   "id": "assistant-social-hf",
+   "titre": "Assistant social H/F",
+   "url": "https://www.departement06.fr/offres-demploi/assistant-social-hf",
+   "domaine": "Social",
+   "categorie": "A",
+   "categories": [
+    "A"
+   ],
+   "filiere": "MEDICO-SOCIALE",
+   "filieres": [
+    "MEDICO-SOCIALE"
+   ],
+   "deadline": "",
+   "deadline_label": "Candidature permanente",
+   "publie_le": "2025-07-25",
+   "resume": "Au sein de la MSD, l'assistant social, rattaché à l'équipe pluridisciplinaire, aide à résoudre des problèmes divers d'ordre social, administratif, socio-économique posés par différents publics en difficulté, dans le cadre de la politique…",
+   "dcip": false,
+   "service": "",
+   "appariement": "",
+   "candidature_permanente": true
+  },
+  {
+   "id": "animateur-pour-les-ecoles-departementales-de-pleine-nature-hf",
+   "titre": "Animateur pour les écoles départementales de pleine nature H/F",
+   "url": "https://www.departement06.fr/offres-demploi/animateur-pour-les-ecoles-departementales-de-pleine-nature-hf",
+   "domaine": "Education - Animation - Jeunesse",
+   "categorie": "C",
+   "categories": [
+    "C"
+   ],
+   "filiere": "ANIMATION",
+   "filieres": [
+    "ANIMATION"
+   ],
+   "deadline": "",
+   "deadline_label": "Candidature permanente",
+   "publie_le": "2025-07-23",
+   "resume": "Au sein des écoles départementales de pleine nature, l'animateur accueille et encadre un groupe d'enfants de 6 à 12 ans dans la vie quotidienne et les activités pratiquées. Il conçoit, propose et met en œuvre des activités éducatives et de loisirs…",
+   "dcip": false,
+   "service": "",
+   "appariement": "",
+   "candidature_permanente": true
+  },
+  {
+   "id": "educateur-specialise-hf",
+   "titre": "Educateur spécialisé H/F",
+   "url": "https://www.departement06.fr/offres-demploi/educateur-specialise-hf",
+   "domaine": "Social",
+   "categorie": "A",
+   "categories": [
+    "A"
+   ],
+   "filiere": "MEDICO-SOCIALE",
+   "filieres": [
+    "MEDICO-SOCIALE"
+   ],
+   "deadline": "",
+   "deadline_label": "Candidature permanente",
+   "publie_le": "2025-07-23",
+   "resume": "Au sein de la MSD, l'éducateur assure la protection et le développement global des enfants et des jeunes en situation de vulnérabilité, en apportant un soutien adapté aux familles, en accompagnant les mineurs confiés au Département, et en…",
+   "dcip": false,
+   "service": "",
+   "appariement": "",
+   "candidature_permanente": true
+  },
+  {
+   "id": "infirmier-hf",
+   "titre": "Infirmier H/F",
+   "url": "https://www.departement06.fr/offres-demploi/infirmier-hf",
+   "domaine": "",
+   "categorie": "A",
+   "categories": [
+    "A"
+   ],
+   "filiere": "MEDICO-SOCIALE",
+   "filieres": [
+    "MEDICO-SOCIALE"
+   ],
+   "deadline": "",
+   "deadline_label": "Candidature permanente",
+   "publie_le": "2025-07-23",
+   "resume": "L'infirmier participe aux missions de prévention et de promotion de la santé auprès de divers publics dans le domaine de la compétence du Département. Il évalue les situations individuelles et les besoins des personnes. Il participe aux synthèses ou…",
+   "dcip": false,
+   "service": "",
+   "appariement": "",
+   "candidature_permanente": true
+  },
+  {
+   "id": "medecin-de-pmi-hf",
+   "titre": "Médecin de PMI H/F",
+   "url": "https://www.departement06.fr/offres-demploi/medecin-de-pmi-hf",
+   "domaine": "",
+   "categorie": "A",
+   "categories": [
+    "A"
+   ],
+   "filiere": "MEDICO-SOCIALE",
+   "filieres": [
+    "MEDICO-SOCIALE"
+   ],
+   "deadline": "",
+   "deadline_label": "Candidature permanente",
+   "publie_le": "2025-07-23",
+   "resume": "Directement rattaché au médecin chef du service départemental de PMI, le médecin de PMI participe à l'élaboration et à la mise en œuvre de la politique du Département relative à la protection et à la promotion de la santé de la famille et de l…",
+   "dcip": false,
+   "service": "",
+   "appariement": "",
+   "candidature_permanente": true
+  },
+  {
+   "id": "puericultrice-hf",
+   "titre": "Puéricultrice H/F",
+   "url": "https://www.departement06.fr/offres-demploi/puericultrice-hf",
+   "domaine": "Santé",
+   "categorie": "A",
+   "categories": [
+    "A"
+   ],
+   "filiere": "MEDICO-SOCIALE",
+   "filieres": [
+    "MEDICO-SOCIALE"
+   ],
+   "deadline": "",
+   "deadline_label": "Candidature permanente",
+   "publie_le": "2025-07-23",
+   "resume": "Au sein de la PMI, la puéricultrice assure la protection, la santé et le développement harmonieux des jeunes enfants, tout en accompagnant et soutenant les parents dans leurs responsabilités éducatives",
+   "dcip": false,
+   "service": "",
+   "appariement": "",
+   "candidature_permanente": true
+  },
+  {
+   "id": "tos-chef-de-cuisine-en-college-hf",
+   "titre": "TOS - Chef de cuisine en collège H/F",
+   "url": "https://www.departement06.fr/offres-demploi/tos-chef-de-cuisine-en-college-hf",
+   "domaine": "",
+   "categorie": "C",
+   "categories": [
+    "C"
+   ],
+   "filiere": "TECHNIQUE",
+   "filieres": [
+    "TECHNIQUE"
+   ],
+   "deadline": "",
+   "deadline_label": "Candidature permanente",
+   "publie_le": "2025-07-23",
+   "resume": "Placé sous l'autorité hiérarchique du service de l'éducation et sous l'autorité fonctionnelle du Chef d'établissement, le chef de cuisine conçoit et réalise les menus servis en restauration collective. Il dirige l'équipe affectée au service de…",
    "dcip": false,
    "service": "",
    "appariement": "",
