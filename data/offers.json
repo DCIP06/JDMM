@@ -1,9 +1,53 @@
 {
- "generated_at": "2026-10-01T04:18:04Z",
+ "generated_at": "2026-10-02T04:17:37Z",
  "source": "https://www.departement06.fr/offres-demploi",
- "count": 36,
- "count_dcip": 2,
+ "count": 44,
+ "count_dcip": 6,
  "offers": [
+  {
+   "id": "attache-de-presse-dcep-32026",
+   "titre": "Attaché de presse DCEP (32026)",
+   "url": "https://www.departement06.fr/offres-demploi/attache-de-presse-dcep-32026",
+   "domaine": "Communication - Evènementiel",
+   "categorie": "A",
+   "categories": [
+    "A"
+   ],
+   "filiere": "ADMINISTRATIVE",
+   "filieres": [
+    "ADMINISTRATIVE"
+   ],
+   "deadline": "2026-10-23",
+   "deadline_label": "23 octobre 2026",
+   "publie_le": "2026-10-01",
+   "resume": "Au sein du service presse et en étroite collaboration avec les services administratifs et le cabinet du Président, l'attaché de presse contribue à la mise en œuvre de la stratégie de relations presse du Département et à la promotion de ses actions…",
+   "dcip": false,
+   "service": "",
+   "appariement": "",
+   "candidature_permanente": false
+  },
+  {
+   "id": "charge-doperations-colleges-hf-33929",
+   "titre": "Chargé d'opérations collèges H/F (33929)",
+   "url": "https://www.departement06.fr/offres-demploi/charge-doperations-colleges-hf-33929",
+   "domaine": "Patrimoine bâti",
+   "categorie": "B",
+   "categories": [
+    "B"
+   ],
+   "filiere": "TECHNIQUE",
+   "filieres": [
+    "TECHNIQUE"
+   ],
+   "deadline": "2026-10-30",
+   "deadline_label": "30 octobre 2026",
+   "publie_le": "2026-10-01",
+   "resume": "Au sein d'une équipe du service maintenance, le chargé d'opérations conçoit et fait réaliser par des entreprises divers travaux d'extension, de restructuration, de réhabilitation, de grosses réparations, d'aménagement et d'entretien concernant le…",
+   "dcip": true,
+   "service": "",
+   "appariement": "domaine",
+   "candidature_permanente": false
+  },
   {
    "id": "aide-magasinier-hf-30378",
    "titre": "Aide-magasinier H/F (30378)",
@@ -202,6 +246,28 @@
    "deadline_label": "23 octobre 2026",
    "publie_le": "2026-09-23",
    "resume": "Au sein du service relation et accompagnement des usagers et placé sous la responsabilité de la responsable de la structure, le conseiller autonomie assure un accueil, une information et un accompagnement de proximité des usagers de la MDA en…",
+   "dcip": false,
+   "service": "",
+   "appariement": "",
+   "candidature_permanente": false
+  },
+  {
+   "id": "infirmier-mobile-dispositif-de-prevention-de-lexploitation-sexuelle-des-mineurs",
+   "titre": "Infirmier mobile dispositif de prévention de l'exploitation sexuelle des mineurs Carrefour Santé Jeunes",
+   "url": "https://www.departement06.fr/offres-demploi/infirmier-mobile-dispositif-de-prevention-de-lexploitation-sexuelle-des-mineurs",
+   "domaine": "Social",
+   "categorie": "A",
+   "categories": [
+    "A"
+   ],
+   "filiere": "MEDICO-SOCIALE",
+   "filieres": [
+    "MEDICO-SOCIALE"
+   ],
+   "deadline": "2026-10-30",
+   "deadline_label": "30 octobre 2026",
+   "publie_le": "2026-09-18",
+   "resume": "L'infirmier mobile dispositif de prévention de l'exploitation sexuelle des mineurs au Carrefour Santé Jeunes en SDPMI participe à la mise en oeuvre de la politique du Conseil Départemental des Alpes-Maritimes en assurant sur son territoire d…",
    "dcip": false,
    "service": "",
    "appariement": "",
@@ -588,6 +654,29 @@
    "candidature_permanente": false
   },
   {
+   "id": "ingenieur-charge-detudes-courants-forts-et-faibles-dcip-hf-30269",
+   "titre": "Ingénieur chargé d'études courants forts et faibles DCIP H/F (30269)",
+   "url": "https://www.departement06.fr/offres-demploi/ingenieur-charge-detudes-courants-forts-et-faibles-dcip-hf-30269",
+   "domaine": "Patrimoine bâti",
+   "categorie": "A",
+   "categories": [
+    "A"
+   ],
+   "filiere": "TECHNIQUE",
+   "filieres": [
+    "TECHNIQUE"
+   ],
+   "deadline": "2026-10-30",
+   "deadline_label": "30 octobre 2026",
+   "publie_le": "2026-08-29",
+   "resume": "Au sein du service énergie et fluides, l'ingénieur chargé d'études conçoit, fait réaliser, en régie directe ou par des entreprises, des travaux de création de locaux, de restructuration ou rénovation concernant le patrimoine bâti. Il gère les…",
+   "dcip": true,
+   "service": "Énergie et fluides",
+   "poste_dcip_id": "ingenieur-charge-detudes-courants-forts-et-faibles-dcip-hf-30269",
+   "appariement": "url",
+   "candidature_permanente": false
+  },
+  {
    "id": "juriste-hf-22525",
    "titre": "Juriste H/F (22525)",
    "url": "https://www.departement06.fr/offres-demploi/juriste-hf-22525",
@@ -604,6 +693,74 @@
    "deadline_label": "16 octobre 2026",
    "publie_le": "2026-08-14",
    "resume": "Le juriste défend les droits et intérêts du département auprès des juridictions, conseille les services dans toutes les implications de fait ou de droit relatives aux procédures judiciaires et assiste les services au plan juridique dans la conduite…",
+   "dcip": false,
+   "service": "",
+   "appariement": "",
+   "candidature_permanente": false
+  },
+  {
+   "id": "ingenieur-conduite-doperations-de-batiments-opc-suivi-de-chantier-hf-30249",
+   "titre": "Ingénieur conduite d'opérations de bâtiments OPC - Suivi de chantier H/F (30249)",
+   "url": "https://www.departement06.fr/offres-demploi/ingenieur-conduite-doperations-de-batiments-opc-suivi-de-chantier-hf-30249",
+   "domaine": "Patrimoine bâti",
+   "categorie": "A",
+   "categories": [
+    "A"
+   ],
+   "filiere": "TECHNIQUE",
+   "filieres": [
+    "TECHNIQUE"
+   ],
+   "deadline": "2026-10-30",
+   "deadline_label": "30 octobre 2026",
+   "publie_le": "2026-07-23",
+   "resume": "Au sein du service études et travaux, l'ingénieur conduite d'opérations de bâtiments assure la conduite d'opérations de construction, de rénovation et de restructuration de locaux ou bâtiments.",
+   "dcip": true,
+   "service": "Études et travaux",
+   "poste_dcip_id": "ingenieur-conduite-doperations-de-batiments-opc-suivi-de-chantier-hf-30249",
+   "appariement": "url",
+   "candidature_permanente": false
+  },
+  {
+   "id": "charge-de-coordination-fonctionnelle-hf",
+   "titre": "Chargé de coordination fonctionnelle H/F",
+   "url": "https://www.departement06.fr/offres-demploi/charge-de-coordination-fonctionnelle-hf",
+   "domaine": "Finances et contrôle de gestion",
+   "categorie": "B",
+   "categories": [
+    "B"
+   ],
+   "filiere": "ADMINISTRATIVE",
+   "filieres": [
+    "ADMINISTRATIVE",
+    "TECHNIQUE"
+   ],
+   "deadline": "2026-10-30",
+   "deadline_label": "30 octobre 2026",
+   "publie_le": "2026-07-03",
+   "resume": "Au sein du service de la maintenance des collèges, le chargé de coordination fonctionnelle, assure, sous l'autorité du chef de service, le suivi et le contrôle des marchés à bons de commande de travaux et de de fournitures. Ces marchés couvrent l…",
+   "dcip": false,
+   "service": "",
+   "appariement": "",
+   "candidature_permanente": false
+  },
+  {
+   "id": "appreciateur-de-la-minorite-hf-32847",
+   "titre": "Appréciateur de la minorité H/F (32847)",
+   "url": "https://www.departement06.fr/offres-demploi/appreciateur-de-la-minorite-hf-32847",
+   "domaine": "Social",
+   "categorie": "A",
+   "categories": [
+    "A"
+   ],
+   "filiere": "ADMINISTRATIVE",
+   "filieres": [
+    "ADMINISTRATIVE"
+   ],
+   "deadline": "2026-10-30",
+   "deadline_label": "30 octobre 2026",
+   "publie_le": "2026-05-11",
+   "resume": "Au sein de la section Appréciations, mise à l'abri et évaluations, l'appréciateur de la minorité assure l'évaluation objective et rigoureuse de la minorité et de la vulnérabilité de personnes se déclarant mineures et isolées, en collaboration avec…",
    "dcip": false,
    "service": "",
    "appariement": "",
@@ -630,6 +787,29 @@
    "service": "",
    "appariement": "",
    "candidature_permanente": true
+  },
+  {
+   "id": "charge-de-projets-etudes-et-marches-hf-33932",
+   "titre": "Chargé de projets études et marchés H/F (33932)",
+   "url": "https://www.departement06.fr/offres-demploi/charge-de-projets-etudes-et-marches-hf-33932",
+   "domaine": "Patrimoine bâti",
+   "categorie": "A",
+   "categories": [
+    "A"
+   ],
+   "filiere": "TECHNIQUE",
+   "filieres": [
+    "TECHNIQUE"
+   ],
+   "deadline": "2026-10-30",
+   "deadline_label": "30 octobre 2026",
+   "publie_le": "2026-03-20",
+   "resume": "Au sein du service de la maintenance des collèges, le chargé d'études et marchés vient renforcer l'équipe en place. Il prépare et met en œuvre les projets depuis l'élaboration du programme jusqu'au parfait achèvement de l'ouvrage. Il s'agit d…",
+   "dcip": true,
+   "service": "Maintenance des collèges",
+   "poste_dcip_id": "charge-de-projets-etudes-et-marches-hf-33932",
+   "appariement": "url",
+   "candidature_permanente": false
   },
   {
    "id": "sage-femme-hf",
