@@ -1,9 +1,98 @@
 {
- "generated_at": "2026-10-02T04:17:37Z",
+ "generated_at": "2026-10-03T04:17:47Z",
  "source": "https://www.departement06.fr/offres-demploi",
- "count": 44,
- "count_dcip": 6,
+ "count": 48,
+ "count_dcip": 7,
  "offers": [
+  {
+   "id": "charge-de-mission-protection-de-lenfance-hf-33001",
+   "titre": "Chargé de mission protection de l'enfance H/F (33001)",
+   "url": "https://www.departement06.fr/offres-demploi/charge-de-mission-protection-de-lenfance-hf-33001",
+   "domaine": "Social",
+   "categorie": "A",
+   "categories": [
+    "A"
+   ],
+   "filiere": "ADMINISTRATIVE",
+   "filieres": [
+    "ADMINISTRATIVE"
+   ],
+   "deadline": "2026-10-30",
+   "deadline_label": "30 octobre 2026",
+   "publie_le": "2026-10-02",
+   "resume": "Au sein de la direction, le chargé de mission protection de l'enfance assure le pilotage opérationnel et stratégique de la direction en garantissant la coordination efficace entre les services, la fiabilité du suivi des dossiers, et la production d…",
+   "dcip": false,
+   "service": "",
+   "appariement": "",
+   "candidature_permanente": false
+  },
+  {
+   "id": "controleur-de-gestion-du-suivi-des-esms-de-la-protection-de-lenfance-hf-33173",
+   "titre": "Contrôleur de gestion du suivi des ESMS de la protection de l'enfance H/F (33173)",
+   "url": "https://www.departement06.fr/offres-demploi/controleur-de-gestion-du-suivi-des-esms-de-la-protection-de-lenfance-hf-33173",
+   "domaine": "Finances et contrôle de gestion",
+   "categorie": "A",
+   "categories": [
+    "A"
+   ],
+   "filiere": "ADMINISTRATIVE",
+   "filieres": [
+    "ADMINISTRATIVE"
+   ],
+   "deadline": "2026-10-30",
+   "deadline_label": "30 octobre 2026",
+   "publie_le": "2026-10-02",
+   "resume": "Au sein de la section gestion administrative et financière des établissements et services, le contrôleur de gestion du suivi des ESMS de la protection de l'enfance, contribue à la structuration, à la fiabilisation et à l'optimisation du pilotage…",
+   "dcip": false,
+   "service": "",
+   "appariement": "",
+   "candidature_permanente": false
+  },
+  {
+   "id": "ingenieur-charge-detudes-batimentaires-hf-34007",
+   "titre": "Ingénieur chargé d'études bâtimentaires H/F (34007)",
+   "url": "https://www.departement06.fr/offres-demploi/ingenieur-charge-detudes-batimentaires-hf-34007",
+   "domaine": "Patrimoine bâti",
+   "categorie": "A",
+   "categories": [
+    "A"
+   ],
+   "filiere": "TECHNIQUE",
+   "filieres": [
+    "TECHNIQUE"
+   ],
+   "deadline": "2026-10-30",
+   "deadline_label": "30 octobre 2026",
+   "publie_le": "2026-10-02",
+   "resume": "Au sein du service maintenance des bâtiments, l'ingénieur chargé d'études bâtimentaires assure les études et la rédaction des marchés de travaux et des accords cadre pour les opérations de maintenance, de réhabilitation, de rénovation et d'extension…",
+   "dcip": true,
+   "service": "Maintenance des bâtiments",
+   "poste_dcip_id": "ingenieur-charge-detudes-batimentaires-hf-34007",
+   "appariement": "url",
+   "candidature_permanente": false
+  },
+  {
+   "id": "psychologue-placement-familialadoption-renfort-de-hf",
+   "titre": "Psychologue placement familial/adoption Renfort /DE (H/F)",
+   "url": "https://www.departement06.fr/offres-demploi/psychologue-placement-familialadoption-renfort-de-hf",
+   "domaine": "Social",
+   "categorie": "A",
+   "categories": [
+    "A"
+   ],
+   "filiere": "MEDICO-SOCIALE",
+   "filieres": [
+    "MEDICO-SOCIALE"
+   ],
+   "deadline": "2026-10-30",
+   "deadline_label": "30 octobre 2026",
+   "publie_le": "2026-10-02",
+   "resume": "Au sein du service placement familial et adoption, le psychologue participe à la mise en œuvre de la politique du Département en faveur de la famille et de l'enfance, conçoit un travail clinique auprès des enfants et des adultes, met en œuvre les…",
+   "dcip": false,
+   "service": "",
+   "appariement": "",
+   "candidature_permanente": false
+  },
   {
    "id": "attache-de-presse-dcep-32026",
    "titre": "Attaché de presse DCEP (32026)",
