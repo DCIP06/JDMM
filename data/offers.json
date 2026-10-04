@@ -1,7 +1,7 @@
 {
- "generated_at": "2026-10-03T04:17:47Z",
+ "generated_at": "2026-10-04T05:54:59Z",
  "source": "https://www.departement06.fr/offres-demploi",
- "count": 48,
+ "count": 45,
  "count_dcip": 7,
  "offers": [
   {
@@ -541,29 +541,6 @@
    "candidature_permanente": false
   },
   {
-   "id": "chef-dequipe-mecanique-poids-lourds-30626",
-   "titre": "Chef d'équipe mécanique poids lourds (30626)",
-   "url": "https://www.departement06.fr/offres-demploi/chef-dequipe-mecanique-poids-lourds-30626",
-   "domaine": "Infrastructures et réseaux",
-   "categorie": "C",
-   "categories": [
-    "C",
-    "B"
-   ],
-   "filiere": "TECHNIQUE",
-   "filieres": [
-    "TECHNIQUE"
-   ],
-   "deadline": "2026-10-03",
-   "deadline_label": "3 octobre 2026",
-   "publie_le": "2026-09-04",
-   "resume": "Au sein du service du parc des véhicules techniques, le chef d'équipe mécanique poids lourds assure l'organisation, la coordination et le suivi de l'activité de maintenance de l'atelier afin de garantir la disponibilité, la fiabilité et la sécurité…",
-   "dcip": false,
-   "service": "",
-   "appariement": "",
-   "candidature_permanente": false
-  },
-  {
    "id": "conseillers-numeriques-dtisp-hf-32987",
    "titre": "Conseillers numériques DTISP H/F (32987)",
    "url": "https://www.departement06.fr/offres-demploi/conseillers-numeriques-dtisp-hf-32987",
@@ -580,52 +557,6 @@
    "deadline_label": "4 octobre 2026",
    "publie_le": "2026-09-04",
    "resume": "Au sein du service des Maisons du Département, le conseiller numérique sensibilise le public aux enjeux du numérique et de l'intelligence artificielle, et favorise des usages responsables, citoyens et critiques (lutte contre les fausses informations…",
-   "dcip": false,
-   "service": "",
-   "appariement": "",
-   "candidature_permanente": false
-  },
-  {
-   "id": "adjoint-au-directeur-du-secretariat-general-hf-31494",
-   "titre": "Adjoint au directeur du Secrétariat Général H/F (31494)",
-   "url": "https://www.departement06.fr/offres-demploi/adjoint-au-directeur-du-secretariat-general-hf-31494",
-   "domaine": "Affaires générales",
-   "categorie": "A",
-   "categories": [
-    "A"
-   ],
-   "filiere": "ADMINISTRATIVE",
-   "filieres": [
-    "ADMINISTRATIVE"
-   ],
-   "deadline": "2026-10-03",
-   "deadline_label": "3 octobre 2026",
-   "publie_le": "2026-09-03",
-   "resume": "L'adjoint au directeur contribue au bon fonctionnement du Secrétariat général en assurant la coordination opérationnelle des activités transversales, le suivi des dossiers stratégiques et l'appui au directeur dans l'exercice de ses missions. Il…",
-   "dcip": false,
-   "service": "",
-   "appariement": "",
-   "candidature_permanente": false
-  },
-  {
-   "id": "charge-de-communication-des-projets-culturels-et-du-waiff-hf-xxxx",
-   "titre": "Chargé de communication des projets culturels et du WAIFF H/F (xxxx)",
-   "url": "https://www.departement06.fr/offres-demploi/charge-de-communication-des-projets-culturels-et-du-waiff-hf-xxxx",
-   "domaine": "Communication - Evènementiel",
-   "categorie": "B",
-   "categories": [
-    "B",
-    "A"
-   ],
-   "filiere": "ADMINISTRATIVE",
-   "filieres": [
-    "ADMINISTRATIVE",
-    "TECHNIQUE"
-   ],
-   "deadline": "2026-10-03",
-   "deadline_label": "3 octobre 2026",
-   "publie_le": "2026-09-03",
-   "resume": "Sous l'autorité du Directeur de la Communication, de l'Événementiel et du Protocole, le chargé de communication conçoit, coordonne et met en œuvre la communication du World AI Film Festival et des grands événements culturels départementaux, il…",
    "dcip": false,
    "service": "",
    "appariement": "",
