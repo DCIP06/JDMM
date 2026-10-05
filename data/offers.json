@@ -1,7 +1,7 @@
 {
- "generated_at": "2026-10-04T05:54:59Z",
+ "generated_at": "2026-10-05T04:19:13Z",
  "source": "https://www.departement06.fr/offres-demploi",
- "count": 45,
+ "count": 39,
  "count_dcip": 7,
  "offers": [
   {
@@ -363,29 +363,6 @@
    "candidature_permanente": false
   },
   {
-   "id": "charge-de-projets-cinematographiques-et-audiovisuels-hf-xx",
-   "titre": "Chargé de projets cinématographiques et audiovisuels H/F (xx)",
-   "url": "https://www.departement06.fr/offres-demploi/charge-de-projets-cinematographiques-et-audiovisuels-hf-xx",
-   "domaine": "Culture et patrimoine",
-   "categorie": "B",
-   "categories": [
-    "B",
-    "A"
-   ],
-   "filiere": "CULTURELLE",
-   "filieres": [
-    "CULTURELLE"
-   ],
-   "deadline": "2026-10-04",
-   "deadline_label": "4 octobre 2026",
-   "publie_le": "2026-09-16",
-   "resume": "Sous l'autorité du Directeur de la Culture et de la responsable de la section cinéma, vous participerez à la conception, à la coordination et à la mise en œuvre des actions, événements et projets portés par la Direction. Vous assurerez leur suivi…",
-   "dcip": false,
-   "service": "",
-   "appariement": "",
-   "candidature_permanente": false
-  },
-  {
    "id": "agent-forestier-des-parcs-naturels-departementaux-secteur-ouest-hf-21279",
    "titre": "Agent forestier des parcs naturels départementaux - secteur ouest H/F (21279)",
    "url": "https://www.departement06.fr/offres-demploi/agent-forestier-des-parcs-naturels-departementaux-secteur-ouest-hf-21279",
@@ -475,28 +452,6 @@
    "candidature_permanente": false
   },
   {
-   "id": "agent-de-bibliotheque-collection-adultes-valberg-hf-33090",
-   "titre": "Agent de bibliothèque-collection adultes à Valberg H/F (33090)",
-   "url": "https://www.departement06.fr/offres-demploi/agent-de-bibliotheque-collection-adultes-valberg-hf-33090",
-   "domaine": "Culture et patrimoine",
-   "categorie": "C",
-   "categories": [
-    "C"
-   ],
-   "filiere": "CULTURELLE",
-   "filieres": [
-    "CULTURELLE"
-   ],
-   "deadline": "2026-10-04",
-   "deadline_label": "4 octobre 2026",
-   "publie_le": "2026-09-04",
-   "resume": "Sous l'autorité de la responsable de la médiathèque départementale annexe de Valberg, et au sein d'une équipe polyvalente composée de trois agents avec renforts lors des périodes touristiques, l'agent contribue au bon fonctionnement quotidien de l…",
-   "dcip": false,
-   "service": "",
-   "appariement": "",
-   "candidature_permanente": false
-  },
-  {
    "id": "charge-doperations-des-equipements-electriques-routiers-hf-32407",
    "titre": "Chargé d'opérations des équipements électriques routiers H/F (32407)",
    "url": "https://www.departement06.fr/offres-demploi/charge-doperations-des-equipements-electriques-routiers-hf-32407",
@@ -517,95 +472,6 @@
    "service": "",
    "appariement": "",
    "candidature_permanente": true
-  },
-  {
-   "id": "charge-de-suivi-des-ehpad-hf-30346",
-   "titre": "Chargé de suivi des EHPAD H/F (30346)",
-   "url": "https://www.departement06.fr/offres-demploi/charge-de-suivi-des-ehpad-hf-30346",
-   "domaine": "Social",
-   "categorie": "A",
-   "categories": [
-    "A"
-   ],
-   "filiere": "ADMINISTRATIVE",
-   "filieres": [
-    "ADMINISTRATIVE"
-   ],
-   "deadline": "2026-10-04",
-   "deadline_label": "4 octobre 2026",
-   "publie_le": "2026-09-04",
-   "resume": "Le chargé de suivi des EHPAD assure le suivi administratif, financier et réglementaire des établissements d'hébergement pour personnes âgées, en lien avec les services de l'ARS, afin de garantir la qualité, la conformité et l'évolution des…",
-   "dcip": false,
-   "service": "",
-   "appariement": "",
-   "candidature_permanente": false
-  },
-  {
-   "id": "conseillers-numeriques-dtisp-hf-32987",
-   "titre": "Conseillers numériques DTISP H/F (32987)",
-   "url": "https://www.departement06.fr/offres-demploi/conseillers-numeriques-dtisp-hf-32987",
-   "domaine": "Affaires générales",
-   "categorie": "C",
-   "categories": [
-    "C"
-   ],
-   "filiere": "ADMINISTRATIVE",
-   "filieres": [
-    "ADMINISTRATIVE"
-   ],
-   "deadline": "2026-10-04",
-   "deadline_label": "4 octobre 2026",
-   "publie_le": "2026-09-04",
-   "resume": "Au sein du service des Maisons du Département, le conseiller numérique sensibilise le public aux enjeux du numérique et de l'intelligence artificielle, et favorise des usages responsables, citoyens et critiques (lutte contre les fausses informations…",
-   "dcip": false,
-   "service": "",
-   "appariement": "",
-   "candidature_permanente": false
-  },
-  {
-   "id": "infirmier-en-soins-generaux-cegidd-hf-32324",
-   "titre": "Infirmier en soins généraux CeGIDD H/F (32324)",
-   "url": "https://www.departement06.fr/offres-demploi/infirmier-en-soins-generaux-cegidd-hf-32324",
-   "domaine": "Santé",
-   "categorie": "A",
-   "categories": [
-    "A"
-   ],
-   "filiere": "MEDICO-SOCIALE",
-   "filieres": [
-    "MEDICO-SOCIALE"
-   ],
-   "deadline": "2026-10-04",
-   "deadline_label": "4 octobre 2026",
-   "publie_le": "2026-09-03",
-   "resume": "Au sein des CeGIDD l'infirmier en soins généraux assure les consultations post-médicales, participe aux actions de prévention et de promotion de la santé sexuelle, évalue les situations individuelles, identifie les besoins des usagers et contribue à…",
-   "dcip": false,
-   "service": "",
-   "appariement": "",
-   "candidature_permanente": false
-  },
-  {
-   "id": "responsable-dexploitation-du-cinema-departemental-jp-belmondo-30226",
-   "titre": "Responsable d'exploitation du cinéma départemental JP Belmondo (30226)",
-   "url": "https://www.departement06.fr/offres-demploi/responsable-dexploitation-du-cinema-departemental-jp-belmondo-30226",
-   "domaine": "Culture et patrimoine",
-   "categorie": "B",
-   "categories": [
-    "B"
-   ],
-   "filiere": "CULTURELLE",
-   "filieres": [
-    "CULTURELLE",
-    "ADMINISTRATIVE"
-   ],
-   "deadline": "2026-10-04",
-   "deadline_label": "4 octobre 2026",
-   "publie_le": "2026-09-03",
-   "resume": "Sous l'autorité du Directeur de la Culture et de la responsable de la section cinéma, le responsable assure le pilotage, l'exploitation et le développement du cinéma départemental Jean-Paul Belmondo afin de garantir la qualité du service public, le…",
-   "dcip": false,
-   "service": "",
-   "appariement": "",
-   "candidature_permanente": false
   },
   {
    "id": "administrateur-reseaux-et-securite-hf-33088",
