@@ -1,9 +1,75 @@
 {
- "generated_at": "2026-10-05T04:19:13Z",
+ "generated_at": "2026-10-06T04:18:09Z",
  "source": "https://www.departement06.fr/offres-demploi",
- "count": 39,
+ "count": 42,
  "count_dcip": 7,
  "offers": [
+  {
+   "id": "responsable-pmi-nice-centre-dt4-hf-20934",
+   "titre": "Responsable PMI Nice Centre DT4 H/F (20934)",
+   "url": "https://www.departement06.fr/offres-demploi/responsable-pmi-nice-centre-dt4-hf-20934",
+   "domaine": "Social",
+   "categorie": "A",
+   "categories": [
+    "A"
+   ],
+   "filiere": "MEDICO-SOCIALE",
+   "filieres": [
+    "MEDICO-SOCIALE"
+   ],
+   "deadline": "2026-10-30",
+   "deadline_label": "30 octobre 2026",
+   "publie_le": "2026-10-05",
+   "resume": "Au quotidien,- vous encadrerez techniquement et hiérarchiquement l'équipe pluridisciplinaire de la structure;- vous assurerez des consultations médicales dans les centres de protection maternelle infantile et de planification;",
+   "dcip": false,
+   "service": "",
+   "appariement": "",
+   "candidature_permanente": false
+  },
+  {
+   "id": "responsable-pmi-nice-lyautey-dt4-hf-20951",
+   "titre": "Responsable PMI Nice Lyautey DT4 H/F (20951)",
+   "url": "https://www.departement06.fr/offres-demploi/responsable-pmi-nice-lyautey-dt4-hf-20951",
+   "domaine": "Social",
+   "categorie": "A",
+   "categories": [
+    "A"
+   ],
+   "filiere": "MEDICO-SOCIALE",
+   "filieres": [
+    "MEDICO-SOCIALE"
+   ],
+   "deadline": "2026-10-30",
+   "deadline_label": "30 octobre 2026",
+   "publie_le": "2026-10-05",
+   "resume": "Au quotidien,- vous encadrerez techniquement et hiérarchiquement l'équipe pluridisciplinaire de la structure;- vous assurerez des consultations médicales dans les centres de protection maternelle infantile et de planification;",
+   "dcip": false,
+   "service": "",
+   "appariement": "",
+   "candidature_permanente": false
+  },
+  {
+   "id": "responsable-de-la-section-aide-sociale-paph-30745-hf",
+   "titre": "Responsable de la section aide sociale PA/PH (30745) H/F",
+   "url": "https://www.departement06.fr/offres-demploi/responsable-de-la-section-aide-sociale-paph-30745-hf",
+   "domaine": "Social",
+   "categorie": "A",
+   "categories": [
+    "A"
+   ],
+   "filiere": "ADMINISTRATIVE",
+   "filieres": [
+    "ADMINISTRATIVE"
+   ],
+   "deadline": "2026-10-31",
+   "deadline_label": "31 octobre 2026",
+   "publie_le": "2026-10-05",
+   "resume": "Le responsable de la section aide sociale PA/PH garantit la gestion sécurisée, rigoureuse et optimisée des dispositifs d'aide sociale, en assurant leur attribution, leur suivi juridique et financier, ainsi que leur récupération, tout en contribuant…",
+   "dcip": false,
+   "service": "",
+   "appariement": "",
+   "candidature_permanente": false
+  },
   {
    "id": "charge-de-mission-protection-de-lenfance-hf-33001",
    "titre": "Chargé de mission protection de l'enfance H/F (33001)",
@@ -154,30 +220,6 @@
    "deadline_label": "14 octobre 2026",
    "publie_le": "2026-09-30",
    "resume": "Au sein du service parc automobile, chargé du pilotage et de l'entretien du parc de véhicule légers de la collectivité, l'aide magasinier assiste et remplace le cas échéant le magasinier en cas d'absence afin d'assurer la continuité du…",
-   "dcip": false,
-   "service": "",
-   "appariement": "",
-   "candidature_permanente": false
-  },
-  {
-   "id": "responsable-de-la-micro-folie-hf-34035",
-   "titre": "Responsable de la Micro-Folie H/F (34035)",
-   "url": "https://www.departement06.fr/offres-demploi/responsable-de-la-micro-folie-hf-34035",
-   "domaine": "Culture et patrimoine",
-   "categorie": "B",
-   "categories": [
-    "B",
-    "A"
-   ],
-   "filiere": "CULTURELLE",
-   "filieres": [
-    "CULTURELLE",
-    "ADMINISTRATIVE"
-   ],
-   "deadline": "2026-10-09",
-   "deadline_label": "9 octobre 2026",
-   "publie_le": "2026-09-28",
-   "resume": "Au sein de la direction de la culture du Département des Alpes-Maritimes et sous l'autorité de la directrice de la médiathèque départementale (basée à Nice), le ou la responsable de la Micro-Folie départementale assure en pleine autonomie le bon…",
    "dcip": false,
    "service": "",
    "appariement": "",
@@ -442,8 +484,8 @@
    "filieres": [
     "ADMINISTRATIVE"
    ],
-   "deadline": "2026-10-09",
-   "deadline_label": "9 octobre 2026",
+   "deadline": "2026-10-31",
+   "deadline_label": "31 octobre 2026",
    "publie_le": "2026-09-08",
    "resume": "En votre qualité de contrôleur de gestion :-Vous assurerez périodiquement la communication et la présentation d'outils d'analyse et de pilotage (rapport d'activité, tableaux de bord, etc.), -Vous rédigerez des analyses, rapports, études…",
    "dcip": false,
@@ -472,6 +514,28 @@
    "service": "",
    "appariement": "",
    "candidature_permanente": true
+  },
+  {
+   "id": "charge-de-suivi-des-ehpad-hf-30346",
+   "titre": "Chargé de suivi des EHPAD H/F (30346)",
+   "url": "https://www.departement06.fr/offres-demploi/charge-de-suivi-des-ehpad-hf-30346",
+   "domaine": "Social",
+   "categorie": "A",
+   "categories": [
+    "A"
+   ],
+   "filiere": "ADMINISTRATIVE",
+   "filieres": [
+    "ADMINISTRATIVE"
+   ],
+   "deadline": "2026-10-31",
+   "deadline_label": "31 octobre 2026",
+   "publie_le": "2026-09-04",
+   "resume": "Le chargé de suivi des EHPAD assure le suivi administratif, financier et réglementaire des établissements d'hébergement pour personnes âgées, en lien avec les services de l'ARS, afin de garantir la qualité, la conformité et l'évolution des…",
+   "dcip": false,
+   "service": "",
+   "appariement": "",
+   "candidature_permanente": false
   },
   {
    "id": "administrateur-reseaux-et-securite-hf-33088",
