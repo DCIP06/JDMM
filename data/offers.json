@@ -1,9 +1,54 @@
 {
- "generated_at": "2026-10-06T04:18:09Z",
+ "generated_at": "2026-10-07T04:17:34Z",
  "source": "https://www.departement06.fr/offres-demploi",
- "count": 42,
+ "count": 44,
  "count_dcip": 7,
  "offers": [
+  {
+   "id": "responsable-de-section-services-medico-sociaux-et-accueils-alternatifs-hf-33025",
+   "titre": "Responsable de section services médico-sociaux et accueils alternatifs H/F (33025)",
+   "url": "https://www.departement06.fr/offres-demploi/responsable-de-section-services-medico-sociaux-et-accueils-alternatifs-hf-33025",
+   "domaine": "Social",
+   "categorie": "A",
+   "categories": [
+    "A"
+   ],
+   "filiere": "ADMINISTRATIVE",
+   "filieres": [
+    "ADMINISTRATIVE"
+   ],
+   "deadline": "2026-10-31",
+   "deadline_label": "31 octobre 2026",
+   "publie_le": "2026-10-06",
+   "resume": "Le responsable de section des services médico-sociaux et accueils alternatifs assure le pilotage opérationnel et stratégique du développement, du suivi et du contrôle des dispositifs d'aide au maintien à domicile, d'offres de répit et d'habitats…",
+   "dcip": false,
+   "service": "",
+   "appariement": "",
+   "candidature_permanente": false
+  },
+  {
+   "id": "responsable-fonctionnel-du-systeme-dinformation-financier-hf-34000",
+   "titre": "Responsable fonctionnel du système d'information financier H/F (34000)",
+   "url": "https://www.departement06.fr/offres-demploi/responsable-fonctionnel-du-systeme-dinformation-financier-hf-34000",
+   "domaine": "Finances et contrôle de gestion",
+   "categorie": "A",
+   "categories": [
+    "A"
+   ],
+   "filiere": "ADMINISTRATIVE",
+   "filieres": [
+    "ADMINISTRATIVE",
+    "TECHNIQUE"
+   ],
+   "deadline": "2026-10-30",
+   "deadline_label": "30 octobre 2026",
+   "publie_le": "2026-10-06",
+   "resume": "Le responsable fonctionnel du système d'information financier garantit le bon fonctionnement, l'optimisation et l'appropriation du système d'information financier par l'ensemble des utilisateurs, en assurant son paramétrage, son évolution, sa…",
+   "dcip": false,
+   "service": "",
+   "appariement": "",
+   "candidature_permanente": false
+  },
   {
    "id": "responsable-pmi-nice-centre-dt4-hf-20934",
    "titre": "Responsable PMI Nice Centre DT4 H/F (20934)",
