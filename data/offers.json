@@ -1,9 +1,31 @@
 {
- "generated_at": "2026-10-07T04:17:34Z",
+ "generated_at": "2026-10-08T11:14:54Z",
  "source": "https://www.departement06.fr/offres-demploi",
  "count": 44,
  "count_dcip": 7,
  "offers": [
+  {
+   "id": "psychologue-centre-de-sante-puget-theniers-hf-33936",
+   "titre": "Psychologue Centre de santé Puget-Théniers H/F (33936)",
+   "url": "https://www.departement06.fr/offres-demploi/psychologue-centre-de-sante-puget-theniers-hf-33936",
+   "domaine": "Santé",
+   "categorie": "A",
+   "categories": [
+    "A"
+   ],
+   "filiere": "MEDICO-SOCIALE",
+   "filieres": [
+    "MEDICO-SOCIALE"
+   ],
+   "deadline": "2026-10-31",
+   "deadline_label": "31 octobre 2026",
+   "publie_le": "2026-10-07",
+   "resume": "Dans ce cadre, le psychologue participera à l'amélioration de la prise en charge des patients du territoire et sera à l'écoute de leurs aidants. Il apportera son expertise et son expérience en éducation thérapeutique à la prise en charge coordonnée…",
+   "dcip": false,
+   "service": "",
+   "appariement": "",
+   "candidature_permanente": false
+  },
   {
    "id": "responsable-de-section-services-medico-sociaux-et-accueils-alternatifs-hf-33025",
    "titre": "Responsable de section services médico-sociaux et accueils alternatifs H/F (33025)",
@@ -199,28 +221,6 @@
    "deadline_label": "30 octobre 2026",
    "publie_le": "2026-10-02",
    "resume": "Au sein du service placement familial et adoption, le psychologue participe à la mise en œuvre de la politique du Département en faveur de la famille et de l'enfance, conçoit un travail clinique auprès des enfants et des adultes, met en œuvre les…",
-   "dcip": false,
-   "service": "",
-   "appariement": "",
-   "candidature_permanente": false
-  },
-  {
-   "id": "attache-de-presse-dcep-32026",
-   "titre": "Attaché de presse DCEP (32026)",
-   "url": "https://www.departement06.fr/offres-demploi/attache-de-presse-dcep-32026",
-   "domaine": "Communication - Evènementiel",
-   "categorie": "A",
-   "categories": [
-    "A"
-   ],
-   "filiere": "ADMINISTRATIVE",
-   "filieres": [
-    "ADMINISTRATIVE"
-   ],
-   "deadline": "2026-10-23",
-   "deadline_label": "23 octobre 2026",
-   "publie_le": "2026-10-01",
-   "resume": "Au sein du service presse et en étroite collaboration avec les services administratifs et le cabinet du Président, l'attaché de presse contribue à la mise en œuvre de la stratégie de relations presse du Département et à la promotion de ses actions…",
    "dcip": false,
    "service": "",
    "appariement": "",
@@ -551,14 +551,14 @@
    "filieres": [
     "TECHNIQUE"
    ],
-   "deadline": "",
-   "deadline_label": "Candidature permanente",
+   "deadline": "2026-10-31",
+   "deadline_label": "31 octobre 2026",
    "publie_le": "2026-09-04",
    "resume": "Sous l'autorité du responsable de la section, le chargé d'opérations assure le suivi technique, administratif et financier des équipements électriques routiers, avec une spécialisation forte sur les tunnels départementaux.",
    "dcip": false,
    "service": "",
    "appariement": "",
-   "candidature_permanente": true
+   "candidature_permanente": false
   },
   {
    "id": "charge-de-suivi-des-ehpad-hf-30346",
