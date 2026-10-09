@@ -1,9 +1,53 @@
 {
- "generated_at": "2026-10-08T11:14:54Z",
+ "generated_at": "2026-10-09T11:13:55Z",
  "source": "https://www.departement06.fr/offres-demploi",
- "count": 44,
- "count_dcip": 7,
+ "count": 45,
+ "count_dcip": 8,
  "offers": [
+  {
+   "id": "charge-doperations-specialise-ascenseurs-hf",
+   "titre": "Chargé d'opérations spécialisé ascenseurs H/F",
+   "url": "https://www.departement06.fr/offres-demploi/charge-doperations-specialise-ascenseurs-hf",
+   "domaine": "Patrimoine bâti",
+   "categorie": "B",
+   "categories": [
+    "B"
+   ],
+   "filiere": "TECHNIQUE",
+   "filieres": [
+    "TECHNIQUE"
+   ],
+   "deadline": "2026-10-31",
+   "deadline_label": "31 octobre 2026",
+   "publie_le": "2026-10-09",
+   "resume": "Au sein d'une équipe du service maintenance, le chargé d'opérations spécialisé ascenseur assure le suivi technique, réglementaire et contractuel du parc d'ascenseurs des collèges et des gymnases qui leur sont rattachés (ascenseurs, monte charges…",
+   "dcip": true,
+   "service": "",
+   "appariement": "domaine",
+   "candidature_permanente": false
+  },
+  {
+   "id": "ergotherapeute-paph-hf-33276",
+   "titre": "Ergothérapeute PA/PH H/F (33276)",
+   "url": "https://www.departement06.fr/offres-demploi/ergotherapeute-paph-hf-33276",
+   "domaine": "Social",
+   "categorie": "A",
+   "categories": [
+    "A"
+   ],
+   "filiere": "MEDICO-SOCIALE",
+   "filieres": [
+    "MEDICO-SOCIALE"
+   ],
+   "deadline": "2026-11-08",
+   "deadline_label": "8 novembre 2026",
+   "publie_le": "2026-10-08",
+   "resume": "L'ergothérapeute assure l'évaluation des situations de perte d'autonomie et l'expertise en ergothérapie afin de déterminer les aides, aménagements et compensations nécessaires, dans le cadre des dispositifs portés par la MDA.",
+   "dcip": false,
+   "service": "",
+   "appariement": "",
+   "candidature_permanente": false
+  },
   {
    "id": "psychologue-centre-de-sante-puget-theniers-hf-33936",
    "titre": "Psychologue Centre de santé Puget-Théniers H/F (33936)",
@@ -714,29 +758,6 @@
    "service": "Études et travaux",
    "poste_dcip_id": "ingenieur-conduite-doperations-de-batiments-opc-suivi-de-chantier-hf-30249",
    "appariement": "url",
-   "candidature_permanente": false
-  },
-  {
-   "id": "charge-de-coordination-fonctionnelle-hf",
-   "titre": "Chargé de coordination fonctionnelle H/F",
-   "url": "https://www.departement06.fr/offres-demploi/charge-de-coordination-fonctionnelle-hf",
-   "domaine": "Finances et contrôle de gestion",
-   "categorie": "B",
-   "categories": [
-    "B"
-   ],
-   "filiere": "ADMINISTRATIVE",
-   "filieres": [
-    "ADMINISTRATIVE",
-    "TECHNIQUE"
-   ],
-   "deadline": "2026-10-30",
-   "deadline_label": "30 octobre 2026",
-   "publie_le": "2026-07-03",
-   "resume": "Au sein du service de la maintenance des collèges, le chargé de coordination fonctionnelle, assure, sous l'autorité du chef de service, le suivi et le contrôle des marchés à bons de commande de travaux et de de fournitures. Ces marchés couvrent l…",
-   "dcip": false,
-   "service": "",
-   "appariement": "",
    "candidature_permanente": false
   },
   {
