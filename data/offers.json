@@ -1,7 +1,7 @@
 {
- "generated_at": "2026-10-09T11:13:55Z",
+ "generated_at": "2026-10-12T11:48:29Z",
  "source": "https://www.departement06.fr/offres-demploi",
- "count": 45,
+ "count": 42,
  "count_dcip": 8,
  "offers": [
   {
@@ -488,72 +488,6 @@
    "deadline_label": "30 octobre 2026",
    "publie_le": "2026-09-18",
    "resume": "L'infirmier mobile dispositif de prévention de l'exploitation sexuelle des mineurs au Carrefour Santé Jeunes en SDPMI participe à la mise en oeuvre de la politique du Conseil Départemental des Alpes-Maritimes en assurant sur son territoire d…",
-   "dcip": false,
-   "service": "",
-   "appariement": "",
-   "candidature_permanente": false
-  },
-  {
-   "id": "agent-forestier-des-parcs-naturels-departementaux-secteur-ouest-hf-21279",
-   "titre": "Agent forestier des parcs naturels départementaux - secteur ouest H/F (21279)",
-   "url": "https://www.departement06.fr/offres-demploi/agent-forestier-des-parcs-naturels-departementaux-secteur-ouest-hf-21279",
-   "domaine": "Environnement - Ecologie",
-   "categorie": "C",
-   "categories": [
-    "C"
-   ],
-   "filiere": "TECHNIQUE",
-   "filieres": [
-    "TECHNIQUE"
-   ],
-   "deadline": "2026-10-11",
-   "deadline_label": "11 octobre 2026",
-   "publie_le": "2026-09-11",
-   "resume": "Au sein de ce secteur, l'agent forestier assure l'entretien, la sécurité et l'aménagement des espaces naturels, en garantissant leur propreté, leur accessibilité et leur valorisation, tout en contribuant à la préservation de l'environnement, à l…",
-   "dcip": false,
-   "service": "",
-   "appariement": "",
-   "candidature_permanente": false
-  },
-  {
-   "id": "garde-nature-des-parcs-naturels-departementaux-secteur-est-hf-31254",
-   "titre": "Garde nature des parcs naturels départementaux - secteur Est H/F (31254)",
-   "url": "https://www.departement06.fr/offres-demploi/garde-nature-des-parcs-naturels-departementaux-secteur-est-hf-31254",
-   "domaine": "Environnement - Ecologie",
-   "categorie": "C",
-   "categories": [
-    "C"
-   ],
-   "filiere": "TECHNIQUE",
-   "filieres": [
-    "TECHNIQUE"
-   ],
-   "deadline": "2026-10-11",
-   "deadline_label": "11 octobre 2026",
-   "publie_le": "2026-09-11",
-   "resume": "Au sein d'une équipe composée de 20 agents (1 responsable, son adjoint et 18 gardes), le garde nature du secteur Est assure en binôme la surveillance des parcs naturels départementaux d'Estienne d'Orves, du Vinaigrier, de la Grande Corniche, du Cros…",
-   "dcip": false,
-   "service": "",
-   "appariement": "",
-   "candidature_permanente": false
-  },
-  {
-   "id": "garde-nature-des-parcs-naturels-departementaux-secteur-est-hf-33340",
-   "titre": "Garde nature des parcs naturels départementaux - Secteur Est H/F (33340)",
-   "url": "https://www.departement06.fr/offres-demploi/garde-nature-des-parcs-naturels-departementaux-secteur-est-hf-33340",
-   "domaine": "Environnement - Ecologie",
-   "categorie": "C",
-   "categories": [
-    "C"
-   ],
-   "filiere": "TECHNIQUE",
-   "filieres": [
-    "TECHNIQUE"
-   ],
-   "deadline": "2026-10-11",
-   "deadline_label": "11 octobre 2026",
-   "publie_le": "2026-09-11",
-   "resume": "Au sein d'une équipe composée de 20 agents (1 responsable, son adjoint et 18 gardes), le garde nature du secteur Est assure en binôme la surveillance des parcs naturels départementaux d'Estienne d'Orves, du Vinaigrier, de la Grande Corniche, du Cros…",
    "dcip": false,
    "service": "",
    "appariement": "",
