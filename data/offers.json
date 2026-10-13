@@ -1,9 +1,54 @@
 {
- "generated_at": "2026-10-12T11:48:29Z",
+ "generated_at": "2026-10-13T11:36:33Z",
  "source": "https://www.departement06.fr/offres-demploi",
- "count": 42,
+ "count": 44,
  "count_dcip": 8,
  "offers": [
+  {
+   "id": "chef-equipe-atelier-specialisation-poids-lourds-hf-30626",
+   "titre": "Chef équipe atelier spécialisation poids lourds H/F (30626)",
+   "url": "https://www.departement06.fr/offres-demploi/chef-equipe-atelier-specialisation-poids-lourds-hf-30626",
+   "domaine": "Infrastructures et réseaux",
+   "categorie": "C",
+   "categories": [
+    "C",
+    "B"
+   ],
+   "filiere": "TECHNIQUE",
+   "filieres": [
+    "TECHNIQUE"
+   ],
+   "deadline": "2026-11-12",
+   "deadline_label": "12 novembre 2026",
+   "publie_le": "2026-10-13",
+   "resume": "le chef d'équipe – spécialisation poids lourds assure l'encadrement opérationnel d'une équipe de techniciens chargés de l'entretien et de la maintenance des véhicules lourds et matériels associés. Sous l'autorité du responsable du service, il…",
+   "dcip": false,
+   "service": "",
+   "appariement": "",
+   "candidature_permanente": false
+  },
+  {
+   "id": "controleur-responsable-dun-centre-dexploitation-sur-greolieres-hf-31344",
+   "titre": "Contrôleur responsable d'un centre d'exploitation sur Gréolières H/F (31344)",
+   "url": "https://www.departement06.fr/offres-demploi/controleur-responsable-dun-centre-dexploitation-sur-greolieres-hf-31344",
+   "domaine": "Infrastructures et réseaux",
+   "categorie": "B",
+   "categories": [
+    "B"
+   ],
+   "filiere": "TECHNIQUE",
+   "filieres": [
+    "TECHNIQUE"
+   ],
+   "deadline": "2026-10-31",
+   "deadline_label": "31 octobre 2026",
+   "publie_le": "2026-10-12",
+   "resume": "Au sein de l'ARD, le contrôleur responsable de centres d'exploitation a pour mission d'encadrer, piloter et suivre l'activité générale du centre d'exploitation de Gréolières et d'assurer la mise en œuvre des travaux neufs.",
+   "dcip": false,
+   "service": "",
+   "appariement": "",
+   "candidature_permanente": false
+  },
   {
    "id": "charge-doperations-specialise-ascenseurs-hf",
    "titre": "Chargé d'opérations spécialisé ascenseurs H/F",
