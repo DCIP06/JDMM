@@ -1,9 +1,32 @@
 {
- "generated_at": "2026-10-13T11:36:33Z",
+ "generated_at": "2026-10-15T09:02:55Z",
  "source": "https://www.departement06.fr/offres-demploi",
  "count": 44,
  "count_dcip": 8,
  "offers": [
+  {
+   "id": "referent-suivi-parcours-mna-hf-33993",
+   "titre": "Référent suivi parcours MNA H/F (33993)",
+   "url": "https://www.departement06.fr/offres-demploi/referent-suivi-parcours-mna-hf-33993",
+   "domaine": "Social",
+   "categorie": "B",
+   "categories": [
+    "B",
+    "A"
+   ],
+   "filiere": "ADMINISTRATIVE",
+   "filieres": [
+    "ADMINISTRATIVE"
+   ],
+   "deadline": "2026-10-30",
+   "deadline_label": "30 octobre 2026",
+   "publie_le": "2026-10-14",
+   "resume": "Au sein de la section Suivi des enfants confiés, le référent suivi parcours des MNA assure l'accompagnement et le suivi des enfants, adolescents et jeunes adultes confiés, en coordonnant les acteurs internes et externes, afin de répondre à leurs…",
+   "dcip": false,
+   "service": "",
+   "appariement": "",
+   "candidature_permanente": false
+  },
   {
    "id": "chef-equipe-atelier-specialisation-poids-lourds-hf-30626",
    "titre": "Chef équipe atelier spécialisation poids lourds H/F (30626)",
@@ -335,28 +358,6 @@
    "dcip": true,
    "service": "",
    "appariement": "domaine",
-   "candidature_permanente": false
-  },
-  {
-   "id": "aide-magasinier-hf-30378",
-   "titre": "Aide-magasinier H/F (30378)",
-   "url": "https://www.departement06.fr/offres-demploi/aide-magasinier-hf-30378",
-   "domaine": "Logistique",
-   "categorie": "C",
-   "categories": [
-    "C"
-   ],
-   "filiere": "TECHNIQUE",
-   "filieres": [
-    "TECHNIQUE"
-   ],
-   "deadline": "2026-10-14",
-   "deadline_label": "14 octobre 2026",
-   "publie_le": "2026-09-30",
-   "resume": "Au sein du service parc automobile, chargé du pilotage et de l'entretien du parc de véhicule légers de la collectivité, l'aide magasinier assiste et remplace le cas échéant le magasinier en cas d'absence afin d'assurer la continuité du…",
-   "dcip": false,
-   "service": "",
-   "appariement": "",
    "candidature_permanente": false
   },
   {
