@@ -1,9 +1,31 @@
 {
- "generated_at": "2026-10-17T08:27:04Z",
+ "generated_at": "2026-10-20T09:18:42Z",
  "source": "https://www.departement06.fr/offres-demploi",
- "count": 49,
+ "count": 50,
  "count_dcip": 11,
  "offers": [
+  {
+   "id": "charge-de-coordination-hf-33693",
+   "titre": "Chargé de coordination H/F (33693)",
+   "url": "https://www.departement06.fr/offres-demploi/charge-de-coordination-hf-33693",
+   "domaine": "Social",
+   "categorie": "B",
+   "categories": [
+    "B"
+   ],
+   "filiere": "ADMINISTRATIVE",
+   "filieres": [
+    "ADMINISTRATIVE"
+   ],
+   "deadline": "2026-11-19",
+   "deadline_label": "19 novembre 2026",
+   "publie_le": "2026-10-19",
+   "resume": "Ce poste s'inscrit dans le besoin de coordination de l'activité de la MDA composée de 8 services et de plus de 200 agents.Rattaché directement au Directeur, en lien permanent avec le Directeur et ses adjointes, le chargé de coordination de…",
+   "dcip": false,
+   "service": "",
+   "appariement": "",
+   "candidature_permanente": false
+  },
   {
    "id": "agent-de-maintenance-des-batiments-tout-corps-detat-hf-30726",
    "titre": "Agent de maintenance des bâtiments – Tout corps d'état H/F (30726)",
