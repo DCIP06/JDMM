@@ -1,9 +1,53 @@
 {
- "generated_at": "2026-10-20T09:18:42Z",
+ "generated_at": "2026-10-21T09:15:45Z",
  "source": "https://www.departement06.fr/offres-demploi",
- "count": 50,
+ "count": 52,
  "count_dcip": 11,
  "offers": [
+  {
+   "id": "charge-de-mission-financements-publics-34053",
+   "titre": "Chargé de mission financements publics (34053)",
+   "url": "https://www.departement06.fr/offres-demploi/charge-de-mission-financements-publics-34053",
+   "domaine": "Développement",
+   "categorie": "A",
+   "categories": [
+    "A"
+   ],
+   "filiere": "ADMINISTRATIVE",
+   "filieres": [
+    "ADMINISTRATIVE"
+   ],
+   "deadline": "2026-11-20",
+   "deadline_label": "20 novembre 2026",
+   "publie_le": "2026-10-20",
+   "resume": "Sous l'autorité du responsable du Service d'Appui aux politiques publiques, le chargé de mission financements publics participe à l'accès aux financements régionaux, nationaux et européens des communes du territoire. Il assure une mission de veille,…",
+   "dcip": false,
+   "service": "",
+   "appariement": "",
+   "candidature_permanente": false
+  },
+  {
+   "id": "psychologue-au-cegidd-hf-30801",
+   "titre": "Psychologue au CeGIDD H/F (30801)",
+   "url": "https://www.departement06.fr/offres-demploi/psychologue-au-cegidd-hf-30801",
+   "domaine": "Santé",
+   "categorie": "A",
+   "categories": [
+    "A"
+   ],
+   "filiere": "MEDICO-SOCIALE",
+   "filieres": [
+    "MEDICO-SOCIALE"
+   ],
+   "deadline": "2026-11-20",
+   "deadline_label": "20 novembre 2026",
+   "publie_le": "2026-10-20",
+   "resume": "Au sein du CeGIDD, le psychologue assure un accompagnement psychologique global des usagers du CeGIDD en favorisant le repérage des vulnérabilités, le soutien psychologique, l'accès aux soins et la promotion de la santé sexuelle, afin de contribuer…",
+   "dcip": false,
+   "service": "",
+   "appariement": "",
+   "candidature_permanente": false
+  },
   {
    "id": "charge-de-coordination-hf-33693",
    "titre": "Chargé de coordination H/F (33693)",
