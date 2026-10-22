@@ -1,9 +1,27 @@
 {
- "generated_at": "2026-10-21T09:15:45Z",
+ "generated_at": "2026-10-22T09:18:14Z",
  "source": "https://www.departement06.fr/offres-demploi",
- "count": 52,
+ "count": 53,
  "count_dcip": 11,
  "offers": [
+  {
+   "id": "assistant-familial-hf",
+   "titre": "Assistant familial H/F",
+   "url": "https://www.departement06.fr/offres-demploi/assistant-familial-hf",
+   "domaine": "Social",
+   "categorie": "",
+   "categories": [],
+   "filiere": "",
+   "filieres": [],
+   "deadline": "",
+   "deadline_label": "Candidature permanente",
+   "publie_le": "2026-10-21",
+   "resume": "L'assistant familial assure à l'enfant accueilli un cadre de vie stable, sécurisant et bienveillant favorisant son développement physique, affectif, social et éducatif, tout en répondant à ses besoins quotidiens. Il l'accompagne dans son parcours de…",
+   "dcip": false,
+   "service": "",
+   "appariement": "",
+   "candidature_permanente": true
+  },
   {
    "id": "charge-de-mission-financements-publics-34053",
    "titre": "Chargé de mission financements publics (34053)",
