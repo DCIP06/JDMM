@@ -1,9 +1,31 @@
 {
- "generated_at": "2026-10-23T09:13:43Z",
+ "generated_at": "2026-10-24T08:47:19Z",
  "source": "https://www.departement06.fr/offres-demploi",
- "count": 53,
+ "count": 52,
  "count_dcip": 11,
  "offers": [
+  {
+   "id": "charge-du-controle-financier-de-34052-hf",
+   "titre": "Chargé du contrôle financier DE (34052) H/F",
+   "url": "https://www.departement06.fr/offres-demploi/charge-du-controle-financier-de-34052-hf",
+   "domaine": "Finances et contrôle de gestion",
+   "categorie": "A",
+   "categories": [
+    "A"
+   ],
+   "filiere": "ADMINISTRATIVE",
+   "filieres": [
+    "ADMINISTRATIVE"
+   ],
+   "deadline": "2026-11-30",
+   "deadline_label": "30 novembre 2026",
+   "publie_le": "2026-10-23",
+   "resume": "Au sein de la section gestion administrative et financière des établissements et services, le chargé du contrôle financier assure une gestion financière rigoureuse, prospective et optimisée des établissements et services de l'aide sociale à l…",
+   "dcip": false,
+   "service": "",
+   "appariement": "",
+   "candidature_permanente": false
+  },
   {
    "id": "assistant-familial-hf",
    "titre": "Assistant familial H/F",
@@ -689,50 +711,6 @@
    "service": "Énergie et fluides",
    "poste_dcip_id": "charge-detudes-cvc-maintenance-hf",
    "appariement": "url",
-   "candidature_permanente": false
-  },
-  {
-   "id": "charge-de-projet-protocole-hf-33082",
-   "titre": "Chargé de projet protocole H/F (33082)",
-   "url": "https://www.departement06.fr/offres-demploi/charge-de-projet-protocole-hf-33082",
-   "domaine": "Communication - Evènementiel",
-   "categorie": "B",
-   "categories": [
-    "B"
-   ],
-   "filiere": "TECHNIQUE",
-   "filieres": [
-    "TECHNIQUE"
-   ],
-   "deadline": "2026-10-23",
-   "deadline_label": "23 octobre 2026",
-   "publie_le": "2026-09-24",
-   "resume": "Au sein du service du protocole, le chargé de projet propose et coordonne les actions de communication du Conseil départemental. Il a en charge l'organisation matérielle de l'ensemble des manifestations, des réceptions et des cérémonies organisées…",
-   "dcip": false,
-   "service": "",
-   "appariement": "",
-   "candidature_permanente": false
-  },
-  {
-   "id": "conseillers-autonomie-allo-mda-hf-34022",
-   "titre": "Conseillers autonomie ALLO MDA H/F (34022)",
-   "url": "https://www.departement06.fr/offres-demploi/conseillers-autonomie-allo-mda-hf-34022",
-   "domaine": "Social",
-   "categorie": "C",
-   "categories": [
-    "C"
-   ],
-   "filiere": "SOCIALE",
-   "filieres": [
-    "SOCIALE"
-   ],
-   "deadline": "2026-10-23",
-   "deadline_label": "23 octobre 2026",
-   "publie_le": "2026-09-23",
-   "resume": "Au sein du service relation et accompagnement des usagers et placé sous la responsabilité de la responsable de la structure, le conseiller autonomie assure un accueil, une information et un accompagnement de proximité des usagers de la MDA en…",
-   "dcip": false,
-   "service": "",
-   "appariement": "",
    "candidature_permanente": false
   },
   {
