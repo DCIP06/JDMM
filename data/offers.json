@@ -1,7 +1,7 @@
 {
- "generated_at": "2026-10-24T08:47:19Z",
+ "generated_at": "2026-10-25T09:03:04Z",
  "source": "https://www.departement06.fr/offres-demploi",
- "count": 52,
+ "count": 49,
  "count_dcip": 11,
  "offers": [
   {
@@ -601,50 +601,6 @@
    "candidature_permanente": false
   },
   {
-   "id": "agent-forestier-des-parcs-naturels-departementaux-secteur-est-hf-21278",
-   "titre": "Agent forestier des Parcs naturels départementaux - secteur Est H/F (21278)",
-   "url": "https://www.departement06.fr/offres-demploi/agent-forestier-des-parcs-naturels-departementaux-secteur-est-hf-21278",
-   "domaine": "Environnement - Ecologie",
-   "categorie": "C",
-   "categories": [
-    "C"
-   ],
-   "filiere": "TECHNIQUE",
-   "filieres": [
-    "TECHNIQUE"
-   ],
-   "deadline": "2026-10-24",
-   "deadline_label": "24 octobre 2026",
-   "publie_le": "2026-09-24",
-   "resume": "Au sein de ce secteur, l'agent forestier assure l'entretien, la sécurité et l'aménagement des espaces naturels, en garantissant leur propreté, leur accessibilité et leur valorisation, tout en contribuant à la préservation de l'environnement, à l…",
-   "dcip": false,
-   "service": "",
-   "appariement": "",
-   "candidature_permanente": false
-  },
-  {
-   "id": "chef-cuisinier-hf-33698",
-   "titre": "Chef cuisinier H/F (33698)",
-   "url": "https://www.departement06.fr/offres-demploi/chef-cuisinier-hf-33698",
-   "domaine": "Communication - Evènementiel",
-   "categorie": "B",
-   "categories": [
-    "B"
-   ],
-   "filiere": "TECHNIQUE",
-   "filieres": [
-    "TECHNIQUE"
-   ],
-   "deadline": "2026-10-24",
-   "deadline_label": "24 octobre 2026",
-   "publie_le": "2026-09-24",
-   "resume": "Au sein du service protocole, le chef cuisinier assure une prestation de restauration de qualité, de la conception des menus à la réalisation des plats, dans le respect des normes d'hygiène et de sécurité alimentaire, tout en garantissant la gestion…",
-   "dcip": false,
-   "service": "",
-   "appariement": "",
-   "candidature_permanente": false
-  },
-  {
    "id": "chef-de-projet-batiment-rehabilitation-agence-06-hf",
    "titre": "Chef de projet bâtiment / réhabilitation Agence 06 H/F",
    "url": "https://www.departement06.fr/offres-demploi/chef-de-projet-batiment-rehabilitation-agence-06-hf",
@@ -664,29 +620,6 @@
    "dcip": true,
    "service": "",
    "appariement": "motif:bâtiment",
-   "candidature_permanente": false
-  },
-  {
-   "id": "responsable-ressources-humaines-agence-06-hf",
-   "titre": "Responsable Ressources Humaines Agence 06 H/F",
-   "url": "https://www.departement06.fr/offres-demploi/responsable-ressources-humaines-agence-06-hf",
-   "domaine": "Développement",
-   "categorie": "B",
-   "categories": [
-    "B",
-    "A"
-   ],
-   "filiere": "ADMINISTRATIVE",
-   "filieres": [
-    "ADMINISTRATIVE"
-   ],
-   "deadline": "2026-10-24",
-   "deadline_label": "24 octobre 2026",
-   "publie_le": "2026-09-24",
-   "resume": "Au sein de la Direction de l'Agence06, et en lien direct avec la Direction des Ressources humaines du Département des Alpes Maritimes, le/la Responsable Ressources Humaines (RH) est chargé de l'application de la politique et de la stratégie en…",
-   "dcip": false,
-   "service": "",
-   "appariement": "",
    "candidature_permanente": false
   },
   {
