@@ -1,9 +1,31 @@
 {
- "generated_at": "2026-10-25T09:03:04Z",
+ "generated_at": "2026-10-27T09:42:49Z",
  "source": "https://www.departement06.fr/offres-demploi",
- "count": 49,
+ "count": 50,
  "count_dcip": 11,
  "offers": [
+  {
+   "id": "assistant-la-coordinatrice-mise-labri-hf-33358",
+   "titre": "Assistant à la coordinatrice mise à l'abri H/F (33358)",
+   "url": "https://www.departement06.fr/offres-demploi/assistant-la-coordinatrice-mise-labri-hf-33358",
+   "domaine": "Social",
+   "categorie": "C",
+   "categories": [
+    "C"
+   ],
+   "filiere": "ADMINISTRATIVE",
+   "filieres": [
+    "ADMINISTRATIVE"
+   ],
+   "deadline": "2026-11-13",
+   "deadline_label": "13 novembre 2026",
+   "publie_le": "2026-10-26",
+   "resume": "Au sein de la section, l'assistant à la coordinatrice mise à l'abri, assure le soutien administratif et la coordination des activités du service afin de garantir un suivi efficace des situations et une prise en charge adaptée des enfants,…",
+   "dcip": false,
+   "service": "",
+   "appariement": "",
+   "candidature_permanente": false
+  },
   {
    "id": "charge-du-controle-financier-de-34052-hf",
    "titre": "Chargé du contrôle financier DE (34052) H/F",
