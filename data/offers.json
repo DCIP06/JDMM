@@ -1,14 +1,14 @@
 {
- "generated_at": "2026-10-27T09:42:49Z",
+ "generated_at": "2026-10-28T10:28:12Z",
  "source": "https://www.departement06.fr/offres-demploi",
- "count": 50,
- "count_dcip": 11,
+ "count": 49,
+ "count_dcip": 9,
  "offers": [
   {
    "id": "assistant-la-coordinatrice-mise-labri-hf-33358",
    "titre": "Assistant à la coordinatrice mise à l'abri H/F (33358)",
    "url": "https://www.departement06.fr/offres-demploi/assistant-la-coordinatrice-mise-labri-hf-33358",
-   "domaine": "Social",
+   "domaine": "",
    "categorie": "C",
    "categories": [
     "C"
@@ -30,7 +30,7 @@
    "id": "charge-du-controle-financier-de-34052-hf",
    "titre": "Chargé du contrôle financier DE (34052) H/F",
    "url": "https://www.departement06.fr/offres-demploi/charge-du-controle-financier-de-34052-hf",
-   "domaine": "Finances et contrôle de gestion",
+   "domaine": "",
    "categorie": "A",
    "categories": [
     "A"
@@ -52,7 +52,7 @@
    "id": "assistant-familial-hf",
    "titre": "Assistant familial H/F",
    "url": "https://www.departement06.fr/offres-demploi/assistant-familial-hf",
-   "domaine": "Social",
+   "domaine": "",
    "categorie": "",
    "categories": [],
    "filiere": "",
@@ -70,7 +70,7 @@
    "id": "charge-de-mission-financements-publics-34053",
    "titre": "Chargé de mission financements publics (34053)",
    "url": "https://www.departement06.fr/offres-demploi/charge-de-mission-financements-publics-34053",
-   "domaine": "Développement",
+   "domaine": "",
    "categorie": "A",
    "categories": [
     "A"
@@ -92,7 +92,7 @@
    "id": "psychologue-au-cegidd-hf-30801",
    "titre": "Psychologue au CeGIDD H/F (30801)",
    "url": "https://www.departement06.fr/offres-demploi/psychologue-au-cegidd-hf-30801",
-   "domaine": "Santé",
+   "domaine": "",
    "categorie": "A",
    "categories": [
     "A"
@@ -114,7 +114,7 @@
    "id": "charge-de-coordination-hf-33693",
    "titre": "Chargé de coordination H/F (33693)",
    "url": "https://www.departement06.fr/offres-demploi/charge-de-coordination-hf-33693",
-   "domaine": "Social",
+   "domaine": "",
    "categorie": "B",
    "categories": [
     "B"
@@ -136,7 +136,7 @@
    "id": "agent-de-maintenance-des-batiments-tout-corps-detat-hf-30726",
    "titre": "Agent de maintenance des bâtiments – Tout corps d'état H/F (30726)",
    "url": "https://www.departement06.fr/offres-demploi/agent-de-maintenance-des-batiments-tout-corps-detat-hf-30726",
-   "domaine": "Patrimoine bâti",
+   "domaine": "",
    "categorie": "C",
    "categories": [
     "C"
@@ -151,14 +151,14 @@
    "resume": "Au sein du service entretien de proximité des bâtiments, l'agent de maintenance des bâtiments assure la continuité, la sécurité et la qualité du fonctionnement des installations en réalisant les interventions de maintenance de premier niveau, en…",
    "dcip": true,
    "service": "",
-   "appariement": "domaine",
+   "appariement": "motif:bâtiment",
    "candidature_permanente": false
   },
   {
    "id": "assistant-administratif-hf-33223",
    "titre": "Assistant administratif H/F (33223)",
    "url": "https://www.departement06.fr/offres-demploi/assistant-administratif-hf-33223",
-   "domaine": "Social",
+   "domaine": "",
    "categorie": "C",
    "categories": [
     "C"
@@ -180,7 +180,7 @@
    "id": "assistant-de-gestion-service-etudes-et-travaux-dcip-hf-31397",
    "titre": "Assistant de gestion Service Etudes et Travaux DCIP H/F (31397)",
    "url": "https://www.departement06.fr/offres-demploi/assistant-de-gestion-service-etudes-et-travaux-dcip-hf-31397",
-   "domaine": "Patrimoine bâti",
+   "domaine": "",
    "categorie": "C",
    "categories": [
     "C",
@@ -204,7 +204,7 @@
    "id": "charge-detudes-et-de-projets-cvc-ventilation-et-plomberie-hf-34054",
    "titre": "Chargé d'études et de projets CVC, ventilation et plomberie (H/F) (34054)",
    "url": "https://www.departement06.fr/offres-demploi/charge-detudes-et-de-projets-cvc-ventilation-et-plomberie-hf-34054",
-   "domaine": "Patrimoine bâti",
+   "domaine": "",
    "categorie": "A",
    "categories": [
     "A"
@@ -219,36 +219,14 @@
    "resume": "Au sein du service Energie et fluides, le chargé d'études et de projets CVC, ventilation et plomberie assiste le chef de service dans la coordination des activités des personnels placés sous son autorité. Il garantit la conception, la conformité, le…",
    "dcip": true,
    "service": "",
-   "appariement": "domaine",
-   "candidature_permanente": false
-  },
-  {
-   "id": "referent-espace-territorial-insertion-et-controle-volant-hf-31582",
-   "titre": "Réfèrent Espace Territorial Insertion et Contrôle Volant H/F (31582)",
-   "url": "https://www.departement06.fr/offres-demploi/referent-espace-territorial-insertion-et-controle-volant-hf-31582",
-   "domaine": "Social",
-   "categorie": "C",
-   "categories": [
-    "C"
-   ],
-   "filiere": "MEDICO-SOCIALE",
-   "filieres": [
-    "MEDICO-SOCIALE"
-   ],
-   "deadline": "2026-11-16",
-   "deadline_label": "16 novembre 2026",
-   "publie_le": "2026-10-16",
-   "resume": "Au sein d'une équipe de 10 agents:· Vous accueillez, accompagnez, informez et orientez les bénéficiaires du RSA dans l'élaboration d'un parcours d'insertion socioprofessionnelle,· Vous contrôlez les parcours d'insertion des bénéficiaires…",
-   "dcip": false,
-   "service": "",
-   "appariement": "",
+   "appariement": "motif:CVC",
    "candidature_permanente": false
   },
   {
    "id": "technicien-de-lenvironnement-poste-de-travail-hf-32380",
    "titre": "Technicien de l'environnement poste de travail H/F (32380)",
    "url": "https://www.departement06.fr/offres-demploi/technicien-de-lenvironnement-poste-de-travail-hf-32380",
-   "domaine": "Infrastructures et réseaux",
+   "domaine": "",
    "categorie": "B",
    "categories": [
     "B"
@@ -270,7 +248,7 @@
    "id": "referent-suivi-parcours-mna-hf-33993",
    "titre": "Référent suivi parcours MNA H/F (33993)",
    "url": "https://www.departement06.fr/offres-demploi/referent-suivi-parcours-mna-hf-33993",
-   "domaine": "Social",
+   "domaine": "",
    "categorie": "B",
    "categories": [
     "B",
@@ -293,7 +271,7 @@
    "id": "chef-equipe-atelier-specialisation-poids-lourds-hf-30626",
    "titre": "Chef équipe atelier spécialisation poids lourds H/F (30626)",
    "url": "https://www.departement06.fr/offres-demploi/chef-equipe-atelier-specialisation-poids-lourds-hf-30626",
-   "domaine": "Infrastructures et réseaux",
+   "domaine": "",
    "categorie": "C",
    "categories": [
     "C",
@@ -316,7 +294,7 @@
    "id": "controleur-responsable-dun-centre-dexploitation-sur-greolieres-hf-31344",
    "titre": "Contrôleur responsable d'un centre d'exploitation sur Gréolières H/F (31344)",
    "url": "https://www.departement06.fr/offres-demploi/controleur-responsable-dun-centre-dexploitation-sur-greolieres-hf-31344",
-   "domaine": "Infrastructures et réseaux",
+   "domaine": "",
    "categorie": "B",
    "categories": [
     "B"
@@ -338,7 +316,7 @@
    "id": "technicien-specialise-ascenseurs-hf",
    "titre": "Technicien spécialisé ascenseurs H/F",
    "url": "https://www.departement06.fr/offres-demploi/technicien-specialise-ascenseurs-hf",
-   "domaine": "Patrimoine bâti",
+   "domaine": "",
    "categorie": "B",
    "categories": [
     "B"
@@ -351,16 +329,16 @@
    "deadline_label": "31 octobre 2026",
    "publie_le": "2026-10-09",
    "resume": "Au sein d'une équipe du service maintenance, le chargé d'opérations spécialisé ascenseur assure le suivi technique, réglementaire et contractuel du parc d'ascenseurs des collèges et des gymnases qui leur sont rattachés (ascenseurs, monte charges…",
-   "dcip": true,
+   "dcip": false,
    "service": "",
-   "appariement": "domaine",
+   "appariement": "",
    "candidature_permanente": false
   },
   {
    "id": "ergotherapeute-paph-hf-33276",
    "titre": "Ergothérapeute PA/PH H/F (33276)",
    "url": "https://www.departement06.fr/offres-demploi/ergotherapeute-paph-hf-33276",
-   "domaine": "Social",
+   "domaine": "",
    "categorie": "A",
    "categories": [
     "A"
@@ -382,7 +360,7 @@
    "id": "psychologue-centre-de-sante-puget-theniers-hf-33936",
    "titre": "Psychologue Centre de santé Puget-Théniers H/F (33936)",
    "url": "https://www.departement06.fr/offres-demploi/psychologue-centre-de-sante-puget-theniers-hf-33936",
-   "domaine": "Santé",
+   "domaine": "",
    "categorie": "A",
    "categories": [
     "A"
@@ -404,7 +382,7 @@
    "id": "responsable-de-section-services-medico-sociaux-et-accueils-alternatifs-hf-33025",
    "titre": "Responsable de section services médico-sociaux et accueils alternatifs H/F (33025)",
    "url": "https://www.departement06.fr/offres-demploi/responsable-de-section-services-medico-sociaux-et-accueils-alternatifs-hf-33025",
-   "domaine": "Social",
+   "domaine": "",
    "categorie": "A",
    "categories": [
     "A"
@@ -426,7 +404,7 @@
    "id": "responsable-fonctionnel-du-systeme-dinformation-financier-hf-34000",
    "titre": "Responsable fonctionnel du système d'information financier H/F (34000)",
    "url": "https://www.departement06.fr/offres-demploi/responsable-fonctionnel-du-systeme-dinformation-financier-hf-34000",
-   "domaine": "Finances et contrôle de gestion",
+   "domaine": "",
    "categorie": "A",
    "categories": [
     "A"
@@ -449,7 +427,7 @@
    "id": "responsable-pmi-nice-centre-dt4-hf-20934",
    "titre": "Responsable PMI Nice Centre DT4 H/F (20934)",
    "url": "https://www.departement06.fr/offres-demploi/responsable-pmi-nice-centre-dt4-hf-20934",
-   "domaine": "Social",
+   "domaine": "",
    "categorie": "A",
    "categories": [
     "A"
@@ -461,7 +439,7 @@
    "deadline": "2026-10-30",
    "deadline_label": "30 octobre 2026",
    "publie_le": "2026-10-05",
-   "resume": "Au quotidien,- vous encadrerez techniquement et hiérarchiquement l'équipe pluridisciplinaire de la structure;- vous assurerez des consultations médicales dans les centres de protection maternelle infantile et de planification;",
+   "resume": "Au quotidien,- vous encadrerez techniquement et hiérarchiquement l'équipe pluridisciplinaire de la structure;- vous assurerez des consultations médicales dans les centres de protection maternelle infantile et de planification;-vous…",
    "dcip": false,
    "service": "",
    "appariement": "",
@@ -471,7 +449,7 @@
    "id": "responsable-pmi-nice-lyautey-dt4-hf-20951",
    "titre": "Responsable PMI Nice Lyautey DT4 H/F (20951)",
    "url": "https://www.departement06.fr/offres-demploi/responsable-pmi-nice-lyautey-dt4-hf-20951",
-   "domaine": "Social",
+   "domaine": "",
    "categorie": "A",
    "categories": [
     "A"
@@ -483,7 +461,7 @@
    "deadline": "2026-10-30",
    "deadline_label": "30 octobre 2026",
    "publie_le": "2026-10-05",
-   "resume": "Au quotidien,- vous encadrerez techniquement et hiérarchiquement l'équipe pluridisciplinaire de la structure;- vous assurerez des consultations médicales dans les centres de protection maternelle infantile et de planification;",
+   "resume": "Au quotidien,- vous encadrerez techniquement et hiérarchiquement l'équipe pluridisciplinaire de la structure;- vous assurerez des consultations médicales dans les centres de protection maternelle infantile et de planification;-vous…",
    "dcip": false,
    "service": "",
    "appariement": "",
@@ -493,7 +471,7 @@
    "id": "responsable-de-la-section-aide-sociale-paph-30745-hf",
    "titre": "Responsable de la section aide sociale PA/PH (30745) H/F",
    "url": "https://www.departement06.fr/offres-demploi/responsable-de-la-section-aide-sociale-paph-30745-hf",
-   "domaine": "Social",
+   "domaine": "",
    "categorie": "A",
    "categories": [
     "A"
@@ -515,7 +493,7 @@
    "id": "charge-de-mission-protection-de-lenfance-hf-33001",
    "titre": "Chargé de mission protection de l'enfance H/F (33001)",
    "url": "https://www.departement06.fr/offres-demploi/charge-de-mission-protection-de-lenfance-hf-33001",
-   "domaine": "Social",
+   "domaine": "",
    "categorie": "A",
    "categories": [
     "A"
@@ -537,7 +515,7 @@
    "id": "controleur-de-gestion-du-suivi-des-esms-de-la-protection-de-lenfance-hf-33173",
    "titre": "Contrôleur de gestion du suivi des ESMS de la protection de l'enfance H/F (33173)",
    "url": "https://www.departement06.fr/offres-demploi/controleur-de-gestion-du-suivi-des-esms-de-la-protection-de-lenfance-hf-33173",
-   "domaine": "Finances et contrôle de gestion",
+   "domaine": "",
    "categorie": "A",
    "categories": [
     "A"
@@ -549,7 +527,7 @@
    "deadline": "2026-10-30",
    "deadline_label": "30 octobre 2026",
    "publie_le": "2026-10-02",
-   "resume": "Au sein de la section gestion administrative et financière des établissements et services, le contrôleur de gestion du suivi des ESMS de la protection de l'enfance, contribue à la structuration, à la fiabilisation et à l'optimisation du pilotage…",
+   "resume": "Au sein de la section gestion administrative et financière des établissements et services, le contrôleur de gestion du suivi des ESMS de la protection de l'enfance, contribue à la structuration, à la fiabilisation et à l'optimisation du…",
    "dcip": false,
    "service": "",
    "appariement": "",
@@ -559,7 +537,7 @@
    "id": "ingenieur-charge-detudes-batimentaires-hf-34007",
    "titre": "Ingénieur chargé d'études bâtimentaires H/F (34007)",
    "url": "https://www.departement06.fr/offres-demploi/ingenieur-charge-detudes-batimentaires-hf-34007",
-   "domaine": "Patrimoine bâti",
+   "domaine": "",
    "categorie": "A",
    "categories": [
     "A"
@@ -582,7 +560,7 @@
    "id": "psychologue-placement-familialadoption-renfort-de-hf",
    "titre": "Psychologue placement familial/adoption Renfort /DE (H/F)",
    "url": "https://www.departement06.fr/offres-demploi/psychologue-placement-familialadoption-renfort-de-hf",
-   "domaine": "Social",
+   "domaine": "",
    "categorie": "A",
    "categories": [
     "A"
@@ -604,7 +582,7 @@
    "id": "charge-doperations-colleges-hf-33929",
    "titre": "Chargé d'opérations collèges H/F (33929)",
    "url": "https://www.departement06.fr/offres-demploi/charge-doperations-colleges-hf-33929",
-   "domaine": "Patrimoine bâti",
+   "domaine": "",
    "categorie": "B",
    "categories": [
     "B"
@@ -617,16 +595,16 @@
    "deadline_label": "30 octobre 2026",
    "publie_le": "2026-10-01",
    "resume": "Au sein d'une équipe du service maintenance, le chargé d'opérations conçoit et fait réaliser par des entreprises divers travaux d'extension, de restructuration, de réhabilitation, de grosses réparations, d'aménagement et d'entretien concernant le…",
-   "dcip": true,
+   "dcip": false,
    "service": "",
-   "appariement": "domaine",
+   "appariement": "",
    "candidature_permanente": false
   },
   {
    "id": "chef-de-projet-batiment-rehabilitation-agence-06-hf",
    "titre": "Chef de projet bâtiment / réhabilitation Agence 06 H/F",
    "url": "https://www.departement06.fr/offres-demploi/chef-de-projet-batiment-rehabilitation-agence-06-hf",
-   "domaine": "Développement",
+   "domaine": "",
    "categorie": "A",
    "categories": [
     "A"
@@ -648,7 +626,7 @@
    "id": "charge-detudes-cvc-maintenance-hf",
    "titre": "Chargé d'études CVC maintenance H/F",
    "url": "https://www.departement06.fr/offres-demploi/charge-detudes-cvc-maintenance-hf",
-   "domaine": "Patrimoine bâti",
+   "domaine": "",
    "categorie": "B",
    "categories": [
     "B",
@@ -672,7 +650,7 @@
    "id": "infirmier-mobile-dispositif-de-prevention-de-lexploitation-sexuelle-des-mineurs",
    "titre": "Infirmier mobile dispositif de prévention de l'exploitation sexuelle des mineurs Carrefour Santé Jeunes",
    "url": "https://www.departement06.fr/offres-demploi/infirmier-mobile-dispositif-de-prevention-de-lexploitation-sexuelle-des-mineurs",
-   "domaine": "Social",
+   "domaine": "",
    "categorie": "A",
    "categories": [
     "A"
@@ -694,7 +672,7 @@
    "id": "controleur-de-gestion-hf-34034",
    "titre": "Contrôleur de gestion H/F (34034)",
    "url": "https://www.departement06.fr/offres-demploi/controleur-de-gestion-hf-34034",
-   "domaine": "Finances et contrôle de gestion",
+   "domaine": "",
    "categorie": "B",
    "categories": [
     "B",
@@ -707,7 +685,7 @@
    "deadline": "2026-10-31",
    "deadline_label": "31 octobre 2026",
    "publie_le": "2026-09-08",
-   "resume": "En votre qualité de contrôleur de gestion :-Vous assurerez périodiquement la communication et la présentation d'outils d'analyse et de pilotage (rapport d'activité, tableaux de bord, etc.), -Vous rédigerez des analyses, rapports, études…",
+   "resume": "En votre qualité de contrôleur de gestion :-Vous assurerez périodiquement la communication et la présentation d'outils d'analyse et de pilotage (rapport d'activité, tableaux de bord, etc.), -Vous rédigerez des analyses, rapports, études d…",
    "dcip": false,
    "service": "",
    "appariement": "",
@@ -717,7 +695,7 @@
    "id": "charge-doperations-des-equipements-electriques-routiers-hf-32407",
    "titre": "Chargé d'opérations des équipements électriques routiers H/F (32407)",
    "url": "https://www.departement06.fr/offres-demploi/charge-doperations-des-equipements-electriques-routiers-hf-32407",
-   "domaine": "Infrastructures et réseaux",
+   "domaine": "",
    "categorie": "B",
    "categories": [
     "B"
@@ -739,7 +717,7 @@
    "id": "charge-de-suivi-des-ehpad-hf-30346",
    "titre": "Chargé de suivi des EHPAD H/F (30346)",
    "url": "https://www.departement06.fr/offres-demploi/charge-de-suivi-des-ehpad-hf-30346",
-   "domaine": "Social",
+   "domaine": "",
    "categorie": "A",
    "categories": [
     "A"
@@ -761,7 +739,7 @@
    "id": "administrateur-reseaux-et-securite-hf-33088",
    "titre": "Administrateur réseaux et sécurité H/F (33088)",
    "url": "https://www.departement06.fr/offres-demploi/administrateur-reseaux-et-securite-hf-33088",
-   "domaine": "Infrastructures et réseaux",
+   "domaine": "",
    "categorie": "A",
    "categories": [
     "A"
@@ -783,7 +761,7 @@
    "id": "responsable-digital-workplace-hf-33971",
    "titre": "Responsable Digital Workplace H/F (33971)",
    "url": "https://www.departement06.fr/offres-demploi/responsable-digital-workplace-hf-33971",
-   "domaine": "Systèmes d'information et TIC",
+   "domaine": "",
    "categorie": "A",
    "categories": [
     "A"
@@ -805,7 +783,7 @@
    "id": "superviseur-dexploitation-systemes-et-reseaux-hf-32684",
    "titre": "Superviseur d'exploitation systèmes et réseaux H/F (32684)",
    "url": "https://www.departement06.fr/offres-demploi/superviseur-dexploitation-systemes-et-reseaux-hf-32684",
-   "domaine": "Infrastructures et réseaux",
+   "domaine": "",
    "categorie": "A",
    "categories": [
     "A"
@@ -827,7 +805,7 @@
    "id": "ingenieur-charge-detudes-courants-forts-et-faibles-dcip-hf-30269",
    "titre": "Ingénieur chargé d'études courants forts et faibles DCIP H/F (30269)",
    "url": "https://www.departement06.fr/offres-demploi/ingenieur-charge-detudes-courants-forts-et-faibles-dcip-hf-30269",
-   "domaine": "Patrimoine bâti",
+   "domaine": "",
    "categorie": "A",
    "categories": [
     "A"
@@ -850,7 +828,7 @@
    "id": "ingenieur-conduite-doperations-de-batiments-opc-suivi-de-chantier-hf-30249",
    "titre": "Ingénieur conduite d'opérations de bâtiments OPC - Suivi de chantier H/F (30249)",
    "url": "https://www.departement06.fr/offres-demploi/ingenieur-conduite-doperations-de-batiments-opc-suivi-de-chantier-hf-30249",
-   "domaine": "Patrimoine bâti",
+   "domaine": "",
    "categorie": "A",
    "categories": [
     "A"
@@ -873,7 +851,7 @@
    "id": "appreciateur-de-la-minorite-hf-32847",
    "titre": "Appréciateur de la minorité H/F (32847)",
    "url": "https://www.departement06.fr/offres-demploi/appreciateur-de-la-minorite-hf-32847",
-   "domaine": "Social",
+   "domaine": "",
    "categorie": "A",
    "categories": [
     "A"
@@ -895,7 +873,7 @@
    "id": "medecin-hf",
    "titre": "Médecin (H/F)",
    "url": "https://www.departement06.fr/offres-demploi/medecin-hf",
-   "domaine": "Santé",
+   "domaine": "",
    "categorie": "A",
    "categories": [
     "A"
@@ -917,7 +895,7 @@
    "id": "charge-de-projets-etudes-et-marches-hf-33932",
    "titre": "Chargé de projets études et marchés H/F (33932)",
    "url": "https://www.departement06.fr/offres-demploi/charge-de-projets-etudes-et-marches-hf-33932",
-   "domaine": "Patrimoine bâti",
+   "domaine": "",
    "categorie": "A",
    "categories": [
     "A"
@@ -962,7 +940,7 @@
    "id": "assistant-social-hf",
    "titre": "Assistant social H/F",
    "url": "https://www.departement06.fr/offres-demploi/assistant-social-hf",
-   "domaine": "Social",
+   "domaine": "",
    "categorie": "A",
    "categories": [
     "A"
@@ -984,7 +962,7 @@
    "id": "animateur-pour-les-ecoles-departementales-de-pleine-nature-hf",
    "titre": "Animateur pour les écoles départementales de pleine nature H/F",
    "url": "https://www.departement06.fr/offres-demploi/animateur-pour-les-ecoles-departementales-de-pleine-nature-hf",
-   "domaine": "Education - Animation - Jeunesse",
+   "domaine": "",
    "categorie": "C",
    "categories": [
     "C"
@@ -1006,7 +984,7 @@
    "id": "educateur-specialise-hf",
    "titre": "Educateur spécialisé H/F",
    "url": "https://www.departement06.fr/offres-demploi/educateur-specialise-hf",
-   "domaine": "Social",
+   "domaine": "",
    "categorie": "A",
    "categories": [
     "A"
@@ -1072,7 +1050,7 @@
    "id": "puericultrice-hf",
    "titre": "Puéricultrice H/F",
    "url": "https://www.departement06.fr/offres-demploi/puericultrice-hf",
-   "domaine": "Santé",
+   "domaine": "",
    "categorie": "A",
    "categories": [
     "A"
