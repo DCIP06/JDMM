@@ -1,9 +1,99 @@
 {
- "generated_at": "2026-10-30T10:47:13Z",
+ "generated_at": "2026-10-31T10:16:20Z",
  "source": "https://www.departement06.fr/offres-demploi",
- "count": 48,
- "count_dcip": 9,
+ "count": 43,
+ "count_dcip": 6,
  "offers": [
+  {
+   "id": "adjoint-antenne-departementale-de-recueil-devaluation-et-de-traitement-des",
+   "titre": "Adjoint Antenne départementale de recueil, d'évaluation et de traitement des informations préoccupantes H/F (33440)",
+   "url": "https://www.departement06.fr/offres-demploi/adjoint-antenne-departementale-de-recueil-devaluation-et-de-traitement-des",
+   "domaine": "",
+   "categorie": "A",
+   "categories": [
+    "A"
+   ],
+   "filiere": "MEDICO-SOCIALE",
+   "filieres": [
+    "MEDICO-SOCIALE",
+    "ADMINISTRATIVE"
+   ],
+   "deadline": "2026-11-30",
+   "deadline_label": "30 novembre 2026",
+   "publie_le": "2026-10-30",
+   "resume": "Au sein d'une équipe de 13 agents, l'adjoint assure la coordination opérationnelle de l'activité de l'ADRET, garantit la qualité du suivi des situations, le respect des délais et des procédures, sécurise le dispositif et les professionnels. Son…",
+   "dcip": false,
+   "service": "",
+   "appariement": "",
+   "candidature_permanente": false
+  },
+  {
+   "id": "adjoint-au-chef-du-service-du-parc-automobile-hf",
+   "titre": "Adjoint au chef du service du parc automobile H/F",
+   "url": "https://www.departement06.fr/offres-demploi/adjoint-au-chef-du-service-du-parc-automobile-hf",
+   "domaine": "",
+   "categorie": "A",
+   "categories": [
+    "A"
+   ],
+   "filiere": "TECHNIQUE",
+   "filieres": [
+    "TECHNIQUE"
+   ],
+   "deadline": "2026-11-30",
+   "deadline_label": "30 novembre 2026",
+   "publie_le": "2026-10-30",
+   "resume": "Au sein de la Direction des achats et de la logistique, l'adjoint au chef de service assure, aux côtés du chef de service, le bon fonctionnement, l'optimisation et la modernisation du parc automobile départemental, tout en encadrant les équipes et…",
+   "dcip": false,
+   "service": "",
+   "appariement": "",
+   "candidature_permanente": false
+  },
+  {
+   "id": "charge-doperations-de-batiment-tce-dcip-32747",
+   "titre": "Chargé d'opérations de bâtiment TCE DCIP (32747)",
+   "url": "https://www.departement06.fr/offres-demploi/charge-doperations-de-batiment-tce-dcip-32747",
+   "domaine": "",
+   "categorie": "B",
+   "categories": [
+    "B"
+   ],
+   "filiere": "TECHNIQUE",
+   "filieres": [
+    "TECHNIQUE"
+   ],
+   "deadline": "2026-11-30",
+   "deadline_label": "30 novembre 2026",
+   "publie_le": "2026-10-30",
+   "resume": "Au sein d'une équipe composée de 17 agents, le chargé d'opérations, sous l'autorité du chef de service, participe à la conception du programme de travaux et fait réaliser par des entreprises les opérations de rénovation, d'aménagements et d…",
+   "dcip": true,
+   "service": "Maintenance des bâtiments",
+   "poste_dcip_id": "charge-doperations-de-batiment-tce-dcip-32747",
+   "appariement": "url",
+   "candidature_permanente": false
+  },
+  {
+   "id": "chef-du-service-de-lassemblee-hf-31080",
+   "titre": "Chef du service de l'Assemblée H/F (31080)",
+   "url": "https://www.departement06.fr/offres-demploi/chef-du-service-de-lassemblee-hf-31080",
+   "domaine": "",
+   "categorie": "A",
+   "categories": [
+    "A"
+   ],
+   "filiere": "ADMINISTRATIVE",
+   "filieres": [
+    "ADMINISTRATIVE"
+   ],
+   "deadline": "2026-11-30",
+   "deadline_label": "30 novembre 2026",
+   "publie_le": "2026-10-30",
+   "resume": "Au sein du service de l'Assemblée, le chef du service est le garant de la qualité et de la sécurité du processus délibératif de la collectivité.",
+   "dcip": false,
+   "service": "",
+   "appariement": "",
+   "candidature_permanente": false
+  },
   {
    "id": "assistant-la-coordinatrice-mise-labri-hf-33358",
    "titre": "Assistant à la coordinatrice mise à l'abri H/F (33358)",
@@ -133,28 +223,6 @@
    "candidature_permanente": false
   },
   {
-   "id": "agent-de-maintenance-des-batiments-tout-corps-detat-hf-30726",
-   "titre": "Agent de maintenance des bâtiments – Tout corps d'état H/F (30726)",
-   "url": "https://www.departement06.fr/offres-demploi/agent-de-maintenance-des-batiments-tout-corps-detat-hf-30726",
-   "domaine": "",
-   "categorie": "C",
-   "categories": [
-    "C"
-   ],
-   "filiere": "TECHNIQUE",
-   "filieres": [
-    "TECHNIQUE"
-   ],
-   "deadline": "2026-10-30",
-   "deadline_label": "30 octobre 2026",
-   "publie_le": "2026-10-16",
-   "resume": "Au sein du service entretien de proximité des bâtiments, l'agent de maintenance des bâtiments assure la continuité, la sécurité et la qualité du fonctionnement des installations en réalisant les interventions de maintenance de premier niveau, en…",
-   "dcip": true,
-   "service": "",
-   "appariement": "motif:bâtiment",
-   "candidature_permanente": false
-  },
-  {
    "id": "assistant-de-gestion-service-etudes-et-travaux-dcip-hf-31397",
    "titre": "Assistant de gestion Service Etudes et Travaux DCIP H/F (31397)",
    "url": "https://www.departement06.fr/offres-demploi/assistant-de-gestion-service-etudes-et-travaux-dcip-hf-31397",
@@ -236,8 +304,8 @@
    "filieres": [
     "ADMINISTRATIVE"
    ],
-   "deadline": "2026-10-30",
-   "deadline_label": "30 octobre 2026",
+   "deadline": "2026-11-30",
+   "deadline_label": "30 novembre 2026",
    "publie_le": "2026-10-14",
    "resume": "Au sein de la section Suivi des enfants confiés, le référent suivi parcours des MNA assure l'accompagnement et le suivi des enfants, adolescents et jeunes adultes confiés, en coordonnant les acteurs internes et externes, afin de répondre à leurs…",
    "dcip": false,
@@ -303,8 +371,8 @@
    "filieres": [
     "TECHNIQUE"
    ],
-   "deadline": "2026-10-31",
-   "deadline_label": "31 octobre 2026",
+   "deadline": "2026-11-30",
+   "deadline_label": "30 novembre 2026",
    "publie_le": "2026-10-09",
    "resume": "Au sein d'une équipe du service maintenance, le chargé d'opérations spécialisé ascenseur assure le suivi technique, réglementaire et contractuel du parc d'ascenseurs des collèges et des gymnases qui leur sont rattachés (ascenseurs, monte charges…",
    "dcip": false,
@@ -347,8 +415,8 @@
    "filieres": [
     "MEDICO-SOCIALE"
    ],
-   "deadline": "2026-10-31",
-   "deadline_label": "31 octobre 2026",
+   "deadline": "2026-11-30",
+   "deadline_label": "30 novembre 2026",
    "publie_le": "2026-10-07",
    "resume": "Dans ce cadre, le psychologue participera à l'amélioration de la prise en charge des patients du territoire et sera à l'écoute de leurs aidants. Il apportera son expertise et son expérience en éducation thérapeutique à la prise en charge coordonnée…",
    "dcip": false,
@@ -379,51 +447,6 @@
    "candidature_permanente": false
   },
   {
-   "id": "responsable-fonctionnel-du-systeme-dinformation-financier-hf-34000",
-   "titre": "Responsable fonctionnel du système d'information financier H/F (34000)",
-   "url": "https://www.departement06.fr/offres-demploi/responsable-fonctionnel-du-systeme-dinformation-financier-hf-34000",
-   "domaine": "",
-   "categorie": "A",
-   "categories": [
-    "A"
-   ],
-   "filiere": "ADMINISTRATIVE",
-   "filieres": [
-    "ADMINISTRATIVE",
-    "TECHNIQUE"
-   ],
-   "deadline": "2026-10-30",
-   "deadline_label": "30 octobre 2026",
-   "publie_le": "2026-10-06",
-   "resume": "Le responsable fonctionnel du système d'information financier garantit le bon fonctionnement, l'optimisation et l'appropriation du système d'information financier par l'ensemble des utilisateurs, en assurant son paramétrage, son évolution, sa…",
-   "dcip": false,
-   "service": "",
-   "appariement": "",
-   "candidature_permanente": false
-  },
-  {
-   "id": "responsable-pmi-nice-centre-dt4-hf-20934",
-   "titre": "Responsable PMI Nice Centre DT4 H/F (20934)",
-   "url": "https://www.departement06.fr/offres-demploi/responsable-pmi-nice-centre-dt4-hf-20934",
-   "domaine": "",
-   "categorie": "A",
-   "categories": [
-    "A"
-   ],
-   "filiere": "MEDICO-SOCIALE",
-   "filieres": [
-    "MEDICO-SOCIALE"
-   ],
-   "deadline": "2026-10-30",
-   "deadline_label": "30 octobre 2026",
-   "publie_le": "2026-10-05",
-   "resume": "Au quotidien,- vous encadrerez techniquement et hiérarchiquement l'équipe pluridisciplinaire de la structure;- vous assurerez des consultations médicales dans les centres de protection maternelle infantile et de planification;-vous…",
-   "dcip": false,
-   "service": "",
-   "appariement": "",
-   "candidature_permanente": false
-  },
-  {
    "id": "responsable-pmi-nice-lyautey-dt4-hf-20951",
    "titre": "Responsable PMI Nice Lyautey DT4 H/F (20951)",
    "url": "https://www.departement06.fr/offres-demploi/responsable-pmi-nice-lyautey-dt4-hf-20951",
@@ -436,8 +459,30 @@
    "filieres": [
     "MEDICO-SOCIALE"
    ],
-   "deadline": "2026-10-30",
-   "deadline_label": "30 octobre 2026",
+   "deadline": "2026-11-30",
+   "deadline_label": "30 novembre 2026",
+   "publie_le": "2026-10-05",
+   "resume": "Au quotidien,- vous encadrerez techniquement et hiérarchiquement l'équipe pluridisciplinaire de la structure;- vous assurerez des consultations médicales dans les centres de protection maternelle infantile et de planification;-vous…",
+   "dcip": false,
+   "service": "",
+   "appariement": "",
+   "candidature_permanente": false
+  },
+  {
+   "id": "responsable-pmi-secteur-nice-et-limitrophe-dt4-hf-20934",
+   "titre": "Responsable PMI Secteur Nice et limitrophe DT4 H/F (20934)",
+   "url": "https://www.departement06.fr/offres-demploi/responsable-pmi-secteur-nice-et-limitrophe-dt4-hf-20934",
+   "domaine": "",
+   "categorie": "A",
+   "categories": [
+    "A"
+   ],
+   "filiere": "MEDICO-SOCIALE",
+   "filieres": [
+    "MEDICO-SOCIALE"
+   ],
+   "deadline": "2026-11-30",
+   "deadline_label": "30 novembre 2026",
    "publie_le": "2026-10-05",
    "resume": "Au quotidien,- vous encadrerez techniquement et hiérarchiquement l'équipe pluridisciplinaire de la structure;- vous assurerez des consultations médicales dans les centres de protection maternelle infantile et de planification;-vous…",
    "dcip": false,
@@ -480,8 +525,8 @@
    "filieres": [
     "ADMINISTRATIVE"
    ],
-   "deadline": "2026-10-30",
-   "deadline_label": "30 octobre 2026",
+   "deadline": "2026-11-30",
+   "deadline_label": "30 novembre 2026",
    "publie_le": "2026-10-02",
    "resume": "Au sein de la direction, le chargé de mission protection de l'enfance assure le pilotage opérationnel et stratégique de la direction en garantissant la coordination efficace entre les services, la fiabilité du suivi des dossiers, et la production d…",
    "dcip": false,
@@ -502,55 +547,10 @@
    "filieres": [
     "ADMINISTRATIVE"
    ],
-   "deadline": "2026-10-30",
-   "deadline_label": "30 octobre 2026",
+   "deadline": "2026-11-30",
+   "deadline_label": "30 novembre 2026",
    "publie_le": "2026-10-02",
    "resume": "Au sein de la section gestion administrative et financière des établissements et services, le contrôleur de gestion du suivi des ESMS de la protection de l'enfance, contribue à la structuration, à la fiabilisation et à l'optimisation du…",
-   "dcip": false,
-   "service": "",
-   "appariement": "",
-   "candidature_permanente": false
-  },
-  {
-   "id": "ingenieur-charge-detudes-batimentaires-hf-34007",
-   "titre": "Ingénieur chargé d'études bâtimentaires H/F (34007)",
-   "url": "https://www.departement06.fr/offres-demploi/ingenieur-charge-detudes-batimentaires-hf-34007",
-   "domaine": "",
-   "categorie": "A",
-   "categories": [
-    "A"
-   ],
-   "filiere": "TECHNIQUE",
-   "filieres": [
-    "TECHNIQUE"
-   ],
-   "deadline": "2026-10-30",
-   "deadline_label": "30 octobre 2026",
-   "publie_le": "2026-10-02",
-   "resume": "Au sein du service maintenance des bâtiments, l'ingénieur chargé d'études bâtimentaires assure les études et la rédaction des marchés de travaux et des accords cadre pour les opérations de maintenance, de réhabilitation, de rénovation et d'extension…",
-   "dcip": true,
-   "service": "Maintenance des bâtiments",
-   "poste_dcip_id": "ingenieur-charge-detudes-batimentaires-hf-34007",
-   "appariement": "url",
-   "candidature_permanente": false
-  },
-  {
-   "id": "psychologue-placement-familialadoption-renfort-de-hf",
-   "titre": "Psychologue placement familial/adoption Renfort /DE (H/F)",
-   "url": "https://www.departement06.fr/offres-demploi/psychologue-placement-familialadoption-renfort-de-hf",
-   "domaine": "",
-   "categorie": "A",
-   "categories": [
-    "A"
-   ],
-   "filiere": "MEDICO-SOCIALE",
-   "filieres": [
-    "MEDICO-SOCIALE"
-   ],
-   "deadline": "2026-10-30",
-   "deadline_label": "30 octobre 2026",
-   "publie_le": "2026-10-02",
-   "resume": "Au sein du service placement familial et adoption, le psychologue participe à la mise en œuvre de la politique du Département en faveur de la famille et de l'enfance, conçoit un travail clinique auprès des enfants et des adultes, met en œuvre les…",
    "dcip": false,
    "service": "",
    "appariement": "",
@@ -569,8 +569,8 @@
    "filieres": [
     "TECHNIQUE"
    ],
-   "deadline": "2026-10-30",
-   "deadline_label": "30 octobre 2026",
+   "deadline": "2026-11-30",
+   "deadline_label": "30 novembre 2026",
    "publie_le": "2026-10-01",
    "resume": "Au sein d'une équipe du service maintenance, le chargé d'opérations conçoit et fait réaliser par des entreprises divers travaux d'extension, de restructuration, de réhabilitation, de grosses réparations, d'aménagement et d'entretien concernant le…",
    "dcip": false,
@@ -591,37 +591,13 @@
    "filieres": [
     "TECHNIQUE"
    ],
-   "deadline": "2026-10-30",
-   "deadline_label": "30 octobre 2026",
+   "deadline": "2026-11-30",
+   "deadline_label": "30 novembre 2026",
    "publie_le": "2026-09-24",
    "resume": "Le chef de projet bâtiment/ réhabilitation est une personne ressource qui assure le pilotage des projets communaux que l'Agence06 accompagne. Son objectif est de fournir aux collectivités l'appui en ingénierie et en expertise nécessaires pour…",
    "dcip": true,
    "service": "",
    "appariement": "motif:bâtiment",
-   "candidature_permanente": false
-  },
-  {
-   "id": "charge-detudes-cvc-maintenance-hf",
-   "titre": "Chargé d'études CVC maintenance H/F",
-   "url": "https://www.departement06.fr/offres-demploi/charge-detudes-cvc-maintenance-hf",
-   "domaine": "",
-   "categorie": "B",
-   "categories": [
-    "B",
-    "A"
-   ],
-   "filiere": "TECHNIQUE",
-   "filieres": [
-    "TECHNIQUE"
-   ],
-   "deadline": "2026-10-30",
-   "deadline_label": "30 octobre 2026",
-   "publie_le": "2026-09-24",
-   "resume": "Au sein du service énergie fluides, composé d'une équipe de 17 agents, le chargé d'études CVC gère les contrats de maintenance des équipements techniques de sa spécialité. Il pilote la mise en place de la GMAO pour le suivi de la maintenance des…",
-   "dcip": true,
-   "service": "Énergie et fluides",
-   "poste_dcip_id": "charge-detudes-cvc-maintenance-hf",
-   "appariement": "url",
    "candidature_permanente": false
   },
   {
@@ -637,8 +613,8 @@
    "filieres": [
     "MEDICO-SOCIALE"
    ],
-   "deadline": "2026-10-30",
-   "deadline_label": "30 octobre 2026",
+   "deadline": "2026-11-30",
+   "deadline_label": "30 novembre 2026",
    "publie_le": "2026-09-18",
    "resume": "L'infirmier mobile dispositif de prévention de l'exploitation sexuelle des mineurs au Carrefour Santé Jeunes en SDPMI participe à la mise en oeuvre de la politique du Conseil Départemental des Alpes-Maritimes en assurant sur son territoire d…",
    "dcip": false,
@@ -714,72 +690,6 @@
    "candidature_permanente": false
   },
   {
-   "id": "administrateur-reseaux-et-securite-hf-33088",
-   "titre": "Administrateur réseaux et sécurité H/F (33088)",
-   "url": "https://www.departement06.fr/offres-demploi/administrateur-reseaux-et-securite-hf-33088",
-   "domaine": "",
-   "categorie": "A",
-   "categories": [
-    "A"
-   ],
-   "filiere": "TECHNIQUE",
-   "filieres": [
-    "TECHNIQUE"
-   ],
-   "deadline": "2026-10-30",
-   "deadline_label": "30 octobre 2026",
-   "publie_le": "2026-09-03",
-   "resume": "L'administrateur réseaux et sécurité garanti la conception, l'exploitation, la sécurisation et l'évolution de l'infrastructure réseau et sécurité de la collectivité, en assurant un haut niveau de disponibilité, de performance, de conformité…",
-   "dcip": false,
-   "service": "",
-   "appariement": "",
-   "candidature_permanente": false
-  },
-  {
-   "id": "responsable-digital-workplace-hf-33971",
-   "titre": "Responsable Digital Workplace H/F (33971)",
-   "url": "https://www.departement06.fr/offres-demploi/responsable-digital-workplace-hf-33971",
-   "domaine": "",
-   "categorie": "A",
-   "categories": [
-    "A"
-   ],
-   "filiere": "TECHNIQUE",
-   "filieres": [
-    "TECHNIQUE"
-   ],
-   "deadline": "2026-10-30",
-   "deadline_label": "30 octobre 2026",
-   "publie_le": "2026-09-03",
-   "resume": "Nous recherchons un « Responsable Digital Workplace » pour incarner la cohérence globale de l'environnement de travail numérique, entendu comme un produit de service transverse au bénéfice de toute la collectivité. Le poste est ouvert au sein du…",
-   "dcip": false,
-   "service": "",
-   "appariement": "",
-   "candidature_permanente": false
-  },
-  {
-   "id": "superviseur-dexploitation-systemes-et-reseaux-hf-32684",
-   "titre": "Superviseur d'exploitation systèmes et réseaux H/F (32684)",
-   "url": "https://www.departement06.fr/offres-demploi/superviseur-dexploitation-systemes-et-reseaux-hf-32684",
-   "domaine": "",
-   "categorie": "A",
-   "categories": [
-    "A"
-   ],
-   "filiere": "TECHNIQUE",
-   "filieres": [
-    "TECHNIQUE"
-   ],
-   "deadline": "2026-10-30",
-   "deadline_label": "30 octobre 2026",
-   "publie_le": "2026-09-03",
-   "resume": "Au sein du service Infrastructures et Exploitation, le superviseur d'exploitation systèmes et réseaux pilote la coordination et le bon déroulement des activités des équipes systèmes et réseaux. Il garantit la continuité de service, la sécurité et la…",
-   "dcip": false,
-   "service": "",
-   "appariement": "",
-   "candidature_permanente": false
-  },
-  {
    "id": "ingenieur-charge-detudes-courants-forts-et-faibles-dcip-hf-30269",
    "titre": "Ingénieur chargé d'études courants forts et faibles DCIP H/F (30269)",
    "url": "https://www.departement06.fr/offres-demploi/ingenieur-charge-detudes-courants-forts-et-faibles-dcip-hf-30269",
@@ -792,8 +702,8 @@
    "filieres": [
     "TECHNIQUE"
    ],
-   "deadline": "2026-10-30",
-   "deadline_label": "30 octobre 2026",
+   "deadline": "2026-11-30",
+   "deadline_label": "30 novembre 2026",
    "publie_le": "2026-08-29",
    "resume": "Au sein du service énergie et fluides, l'ingénieur chargé d'études conçoit, fait réaliser, en régie directe ou par des entreprises, des travaux de création de locaux, de restructuration ou rénovation concernant le patrimoine bâti. Il gère les…",
    "dcip": true,
@@ -815,8 +725,8 @@
    "filieres": [
     "TECHNIQUE"
    ],
-   "deadline": "2026-10-30",
-   "deadline_label": "30 octobre 2026",
+   "deadline": "2026-11-30",
+   "deadline_label": "30 novembre 2026",
    "publie_le": "2026-07-23",
    "resume": "Au sein du service études et travaux, l'ingénieur conduite d'opérations de bâtiments assure la conduite d'opérations de construction, de rénovation et de restructuration de locaux ou bâtiments.",
    "dcip": true,
@@ -838,8 +748,8 @@
    "filieres": [
     "ADMINISTRATIVE"
    ],
-   "deadline": "2026-10-30",
-   "deadline_label": "30 octobre 2026",
+   "deadline": "2026-11-30",
+   "deadline_label": "30 novembre 2026",
    "publie_le": "2026-05-11",
    "resume": "Au sein de la section Appréciations, mise à l'abri et évaluations, l'appréciateur de la minorité assure l'évaluation objective et rigoureuse de la minorité et de la vulnérabilité de personnes se déclarant mineures et isolées, en collaboration avec…",
    "dcip": false,
@@ -868,29 +778,6 @@
    "service": "",
    "appariement": "",
    "candidature_permanente": true
-  },
-  {
-   "id": "charge-de-projets-etudes-et-marches-hf-33932",
-   "titre": "Chargé de projets études et marchés H/F (33932)",
-   "url": "https://www.departement06.fr/offres-demploi/charge-de-projets-etudes-et-marches-hf-33932",
-   "domaine": "",
-   "categorie": "A",
-   "categories": [
-    "A"
-   ],
-   "filiere": "TECHNIQUE",
-   "filieres": [
-    "TECHNIQUE"
-   ],
-   "deadline": "2026-10-30",
-   "deadline_label": "30 octobre 2026",
-   "publie_le": "2026-03-20",
-   "resume": "Au sein du service de la maintenance des collèges, le chargé d'études et marchés vient renforcer l'équipe en place. Il prépare et met en œuvre les projets depuis l'élaboration du programme jusqu'au parfait achèvement de l'ouvrage. Il s'agit d…",
-   "dcip": true,
-   "service": "Maintenance des collèges",
-   "poste_dcip_id": "charge-de-projets-etudes-et-marches-hf-33932",
-   "appariement": "url",
-   "candidature_permanente": false
   },
   {
    "id": "sage-femme-hf",
