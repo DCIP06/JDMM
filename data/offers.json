@@ -1,9 +1,53 @@
 {
- "generated_at": "2026-11-01T11:09:47Z",
+ "generated_at": "2026-11-02T12:11:30Z",
  "source": "https://www.departement06.fr/offres-demploi",
- "count": 38,
+ "count": 39,
  "count_dcip": 6,
  "offers": [
+  {
+   "id": "administrateur-reseaux-et-securite-hf-33088",
+   "titre": "Administrateur réseaux et sécurité H/F (33088)",
+   "url": "https://www.departement06.fr/offres-demploi/administrateur-reseaux-et-securite-hf-33088",
+   "domaine": "",
+   "categorie": "A",
+   "categories": [
+    "A"
+   ],
+   "filiere": "TECHNIQUE",
+   "filieres": [
+    "TECHNIQUE"
+   ],
+   "deadline": "2026-11-30",
+   "deadline_label": "30 novembre 2026",
+   "publie_le": "2026-11-02",
+   "resume": "L'administrateur réseaux et sécurité garanti la conception, l'exploitation, la sécurisation et l'évolution de l'infrastructure réseau et sécurité de la collectivité, en assurant un haut niveau de disponibilité, de performance, de conformité…",
+   "dcip": false,
+   "service": "",
+   "appariement": "",
+   "candidature_permanente": false
+  },
+  {
+   "id": "responsable-digital-workplace-hf-33971",
+   "titre": "Responsable Digital Workplace H/F (33971)",
+   "url": "https://www.departement06.fr/offres-demploi/responsable-digital-workplace-hf-33971",
+   "domaine": "",
+   "categorie": "A",
+   "categories": [
+    "A"
+   ],
+   "filiere": "TECHNIQUE",
+   "filieres": [
+    "TECHNIQUE"
+   ],
+   "deadline": "2026-11-30",
+   "deadline_label": "30 novembre 2026",
+   "publie_le": "2026-11-02",
+   "resume": "Nous recherchons un « Responsable Digital Workplace » pour incarner la cohérence globale de l'environnement de travail numérique, entendu comme un produit de service transverse au bénéfice de toute la collectivité. Le poste est ouvert au sein du…",
+   "dcip": false,
+   "service": "",
+   "appariement": "",
+   "candidature_permanente": false
+  },
   {
    "id": "adjoint-antenne-departementale-de-recueil-devaluation-et-de-traitement-des",
    "titre": "Adjoint Antenne départementale de recueil, d'évaluation et de traitement des informations préoccupantes H/F (33440)",
@@ -70,28 +114,6 @@
    "service": "Maintenance des bâtiments",
    "poste_dcip_id": "charge-doperations-de-batiment-tce-dcip-32747",
    "appariement": "url",
-   "candidature_permanente": false
-  },
-  {
-   "id": "chef-du-service-de-lassemblee-hf-31080",
-   "titre": "Chef du service de l'Assemblée H/F (31080)",
-   "url": "https://www.departement06.fr/offres-demploi/chef-du-service-de-lassemblee-hf-31080",
-   "domaine": "",
-   "categorie": "A",
-   "categories": [
-    "A"
-   ],
-   "filiere": "ADMINISTRATIVE",
-   "filieres": [
-    "ADMINISTRATIVE"
-   ],
-   "deadline": "2026-11-30",
-   "deadline_label": "30 novembre 2026",
-   "publie_le": "2026-10-30",
-   "resume": "Au sein du service de l'Assemblée, le chef du service est le garant de la qualité et de la sécurité du processus délibératif de la collectivité.",
-   "dcip": false,
-   "service": "",
-   "appariement": "",
    "candidature_permanente": false
   },
   {
