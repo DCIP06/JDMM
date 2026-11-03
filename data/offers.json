@@ -1,9 +1,31 @@
 {
- "generated_at": "2026-11-02T12:11:30Z",
+ "generated_at": "2026-11-03T11:46:14Z",
  "source": "https://www.departement06.fr/offres-demploi",
- "count": 39,
+ "count": 40,
  "count_dcip": 6,
  "offers": [
+  {
+   "id": "chef-du-service-de-lassemblee-hf-31080",
+   "titre": "Chef du service de l'Assemblée H/F (31080)",
+   "url": "https://www.departement06.fr/offres-demploi/chef-du-service-de-lassemblee-hf-31080",
+   "domaine": "",
+   "categorie": "A",
+   "categories": [
+    "A"
+   ],
+   "filiere": "ADMINISTRATIVE",
+   "filieres": [
+    "ADMINISTRATIVE"
+   ],
+   "deadline": "2026-11-30",
+   "deadline_label": "30 novembre 2026",
+   "publie_le": "2026-11-03",
+   "resume": "Au sein du service de l'Assemblée, le chef du service est le garant de la qualité et de la sécurité du processus délibératif de la collectivité.",
+   "dcip": false,
+   "service": "",
+   "appariement": "",
+   "candidature_permanente": false
+  },
   {
    "id": "administrateur-reseaux-et-securite-hf-33088",
    "titre": "Administrateur réseaux et sécurité H/F (33088)",
