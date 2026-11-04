@@ -1,9 +1,31 @@
 {
- "generated_at": "2026-11-03T11:46:14Z",
+ "generated_at": "2026-11-04T11:58:24Z",
  "source": "https://www.departement06.fr/offres-demploi",
- "count": 40,
+ "count": 41,
  "count_dcip": 6,
  "offers": [
+  {
+   "id": "charge-doperation-domaines-electriques-hf-30665",
+   "titre": "Chargé d'opération domaines électriques H/F (30665)",
+   "url": "https://www.departement06.fr/offres-demploi/charge-doperation-domaines-electriques-hf-30665",
+   "domaine": "",
+   "categorie": "B",
+   "categories": [
+    "B"
+   ],
+   "filiere": "TECHNIQUE",
+   "filieres": [
+    "TECHNIQUE"
+   ],
+   "deadline": "",
+   "deadline_label": "Candidature permanente",
+   "publie_le": "2026-11-03",
+   "resume": "Au sein du service, le chargé d'opération assure la fiabilité, la sécurité, la conformité réglementaire et l'amélioration continue des installations électriques, des systèmes de sécurité incendie (SSI) et des équipements de courants faibles du…",
+   "dcip": false,
+   "service": "",
+   "appariement": "",
+   "candidature_permanente": true
+  },
   {
    "id": "chef-du-service-de-lassemblee-hf-31080",
    "titre": "Chef du service de l'Assemblée H/F (31080)",
