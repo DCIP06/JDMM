@@ -1,9 +1,33 @@
 {
- "generated_at": "2026-11-04T11:58:24Z",
+ "generated_at": "2026-11-05T12:02:43Z",
  "source": "https://www.departement06.fr/offres-demploi",
- "count": 41,
+ "count": 42,
  "count_dcip": 6,
  "offers": [
+  {
+   "id": "responsable-de-la-section-des-mediatheques-annexes-et-de-la-micro-folie-34035",
+   "titre": "Responsable de la section des médiathèques annexes et de la Micro-Folie (34035)",
+   "url": "https://www.departement06.fr/offres-demploi/responsable-de-la-section-des-mediatheques-annexes-et-de-la-micro-folie-34035",
+   "domaine": "",
+   "categorie": "B",
+   "categories": [
+    "B",
+    "A"
+   ],
+   "filiere": "CULTURELLE",
+   "filieres": [
+    "CULTURELLE",
+    "ADMINISTRATIVE"
+   ],
+   "deadline": "2026-12-04",
+   "deadline_label": "4 décembre 2026",
+   "publie_le": "2026-11-04",
+   "resume": "En lien étroit avec la directrice, le responsable de la section des médiathèques annexes et de la Micro-folie pilote ces cinq équipements et décline les orientations du service et de la collectivité dans le respect des spécificités de chaque site.",
+   "dcip": false,
+   "service": "",
+   "appariement": "",
+   "candidature_permanente": false
+  },
   {
    "id": "charge-doperation-domaines-electriques-hf-30665",
    "titre": "Chargé d'opération domaines électriques H/F (30665)",
@@ -17,14 +41,14 @@
    "filieres": [
     "TECHNIQUE"
    ],
-   "deadline": "",
-   "deadline_label": "Candidature permanente",
+   "deadline": "2026-11-30",
+   "deadline_label": "30 novembre 2026",
    "publie_le": "2026-11-03",
    "resume": "Au sein du service, le chargé d'opération assure la fiabilité, la sécurité, la conformité réglementaire et l'amélioration continue des installations électriques, des systèmes de sécurité incendie (SSI) et des équipements de courants faibles du…",
    "dcip": false,
    "service": "",
    "appariement": "",
-   "candidature_permanente": true
+   "candidature_permanente": false
   },
   {
    "id": "chef-du-service-de-lassemblee-hf-31080",
