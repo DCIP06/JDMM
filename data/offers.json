@@ -1,9 +1,31 @@
 {
- "generated_at": "2026-11-05T12:02:43Z",
+ "generated_at": "2026-11-07T10:57:34Z",
  "source": "https://www.departement06.fr/offres-demploi",
- "count": 42,
+ "count": 43,
  "count_dcip": 6,
  "offers": [
+  {
+   "id": "charge-de-suivi-des-ehpad-hf-30346",
+   "titre": "Chargé de suivi des EHPAD H/F (30346)",
+   "url": "https://www.departement06.fr/offres-demploi/charge-de-suivi-des-ehpad-hf-30346",
+   "domaine": "",
+   "categorie": "A",
+   "categories": [
+    "A"
+   ],
+   "filiere": "ADMINISTRATIVE",
+   "filieres": [
+    "ADMINISTRATIVE"
+   ],
+   "deadline": "2026-11-30",
+   "deadline_label": "30 novembre 2026",
+   "publie_le": "2026-11-06",
+   "resume": "Le chargé de suivi des EHPAD assure le suivi administratif, financier et réglementaire des établissements d'hébergement pour personnes âgées, en lien avec les services de l'ARS, afin de garantir la qualité, la conformité et l'évolution des…",
+   "dcip": false,
+   "service": "",
+   "appariement": "",
+   "candidature_permanente": false
+  },
   {
    "id": "responsable-de-la-section-des-mediatheques-annexes-et-de-la-micro-folie-34035",
    "titre": "Responsable de la section des médiathèques annexes et de la Micro-Folie (34035)",
