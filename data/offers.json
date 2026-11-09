@@ -1,7 +1,7 @@
 {
- "generated_at": "2026-11-07T10:57:34Z",
+ "generated_at": "2026-11-09T12:42:00Z",
  "source": "https://www.departement06.fr/offres-demploi",
- "count": 43,
+ "count": 42,
  "count_dcip": 6,
  "offers": [
   {
@@ -465,28 +465,6 @@
    "deadline_label": "30 novembre 2026",
    "publie_le": "2026-10-09",
    "resume": "Au sein d'une équipe du service maintenance, le chargé d'opérations spécialisé ascenseur assure le suivi technique, réglementaire et contractuel du parc d'ascenseurs des collèges et des gymnases qui leur sont rattachés (ascenseurs, monte charges…",
-   "dcip": false,
-   "service": "",
-   "appariement": "",
-   "candidature_permanente": false
-  },
-  {
-   "id": "ergotherapeute-paph-hf-33276",
-   "titre": "Ergothérapeute PA/PH H/F (33276)",
-   "url": "https://www.departement06.fr/offres-demploi/ergotherapeute-paph-hf-33276",
-   "domaine": "",
-   "categorie": "A",
-   "categories": [
-    "A"
-   ],
-   "filiere": "MEDICO-SOCIALE",
-   "filieres": [
-    "MEDICO-SOCIALE"
-   ],
-   "deadline": "2026-11-08",
-   "deadline_label": "8 novembre 2026",
-   "publie_le": "2026-10-08",
-   "resume": "L'ergothérapeute assure l'évaluation des situations de perte d'autonomie et l'expertise en ergothérapie afin de déterminer les aides, aménagements et compensations nécessaires, dans le cadre des dispositifs portés par la MDA.",
    "dcip": false,
    "service": "",
    "appariement": "",
