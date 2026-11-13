@@ -1,7 +1,7 @@
 {
- "generated_at": "2026-11-10T12:23:51Z",
+ "generated_at": "2026-11-13T12:00:35Z",
  "source": "https://www.departement06.fr/offres-demploi",
- "count": 44,
+ "count": 43,
  "count_dcip": 6,
  "offers": [
   {
@@ -464,29 +464,6 @@
    "deadline_label": "30 novembre 2026",
    "publie_le": "2026-10-14",
    "resume": "Au sein de la section Suivi des enfants confiés, le référent suivi parcours des MNA assure l'accompagnement et le suivi des enfants, adolescents et jeunes adultes confiés, en coordonnant les acteurs internes et externes, afin de répondre à leurs…",
-   "dcip": false,
-   "service": "",
-   "appariement": "",
-   "candidature_permanente": false
-  },
-  {
-   "id": "chef-equipe-atelier-specialisation-poids-lourds-hf-30626",
-   "titre": "Chef équipe atelier spécialisation poids lourds H/F (30626)",
-   "url": "https://www.departement06.fr/offres-demploi/chef-equipe-atelier-specialisation-poids-lourds-hf-30626",
-   "domaine": "",
-   "categorie": "C",
-   "categories": [
-    "C",
-    "B"
-   ],
-   "filiere": "TECHNIQUE",
-   "filieres": [
-    "TECHNIQUE"
-   ],
-   "deadline": "2026-11-12",
-   "deadline_label": "12 novembre 2026",
-   "publie_le": "2026-10-13",
-   "resume": "le chef d'équipe – spécialisation poids lourds assure l'encadrement opérationnel d'une équipe de techniciens chargés de l'entretien et de la maintenance des véhicules lourds et matériels associés. Sous l'autorité du responsable du service, il…",
    "dcip": false,
    "service": "",
    "appariement": "",
