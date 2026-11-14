@@ -1,7 +1,7 @@
 {
- "generated_at": "2026-11-13T12:00:35Z",
+ "generated_at": "2026-11-14T11:19:12Z",
  "source": "https://www.departement06.fr/offres-demploi",
- "count": 43,
+ "count": 42,
  "count_dcip": 6,
  "offers": [
   {
@@ -248,28 +248,6 @@
    "service": "Maintenance des bâtiments",
    "poste_dcip_id": "charge-doperations-de-batiment-tce-dcip-32747",
    "appariement": "url",
-   "candidature_permanente": false
-  },
-  {
-   "id": "assistant-la-coordinatrice-mise-labri-hf-33358",
-   "titre": "Assistant à la coordinatrice mise à l'abri H/F (33358)",
-   "url": "https://www.departement06.fr/offres-demploi/assistant-la-coordinatrice-mise-labri-hf-33358",
-   "domaine": "",
-   "categorie": "C",
-   "categories": [
-    "C"
-   ],
-   "filiere": "ADMINISTRATIVE",
-   "filieres": [
-    "ADMINISTRATIVE"
-   ],
-   "deadline": "2026-11-13",
-   "deadline_label": "13 novembre 2026",
-   "publie_le": "2026-10-26",
-   "resume": "Au sein de la section, l'assistant à la coordinatrice mise à l'abri, assure le soutien administratif et la coordination des activités du service afin de garantir un suivi efficace des situations et une prise en charge adaptée des enfants,…",
-   "dcip": false,
-   "service": "",
-   "appariement": "",
    "candidature_permanente": false
   },
   {
