@@ -1,7 +1,7 @@
 {
- "generated_at": "2026-11-14T11:19:12Z",
+ "generated_at": "2026-11-17T12:58:40Z",
  "source": "https://www.departement06.fr/offres-demploi",
- "count": 42,
+ "count": 41,
  "count_dcip": 6,
  "offers": [
   {
@@ -400,28 +400,6 @@
    "dcip": true,
    "service": "",
    "appariement": "motif:CVC",
-   "candidature_permanente": false
-  },
-  {
-   "id": "technicien-de-lenvironnement-poste-de-travail-hf-32380",
-   "titre": "Technicien de l'environnement poste de travail H/F (32380)",
-   "url": "https://www.departement06.fr/offres-demploi/technicien-de-lenvironnement-poste-de-travail-hf-32380",
-   "domaine": "",
-   "categorie": "B",
-   "categories": [
-    "B"
-   ],
-   "filiere": "TECHNIQUE",
-   "filieres": [
-    "TECHNIQUE"
-   ],
-   "deadline": "2026-11-16",
-   "deadline_label": "16 novembre 2026",
-   "publie_le": "2026-10-16",
-   "resume": "Le technicien environnement assure un environnement numérique fiable, sécurisé et adapté aux besoins des utilisateurs, tout en favorisant leur autonomie et la continuité de service.",
-   "dcip": false,
-   "service": "",
-   "appariement": "",
    "candidature_permanente": false
   },
   {
