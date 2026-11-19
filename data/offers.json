@@ -1,9 +1,31 @@
 {
- "generated_at": "2026-11-17T12:58:40Z",
+ "generated_at": "2026-11-19T12:43:33Z",
  "source": "https://www.departement06.fr/offres-demploi",
- "count": 41,
+ "count": 42,
  "count_dcip": 6,
  "offers": [
+  {
+   "id": "responsable-de-la-section-aide-sociale-paph-30745-hf",
+   "titre": "Responsable de la section aide sociale PA/PH (30745) H/F",
+   "url": "https://www.departement06.fr/offres-demploi/responsable-de-la-section-aide-sociale-paph-30745-hf",
+   "domaine": "",
+   "categorie": "A",
+   "categories": [
+    "A"
+   ],
+   "filiere": "ADMINISTRATIVE",
+   "filieres": [
+    "ADMINISTRATIVE"
+   ],
+   "deadline": "2026-12-18",
+   "deadline_label": "18 décembre 2026",
+   "publie_le": "2026-11-18",
+   "resume": "Le responsable de la section aide sociale PA/PH garantit la gestion sécurisée, rigoureuse et optimisée des dispositifs d'aide sociale, en assurant leur attribution, leur suivi juridique et financier, ainsi que leur récupération, tout en contribuant…",
+   "dcip": false,
+   "service": "",
+   "appariement": "",
+   "candidature_permanente": false
+  },
   {
    "id": "chef-cuisinier-hf-33698",
    "titre": "Chef cuisinier H/F (33698)",
