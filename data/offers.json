@@ -1,9 +1,54 @@
 {
- "generated_at": "2026-11-19T12:43:33Z",
+ "generated_at": "2026-11-20T12:40:47Z",
  "source": "https://www.departement06.fr/offres-demploi",
- "count": 42,
+ "count": 43,
  "count_dcip": 6,
  "offers": [
+  {
+   "id": "charge-de-dossiers-des-mineurs-non-accompagnes-hf",
+   "titre": "Chargé de dossiers des mineurs non accompagnés H/F",
+   "url": "https://www.departement06.fr/offres-demploi/charge-de-dossiers-des-mineurs-non-accompagnes-hf",
+   "domaine": "",
+   "categorie": "C",
+   "categories": [
+    "C"
+   ],
+   "filiere": "ADMINISTRATIVE",
+   "filieres": [
+    "ADMINISTRATIVE"
+   ],
+   "deadline": "2026-11-30",
+   "deadline_label": "30 novembre 2026",
+   "publie_le": "2026-11-20",
+   "resume": "Au sein de la section du Suivi des mineurs confiés, le chargé de dossiers des mineurs non accompagnés assure la gestion des dossiers et le suivi des procédures administratives et judiciaires du mineur confié au département.",
+   "dcip": false,
+   "service": "",
+   "appariement": "",
+   "candidature_permanente": false
+  },
+  {
+   "id": "conseiller-agents-contractuels-hf-20029",
+   "titre": "Conseiller agents contractuels H/F (20029)",
+   "url": "https://www.departement06.fr/offres-demploi/conseiller-agents-contractuels-hf-20029",
+   "domaine": "",
+   "categorie": "C",
+   "categories": [
+    "C",
+    "B"
+   ],
+   "filiere": "ADMINISTRATIVE",
+   "filieres": [
+    "ADMINISTRATIVE"
+   ],
+   "deadline": "2026-12-20",
+   "deadline_label": "20 décembre 2026",
+   "publie_le": "2026-11-20",
+   "resume": "Le conseiller agents contractuels accueille, informe et conseille les agents sur leur carrière, leur contrat. A ce titre, vous aurez en charge la gestion, le suivi et l'instruction des dossiers agents.Au regard de la réglementation en vigueur et…",
+   "dcip": false,
+   "service": "",
+   "appariement": "",
+   "candidature_permanente": false
+  },
   {
    "id": "responsable-de-la-section-aide-sociale-paph-30745-hf",
    "titre": "Responsable de la section aide sociale PA/PH (30745) H/F",
@@ -351,28 +396,6 @@
    "deadline_label": "20 novembre 2026",
    "publie_le": "2026-10-20",
    "resume": "Au sein du CeGIDD, le psychologue assure un accompagnement psychologique global des usagers du CeGIDD en favorisant le repérage des vulnérabilités, le soutien psychologique, l'accès aux soins et la promotion de la santé sexuelle, afin de contribuer…",
-   "dcip": false,
-   "service": "",
-   "appariement": "",
-   "candidature_permanente": false
-  },
-  {
-   "id": "charge-de-coordination-hf-33693",
-   "titre": "Chargé de coordination H/F (33693)",
-   "url": "https://www.departement06.fr/offres-demploi/charge-de-coordination-hf-33693",
-   "domaine": "",
-   "categorie": "B",
-   "categories": [
-    "B"
-   ],
-   "filiere": "ADMINISTRATIVE",
-   "filieres": [
-    "ADMINISTRATIVE"
-   ],
-   "deadline": "2026-11-19",
-   "deadline_label": "19 novembre 2026",
-   "publie_le": "2026-10-19",
-   "resume": "Ce poste s'inscrit dans le besoin de coordination de l'activité de la MDA composée de 8 services et de plus de 200 agents.Rattaché directement au Directeur, en lien permanent avec le Directeur et ses adjointes, le chargé de coordination de…",
    "dcip": false,
    "service": "",
    "appariement": "",
