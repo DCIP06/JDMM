@@ -1,9 +1,31 @@
 {
- "generated_at": "2026-11-20T12:40:47Z",
+ "generated_at": "2026-11-21T12:21:58Z",
  "source": "https://www.departement06.fr/offres-demploi",
- "count": 43,
+ "count": 42,
  "count_dcip": 6,
  "offers": [
+  {
+   "id": "agent-de-bibliotheque-mediatheque-valberg",
+   "titre": "Agent de bibliothèque Médiathèque Valberg",
+   "url": "https://www.departement06.fr/offres-demploi/agent-de-bibliotheque-mediatheque-valberg",
+   "domaine": "",
+   "categorie": "C",
+   "categories": [
+    "C"
+   ],
+   "filiere": "CULTURELLE",
+   "filieres": [
+    "CULTURELLE"
+   ],
+   "deadline": "",
+   "deadline_label": "Candidature permanente",
+   "publie_le": "2026-11-20",
+   "resume": "",
+   "dcip": false,
+   "service": "",
+   "appariement": "",
+   "candidature_permanente": true
+  },
   {
    "id": "charge-de-dossiers-des-mineurs-non-accompagnes-hf",
    "titre": "Chargé de dossiers des mineurs non accompagnés H/F",
@@ -356,50 +378,6 @@
    "service": "",
    "appariement": "",
    "candidature_permanente": true
-  },
-  {
-   "id": "charge-de-mission-financements-publics-34053",
-   "titre": "Chargé de mission financements publics (34053)",
-   "url": "https://www.departement06.fr/offres-demploi/charge-de-mission-financements-publics-34053",
-   "domaine": "",
-   "categorie": "A",
-   "categories": [
-    "A"
-   ],
-   "filiere": "ADMINISTRATIVE",
-   "filieres": [
-    "ADMINISTRATIVE"
-   ],
-   "deadline": "2026-11-20",
-   "deadline_label": "20 novembre 2026",
-   "publie_le": "2026-10-20",
-   "resume": "Sous l'autorité du responsable du Service d'Appui aux politiques publiques, le chargé de mission financements publics participe à l'accès aux financements régionaux, nationaux et européens des communes du territoire. Il assure une mission de veille,…",
-   "dcip": false,
-   "service": "",
-   "appariement": "",
-   "candidature_permanente": false
-  },
-  {
-   "id": "psychologue-au-cegidd-hf-30801",
-   "titre": "Psychologue au CeGIDD H/F (30801)",
-   "url": "https://www.departement06.fr/offres-demploi/psychologue-au-cegidd-hf-30801",
-   "domaine": "",
-   "categorie": "A",
-   "categories": [
-    "A"
-   ],
-   "filiere": "MEDICO-SOCIALE",
-   "filieres": [
-    "MEDICO-SOCIALE"
-   ],
-   "deadline": "2026-11-20",
-   "deadline_label": "20 novembre 2026",
-   "publie_le": "2026-10-20",
-   "resume": "Au sein du CeGIDD, le psychologue assure un accompagnement psychologique global des usagers du CeGIDD en favorisant le repérage des vulnérabilités, le soutien psychologique, l'accès aux soins et la promotion de la santé sexuelle, afin de contribuer…",
-   "dcip": false,
-   "service": "",
-   "appariement": "",
-   "candidature_permanente": false
   },
   {
    "id": "assistant-de-gestion-service-etudes-et-travaux-dcip-hf-31397",
