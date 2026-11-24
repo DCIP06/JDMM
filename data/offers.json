@@ -1,13 +1,13 @@
 {
- "generated_at": "2026-11-21T12:21:58Z",
+ "generated_at": "2026-11-24T14:41:34Z",
  "source": "https://www.departement06.fr/offres-demploi",
  "count": 42,
  "count_dcip": 6,
  "offers": [
   {
-   "id": "agent-de-bibliotheque-mediatheque-valberg",
-   "titre": "Agent de bibliothèque Médiathèque Valberg",
-   "url": "https://www.departement06.fr/offres-demploi/agent-de-bibliotheque-mediatheque-valberg",
+   "id": "agent-de-bibliotheque-valberg-hf",
+   "titre": "Agent de bibliothèque à Valberg H/F",
+   "url": "https://www.departement06.fr/offres-demploi/agent-de-bibliotheque-valberg-hf",
    "domaine": "",
    "categorie": "C",
    "categories": [
@@ -17,14 +17,36 @@
    "filieres": [
     "CULTURELLE"
    ],
-   "deadline": "",
-   "deadline_label": "Candidature permanente",
-   "publie_le": "2026-11-20",
-   "resume": "",
+   "deadline": "2026-12-18",
+   "deadline_label": "18 décembre 2026",
+   "publie_le": "2026-11-24",
+   "resume": "Sous l'autorité de la responsable de la médiathèque départementale annexe de Valberg, et au sein d'une équipe polyvalente composée de trois agents avec renforts lors des périodes touristiques, l'agent contribue au bon fonctionnement quotidien de l…",
    "dcip": false,
    "service": "",
    "appariement": "",
-   "candidature_permanente": true
+   "candidature_permanente": false
+  },
+  {
+   "id": "agent-de-paiement-hebergement-paph-en-renfort-hf",
+   "titre": "Agent de paiement Hébergement PA/PH en renfort H/F",
+   "url": "https://www.departement06.fr/offres-demploi/agent-de-paiement-hebergement-paph-en-renfort-hf",
+   "domaine": "",
+   "categorie": "C",
+   "categories": [
+    "C"
+   ],
+   "filiere": "ADMINISTRATIVE",
+   "filieres": [
+    "ADMINISTRATIVE"
+   ],
+   "deadline": "2026-12-15",
+   "deadline_label": "15 décembre 2026",
+   "publie_le": "2026-11-23",
+   "resume": "En relation directe avec la responsable de section, l'agent met au paiement les différentes aides accordées aux personnes âgées et/ou en situation de handicap.",
+   "dcip": false,
+   "service": "",
+   "appariement": "",
+   "candidature_permanente": false
   },
   {
    "id": "charge-de-dossiers-des-mineurs-non-accompagnes-hf",
@@ -244,28 +266,6 @@
    "deadline_label": "30 novembre 2026",
    "publie_le": "2026-11-02",
    "resume": "L'administrateur réseaux et sécurité garanti la conception, l'exploitation, la sécurisation et l'évolution de l'infrastructure réseau et sécurité de la collectivité, en assurant un haut niveau de disponibilité, de performance, de conformité…",
-   "dcip": false,
-   "service": "",
-   "appariement": "",
-   "candidature_permanente": false
-  },
-  {
-   "id": "responsable-digital-workplace-hf-33971",
-   "titre": "Responsable Digital Workplace H/F (33971)",
-   "url": "https://www.departement06.fr/offres-demploi/responsable-digital-workplace-hf-33971",
-   "domaine": "",
-   "categorie": "A",
-   "categories": [
-    "A"
-   ],
-   "filiere": "TECHNIQUE",
-   "filieres": [
-    "TECHNIQUE"
-   ],
-   "deadline": "2026-11-30",
-   "deadline_label": "30 novembre 2026",
-   "publie_le": "2026-11-02",
-   "resume": "Nous recherchons un « Responsable Digital Workplace » pour incarner la cohérence globale de l'environnement de travail numérique, entendu comme un produit de service transverse au bénéfice de toute la collectivité. Le poste est ouvert au sein du…",
    "dcip": false,
    "service": "",
    "appariement": "",
@@ -660,8 +660,8 @@
    "filieres": [
     "ADMINISTRATIVE"
    ],
-   "deadline": "2026-11-30",
-   "deadline_label": "30 novembre 2026",
+   "deadline": "2026-12-31",
+   "deadline_label": "31 décembre 2026",
    "publie_le": "2026-09-08",
    "resume": "En votre qualité de contrôleur de gestion :-Vous assurerez périodiquement la communication et la présentation d'outils d'analyse et de pilotage (rapport d'activité, tableaux de bord, etc.), -Vous rédigerez des analyses, rapports, études d…",
    "dcip": false,
