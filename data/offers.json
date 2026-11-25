@@ -1,9 +1,31 @@
 {
- "generated_at": "2026-11-24T14:41:34Z",
+ "generated_at": "2026-11-25T14:04:03Z",
  "source": "https://www.departement06.fr/offres-demploi",
- "count": 42,
+ "count": 43,
  "count_dcip": 6,
  "offers": [
+  {
+   "id": "responsable-digital-workplace-hf-33971",
+   "titre": "Responsable Digital Workplace H/F (33971)",
+   "url": "https://www.departement06.fr/offres-demploi/responsable-digital-workplace-hf-33971",
+   "domaine": "",
+   "categorie": "A",
+   "categories": [
+    "A"
+   ],
+   "filiere": "TECHNIQUE",
+   "filieres": [
+    "TECHNIQUE"
+   ],
+   "deadline": "2026-12-25",
+   "deadline_label": "25 décembre 2026",
+   "publie_le": "2026-11-25",
+   "resume": "Rattaché au service SPAN de la Direction des services numériques, vous pilotez le Digital Workplace selon une logique produit au bénéfice de toute la collectivité.Vous portez sa vision, sa feuille de route, sa gouvernance, ses règles d'usage et…",
+   "dcip": false,
+   "service": "",
+   "appariement": "",
+   "candidature_permanente": false
+  },
   {
    "id": "agent-de-bibliotheque-valberg-hf",
    "titre": "Agent de bibliothèque à Valberg H/F",
