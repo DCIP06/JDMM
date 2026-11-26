@@ -1,9 +1,32 @@
 {
- "generated_at": "2026-11-25T14:04:03Z",
+ "generated_at": "2026-11-26T13:42:19Z",
  "source": "https://www.departement06.fr/offres-demploi",
  "count": 43,
- "count_dcip": 6,
+ "count_dcip": 7,
  "offers": [
+  {
+   "id": "charge-de-coordination-fonctionnelle-dcip-hf",
+   "titre": "Chargé de coordination fonctionnelle DCIP H/F",
+   "url": "https://www.departement06.fr/offres-demploi/charge-de-coordination-fonctionnelle-dcip-hf",
+   "domaine": "",
+   "categorie": "B",
+   "categories": [
+    "B"
+   ],
+   "filiere": "ADMINISTRATIVE",
+   "filieres": [
+    "ADMINISTRATIVE",
+    "TECHNIQUE"
+   ],
+   "deadline": "2026-12-31",
+   "deadline_label": "31 décembre 2026",
+   "publie_le": "2026-11-26",
+   "resume": "Au sein du service de la maintenance des collèges, le chargé de coordination fonctionnelle, assure, sous l'autorité du chef de service, le suivi et le contrôle des marchés à bons de commande de travaux et de de fournitures. Ces marchés couvrent l…",
+   "dcip": true,
+   "service": "",
+   "appariement": "motif:DCIP",
+   "candidature_permanente": false
+  },
   {
    "id": "responsable-digital-workplace-hf-33971",
    "titre": "Responsable Digital Workplace H/F (33971)",
@@ -198,30 +221,6 @@
    "deadline_label": "30 novembre 2026",
    "publie_le": "2026-11-06",
    "resume": "Le chargé de suivi des EHPAD assure le suivi administratif, financier et réglementaire des établissements d'hébergement pour personnes âgées, en lien avec les services de l'ARS, afin de garantir la qualité, la conformité et l'évolution des…",
-   "dcip": false,
-   "service": "",
-   "appariement": "",
-   "candidature_permanente": false
-  },
-  {
-   "id": "responsable-de-la-section-des-mediatheques-annexes-et-de-la-micro-folie-34035",
-   "titre": "Responsable de la section des médiathèques annexes et de la Micro-Folie (34035)",
-   "url": "https://www.departement06.fr/offres-demploi/responsable-de-la-section-des-mediatheques-annexes-et-de-la-micro-folie-34035",
-   "domaine": "",
-   "categorie": "B",
-   "categories": [
-    "B",
-    "A"
-   ],
-   "filiere": "CULTURELLE",
-   "filieres": [
-    "CULTURELLE",
-    "ADMINISTRATIVE"
-   ],
-   "deadline": "2026-12-04",
-   "deadline_label": "4 décembre 2026",
-   "publie_le": "2026-11-04",
-   "resume": "En lien étroit avec la directrice, le responsable de la section des médiathèques annexes et de la Micro-folie pilote ces cinq équipements et décline les orientations du service et de la collectivité dans le respect des spécificités de chaque site.",
    "dcip": false,
    "service": "",
    "appariement": "",
