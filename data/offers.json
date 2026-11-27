@@ -1,9 +1,54 @@
 {
- "generated_at": "2026-11-26T13:42:19Z",
+ "generated_at": "2026-11-27T13:39:23Z",
  "source": "https://www.departement06.fr/offres-demploi",
- "count": 43,
- "count_dcip": 7,
+ "count": 44,
+ "count_dcip": 8,
  "offers": [
+  {
+   "id": "charge-de-mission-energies-thermiques-renouvelables-hf-33329",
+   "titre": "Chargé de mission énergies thermiques renouvelables H/F (33329)",
+   "url": "https://www.departement06.fr/offres-demploi/charge-de-mission-energies-thermiques-renouvelables-hf-33329",
+   "domaine": "",
+   "categorie": "A",
+   "categories": [
+    "A"
+   ],
+   "filiere": "TECHNIQUE",
+   "filieres": [
+    "TECHNIQUE"
+   ],
+   "deadline": "2026-12-31",
+   "deadline_label": "31 décembre 2026",
+   "publie_le": "2026-11-26",
+   "resume": "Au sein du service Mission énergies renouvelable, le chargé de mission assure l'animation, la promotion et le suivi technique du Contrat Chaleur Renouvelable territorial (CCRt) afin de favoriser le développement de projets de chaleur renouvelable…",
+   "dcip": true,
+   "service": "Mission énergies renouvelables",
+   "poste_dcip_id": "charge-de-mission-energies-thermiques-renouvelables-hf-33329",
+   "appariement": "url",
+   "candidature_permanente": false
+  },
+  {
+   "id": "technicien-specialise-ascenseurs-hf-32743",
+   "titre": "Technicien spécialisé ascenseurs H/F (32743)",
+   "url": "https://www.departement06.fr/offres-demploi/technicien-specialise-ascenseurs-hf-32743",
+   "domaine": "",
+   "categorie": "B",
+   "categories": [
+    "B"
+   ],
+   "filiere": "TECHNIQUE",
+   "filieres": [
+    "TECHNIQUE"
+   ],
+   "deadline": "2026-11-30",
+   "deadline_label": "30 novembre 2026",
+   "publie_le": "2026-11-26",
+   "resume": "Au sein d'une équipe du service maintenance, le chargé d'opérations spécialisé ascenseur assure le suivi technique, réglementaire et contractuel du parc d'ascenseurs des collèges et des gymnases qui leur sont rattachés (ascenseurs, monte charges…",
+   "dcip": false,
+   "service": "",
+   "appariement": "",
+   "candidature_permanente": false
+  },
   {
    "id": "charge-de-coordination-fonctionnelle-dcip-hf",
    "titre": "Chargé de coordination fonctionnelle DCIP H/F",
@@ -173,8 +218,8 @@
    "filieres": [
     "TECHNIQUE"
    ],
-   "deadline": "2026-11-30",
-   "deadline_label": "30 novembre 2026",
+   "deadline": "2026-12-18",
+   "deadline_label": "18 décembre 2026",
    "publie_le": "2026-11-10",
    "resume": "Au sein du service protocole, le chef cuisinier assure une prestation de restauration de qualité, de la conception des menus à la réalisation des plats, dans le respect des normes d'hygiène et de sécurité alimentaire, tout en garantissant la gestion…",
    "dcip": false,
@@ -464,28 +509,6 @@
    "deadline_label": "30 novembre 2026",
    "publie_le": "2026-10-14",
    "resume": "Au sein de la section Suivi des enfants confiés, le référent suivi parcours des MNA assure l'accompagnement et le suivi des enfants, adolescents et jeunes adultes confiés, en coordonnant les acteurs internes et externes, afin de répondre à leurs…",
-   "dcip": false,
-   "service": "",
-   "appariement": "",
-   "candidature_permanente": false
-  },
-  {
-   "id": "technicien-specialise-ascenseurs-hf",
-   "titre": "Technicien spécialisé ascenseurs H/F",
-   "url": "https://www.departement06.fr/offres-demploi/technicien-specialise-ascenseurs-hf",
-   "domaine": "",
-   "categorie": "B",
-   "categories": [
-    "B"
-   ],
-   "filiere": "TECHNIQUE",
-   "filieres": [
-    "TECHNIQUE"
-   ],
-   "deadline": "2026-11-30",
-   "deadline_label": "30 novembre 2026",
-   "publie_le": "2026-10-09",
-   "resume": "Au sein d'une équipe du service maintenance, le chargé d'opérations spécialisé ascenseur assure le suivi technique, réglementaire et contractuel du parc d'ascenseurs des collèges et des gymnases qui leur sont rattachés (ascenseurs, monte charges…",
    "dcip": false,
    "service": "",
    "appariement": "",
